@@ -1,11 +1,12 @@
 # Sales Data Analysis using SQL
 
 ## 📌 Project Overview
-This project demonstrates how to design a relational database and analyze sales data using MySQL. It covers database design, SQL queries, data analysis, and business reporting using a sample sales dataset.
+This project demonstrates how to design a relational database and analyze sales data using MySQL. It covers database design, SQL querying, business analysis, and reporting using a sample sales dataset.
 
 ---
 
 ## 🛠 Technologies Used
+
 - MySQL 8.0
 - MySQL Workbench
 - SQL
@@ -16,7 +17,7 @@ This project demonstrates how to design a relational database and analyze sales 
 
 ## 📂 Project Structure
 
-```
+```text
 Sales_Data_Analysis_SQL/
 │
 ├── Database_Design/
@@ -26,13 +27,17 @@ Sales_Data_Analysis_SQL/
 │   ├── create_database.sql
 │   ├── insert_data.sql
 │   ├── basic_queries.sql
-│   └── join_queries.sql
+│   ├── join_queries.sql
+│   ├── aggregate_queries.sql
+│   └── subqueries.sql
 │
 ├── Screenshots/
 │   ├── Day 1/
 │   ├── Day 2/
 │   ├── Day 3/
-│   └── Day 4/
+│   ├── Day 4/
+│   ├── Day 5/
+│   └── Day 6/
 │
 ├── Presentation/
 ├── Report/
@@ -99,8 +104,9 @@ Implemented queries using:
 Implemented:
 
 - INNER JOIN
-- LEFT JOIN
-- RIGHT JOIN
+- Customer and Orders JOIN
+- Orders and Payments JOIN
+- Order_Items and Products JOIN
 - Multi-table JOIN
 - Customer Order Report
 - Product Sales Report
@@ -108,17 +114,49 @@ Implemented:
 
 ---
 
-## 🚀 Upcoming Tasks
+## ✅ Day 5 - Aggregate Functions
+
+Implemented:
 
 - GROUP BY
 - HAVING
-- Aggregate Analysis
-- Subqueries
+- COUNT()
+- SUM()
+- AVG()
+- Revenue Analysis
+- Customer Sales Analysis
+- Product Sales Analysis
+
+---
+
+## ✅ Day 6 - SQL Subqueries
+
+Implemented:
+
+- Products Above Average Price
+- Customers With Orders
+- Orders Above Average Value
+- Most Expensive Product
+- Cheapest Product
+- Customers With Multiple Orders
+- Single-row Subqueries
+- IN Subqueries
+- Business Analysis using Subqueries
+
+---
+
+## 🚀 Upcoming Tasks
+
 - Views
 - Stored Procedures
+- Triggers
+- Indexes
 - Window Functions
+- Common Table Expressions (CTEs)
 - SQL Optimization
 - Power BI Dashboard
+- Final Business Report
+- Project Presentation
 
 ---
 
@@ -128,11 +166,25 @@ By completing this project, I learned:
 
 - Database Design
 - Relational Database Concepts
-- SQL Queries
-- Table Relationships
+- SQL Data Definition Language (DDL)
+- SQL Data Manipulation Language (DML)
+- Basic SQL Queries
+- Aggregate Functions
 - JOIN Operations
-- Data Analysis using SQL
+- Subqueries
+- Business Data Analysis
 - Git & GitHub Project Management
+
+---
+
+## 📊 Current Project Status
+
+| Week | Progress |
+|------|----------|
+| Week 1 | ✅ Day 1 - Day 6 Completed |
+| Remaining | Day 7 + Advanced SQL + Power BI |
+
+**Overall Progress:** **Approximately 40% Completed**
 
 ---
 
@@ -140,5 +192,5 @@ By completing this project, I learned:
 
 **Vishnu Kumar**
 
-GitHub:
+GitHub:  
 https://github.com/vishnuvk-coder
