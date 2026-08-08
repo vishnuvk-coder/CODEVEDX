@@ -1,31 +1,38 @@
 # 📊 Sales Data Analysis using SQL
 
-A hands-on SQL project that demonstrates database design, data manipulation, and business data analysis using MySQL. This project simulates a real-world sales management system and showcases SQL skills required for Data Analyst and SQL Developer roles.
+A hands-on SQL portfolio project focused on **relational database design, SQL querying, data analysis, and business reporting** using MySQL.
+
+The project simulates a real-world sales management system and demonstrates practical SQL skills relevant to **Data Analyst and SQL Developer roles**.
 
 ---
 
-# 🚀 Project Overview
+## 🚀 Project Overview
 
-This project covers the complete SQL workflow:
+This project follows a complete SQL data-analysis workflow:
 
 - Designing a relational database
-- Creating tables with Primary & Foreign Keys
-- Inserting sample business data
-- Writing SQL queries for analysis
-- Performing JOIN operations
+- Creating tables with Primary Keys and Foreign Keys
+- Inserting and managing business data
+- Writing SQL queries for data analysis
+- Filtering and sorting data
+- Performing SQL JOIN operations
 - Using Aggregate Functions
-- Implementing Subqueries
-- Building business reports
+- Implementing SQL Subqueries
+- Creating reusable SQL Views
+- Generating business-oriented reports
+- Managing the project using Git and GitHub
 
 ---
 
-# 🛠️ Technologies Used
+## 🛠️ Technologies Used
 
-- MySQL 8.0
-- MySQL Workbench
-- SQL
-- Git
-- GitHub
+| Technology | Purpose |
+|---|---|
+| **MySQL 8.0** | Database & SQL analysis |
+| **MySQL Workbench** | Database development |
+| **SQL** | Data querying & analysis |
+| **Git** | Version control |
+| **GitHub** | Project management & portfolio |
 
 ---
 
@@ -43,7 +50,9 @@ Sales_Data_Analysis_SQL/
 │   ├── basic_queries.sql
 │   ├── join_queries.sql
 │   ├── aggregate_queries.sql
-│   └── subqueries.sql
+│   ├── subqueries.sql
+│   ├── sales_analysis_report.sql
+│   └── views.sql
 │
 ├── Screenshots/
 │   ├── Day 1/
@@ -51,10 +60,15 @@ Sales_Data_Analysis_SQL/
 │   ├── Day 3/
 │   ├── Day 4/
 │   ├── Day 5/
-│   └── Day 6/
+│   ├── Day 6/
+│   ├── Day 7/
+│   └── Day 8/
 │
 ├── Presentation/
+│
 ├── Report/
+│   └── Week1_Report.md
+│
 └── README.md
 ```
 
@@ -62,15 +76,27 @@ Sales_Data_Analysis_SQL/
 
 # 🗃️ Database Schema
 
-The database consists of five related tables:
+The project uses five related tables:
 
 | Table | Description |
-|-------|-------------|
-| Customers | Customer information |
-| Products | Product details and pricing |
-| Orders | Customer order records |
-| Order_Items | Products included in each order |
-| Payments | Payment information |
+|---|---|
+| `Customers` | Stores customer information |
+| `Products` | Stores product details and pricing |
+| `Orders` | Stores customer order records |
+| `Order_Items` | Stores products included in each order |
+| `Payments` | Stores payment information |
+
+### 🔗 Main Relationships
+
+```text
+Customers
+    │
+    └── Orders
+          │
+          ├── Order_Items ─── Products
+          │
+          └── Payments
+```
 
 ---
 
@@ -78,22 +104,31 @@ The database consists of five related tables:
 
 ## ✅ Day 1 – Database Design
 
+Completed:
+
 - Created `sales_analysis_db`
-- Created all five tables
+- Created five relational tables
+- Created `Customers`
+- Created `Products`
+- Created `Orders`
+- Created `Order_Items`
+- Created `Payments`
 - Defined Primary Keys
 - Defined Foreign Keys
 - Verified database structure
 
 ---
 
-## ✅ Day 2 – Sample Data Insertion
+## ✅ Day 2 – Data Insertion
 
-- Inserted Customers data
-- Inserted Products data
-- Inserted Orders data
-- Inserted Order Items data
-- Inserted Payments data
-- Verified records using `SELECT *`
+Completed:
+
+- Inserted customer records
+- Inserted product records
+- Inserted order records
+- Inserted order item records
+- Inserted payment records
+- Verified inserted data using `SELECT *`
 
 ---
 
@@ -101,15 +136,15 @@ The database consists of five related tables:
 
 Implemented:
 
-- SELECT
-- WHERE
-- ORDER BY
-- DISTINCT
-- LIMIT
-- LIKE
-- BETWEEN
-- Aggregate Functions
-- Data Filtering
+- `SELECT`
+- `WHERE`
+- `ORDER BY`
+- `DISTINCT`
+- `LIMIT`
+- `LIKE`
+- `BETWEEN`
+- Data filtering
+- Basic data analysis
 
 ---
 
@@ -117,13 +152,16 @@ Implemented:
 
 Implemented:
 
-- INNER JOIN
-- LEFT JOIN
-- RIGHT JOIN
-- Multi-table JOIN
-- Customer Order Report
-- Product Sales Report
-- Payment Report
+- `INNER JOIN`
+- `LEFT JOIN`
+- `RIGHT JOIN`
+- Multi-table JOINs
+
+Created analysis reports for:
+
+- Customer Orders
+- Product Sales
+- Payment Details
 
 ---
 
@@ -131,11 +169,11 @@ Implemented:
 
 Implemented:
 
-- GROUP BY
-- HAVING
-- COUNT()
-- SUM()
-- AVG()
+- `GROUP BY`
+- `HAVING`
+- `COUNT()`
+- `SUM()`
+- `AVG()`
 - Revenue Analysis
 - Customer Sales Analysis
 - Product Sales Analysis
@@ -147,86 +185,203 @@ Implemented:
 Implemented:
 
 - Single-row Subqueries
-- IN Subqueries
+- `IN` Subqueries
 - Products Above Average Price
 - Orders Above Average Value
 - Most Expensive Product
 - Cheapest Product
 - Customers With Multiple Orders
-- Business Analysis Using Subqueries
+- Business Analysis using Subqueries
 
 ---
 
-# 📚 Skills Demonstrated
+## ✅ Day 7 – Sales Analysis Report
+
+Created a business-oriented sales analysis report covering:
+
+- Total Revenue
+- Total Customers
+- Total Orders
+- Average Order Value
+- Highest Order Value
+- Lowest Order Value
+- Customer-wise Sales
+- Product Revenue
+- Payment Status Analysis
+- Completed Orders
+
+---
+
+## ✅ Day 8 – SQL Views
+
+Created reusable SQL Views for business reporting:
+
+### 1. Customer Order View
+Combines customer information with order details.
+
+### 2. Product Sales View
+Provides product-wise quantity sold and revenue.
+
+### 3. Payment Details View
+Combines customer, order, and payment information.
+
+### 4. Completed Orders View
+Displays completed customer orders.
+
+### 5. Customer Sales Summary View
+Provides:
+
+- Total Orders
+- Total Sales
+- Average Order Value
+
+---
+
+# 📚 SQL Concepts Covered
 
 - Relational Database Design
-- SQL DDL (CREATE, ALTER)
-- SQL DML (INSERT)
-- Filtering and Sorting
-- Aggregate Functions
+- Primary Keys
+- Foreign Keys
+- DDL
+- DML
+- Data Retrieval
+- Data Filtering
+- Sorting
 - SQL JOINs
-- GROUP BY & HAVING
+- Aggregate Functions
+- `GROUP BY`
+- `HAVING`
 - SQL Subqueries
+- SQL Views
 - Business Data Analysis
-- Git & GitHub Version Control
+- Business Reporting
+
+---
+
+# 💼 Business Analysis Covered
+
+The project currently supports analysis such as:
+
+- Customer purchasing behavior
+- Product performance
+- Revenue analysis
+- Order analysis
+- Payment status analysis
+- Completed vs pending orders
+- Customer sales performance
+- Product revenue performance
+- Average order value
+
+---
+
+# 📸 Project Screenshots
+
+Screenshots are organized according to the daily project progress:
+
+| Day | Work |
+|---|---|
+| Day 1 | Database Design |
+| Day 2 | Data Insertion |
+| Day 3 | Basic SQL Queries |
+| Day 4 | JOIN Queries |
+| Day 5 | Aggregate Functions |
+| Day 6 | Subqueries |
+| Day 7 | Sales Analysis Report |
+| Day 8 | SQL Views |
+
+---
+
+# 📄 Project Reports
+
+Weekly project documentation is maintained in the `Report` folder.
+
+### Completed
+
+- ✅ `Week1_Report.md`
+
+### Upcoming
+
+- ⏳ `Week2_Report.md`
+- ⏳ `Week3_Report.md`
+- ⏳ `Week4_Report.md`
+- ⏳ Final Project Report
 
 ---
 
 # 📈 Current Progress
 
 | Milestone | Status |
-|-----------|--------|
+|---|---|
 | Database Design | ✅ Completed |
 | Data Insertion | ✅ Completed |
 | Basic SQL Queries | ✅ Completed |
 | SQL JOINs | ✅ Completed |
 | Aggregate Functions | ✅ Completed |
 | SQL Subqueries | ✅ Completed |
-| Business Reports | ⏳ In Progress |
+| Sales Analysis Report | ✅ Completed |
+| SQL Views | ✅ Completed |
 | Advanced SQL | ⏳ Upcoming |
 | Power BI Dashboard | ⏳ Upcoming |
+| Final Business Report | ⏳ Upcoming |
+| Project Presentation | ⏳ Upcoming |
 
-**Overall Completion:** **40%**
+### 🏆 Week 1
+
+**100% Completed**
+
+### 🔄 Week 2
+
+**Day 8 Completed – SQL Views**
 
 ---
 
 # 🎯 Upcoming Topics
 
-- Mini Sales Analysis Report
-- SQL Views
+The next phase of the project will focus on advanced SQL:
+
 - Stored Procedures
 - Triggers
 - Indexes
 - Window Functions
 - Common Table Expressions (CTEs)
-- SQL Optimization
-- Power BI Dashboard
-- Final Project Report
+- SQL Query Optimization
+- Advanced Business Case Studies
+- Power BI Integration
+- Interactive Dashboard
+- Final Business Report
 - Project Presentation
 
 ---
 
-# 📷 Project Screenshots
+# 🎓 Learning Outcomes
 
-The project includes screenshots for every completed module:
+Through this project, I am developing practical skills in:
 
-- 📁 Day 1 – Database Creation
-- 📁 Day 2 – Data Insertion
-- 📁 Day 3 – Basic Queries
-- 📁 Day 4 – JOIN Queries
-- 📁 Day 5 – Aggregate Functions
-- 📁 Day 6 – Subqueries
+- Relational Database Management
+- SQL Programming
+- Data Analysis
+- Business Intelligence
+- Database Relationships
+- Advanced SQL
+- Business Reporting
+- Git Version Control
+- GitHub Project Management
 
 ---
 
 # 👨‍💻 Author
 
-**Vishnu Kumar**
+## Vishnu Kumar
 
-🎓 Computer Science Graduate
+**Computer Science Graduate**
 
-🔗 GitHub: https://github.com/vishnuvk-coder
+🔗 **GitHub:**  
+https://github.com/vishnuvk-coder
 
 ---
 
-## ⭐ If you found this project helpful, consider giving it a star on GitHub!
+## ⭐ Project Status
+
+**Active Development 🚀**
+
+This project is being developed progressively with new SQL concepts, business analysis techniques, reports, screenshots, and dashboards added throughout the project.
