@@ -1,14 +1,14 @@
 # 📊 Sales Data Analysis using SQL
 
-A hands-on SQL portfolio project focused on **relational database design, SQL querying, data analysis, and business reporting** using MySQL.
+A hands-on SQL portfolio project focused on **relational database design, data manipulation, SQL analysis, and business reporting** using MySQL.
 
-The project simulates a real-world sales management system and demonstrates practical SQL skills relevant to **Data Analyst and SQL Developer roles**.
+This project simulates a real-world sales management system and demonstrates practical SQL skills relevant to **Data Analyst and SQL Developer roles**.
 
 ---
 
 ## 🚀 Project Overview
 
-This project follows a complete SQL data-analysis workflow:
+This project follows a structured SQL data-analysis workflow:
 
 - Designing a relational database
 - Creating tables with Primary Keys and Foreign Keys
@@ -18,7 +18,8 @@ This project follows a complete SQL data-analysis workflow:
 - Performing SQL JOIN operations
 - Using Aggregate Functions
 - Implementing SQL Subqueries
-- Creating reusable SQL Views
+- Creating SQL Views
+- Developing Stored Procedures
 - Generating business-oriented reports
 - Managing the project using Git and GitHub
 
@@ -28,11 +29,11 @@ This project follows a complete SQL data-analysis workflow:
 
 | Technology | Purpose |
 |---|---|
-| **MySQL 8.0** | Database & SQL analysis |
-| **MySQL Workbench** | Database development |
-| **SQL** | Data querying & analysis |
+| **MySQL 8.0** | Database management and SQL analysis |
+| **MySQL Workbench** | Database development and query execution |
+| **SQL** | Data querying and business analysis |
 | **Git** | Version control |
-| **GitHub** | Project management & portfolio |
+| **GitHub** | Project management and portfolio |
 
 ---
 
@@ -52,7 +53,8 @@ Sales_Data_Analysis_SQL/
 │   ├── aggregate_queries.sql
 │   ├── subqueries.sql
 │   ├── sales_analysis_report.sql
-│   └── views.sql
+│   ├── views.sql
+│   └── stored_procedures.sql
 │
 ├── Screenshots/
 │   ├── Day 1/
@@ -62,12 +64,14 @@ Sales_Data_Analysis_SQL/
 │   ├── Day 5/
 │   ├── Day 6/
 │   ├── Day 7/
-│   └── Day 8/
+│   ├── Day 8/
+│   └── Day 9/
 │
 ├── Presentation/
 │
 ├── Report/
-│   └── Week1_Report.md
+│   ├── Week1_Report.md
+│   └── Week2_Report.md
 │
 └── README.md
 ```
@@ -76,7 +80,7 @@ Sales_Data_Analysis_SQL/
 
 # 🗃️ Database Schema
 
-The project uses five related tables:
+The database consists of five related tables:
 
 | Table | Description |
 |---|---|
@@ -86,7 +90,7 @@ The project uses five related tables:
 | `Order_Items` | Stores products included in each order |
 | `Payments` | Stores payment information |
 
-### 🔗 Main Relationships
+### 🔗 Database Relationships
 
 ```text
 Customers
@@ -128,7 +132,7 @@ Completed:
 - Inserted order records
 - Inserted order item records
 - Inserted payment records
-- Verified inserted data using `SELECT *`
+- Verified records using `SELECT *`
 
 ---
 
@@ -197,7 +201,7 @@ Implemented:
 
 ## ✅ Day 7 – Sales Analysis Report
 
-Created a business-oriented sales analysis report covering:
+Created a business-oriented SQL analysis report covering:
 
 - Total Revenue
 - Total Customers
@@ -216,19 +220,19 @@ Created a business-oriented sales analysis report covering:
 
 Created reusable SQL Views for business reporting:
 
-### 1. Customer Order View
+### Customer Order View
 Combines customer information with order details.
 
-### 2. Product Sales View
+### Product Sales View
 Provides product-wise quantity sold and revenue.
 
-### 3. Payment Details View
+### Payment Details View
 Combines customer, order, and payment information.
 
-### 4. Completed Orders View
+### Completed Orders View
 Displays completed customer orders.
 
-### 5. Customer Sales Summary View
+### Customer Sales Summary View
 Provides:
 
 - Total Orders
@@ -237,78 +241,120 @@ Provides:
 
 ---
 
+## 🔄 Day 9 – SQL Stored Procedures
+
+Currently working on reusable Stored Procedures for business analysis.
+
+Implemented procedures for:
+
+- Retrieving all customers
+- Retrieving customer-specific orders
+- Filtering orders by status
+- Filtering products by category
+- Generating customer sales summaries
+
+### Stored Procedures
+
+```text
+Get_All_Customers()
+Get_Customer_Orders(customer_id)
+Get_Orders_By_Status(status)
+Get_Products_By_Category(category)
+Get_Customer_Sales_Summary(customer_id)
+```
+
+Each procedure is tested using `CALL` statements in MySQL Workbench.
+
+---
+
 # 📚 SQL Concepts Covered
+
+### Database Fundamentals
 
 - Relational Database Design
 - Primary Keys
 - Foreign Keys
+- Table Relationships
+- Database Constraints
+
+### SQL Data Operations
+
 - DDL
 - DML
 - Data Retrieval
 - Data Filtering
 - Sorting
-- SQL JOINs
+
+### SQL Analysis
+
 - Aggregate Functions
 - `GROUP BY`
 - `HAVING`
-- SQL Subqueries
+- JOIN Operations
+- Subqueries
 - SQL Views
-- Business Data Analysis
-- Business Reporting
+- Stored Procedures
+
+### Development & Version Control
+
+- Git
+- GitHub
+- SQL Project Organization
+- Daily Development Tracking
 
 ---
 
-# 💼 Business Analysis Covered
+# 💼 Business Analysis
 
-The project currently supports analysis such as:
+The project supports several real-world business analysis scenarios:
 
 - Customer purchasing behavior
 - Product performance
 - Revenue analysis
 - Order analysis
 - Payment status analysis
-- Completed vs pending orders
+- Completed vs Pending Orders
 - Customer sales performance
 - Product revenue performance
-- Average order value
+- Average Order Value
+- Customer order history
+- Category-based product analysis
 
 ---
 
 # 📸 Project Screenshots
 
-Screenshots are organized according to the daily project progress:
+Screenshots are organized by project day:
 
-| Day | Work |
+| Day | Module |
 |---|---|
 | Day 1 | Database Design |
 | Day 2 | Data Insertion |
 | Day 3 | Basic SQL Queries |
-| Day 4 | JOIN Queries |
+| Day 4 | JOIN Operations |
 | Day 5 | Aggregate Functions |
 | Day 6 | Subqueries |
 | Day 7 | Sales Analysis Report |
 | Day 8 | SQL Views |
+| Day 9 | Stored Procedures |
 
 ---
 
 # 📄 Project Reports
 
-Weekly project documentation is maintained in the `Report` folder.
+Project documentation is maintained in the `Report` folder.
 
-### Completed
+### Reports
 
-- ✅ `Week1_Report.md`
-
-### Upcoming
-
-- ⏳ `Week2_Report.md`
-- ⏳ `Week3_Report.md`
-- ⏳ `Week4_Report.md`
+- ✅ Week 1 Report
+- 🔄 Week 2 Report
 - ⏳ Final Project Report
+
+The reports document the SQL concepts, business analysis, screenshots, and progress completed during each project phase.
 
 ---
 
-# 📈 Current Progress
+# 📈 Current Project Status
 
 | Milestone | Status |
 |---|---|
@@ -320,36 +366,33 @@ Weekly project documentation is maintained in the `Report` folder.
 | SQL Subqueries | ✅ Completed |
 | Sales Analysis Report | ✅ Completed |
 | SQL Views | ✅ Completed |
-| Advanced SQL | ⏳ Upcoming |
+| Stored Procedures | 🔄 In Progress |
+| Triggers | ⏳ Upcoming |
+| Indexes | ⏳ Upcoming |
+| Window Functions | ⏳ Upcoming |
+| CTEs | ⏳ Upcoming |
+| SQL Optimization | ⏳ Upcoming |
 | Power BI Dashboard | ⏳ Upcoming |
 | Final Business Report | ⏳ Upcoming |
 | Project Presentation | ⏳ Upcoming |
-
-### 🏆 Week 1
-
-**100% Completed**
-
-### 🔄 Week 2
-
-**Day 8 Completed – SQL Views**
 
 ---
 
 # 🎯 Upcoming Topics
 
-The next phase of the project will focus on advanced SQL:
+The next phase of the project will focus on advanced SQL and Business Intelligence:
 
-- Stored Procedures
-- Triggers
-- Indexes
-- Window Functions
-- Common Table Expressions (CTEs)
-- SQL Query Optimization
-- Advanced Business Case Studies
-- Power BI Integration
-- Interactive Dashboard
-- Final Business Report
-- Project Presentation
+1. **Stored Procedures**
+2. **Triggers**
+3. **Indexes**
+4. **Window Functions**
+5. **Common Table Expressions (CTEs)**
+6. **SQL Query Optimization**
+7. **Advanced Business Case Studies**
+8. **Power BI Integration**
+9. **Interactive Power BI Dashboard**
+10. **Final Business Report**
+11. **Project Presentation**
 
 ---
 
@@ -380,8 +423,18 @@ https://github.com/vishnuvk-coder
 
 ---
 
-## ⭐ Project Status
+# ⭐ Project Status
 
-**Active Development 🚀**
+**🚀 Active Development**
 
-This project is being developed progressively with new SQL concepts, business analysis techniques, reports, screenshots, and dashboards added throughout the project.
+This project is being developed progressively with new SQL concepts, business analysis techniques, reports, screenshots, and Business Intelligence components.
+
+---
+
+## 📌 Current Focus
+
+**Week 2 – Day 9**
+
+> 🔄 SQL Stored Procedures
+
+**Next:** Triggers → Indexes → Window Functions → CTEs → SQL Optimization → Power BI Dashboard
