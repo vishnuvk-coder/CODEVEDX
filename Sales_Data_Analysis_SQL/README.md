@@ -24,6 +24,8 @@ This project follows a structured SQL data-analysis workflow:
 - Creating SQL Indexes
 - Analyzing query execution using `EXPLAIN`
 - Improving query performance
+- Implementing SQL Window Functions
+- Performing advanced sales analysis
 - Generating business-oriented reports
 - Managing the project using Git and GitHub
 
@@ -36,12 +38,12 @@ This project follows a structured SQL data-analysis workflow:
 | **MySQL 8.0**       | Database management and SQL analysis     |
 | **MySQL Workbench** | Database development and query execution |
 | **SQL**             | Data querying and business analysis      |
-| **Git**              | Version control                          |
-| **GitHub**           | Project management and portfolio         |
+| **Git**             | Version control                          |
+| **GitHub**          | Project management and portfolio         |
 
 ---
 
-## 📁 Project Structure
+# 📁 Project Structure
 
 ```text
 Sales_Data_Analysis_SQL/
@@ -60,7 +62,8 @@ Sales_Data_Analysis_SQL/
 │   ├── views.sql
 │   ├── stored_procedures.sql
 │   ├── triggers.sql
-│   └── indexes.sql
+│   ├── indexes.sql
+│   └── window_functions.sql
 │
 ├── Screenshots/
 │   ├── Day 1/
@@ -73,7 +76,8 @@ Sales_Data_Analysis_SQL/
 │   ├── Day 8/
 │   ├── Day 9/
 │   ├── Day 10/
-│   └── Day 11/
+│   ├── Day 11/
+│   └── Day 12/
 │
 ├── Presentation/
 │
