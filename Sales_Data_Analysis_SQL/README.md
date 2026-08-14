@@ -26,6 +26,10 @@ This project follows a structured end-to-end SQL data-analysis workflow:
 - SQL Window Functions
 - Common Table Expressions (CTEs)
 - Advanced sales analysis
+- Customer and product performance analysis
+- Revenue analysis
+- KPI analysis
+- Business performance evaluation
 - Business-oriented reporting
 - Git and GitHub version control
 
@@ -64,7 +68,8 @@ Sales_Data_Analysis_SQL/
 │   ├── triggers.sql
 │   ├── indexes.sql
 │   ├── window_functions.sql
-│   └── cte_queries.sql
+│   ├── cte_queries.sql
+│   └── advanced_business_analysis.sql
 │
 ├── Screenshots/
 │   ├── Day 1/
@@ -79,7 +84,8 @@ Sales_Data_Analysis_SQL/
 │   ├── Day 10/
 │   ├── Day 11/
 │   ├── Day 12/
-│   └── Day 13/
+│   ├── Day 13/
+│   └── Day 14/
 │
 ├── Presentation/
 │
