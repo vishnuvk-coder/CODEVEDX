@@ -1,6 +1,6 @@
 # 📊 Sales Data Analysis using SQL
 
-A hands-on SQL portfolio project focused on **relational database design, data manipulation, advanced SQL analysis, query optimization, and business reporting** using MySQL.
+A hands-on SQL portfolio project focused on **relational database design, data manipulation, advanced SQL analysis, query optimization, performance analysis, and business reporting** using MySQL.
 
 This project simulates a real-world sales management system and demonstrates practical SQL skills relevant to **Data Analyst, Business Analyst, and SQL Developer roles**.
 
@@ -21,15 +21,14 @@ This project follows a structured end-to-end SQL data-analysis workflow:
 - Stored Procedures
 - SQL Triggers
 - SQL Indexes
-- Query performance analysis using `EXPLAIN`
+- Query execution analysis using `EXPLAIN`
 - Query optimization
 - SQL Window Functions
 - Common Table Expressions (CTEs)
 - Advanced sales analysis
 - Customer and product performance analysis
-- Revenue analysis
-- KPI analysis
-- Business performance evaluation
+- Revenue and KPI analysis
+- Query performance optimization
 - Business-oriented reporting
 - Git and GitHub version control
 
@@ -41,7 +40,7 @@ This project follows a structured end-to-end SQL data-analysis workflow:
 |---|---|
 | **MySQL 8.0** | Database management and SQL analysis |
 | **MySQL Workbench** | Database development and query execution |
-| **SQL** | Data querying and business analysis |
+| **SQL** | Data querying, optimization, and business analysis |
 | **Git** | Version control |
 | **GitHub** | Project management and portfolio |
 
@@ -69,7 +68,8 @@ Sales_Data_Analysis_SQL/
 │   ├── indexes.sql
 │   ├── window_functions.sql
 │   ├── cte_queries.sql
-│   └── advanced_business_analysis.sql
+│   ├── advanced_business_analysis.sql
+│   └── query_optimization.sql
 │
 ├── Screenshots/
 │   ├── Day 1/
@@ -85,7 +85,8 @@ Sales_Data_Analysis_SQL/
 │   ├── Day 11/
 │   ├── Day 12/
 │   ├── Day 13/
-│   └── Day 14/
+│   ├── Day 14/
+│   └── Day 15/
 │
 ├── Presentation/
 │
