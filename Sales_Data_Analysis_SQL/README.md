@@ -28,7 +28,10 @@ This project follows a structured end-to-end SQL data-analysis workflow:
 - Advanced sales analysis
 - Customer and product performance analysis
 - Revenue and KPI analysis
-- Query performance optimization
+- Customer segmentation
+- Revenue contribution analysis
+- Business case studies
+- Performance optimization
 - Business-oriented reporting
 - Git and GitHub version control
 
@@ -69,7 +72,8 @@ Sales_Data_Analysis_SQL/
 │   ├── window_functions.sql
 │   ├── cte_queries.sql
 │   ├── advanced_business_analysis.sql
-│   └── query_optimization.sql
+│   ├── query_optimization.sql
+│   └── advanced_business_case_study.sql
 │
 ├── Screenshots/
 │   ├── Day 1/
@@ -86,7 +90,8 @@ Sales_Data_Analysis_SQL/
 │   ├── Day 12/
 │   ├── Day 13/
 │   ├── Day 14/
-│   └── Day 15/
+│   ├── Day 15/
+│   └── Day 16/
 │
 ├── Presentation/
 │
