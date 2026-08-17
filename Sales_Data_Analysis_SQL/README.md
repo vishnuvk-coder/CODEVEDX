@@ -1,6 +1,6 @@
 # 📊 Sales Data Analysis using SQL
 
-A hands-on SQL portfolio project focused on **relational database design, data manipulation, advanced SQL analysis, query optimization, performance analysis, and business reporting** using MySQL.
+A hands-on SQL portfolio project focused on **relational database design, data manipulation, advanced SQL analysis, query optimization, performance analysis, business intelligence, and business reporting** using MySQL.
 
 This project simulates a real-world sales management system and demonstrates practical SQL skills relevant to **Data Analyst, Business Analyst, and SQL Developer roles**.
 
@@ -30,8 +30,10 @@ This project follows a structured end-to-end SQL data-analysis workflow:
 - Revenue and KPI analysis
 - Customer segmentation
 - Revenue contribution analysis
-- Business case studies
-- Performance optimization
+- Advanced business case studies
+- Business performance analysis
+- Query performance optimization
+- Business insights and interpretation
 - Business-oriented reporting
 - Git and GitHub version control
 
@@ -43,7 +45,7 @@ This project follows a structured end-to-end SQL data-analysis workflow:
 |---|---|
 | **MySQL 8.0** | Database management and SQL analysis |
 | **MySQL Workbench** | Database development and query execution |
-| **SQL** | Data querying, optimization, and business analysis |
+| **SQL** | Data querying, analysis, and optimization |
 | **Git** | Version control |
 | **GitHub** | Project management and portfolio |
 
@@ -91,12 +93,14 @@ Sales_Data_Analysis_SQL/
 │   ├── Day 13/
 │   ├── Day 14/
 │   ├── Day 15/
-│   └── Day 16/
+│   ├── Day 16/
+│   └── Day 17/
 │
 ├── Presentation/
 │
 ├── Report/
 │   ├── Week1_Report.md
-│   └── Week2_Report.md
+│   ├── Week2_Report.md
+│   └── Day17_Business_Analysis.md
 │
 └── README.md
