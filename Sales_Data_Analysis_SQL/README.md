@@ -1,6 +1,6 @@
 # 📊 Sales Data Analysis using SQL
 
-A hands-on SQL portfolio project focused on **relational database design, data manipulation, advanced SQL analysis, query optimization, performance analysis, business intelligence, and business reporting** using MySQL.
+A hands-on SQL portfolio project focused on **relational database design, advanced SQL analysis, query optimization, business intelligence, and business reporting** using MySQL.
 
 This project simulates a real-world sales management system and demonstrates practical SQL skills relevant to **Data Analyst, Business Analyst, and SQL Developer roles**.
 
@@ -8,14 +8,16 @@ This project simulates a real-world sales management system and demonstrates pra
 
 ## 🚀 Project Overview
 
-This project follows a structured end-to-end SQL data-analysis workflow:
+This project follows a structured end-to-end SQL data-analysis workflow, progressing from database fundamentals to advanced analytical and business-oriented SQL.
+
+### Core Areas Covered
 
 - Relational database design
-- Primary and Foreign Key implementation
+- Primary Keys and Foreign Keys
 - Business data insertion and management
 - Data retrieval, filtering, and sorting
 - SQL JOIN operations
-- Aggregate functions and grouped analysis
+- Aggregate functions
 - SQL Subqueries
 - SQL Views
 - Stored Procedures
@@ -32,9 +34,9 @@ This project follows a structured end-to-end SQL data-analysis workflow:
 - Revenue contribution analysis
 - Advanced business case studies
 - Business performance analysis
-- Query performance optimization
-- Business insights and interpretation
-- Business-oriented reporting
+- Customer analytics
+- Product analytics
+- Business reporting
 - Git and GitHub version control
 
 ---
@@ -48,10 +50,34 @@ This project follows a structured end-to-end SQL data-analysis workflow:
 | **SQL** | Data querying, analysis, and optimization |
 | **Git** | Version control |
 | **GitHub** | Project management and portfolio |
+| **VS Code** | SQL development and documentation |
 
 ---
 
-# 📁 Project Structure
+# 🗄️ Database Design
+
+The project uses a relational sales database consisting of five primary tables:
+
+| Table | Description |
+|---|---|
+| `Customers` | Stores customer information |
+| `Products` | Stores product details and pricing |
+| `Orders` | Stores customer order records |
+| `Order_Items` | Stores products included in orders |
+| `Payments` | Stores payment information |
+
+### Database Relationships
+
+```text
+Customers
+    │
+    └── Orders
+          │
+          ├── Order_Items ─── Products
+          │
+          └── Payments
+
+### 📁Project Structure
 
 ```text
 Sales_Data_Analysis_SQL/
@@ -75,7 +101,8 @@ Sales_Data_Analysis_SQL/
 │   ├── cte_queries.sql
 │   ├── advanced_business_analysis.sql
 │   ├── query_optimization.sql
-│   └── advanced_business_case_study.sql
+│   ├── advanced_business_case_study.sql
+│   └── business_kpi_analysis.sql
 │
 ├── Screenshots/
 │   ├── Day 1/
@@ -94,7 +121,8 @@ Sales_Data_Analysis_SQL/
 │   ├── Day 14/
 │   ├── Day 15/
 │   ├── Day 16/
-│   └── Day 17/
+│   ├── Day 17/
+│   └── Day 18/
 │
 ├── Presentation/
 │
