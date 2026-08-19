@@ -1,6 +1,6 @@
 # 📊 Sales Data Analysis using SQL
 
-A hands-on SQL portfolio project focused on **relational database design, advanced SQL analysis, query optimization, business intelligence, and business reporting** using MySQL.
+A hands-on SQL portfolio project focused on **relational database design, advanced SQL analysis, query optimization, business intelligence, customer analytics, and business reporting** using MySQL.
 
 This project simulates a real-world sales management system and demonstrates practical SQL skills relevant to **Data Analyst, Business Analyst, and SQL Developer roles**.
 
@@ -34,8 +34,10 @@ This project follows a structured end-to-end SQL data-analysis workflow, progres
 - Revenue contribution analysis
 - Advanced business case studies
 - Business performance analysis
-- Customer analytics
+- Customer behavior analysis
+- Customer revenue analytics
 - Product analytics
+- Business KPI analysis
 - Business reporting
 - Git and GitHub version control
 
@@ -66,7 +68,7 @@ The project uses a relational sales database consisting of five primary tables:
 | `Order_Items` | Stores products included in orders |
 | `Payments` | Stores payment information |
 
-### Database Relationships
+### 🔗 Database Relationships
 
 ```text
 Customers
@@ -77,9 +79,8 @@ Customers
           │
           └── Payments
 
-### 📁Project Structure
+### 📁 Project Structure
 
-```text
 Sales_Data_Analysis_SQL/
 │
 ├── Database_Design/
@@ -102,7 +103,8 @@ Sales_Data_Analysis_SQL/
 │   ├── advanced_business_analysis.sql
 │   ├── query_optimization.sql
 │   ├── advanced_business_case_study.sql
-│   └── business_kpi_analysis.sql
+│   ├── business_kpi_analysis.sql
+│   └── customer_behavior_analysis.sql
 │
 ├── Screenshots/
 │   ├── Day 1/
@@ -122,13 +124,15 @@ Sales_Data_Analysis_SQL/
 │   ├── Day 15/
 │   ├── Day 16/
 │   ├── Day 17/
-│   └── Day 18/
+│   ├── Day 18/
+│   └── Day 19/
 │
 ├── Presentation/
 │
 ├── Report/
 │   ├── Week1_Report.md
 │   ├── Week2_Report.md
-│   └── Day17_Business_Analysis.md
+│   ├── Day17_Business_Analysis.md
+│   └── Day19_Customer_Behavior_Analysis.md
 │
 └── README.md
