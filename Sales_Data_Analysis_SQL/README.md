@@ -1,6 +1,6 @@
-# 📊 Sales Data Analysis using SQL
+# 📊 Sales Data Analysis Using SQL
 
-A hands-on SQL portfolio project focused on **relational database design, advanced SQL analysis, query optimization, business intelligence, customer analytics, and business reporting** using MySQL.
+A hands-on SQL portfolio project focused on **relational database design, advanced SQL analytics, query optimization, customer behavior analysis, business intelligence, and business reporting** using MySQL.
 
 This project simulates a real-world sales management system and demonstrates practical SQL skills relevant to **Data Analyst, Business Analyst, and SQL Developer roles**.
 
@@ -9,6 +9,8 @@ This project simulates a real-world sales management system and demonstrates pra
 ## 🚀 Project Overview
 
 This project follows a structured end-to-end SQL data-analysis workflow, progressing from database fundamentals to advanced analytical and business-oriented SQL.
+
+The project focuses on transforming raw sales data into meaningful business insights using SQL.
 
 ### Core Areas Covered
 
@@ -34,10 +36,11 @@ This project follows a structured end-to-end SQL data-analysis workflow, progres
 - Revenue contribution analysis
 - Advanced business case studies
 - Business performance analysis
-- Customer behavior analysis
 - Customer revenue analytics
+- Customer behavior analysis
 - Product analytics
 - Business KPI analysis
+- Query performance analysis
 - Business reporting
 - Git and GitHub version control
 
@@ -58,7 +61,7 @@ This project follows a structured end-to-end SQL data-analysis workflow, progres
 
 # 🗄️ Database Design
 
-The project uses a relational sales database consisting of five primary tables:
+The project uses a relational sales database consisting of five primary tables.
 
 | Table | Description |
 |---|---|
@@ -79,8 +82,8 @@ Customers
           │
           └── Payments
 
-### 📁 Project Structure
 
+### 📁 Project Structure
 Sales_Data_Analysis_SQL/
 │
 ├── Database_Design/
