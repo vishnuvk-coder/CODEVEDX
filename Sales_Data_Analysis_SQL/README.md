@@ -1,6 +1,6 @@
 # 📊 Sales Data Analysis Using SQL
 
-A hands-on SQL portfolio project focused on **relational database design, advanced SQL analytics, query optimization, customer behavior analysis, business intelligence, and business reporting** using MySQL.
+A hands-on SQL portfolio project focused on **relational database design, advanced SQL analytics, query optimization, customer analytics, business intelligence, and business reporting** using MySQL.
 
 This project simulates a real-world sales management system and demonstrates practical SQL skills relevant to **Data Analyst, Business Analyst, and SQL Developer roles**.
 
@@ -10,7 +10,7 @@ This project simulates a real-world sales management system and demonstrates pra
 
 This project follows a structured end-to-end SQL data-analysis workflow, progressing from database fundamentals to advanced analytical and business-oriented SQL.
 
-The project focuses on transforming raw sales data into meaningful business insights using SQL.
+The primary objective is to transform raw sales data into meaningful business insights using SQL.
 
 ### Core Areas Covered
 
@@ -38,6 +38,7 @@ The project focuses on transforming raw sales data into meaningful business insi
 - Business performance analysis
 - Customer revenue analytics
 - Customer behavior analysis
+- Customer retention analysis
 - Product analytics
 - Business KPI analysis
 - Query performance analysis
@@ -82,7 +83,6 @@ Customers
           │
           └── Payments
 
-
 ### 📁 Project Structure
 Sales_Data_Analysis_SQL/
 │
@@ -107,7 +107,8 @@ Sales_Data_Analysis_SQL/
 │   ├── query_optimization.sql
 │   ├── advanced_business_case_study.sql
 │   ├── business_kpi_analysis.sql
-│   └── customer_behavior_analysis.sql
+│   ├── customer_behavior_analysis.sql
+│   └── customer_retention_analysis.sql
 │
 ├── Screenshots/
 │   ├── Day 1/
@@ -128,7 +129,8 @@ Sales_Data_Analysis_SQL/
 │   ├── Day 16/
 │   ├── Day 17/
 │   ├── Day 18/
-│   └── Day 19/
+│   ├── Day 19/
+│   └── Day 20/
 │
 ├── Presentation/
 │
@@ -136,6 +138,7 @@ Sales_Data_Analysis_SQL/
 │   ├── Week1_Report.md
 │   ├── Week2_Report.md
 │   ├── Day17_Business_Analysis.md
-│   └── Day19_Customer_Behavior_Analysis.md
+│   ├── Day19_Customer_Behavior_Analysis.md
+│   └── Day20_Customer_Retention_Analysis.md
 │
 └── README.md
