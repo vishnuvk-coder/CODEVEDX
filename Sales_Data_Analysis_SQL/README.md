@@ -8,7 +8,7 @@ This project simulates a real-world sales management system and demonstrates pra
 
 ## 🚀 Project Overview
 
-This project follows a structured end-to-end SQL data-analysis workflow, progressing from database fundamentals to advanced analytical and business-oriented SQL.
+This project follows a structured, end-to-end SQL data-analysis workflow, progressing from database fundamentals to advanced analytical and business-oriented SQL.
 
 The primary objective is to transform raw sales data into meaningful business insights using SQL.
 
@@ -39,11 +39,31 @@ The primary objective is to transform raw sales data into meaningful business in
 - Customer revenue analytics
 - Customer behavior analysis
 - Customer retention analysis
+- Customer lifetime value analysis
 - Product analytics
 - Business KPI analysis
 - Query performance analysis
 - Business reporting
+- Business intelligence analysis
 - Git and GitHub version control
+
+---
+
+## 📅 Project Progress
+
+| Phase | Days | Status |
+|---|---:|---|
+| SQL & Database Fundamentals | Day 1–7 | ✅ Completed |
+| Intermediate SQL Analysis | Day 8–14 | ✅ Completed |
+| Advanced SQL & Optimization | Day 15–17 | ✅ Completed |
+| Customer & Business Analytics | Day 18–22 | ✅ Completed |
+| **Overall Progress** | **22 Days** | **✅ Completed** |
+
+### Current Milestone
+
+**22 Days of SQL Business Analysis Completed**
+
+The project has progressed from basic relational database operations to advanced customer analytics, business KPIs, retention analysis, and customer lifetime value analysis.
 
 ---
 
@@ -60,7 +80,7 @@ The primary objective is to transform raw sales data into meaningful business in
 
 ---
 
-## 🗄️ Database Design
+# 🗄️ Database Design
 
 The project uses a relational sales database consisting of five primary tables.
 
@@ -81,10 +101,9 @@ Customers
           │
           ├── Order_Items ─── Products
           │
-          └── Payments 
+          └── Payments
 
-
-📂 Project Structure
+📁 Project Structure
 Sales_Data_Analysis_SQL/
 │
 ├── Database_Design/
@@ -108,8 +127,11 @@ Sales_Data_Analysis_SQL/
 │   ├── query_optimization.sql
 │   ├── advanced_business_case_study.sql
 │   ├── business_kpi_analysis.sql
+│   ├── customer_revenue_analytics.sql
 │   ├── customer_behavior_analysis.sql
-│   └── customer_retention_analysis.sql
+│   ├── customer_retention_analysis.sql
+│   ├── customer_lifetime_value.sql
+│   └── [Day 22 SQL File]
 │
 ├── Screenshots/
 │   ├── Day 1/
@@ -131,7 +153,9 @@ Sales_Data_Analysis_SQL/
 │   ├── Day 17/
 │   ├── Day 18/
 │   ├── Day 19/
-│   └── Day 20/
+│   ├── Day 20/
+│   ├── Day 21/
+│   └── Day 22/
 │
 ├── Presentation/
 │
@@ -140,6 +164,8 @@ Sales_Data_Analysis_SQL/
 │   ├── Week2_Report.md
 │   ├── Day17_Business_Analysis.md
 │   ├── Day19_Customer_Behavior_Analysis.md
-│   └── Day20_Customer_Retention_Analysis.md
+│   ├── Day20_Customer_Retention_Analysis.md
+│   ├── Day21_Customer_Lifetime_Value.md
+│   └── Day22_RFM_Customer_Segmentation.md
 │
 └── README.md
