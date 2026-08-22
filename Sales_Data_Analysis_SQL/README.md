@@ -60,7 +60,7 @@ The primary objective is to transform raw sales data into meaningful business in
 
 ---
 
-# 🗄️ Database Design
+## 🗄️ Database Design
 
 The project uses a relational sales database consisting of five primary tables.
 
@@ -81,9 +81,10 @@ Customers
           │
           ├── Order_Items ─── Products
           │
-          └── Payments
+          └── Payments 
 
-### 📁 Project Structure
+
+📂 Project Structure
 Sales_Data_Analysis_SQL/
 │
 ├── Database_Design/
