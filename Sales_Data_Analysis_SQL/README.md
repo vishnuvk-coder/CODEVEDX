@@ -57,13 +57,14 @@ The primary objective is to transform raw sales data into meaningful business in
 | Intermediate SQL Analysis | Day 8–14 | ✅ Completed |
 | Advanced SQL & Optimization | Day 15–17 | ✅ Completed |
 | Customer & Business Analytics | Day 18–22 | ✅ Completed |
-| **Overall Progress** | **22 Days** | **✅ Completed** |
+| Sales Trend & Time-Series Analysis | Day 23 | ✅ Completed |
+| **Overall Progress** | **23 Days** | **✅ Completed** |
 
 ### Current Milestone
 
-**22 Days of SQL Business Analysis Completed**
+**23 Days of SQL Business Analysis Completed**
 
-The project has progressed from basic relational database operations to advanced customer analytics, business KPIs, retention analysis, and customer lifetime value analysis.
+The project has progressed from relational database fundamentals to advanced SQL optimization, customer analytics, retention analysis, customer lifetime value, segmentation, and time-series sales analysis.
 
 ---
 
@@ -131,7 +132,8 @@ Sales_Data_Analysis_SQL/
 │   ├── customer_behavior_analysis.sql
 │   ├── customer_retention_analysis.sql
 │   ├── customer_lifetime_value.sql
-│   └── [Day 22 SQL File]
+│   ├── rfm_customer_segmentation.sql
+│   └── sales_trend_analysis.sql
 │
 ├── Screenshots/
 │   ├── Day 1/
@@ -155,7 +157,8 @@ Sales_Data_Analysis_SQL/
 │   ├── Day 19/
 │   ├── Day 20/
 │   ├── Day 21/
-│   └── Day 22/
+│   ├── Day 22/
+│   └── Day 23/
 │
 ├── Presentation/
 │
@@ -166,6 +169,7 @@ Sales_Data_Analysis_SQL/
 │   ├── Day19_Customer_Behavior_Analysis.md
 │   ├── Day20_Customer_Retention_Analysis.md
 │   ├── Day21_Customer_Lifetime_Value.md
-│   └── Day22_RFM_Customer_Segmentation.md
+│   ├── Day22_RFM_Customer_Segmentation.md
+│   └── Day23_Sales_Trend_Analysis.md
 │
 └── README.md
