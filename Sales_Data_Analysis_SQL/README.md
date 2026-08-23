@@ -1,6 +1,6 @@
 # 📊 Sales Data Analysis Using SQL
 
-A hands-on SQL portfolio project focused on **relational database design, advanced SQL analytics, query optimization, customer analytics, business intelligence, and business reporting** using MySQL.
+A hands-on SQL portfolio project focused on **relational database design, advanced SQL analytics, query optimization, customer analytics, product analytics, business intelligence, and business reporting** using MySQL.
 
 This project simulates a real-world sales management system and demonstrates practical SQL skills relevant to **Data Analyst, Business Analyst, and SQL Developer roles**.
 
@@ -30,9 +30,11 @@ The primary objective is to transform raw sales data into meaningful business in
 - SQL Window Functions
 - Common Table Expressions (CTEs)
 - Advanced sales analysis
-- Customer and product performance analysis
+- Customer performance analysis
+- Product performance analysis
 - Revenue and KPI analysis
 - Customer segmentation
+- RFM customer segmentation
 - Revenue contribution analysis
 - Advanced business case studies
 - Business performance analysis
@@ -40,7 +42,11 @@ The primary objective is to transform raw sales data into meaningful business in
 - Customer behavior analysis
 - Customer retention analysis
 - Customer lifetime value analysis
-- Product analytics
+- Product revenue analysis
+- Product sales ranking
+- Product performance classification
+- Product revenue contribution
+- Sales trend and time-series analysis
 - Business KPI analysis
 - Query performance analysis
 - Business reporting
@@ -58,13 +64,14 @@ The primary objective is to transform raw sales data into meaningful business in
 | Advanced SQL & Optimization | Day 15–17 | ✅ Completed |
 | Customer & Business Analytics | Day 18–22 | ✅ Completed |
 | Sales Trend & Time-Series Analysis | Day 23 | ✅ Completed |
-| **Overall Progress** | **23 Days** | **✅ Completed** |
+| Product Performance & Profitability Analysis | Day 24 | ✅ Completed |
+| **Overall Progress** | **24 Days** | **✅ Completed** |
 
-### Current Milestone
+### 🏆 Current Milestone
 
-**23 Days of SQL Business Analysis Completed**
+**24 Days of SQL Business Analysis Completed**
 
-The project has progressed from relational database fundamentals to advanced SQL optimization, customer analytics, retention analysis, customer lifetime value, segmentation, and time-series sales analysis.
+The project has progressed from relational database fundamentals to advanced SQL optimization, customer analytics, retention analysis, customer lifetime value, RFM segmentation, sales trend analysis, and advanced product performance analysis.
 
 ---
 
@@ -104,7 +111,8 @@ Customers
           │
           └── Payments
 
-📁 Project Structure
+
+
 Sales_Data_Analysis_SQL/
 │
 ├── Database_Design/
@@ -133,7 +141,8 @@ Sales_Data_Analysis_SQL/
 │   ├── customer_retention_analysis.sql
 │   ├── customer_lifetime_value.sql
 │   ├── rfm_customer_segmentation.sql
-│   └── sales_trend_analysis.sql
+│   ├── sales_trend_analysis.sql
+│   └── product_performance_analysis.sql
 │
 ├── Screenshots/
 │   ├── Day 1/
@@ -158,7 +167,8 @@ Sales_Data_Analysis_SQL/
 │   ├── Day 20/
 │   ├── Day 21/
 │   ├── Day 22/
-│   └── Day 23/
+│   ├── Day 23/
+│   └── Day 24/
 │
 ├── Presentation/
 │
@@ -170,6 +180,7 @@ Sales_Data_Analysis_SQL/
 │   ├── Day20_Customer_Retention_Analysis.md
 │   ├── Day21_Customer_Lifetime_Value.md
 │   ├── Day22_RFM_Customer_Segmentation.md
-│   └── Day23_Sales_Trend_Analysis.md
+│   ├── Day23_Sales_Trend_Analysis.md
+│   └── Day24_Product_Performance_Analysis.md
 │
 └── README.md
