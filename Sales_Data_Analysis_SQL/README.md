@@ -12,50 +12,158 @@ This project follows a structured, end-to-end SQL data-analysis workflow, progre
 
 The primary objective is to transform raw sales data into meaningful business insights using SQL.
 
-### Core Areas Covered
+The project covers database design, data manipulation, analytical SQL, customer analytics, product analytics, revenue analysis, business KPIs, SQL optimization, and business reporting.
+
+---
+
+# 🎯 Project Objectives
+
+The main objectives of this project are to:
+
+- Build and manage a relational sales database.
+- Develop strong SQL querying skills.
+- Analyze customer purchasing behavior.
+- Analyze product sales and revenue performance.
+- Calculate important business KPIs.
+- Perform customer segmentation.
+- Analyze customer retention and lifetime value.
+- Identify sales trends and business patterns.
+- Optimize SQL queries for better performance.
+- Convert raw sales data into actionable business insights.
+- Create structured business reports using SQL analysis.
+
+---
+
+# 📚 Core Areas Covered
+
+### 🗄️ Database & SQL Fundamentals
 
 - Relational database design
-- Primary Keys and Foreign Keys
-- Business data insertion and management
-- Data retrieval, filtering, and sorting
-- SQL JOIN operations
-- Aggregate functions
-- SQL Subqueries
-- SQL Views
+- Database creation
+- Table creation
+- Primary Keys
+- Foreign Keys
+- Data insertion
+- Data manipulation
+- Data retrieval
+- Filtering
+- Sorting
+- DISTINCT
+- LIMIT
+- Pattern matching
+- Date-based filtering
+
+### 🔗 SQL JOIN Operations
+
+- INNER JOIN
+- LEFT JOIN
+- RIGHT JOIN
+- Multi-table JOINs
+- Customer-order analysis
+- Order-product analysis
+- Payment analysis
+
+### 📊 SQL Aggregation & Analysis
+
+- COUNT()
+- SUM()
+- AVG()
+- MIN()
+- MAX()
+- GROUP BY
+- HAVING
+- Revenue calculations
+- Order calculations
+- Customer-level aggregation
+- Product-level aggregation
+
+### 🧠 Advanced SQL
+
+- Subqueries
+- Views
 - Stored Procedures
-- SQL Triggers
-- SQL Indexes
-- Query execution analysis using `EXPLAIN`
-- Query optimization
-- SQL Window Functions
+- Triggers
+- Indexes
+- Window Functions
 - Common Table Expressions (CTEs)
-- Advanced sales analysis
-- Customer performance analysis
-- Product performance analysis
-- Revenue and KPI analysis
-- Customer segmentation
-- RFM customer segmentation
-- Revenue contribution analysis
-- Advanced business case studies
-- Business performance analysis
-- Customer revenue analytics
+- CASE statements
+- Advanced JOIN analysis
+
+### ⚡ SQL Optimization
+
+- SQL indexes
+- Query execution analysis
+- `EXPLAIN`
+- Query performance analysis
+- Query optimization
+- Efficient JOIN strategies
+- Performance-oriented SQL design
+
+### 👥 Customer Analytics
+
+- Customer revenue analysis
 - Customer behavior analysis
+- Customer purchase frequency
 - Customer retention analysis
-- Customer lifetime value analysis
+- Customer lifetime value
+- RFM customer segmentation
+- Customer contribution analysis
+- High-value customer identification
+
+### 📦 Product Analytics
+
+- Product sales analysis
 - Product revenue analysis
 - Product sales ranking
 - Product performance classification
 - Product revenue contribution
-- Sales trend and time-series analysis
+- Top-selling products
+- Product-level business insights
+
+### 💰 Revenue & KPI Analysis
+
+- Total revenue
+- Total orders
+- Total customers
+- Total units sold
+- Average Order Value
+- Customer Lifetime Value
+- Revenue contribution
+- Customer purchase frequency
+- Product revenue
+- Sales performance
+
+### 📈 Sales Trend Analysis
+
+- Daily sales trends
+- Monthly sales trends
+- Revenue trends
+- Order trends
+- Time-series analysis
+- Period-based performance analysis
+
+### 💼 Business Intelligence
+
+- Business performance analysis
+- Customer segmentation
+- Product performance analysis
+- Revenue contribution analysis
 - Business KPI analysis
-- Query performance analysis
+- Advanced business case studies
 - Business reporting
-- Business intelligence analysis
-- Git and GitHub version control
+- Actionable business insights
+
+### 🔧 Development & Version Control
+
+- Git
+- GitHub
+- VS Code
+- MySQL Workbench
+- SQL documentation
 
 ---
 
-## 📅 Project Progress
+# 📅 Project Progress
 
 | Phase | Days | Status |
 |---|---:|---|
@@ -64,18 +172,25 @@ The primary objective is to transform raw sales data into meaningful business in
 | Advanced SQL & Optimization | Day 15–17 | ✅ Completed |
 | Customer & Business Analytics | Day 18–22 | ✅ Completed |
 | Sales Trend & Time-Series Analysis | Day 23 | ✅ Completed |
-| Product Performance & Profitability Analysis | Day 24 | ✅ Completed |
-| **Overall Progress** | **24 Days** | **✅ Completed** |
-
-### 🏆 Current Milestone
-
-**24 Days of SQL Business Analysis Completed**
-
-The project has progressed from relational database fundamentals to advanced SQL optimization, customer analytics, retention analysis, customer lifetime value, RFM segmentation, sales trend analysis, and advanced product performance analysis.
+| Product Performance Analysis | Day 24 | ✅ Completed |
+| Day 25 Advanced Analysis | Day 25 | ✅ Completed |
+| **Overall Progress** | **25 Days** | **✅ Completed** |
 
 ---
 
-## 🛠️ Technologies Used
+# 🏆 Current Milestone
+
+## 25 Days of SQL Business Analysis Completed
+
+The project has progressed from basic relational database operations to advanced SQL analytics and business intelligence.
+
+The current project covers:
+
+**Database Design → SQL Fundamentals → JOINs → Aggregations → Subqueries → Advanced SQL → Optimization → Customer Analytics → RFM Segmentation → Retention → Customer Lifetime Value → Sales Trends → Product Analytics → Advanced Business Analysis**
+
+---
+
+# 🛠️ Technologies Used
 
 | Technology | Purpose |
 |---|---|
@@ -100,7 +215,7 @@ The project uses a relational sales database consisting of five primary tables.
 | `Order_Items` | Stores products included in orders |
 | `Payments` | Stores payment information |
 
-### 🔗 Database Relationships
+## 🔗 Database Relationships
 
 ```text
 Customers
@@ -141,7 +256,8 @@ Sales_Data_Analysis_SQL/
 │   ├── customer_lifetime_value.sql
 │   ├── rfm_customer_segmentation.sql
 │   ├── sales_trend_analysis.sql
-│   └── product_performance_analysis.sql
+│   ├── product_performance_analysis.sql
+│   └── Sales_Profitability_Analysis
 │
 ├── Screenshots/
 │   ├── Day 1/
@@ -167,7 +283,8 @@ Sales_Data_Analysis_SQL/
 │   ├── Day 21/
 │   ├── Day 22/
 │   ├── Day 23/
-│   └── Day 24/
+│   ├── Day 24/
+│   └── Day 25/
 │
 ├── Presentation/
 │
@@ -180,6 +297,7 @@ Sales_Data_Analysis_SQL/
 │   ├── Day21_Customer_Lifetime_Value.md
 │   ├── Day22_RFM_Customer_Segmentation.md
 │   ├── Day23_Sales_Trend_Analysis.md
-│   └── Day24_Product_Performance_Analysis.md
+│   ├── Day24_Product_Performance_Analysis.md
+│   └── Day25_Sales_Profitability_Analysis.md
 │
 └── README.md
