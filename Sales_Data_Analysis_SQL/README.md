@@ -111,8 +111,7 @@ Customers
           │
           └── Payments
 
-
-
+📁 Project Structure
 Sales_Data_Analysis_SQL/
 │
 ├── Database_Design/
