@@ -12,7 +12,27 @@ This project follows a structured, end-to-end SQL data-analysis workflow, progre
 
 The primary objective is to transform raw sales data into meaningful business insights using SQL.
 
-The project covers database design, data manipulation, analytical SQL, customer analytics, product analytics, revenue analysis, business KPIs, SQL optimization, and business reporting.
+The project covers:
+
+- Database design
+- Data manipulation
+- SQL querying
+- JOIN operations
+- Aggregation
+- Advanced SQL
+- Query optimization
+- Customer analytics
+- Product analytics
+- Revenue analysis
+- Business KPI analysis
+- Customer segmentation
+- Retention analysis
+- Customer Lifetime Value
+- Sales trend analysis
+- Product performance analysis
+- Customer revenue contribution
+- Business intelligence
+- Business reporting
 
 ---
 
@@ -28,6 +48,8 @@ The main objectives of this project are to:
 - Perform customer segmentation.
 - Analyze customer retention and lifetime value.
 - Identify sales trends and business patterns.
+- Analyze customer revenue contribution.
+- Identify high-value customers.
 - Optimize SQL queries for better performance.
 - Convert raw sales data into actionable business insights.
 - Create structured business reports using SQL analysis.
@@ -36,7 +58,7 @@ The main objectives of this project are to:
 
 # 📚 Core Areas Covered
 
-### 🗄️ Database & SQL Fundamentals
+## 🗄️ Database & SQL Fundamentals
 
 - Relational database design
 - Database creation
@@ -53,7 +75,7 @@ The main objectives of this project are to:
 - Pattern matching
 - Date-based filtering
 
-### 🔗 SQL JOIN Operations
+## 🔗 SQL JOIN Operations
 
 - INNER JOIN
 - LEFT JOIN
@@ -63,7 +85,7 @@ The main objectives of this project are to:
 - Order-product analysis
 - Payment analysis
 
-### 📊 SQL Aggregation & Analysis
+## 📊 SQL Aggregation & Analysis
 
 - COUNT()
 - SUM()
@@ -77,7 +99,7 @@ The main objectives of this project are to:
 - Customer-level aggregation
 - Product-level aggregation
 
-### 🧠 Advanced SQL
+## 🧠 Advanced SQL
 
 - Subqueries
 - Views
@@ -88,29 +110,35 @@ The main objectives of this project are to:
 - Common Table Expressions (CTEs)
 - CASE statements
 - Advanced JOIN analysis
+- RANK()
+- NTILE()
+- Cumulative calculations
+- Revenue contribution analysis
 
-### ⚡ SQL Optimization
+## ⚡ SQL Optimization
 
 - SQL indexes
 - Query execution analysis
-- `EXPLAIN`
+- EXPLAIN
 - Query performance analysis
 - Query optimization
 - Efficient JOIN strategies
 - Performance-oriented SQL design
 
-### 👥 Customer Analytics
+## 👥 Customer Analytics
 
 - Customer revenue analysis
 - Customer behavior analysis
 - Customer purchase frequency
 - Customer retention analysis
-- Customer lifetime value
+- Customer Lifetime Value
 - RFM customer segmentation
-- Customer contribution analysis
+- Customer revenue contribution
 - High-value customer identification
+- Customer ranking
+- Customer segmentation
 
-### 📦 Product Analytics
+## 📦 Product Analytics
 
 - Product sales analysis
 - Product revenue analysis
@@ -119,8 +147,9 @@ The main objectives of this project are to:
 - Product revenue contribution
 - Top-selling products
 - Product-level business insights
+- Product profitability analysis
 
-### 💰 Revenue & KPI Analysis
+## 💰 Revenue & KPI Analysis
 
 - Total revenue
 - Total orders
@@ -132,8 +161,10 @@ The main objectives of this project are to:
 - Customer purchase frequency
 - Product revenue
 - Sales performance
+- Customer revenue contribution
+- Average customer revenue
 
-### 📈 Sales Trend Analysis
+## 📈 Sales Trend Analysis
 
 - Daily sales trends
 - Monthly sales trends
@@ -142,7 +173,7 @@ The main objectives of this project are to:
 - Time-series analysis
 - Period-based performance analysis
 
-### 💼 Business Intelligence
+## 💼 Business Intelligence
 
 - Business performance analysis
 - Customer segmentation
@@ -150,10 +181,12 @@ The main objectives of this project are to:
 - Revenue contribution analysis
 - Business KPI analysis
 - Advanced business case studies
+- Customer analytics
+- Product analytics
 - Business reporting
 - Actionable business insights
 
-### 🔧 Development & Version Control
+## 🔧 Development & Version Control
 
 - Git
 - GitHub
@@ -173,20 +206,81 @@ The main objectives of this project are to:
 | Customer & Business Analytics | Day 18–22 | ✅ Completed |
 | Sales Trend & Time-Series Analysis | Day 23 | ✅ Completed |
 | Product Performance Analysis | Day 24 | ✅ Completed |
-| Day 25 Advanced Analysis | Day 25 | ✅ Completed |
-| **Overall Progress** | **25 Days** | **✅ Completed** |
+| Sales Profitability Analysis | Day 25 | ✅ Completed |
+| Customer Revenue Contribution Analysis | Day 26 | ✅ Completed |
+| **Overall Progress** | **26 Days** | **✅ Completed** |
 
 ---
 
 # 🏆 Current Milestone
 
-## 25 Days of SQL Business Analysis Completed
+## 26 Days of SQL Business Analysis Completed
 
 The project has progressed from basic relational database operations to advanced SQL analytics and business intelligence.
 
-The current project covers:
+### Current Learning Journey
 
-**Database Design → SQL Fundamentals → JOINs → Aggregations → Subqueries → Advanced SQL → Optimization → Customer Analytics → RFM Segmentation → Retention → Customer Lifetime Value → Sales Trends → Product Analytics → Advanced Business Analysis**
+**Database Design**
+
+↓  
+
+**SQL Fundamentals**
+
+↓  
+
+**JOINs & Aggregations**
+
+↓  
+
+**Subqueries**
+
+↓  
+
+**Advanced SQL**
+
+↓  
+
+**Views, Procedures & Triggers**
+
+↓  
+
+**Indexes & Query Optimization**
+
+↓  
+
+**Window Functions & CTEs**
+
+↓  
+
+**Customer Analytics**
+
+↓  
+
+**RFM Customer Segmentation**
+
+↓  
+
+**Customer Retention**
+
+↓  
+
+**Customer Lifetime Value**
+
+↓  
+
+**Sales Trend Analysis**
+
+↓  
+
+**Product Performance Analysis**
+
+↓  
+
+**Sales Profitability Analysis**
+
+↓  
+
+**Customer Revenue Contribution Analysis**
 
 ---
 
@@ -257,7 +351,8 @@ Sales_Data_Analysis_SQL/
 │   ├── rfm_customer_segmentation.sql
 │   ├── sales_trend_analysis.sql
 │   ├── product_performance_analysis.sql
-│   └── Sales_Profitability_Analysis
+│   ├── sales_profitability_analysis.sql
+│   └── customer_revenue_contribution.sql
 │
 ├── Screenshots/
 │   ├── Day 1/
@@ -284,7 +379,8 @@ Sales_Data_Analysis_SQL/
 │   ├── Day 22/
 │   ├── Day 23/
 │   ├── Day 24/
-│   └── Day 25/
+│   ├── Day 25/
+│   └── Day 26/
 │
 ├── Presentation/
 │
@@ -298,6 +394,7 @@ Sales_Data_Analysis_SQL/
 │   ├── Day22_RFM_Customer_Segmentation.md
 │   ├── Day23_Sales_Trend_Analysis.md
 │   ├── Day24_Product_Performance_Analysis.md
-│   └── Day25_Sales_Profitability_Analysis.md
+│   ├── Day25_Sales_Profitability_Analysis.md
+│   └── Day26_Customer_Revenue_Contribution.md
 │
 └── README.md
