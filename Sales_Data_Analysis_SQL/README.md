@@ -26,14 +26,15 @@ The project covers:
 * Revenue analysis
 * Business KPI analysis
 * Customer segmentation
-* RFM customer segmentation
-* Customer retention analysis
-* Customer churn analysis
-* Customer Lifetime Value analysis
+* Retention analysis
+* Customer Lifetime Value
 * Sales trend analysis
 * Product performance analysis
 * Sales profitability analysis
-* Customer revenue contribution analysis
+* Customer revenue contribution
+* Customer churn analysis
+* Customer cohort analysis
+* Customer retention analysis
 * Business intelligence
 * Business reporting
 
@@ -49,14 +50,13 @@ The main objectives of this project are to:
 * Analyze product sales and revenue performance.
 * Calculate important business KPIs.
 * Perform customer segmentation.
-* Analyze customer retention and churn.
-* Calculate Customer Lifetime Value.
+* Analyze customer retention and lifetime value.
+* Identify sales trends and business patterns.
 * Analyze customer revenue contribution.
 * Identify high-value customers.
-* Identify inactive and at-risk customers.
-* Identify churned customers.
-* Analyze sales trends and business patterns.
-* Analyze product performance and profitability.
+* Analyze customer churn.
+* Perform customer cohort and retention analysis.
+* Identify repeat, one-time, and loyal customers.
 * Optimize SQL queries for better performance.
 * Convert raw sales data into actionable business insights.
 * Create structured business reports using SQL analysis.
@@ -121,6 +121,8 @@ The main objectives of this project are to:
 * NTILE()
 * Cumulative calculations
 * Revenue contribution analysis
+* Cohort analysis
+* Retention analysis
 
 ## ⚡ SQL Optimization
 
@@ -138,17 +140,20 @@ The main objectives of this project are to:
 * Customer behavior analysis
 * Customer purchase frequency
 * Customer retention analysis
-* Customer churn analysis
 * Customer Lifetime Value
 * RFM customer segmentation
 * Customer revenue contribution
 * High-value customer identification
 * Customer ranking
 * Customer segmentation
-* Customer inactivity analysis
-* At-risk customer identification
-* Churn rate analysis
-* Churned customer revenue analysis
+* Customer churn analysis
+* Churned customer identification
+* Repeat customer analysis
+* One-time customer analysis
+* Loyal customer analysis
+* Customer cohort analysis
+* Cohort retention analysis
+* Monthly customer activity
 
 ## 📦 Product Analytics
 
@@ -175,9 +180,10 @@ The main objectives of this project are to:
 * Sales performance
 * Customer revenue contribution
 * Average customer revenue
-* Churned customer revenue
+* Customer retention rate
+* Repeat customer rate
 
-## 📈 Sales Trend Analysis
+## 📈 Sales Trend & Time-Series Analysis
 
 * Daily sales trends
 * Monthly sales trends
@@ -186,19 +192,35 @@ The main objectives of this project are to:
 * Time-series analysis
 * Period-based performance analysis
 
+## 🔄 Cohort & Retention Analysis
+
+* Customer first purchase analysis
+* Cohort identification
+* Cohort month calculation
+* Monthly customer activity
+* Customer retention analysis
+* Cohort retention rate
+* Month 0 retention
+* Month 1 retention
+* Month 2 retention
+* Repeat customer analysis
+* One-time customer analysis
+* Customer retention segmentation
+* Customer purchasing frequency
+
 ## 💼 Business Intelligence
 
 * Business performance analysis
 * Customer segmentation
-* Customer churn analysis
-* Customer retention analysis
 * Product performance analysis
-* Product profitability analysis
 * Revenue contribution analysis
 * Business KPI analysis
 * Advanced business case studies
 * Customer analytics
 * Product analytics
+* Customer churn analysis
+* Cohort analysis
+* Retention analysis
 * Business reporting
 * Actionable business insights
 
@@ -225,15 +247,16 @@ The main objectives of this project are to:
 | Sales Profitability Analysis           |      Day 25 | ✅ Completed     |
 | Customer Revenue Contribution Analysis |      Day 26 | ✅ Completed     |
 | Customer Churn Analysis                |      Day 27 | ✅ Completed     |
-| **Overall Progress**                   | **27 Days** | **✅ Completed** |
+| Customer Cohort & Retention Analysis   |      Day 28 | ✅ Completed     |
+| **Overall Progress**                   | **28 Days** | **✅ Completed** |
 
 ---
 
 # 🏆 Current Milestone
 
-## 27 Days of SQL Business Analysis Completed
+## 28 Days of SQL Business Analysis Completed
 
-The project has progressed from basic relational database operations to advanced SQL analytics, customer intelligence, product analytics, profitability analysis, revenue contribution analysis, and customer churn analysis.
+The project has progressed from basic relational database operations to advanced SQL analytics, customer lifecycle analysis, product analytics, business intelligence, and retention analysis.
 
 ### Current Learning Journey
 
@@ -303,44 +326,9 @@ The project has progressed from basic relational database operations to advanced
 
 **Customer Churn Analysis**
 
----
+↓
 
-# 👤 Day 27 – Customer Churn Analysis
-
-Day 27 focuses on identifying customers who have become inactive or stopped purchasing from the business.
-
-The analysis uses SQL to:
-
-* Identify customers' last purchase dates.
-* Calculate customer inactivity periods.
-* Classify customers as Active, At Risk, or Churned.
-* Calculate customer churn rate.
-* Identify high-value churned customers.
-* Analyze revenue associated with churned customers.
-* Identify customers requiring retention campaigns.
-* Generate actionable customer retention insights.
-
-### Key Business Metrics
-
-* Total Customers
-* Active Customers
-* At-Risk Customers
-* Churned Customers
-* Churn Rate
-* Churned Customer Revenue
-* Average Churned Customer Revenue
-
-### Business Applications
-
-Customer churn analysis can help businesses:
-
-* Detect customer inactivity.
-* Identify customers at risk of leaving.
-* Prioritize high-value customers.
-* Create targeted retention campaigns.
-* Improve customer engagement.
-* Reduce customer loss.
-* Protect recurring revenue.
+**Customer Cohort & Retention Analysis**
 
 ---
 
@@ -418,7 +406,8 @@ Sales_Data_Analysis_SQL/
 │   ├── product_performance_analysis.sql
 │   ├── sales_profitability_analysis.sql
 │   ├── customer_revenue_contribution.sql
-│   └── customer_churn_analysis.sql
+│   ├── customer_churn_analysis.sql
+│   └── customer_cohort_analysis.sql
 │
 ├── Screenshots/
 │   ├── Day 1/
@@ -447,7 +436,8 @@ Sales_Data_Analysis_SQL/
 │   ├── Day 24/
 │   ├── Day 25/
 │   ├── Day 26/
-│   └── Day 27/
+│   ├── Day 27/
+│   └── Day 28/
 │
 ├── Presentation/
 │
@@ -463,53 +453,94 @@ Sales_Data_Analysis_SQL/
 │   ├── Day24_Product_Performance_Analysis.md
 │   ├── Day25_Sales_Profitability_Analysis.md
 │   ├── Day26_Customer_Revenue_Contribution.md
-│   └── Day27_Customer_Churn_Analysis.md
+│   ├── Day27_Customer_Churn_Analysis.md
+│   └── Day28_Customer_Cohort_Analysis.md
 │
 └── README.md
 ```
 
 ---
 
-# 📸 Screenshots & Documentation
+# 📊 Business Analysis Journey
 
-Screenshots for each day's SQL analysis are maintained inside the corresponding `Screenshots/Day X/` folder.
+This project demonstrates an end-to-end progression from raw relational data to business intelligence:
 
-Detailed business analysis reports are maintained inside the `Report/` directory.
-
-This provides a structured record of the complete SQL learning and portfolio development journey.
+```text
+Raw Sales Data
+      ↓
+Database Design
+      ↓
+SQL Fundamentals
+      ↓
+JOINs & Aggregations
+      ↓
+Advanced SQL
+      ↓
+Query Optimization
+      ↓
+Business KPIs
+      ↓
+Customer Analytics
+      ↓
+Customer Behavior
+      ↓
+RFM Segmentation
+      ↓
+Customer Retention
+      ↓
+Customer Lifetime Value
+      ↓
+Sales Trend Analysis
+      ↓
+Product Performance
+      ↓
+Sales Profitability
+      ↓
+Customer Revenue Contribution
+      ↓
+Customer Churn
+      ↓
+Customer Cohort & Retention
+      ↓
+Business Insights
+```
 
 ---
 
-# 📌 Project Highlights
+# 🎓 Skills Demonstrated
 
-### Customer Intelligence
+Through this project, the following practical skills are demonstrated:
 
-The project covers customer behavior, retention, lifetime value, RFM segmentation, revenue contribution, and churn analysis.
-
-### Product Intelligence
-
-Product sales, revenue, ranking, performance, and profitability are analyzed using SQL.
-
-### Business Intelligence
-
-The project converts transactional sales data into business KPIs and actionable insights.
-
-### SQL Performance
-
-Query optimization, indexes, `EXPLAIN`, efficient JOIN strategies, and performance-oriented SQL design are included.
-
-### Portfolio Development
-
-The project is maintained using Git and GitHub with organized SQL scripts, reports, screenshots, and documentation.
+* SQL database design
+* Data querying
+* Data analysis
+* Relational database management
+* Advanced SQL
+* Window functions
+* CTEs
+* Customer analytics
+* Product analytics
+* Revenue analytics
+* KPI analysis
+* Customer segmentation
+* RFM analysis
+* Churn analysis
+* Cohort analysis
+* Retention analysis
+* Query optimization
+* Business intelligence
+* Business reporting
+* Git version control
+* GitHub project management
 
 ---
 
-# 🏁 Conclusion
+# 📌 Project Status
 
-This project demonstrates an end-to-end approach to **SQL-based business analysis**.
+**Current Status: 🟢 Active**
 
-Across 27 days, the project has progressed from relational database fundamentals to advanced SQL, customer analytics, product analytics, profitability analysis, revenue contribution analysis, sales trends, and customer churn analysis.
+**Completed: 28 Days**
 
-The project demonstrates practical skills required for **Data Analyst, Business Analyst, and SQL-focused roles**, including data querying, analytical SQL, business KPI development, customer intelligence, product analysis, SQL optimization, and business reporting.
+**Primary Focus: SQL Data Analysis & Business Intelligence**
 
-**27 Days Completed — SQL Business Analytics Journey Continues 🚀**
+The project continues to expand toward advanced business analytics, customer lifecycle analysis, and real-world decision-support use cases.
