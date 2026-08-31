@@ -35,7 +35,12 @@ The project covers:
 * Customer churn analysis
 * Customer cohort analysis
 * Customer retention analysis
-* Customer purchase frequency analysis
+* Customer purchase frequency
+* Product purchase behavior
+* Product customer reach
+* Product revenue ranking
+* Product revenue contribution
+* Product performance classification
 * Business intelligence
 * Business reporting
 
@@ -57,8 +62,11 @@ The main objectives of this project are to:
 * Identify high-value customers.
 * Analyze customer churn.
 * Perform customer cohort and retention analysis.
-* Analyze customer purchase frequency.
 * Identify repeat, one-time, and loyal customers.
+* Analyze customer purchase frequency.
+* Analyze product purchasing behavior.
+* Identify high-demand and high-revenue products.
+* Analyze product customer reach.
 * Optimize SQL queries for better performance.
 * Convert raw sales data into actionable business insights.
 * Create structured business reports using SQL analysis.
@@ -126,6 +134,9 @@ The main objectives of this project are to:
 * Cohort analysis
 * Retention analysis
 * Customer purchase frequency analysis
+* Product purchase behavior analysis
+* Product ranking
+* Product segmentation
 
 ## ⚡ SQL Optimization
 
@@ -157,7 +168,6 @@ The main objectives of this project are to:
 * Customer cohort analysis
 * Cohort retention analysis
 * Monthly customer activity
-* Purchase frequency analysis
 
 ## 📦 Product Analytics
 
@@ -169,6 +179,12 @@ The main objectives of this project are to:
 * Top-selling products
 * Product-level business insights
 * Product profitability analysis
+* Product purchase behavior
+* Product customer reach
+* Product purchase frequency
+* Repeat product purchases
+* Product sales volume segmentation
+* Customer-product analysis
 
 ## 💰 Revenue & KPI Analysis
 
@@ -186,6 +202,8 @@ The main objectives of this project are to:
 * Average customer revenue
 * Customer retention rate
 * Repeat customer rate
+* Product revenue contribution
+* Product revenue ranking
 
 ## 📈 Sales Trend & Time-Series Analysis
 
@@ -212,6 +230,24 @@ The main objectives of this project are to:
 * Customer retention segmentation
 * Customer purchasing frequency
 
+## 🛒 Product Purchase Behavior Analysis
+
+Day 31 focuses on understanding product-level purchasing behavior.
+
+* Product purchase summary
+* Product customer reach
+* Product purchase frequency
+* Repeat purchase products
+* Product revenue contribution
+* Product revenue ranking
+* Product performance classification
+* Product sales segmentation
+* Customer-product analysis
+* Unique customer analysis
+* Revenue contribution percentage
+* High-volume product identification
+* High-performing product identification
+
 ## 💼 Business Intelligence
 
 * Business performance analysis
@@ -225,7 +261,7 @@ The main objectives of this project are to:
 * Customer churn analysis
 * Cohort analysis
 * Retention analysis
-* Purchase frequency analysis
+* Product purchase behavior analysis
 * Business reporting
 * Actionable business insights
 
@@ -254,16 +290,17 @@ The main objectives of this project are to:
 | Customer Churn Analysis                |      Day 27 | ✅ Completed     |
 | Customer Cohort & Retention Analysis   |      Day 28 | ✅ Completed     |
 | Customer Purchase Frequency Analysis   |      Day 29 | ✅ Completed     |
-| **Day 30 Analysis**                    |  **Day 30** | **✅ Completed** |
-| **Overall Progress**                   | **30 Days** | **✅ Completed** |
+| Day 30 Analysis                        |      Day 30 | ✅ Completed     |
+| Product Purchase Behavior Analysis     |      Day 31 | ✅ Completed     |
+| **Overall Progress**                   | **31 Days** | **✅ Completed** |
 
 ---
 
 # 🏆 Current Milestone
 
-## 30 Days of SQL Business Analysis Completed
+## 31 Days of SQL Business Analysis Completed
 
-The project has progressed from SQL fundamentals and relational database design to advanced SQL analytics, customer analytics, product analytics, profitability analysis, churn analysis, cohort analysis, retention analysis, and customer purchasing behavior.
+The project has progressed from basic relational database operations to advanced SQL analytics, customer lifecycle analysis, product analytics, business intelligence, retention analysis, churn analysis, and product purchasing behavior.
 
 ### Current Learning Journey
 
@@ -276,6 +313,10 @@ The project has progressed from SQL fundamentals and relational database design 
 ↓
 
 **JOINs & Aggregations**
+
+↓
+
+**Subqueries**
 
 ↓
 
@@ -339,11 +380,7 @@ The project has progressed from SQL fundamentals and relational database design 
 
 ↓
 
-**Day 30 Analysis**
-
-↓
-
-**Business Insights**
+**Product Purchase Behavior Analysis**
 
 ---
 
@@ -423,18 +460,41 @@ Sales_Data_Analysis_SQL/
 │   ├── customer_revenue_contribution.sql
 │   ├── customer_churn_analysis.sql
 │   ├── customer_cohort_analysis.sql
-│   └── customer_purchase_frequency_analysis.sql
+│   ├── customer_purchase_frequency_analysis.sql
+│   └── product_purchase_behavior_analysis.sql
 │
 ├── Screenshots/
 │   ├── Day 1/
 │   ├── Day 2/
 │   ├── Day 3/
-│   ├── ...
+│   ├── Day 4/
+│   ├── Day 5/
+│   ├── Day 6/
+│   ├── Day 7/
+│   ├── Day 8/
+│   ├── Day 9/
+│   ├── Day 10/
+│   ├── Day 11/
+│   ├── Day 12/
+│   ├── Day 13/
+│   ├── Day 14/
+│   ├── Day 15/
+│   ├── Day 16/
+│   ├── Day 17/
+│   ├── Day 18/
+│   ├── Day 19/
+│   ├── Day 20/
+│   ├── Day 21/
+│   ├── Day 22/
+│   ├── Day 23/
+│   ├── Day 24/
+│   ├── Day 25/
 │   ├── Day 26/
 │   ├── Day 27/
 │   ├── Day 28/
 │   ├── Day 29/
-│   └── Day 30/
+│   ├── Day 30/
+│   └── Day 31/
 │
 ├── Presentation/
 │
@@ -453,7 +513,8 @@ Sales_Data_Analysis_SQL/
 │   ├── Day27_Customer_Churn_Analysis.md
 │   ├── Day28_Customer_Cohort_Analysis.md
 │   ├── Day29_Customer_Purchase_Frequency_Analysis.md
-│   └── Day30_Customer_Segmentation_Revenue_Analysis.md
+│   ├── Day30_Customer_Segmentation_Revenue_Analysis.md
+│   └── Day31_Product_Purchase_Behavior_Analysis.md
 │
 └── README.md
 ```
@@ -503,7 +564,7 @@ Customer Cohort & Retention
       ↓
 Customer Purchase Frequency
       ↓
-Day 30 Analysis
+Product Purchase Behavior
       ↓
 Business Insights
 ```
@@ -531,6 +592,10 @@ Through this project, the following practical skills are demonstrated:
 * Cohort analysis
 * Retention analysis
 * Purchase frequency analysis
+* Product purchase behavior analysis
+* Product ranking
+* Product segmentation
+* Customer-product analysis
 * Query optimization
 * Business intelligence
 * Business reporting
@@ -539,44 +604,44 @@ Through this project, the following practical skills are demonstrated:
 
 ---
 
-# 📋 Completed Reports
-
-The project currently includes dedicated reports for the major analytical stages:
-
-|        Day | Report                               | Status          |
-| ---------: | ------------------------------------ | --------------- |
-|     Day 17 | Business Analysis                    | ✅ Completed     |
-|     Day 19 | Customer Behavior Analysis           | ✅ Completed     |
-|     Day 20 | Customer Retention Analysis          | ✅ Completed     |
-|     Day 21 | Customer Lifetime Value              | ✅ Completed     |
-|     Day 22 | RFM Customer Segmentation            | ✅ Completed     |
-|     Day 23 | Sales Trend Analysis                 | ✅ Completed     |
-|     Day 24 | Product Performance Analysis         | ✅ Completed     |
-|     Day 25 | Sales Profitability Analysis         | ✅ Completed     |
-|     Day 26 | Customer Revenue Contribution        | ✅ Completed     |
-|     Day 27 | Customer Churn Analysis              | ✅ Completed     |
-|     Day 28 | Customer Cohort & Retention Analysis | ✅ Completed     |
-|     Day 29 | Customer Purchase Frequency Analysis | ✅ Completed     |
-| **Day 30** | **Day 30 Analysis**                  | **✅ Completed** |
-
----
-
 # 📌 Project Status
 
 **Current Status: 🟢 Active**
 
-**Completed: 30 Days**
-
-**Reports: Day 17–30 analytical reports completed where applicable**
+**Completed: 31 Days**
 
 **Primary Focus: SQL Data Analysis & Business Intelligence**
 
-The project continues to expand toward advanced business analytics, customer lifecycle analysis, product analytics, and real-world business decision-support use cases.
+The project continues to expand toward advanced business analytics, customer lifecycle analysis, product analytics, and real-world decision-support use cases.
 
 ---
 
-# 🏁 30-Day Milestone
+# 🚀 Day 31 Achievement
 
-🎉 **30 DAYS OF SQL BUSINESS ANALYSIS COMPLETED**
+**Day 31 — Product Purchase Behavior Analysis ✅**
 
-This milestone demonstrates a continuous progression from foundational SQL and database management to advanced customer analytics, product analytics, revenue analysis, profitability, churn, cohort analysis, retention, purchase frequency, and business reporting.
+Day 31 successfully analyzed product purchasing behavior using advanced SQL techniques.
+
+The analysis covered:
+
+* Product purchase summaries
+* Customer reach
+* Purchase frequency
+* Repeat product purchases
+* Revenue contribution
+* Product revenue ranking
+* Product performance classification
+* Sales volume segmentation
+* Customer-product relationships
+
+This adds another important layer to the project by connecting **customer purchasing behavior with product-level business performance**.
+
+---
+
+# 🏁 Portfolio Progress
+
+### 31 Days Completed
+
+**SQL Fundamentals → Advanced SQL → Business Analytics → Customer Analytics → Product Analytics → Customer Lifecycle → Product Purchase Behavior**
+
+The project now demonstrates a broad practical SQL workflow suitable for showcasing **Data Analyst, Business Analyst, and SQL-focused portfolio skills**.
