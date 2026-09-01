@@ -67,7 +67,7 @@ The main objectives of this project are to:
 * Analyze product purchasing behavior.
 * Identify high-demand and high-revenue products.
 * Analyze product customer reach.
-* Optimize SQL queries for better performance.
+* Apply advanced SQL techniques to business problems.
 * Convert raw sales data into actionable business insights.
 * Create structured business reports using SQL analysis.
 
@@ -232,12 +232,10 @@ The main objectives of this project are to:
 
 ## 🛒 Product Purchase Behavior Analysis
 
-Day 31 focuses on understanding product-level purchasing behavior.
-
-* Product purchase summary
+* Product purchase summaries
 * Product customer reach
 * Product purchase frequency
-* Repeat purchase products
+* Repeat product purchases
 * Product revenue contribution
 * Product revenue ranking
 * Product performance classification
@@ -292,15 +290,16 @@ Day 31 focuses on understanding product-level purchasing behavior.
 | Customer Purchase Frequency Analysis   |      Day 29 | ✅ Completed     |
 | Day 30 Analysis                        |      Day 30 | ✅ Completed     |
 | Product Purchase Behavior Analysis     |      Day 31 | ✅ Completed     |
-| **Overall Progress**                   | **31 Days** | **✅ Completed** |
+| **Day 32 Analysis**                    |  **Day 32** | **✅ Completed** |
+| **Overall Progress**                   | **32 Days** | **✅ Completed** |
 
 ---
 
 # 🏆 Current Milestone
 
-## 31 Days of SQL Business Analysis Completed
+## 32 Days of SQL Business Analysis Completed
 
-The project has progressed from basic relational database operations to advanced SQL analytics, customer lifecycle analysis, product analytics, business intelligence, retention analysis, churn analysis, and product purchasing behavior.
+The project has progressed from basic relational database operations to advanced SQL analytics, customer lifecycle analysis, product analytics, business intelligence, retention analysis, churn analysis, cohort analysis, purchase frequency analysis, and product purchasing behavior.
 
 ### Current Learning Journey
 
@@ -381,6 +380,14 @@ The project has progressed from basic relational database operations to advanced
 ↓
 
 **Product Purchase Behavior Analysis**
+
+↓
+
+**Day 32 Analysis**
+
+↓
+
+**Business Insights**
 
 ---
 
@@ -494,7 +501,8 @@ Sales_Data_Analysis_SQL/
 │   ├── Day 28/
 │   ├── Day 29/
 │   ├── Day 30/
-│   └── Day 31/
+│   ├── Day 31/
+│   └── Day 32/
 │
 ├── Presentation/
 │
@@ -514,7 +522,8 @@ Sales_Data_Analysis_SQL/
 │   ├── Day28_Customer_Cohort_Analysis.md
 │   ├── Day29_Customer_Purchase_Frequency_Analysis.md
 │   ├── Day30_Customer_Segmentation_Revenue_Analysis.md
-│   └── Day31_Product_Purchase_Behavior_Analysis.md
+│   ├── Day31_Product_Purchase_Behavior_Analysis.md
+│   └── Day32_Product_Customer_Affinity_Analysis.md
 │
 └── README.md
 ```
@@ -566,6 +575,8 @@ Customer Purchase Frequency
       ↓
 Product Purchase Behavior
       ↓
+Day 32 Analysis
+      ↓
 Business Insights
 ```
 
@@ -608,7 +619,7 @@ Through this project, the following practical skills are demonstrated:
 
 **Current Status: 🟢 Active**
 
-**Completed: 31 Days**
+**Completed: 32 Days**
 
 **Primary Focus: SQL Data Analysis & Business Intelligence**
 
@@ -616,32 +627,22 @@ The project continues to expand toward advanced business analytics, customer lif
 
 ---
 
-# 🚀 Day 31 Achievement
+# 🚀 Day 32 Achievement
 
-**Day 31 — Product Purchase Behavior Analysis ✅**
+## **Day 32 — Analysis Completed ✅**
 
-Day 31 successfully analyzed product purchasing behavior using advanced SQL techniques.
+Day 32 has been successfully completed as part of the structured SQL business-analysis journey.
 
-The analysis covered:
+The Day 32 work has been added to the project along with its corresponding SQL analysis, documentation, and screenshots.
 
-* Product purchase summaries
-* Customer reach
-* Purchase frequency
-* Repeat product purchases
-* Revenue contribution
-* Product revenue ranking
-* Product performance classification
-* Sales volume segmentation
-* Customer-product relationships
-
-This adds another important layer to the project by connecting **customer purchasing behavior with product-level business performance**.
+This extends the project to **32 consecutive days of practical SQL analysis** and strengthens the overall portfolio by demonstrating continued application of SQL to real-world business problems.
 
 ---
 
 # 🏁 Portfolio Progress
 
-### 31 Days Completed
+## **32 Days Completed**
 
-**SQL Fundamentals → Advanced SQL → Business Analytics → Customer Analytics → Product Analytics → Customer Lifecycle → Product Purchase Behavior**
+**SQL Fundamentals → Advanced SQL → Business Analytics → Customer Analytics → Product Analytics → Customer Lifecycle → Product Purchase Behavior → Day 32 Analysis**
 
 The project now demonstrates a broad practical SQL workflow suitable for showcasing **Data Analyst, Business Analyst, and SQL-focused portfolio skills**.
