@@ -1,8 +1,8 @@
 # 📊 Sales Data Analysis Using SQL
 
-A hands-on SQL portfolio project focused on **relational database design, advanced SQL analytics, query optimization, customer analytics, product analytics, business intelligence, and business reporting** using MySQL.
+A hands-on SQL portfolio project focused on ****relational database design, advanced SQL analytics, query optimization, customer analytics, product analytics, business intelligence, and business reporting**** using MySQL.
 
-This project simulates a real-world sales management system and demonstrates practical SQL skills relevant to **Data Analyst, Business Analyst, and SQL Developer roles**.
+This project simulates a real-world sales management system and demonstrates practical SQL skills relevant to ****Data Analyst, Business Analyst, and SQL Developer roles****.
 
 ---
 
@@ -15,43 +15,91 @@ The primary objective is to transform raw sales data into meaningful business in
 The project covers:
 
 * Database design
+
 * Data manipulation
+
 * SQL querying
+
 * JOIN operations
+
 * Aggregation
+
 * Advanced SQL
+
 * Query optimization
+
 * Customer analytics
+
 * Product analytics
+
 * Revenue analysis
+
 * Business KPI analysis
+
 * Customer segmentation
+
 * Retention analysis
+
 * Customer Lifetime Value
+
 * Sales trend analysis
+
 * Product performance analysis
+
 * Sales profitability analysis
+
 * Customer revenue contribution
+
 * Customer churn analysis
+
 * Customer cohort analysis
+
 * Customer retention analysis
+
 * Customer purchase frequency
+
 * Product purchase behavior
+
 * Product customer reach
+
 * Product revenue ranking
+
 * Product revenue contribution
+
 * Product performance classification
+
 * Product customer affinity
+
 * Product pair analysis
+
 * Cross-selling analysis
+
 * Customer-product purchase analysis
+
 * Customer-product revenue analysis
+
 * Customer-product purchase frequency
+
 * Customer cross-selling analysis
+
 * Product recommendation analysis
+
 * Product affinity scoring
+
 * Revenue opportunity analysis
+
+* Customer purchase journey analysis
+
+* First and last purchase analysis
+
+* Purchase gap analysis
+
+* Basket size analysis
+
+* Repeat purchase analysis
+
 * Business intelligence
+
 * Business reporting
 
 ---
@@ -61,32 +109,65 @@ The project covers:
 The main objectives of this project are to:
 
 * Build and manage a relational sales database.
+
 * Develop strong SQL querying skills.
+
 * Analyze customer purchasing behavior.
+
 * Analyze product sales and revenue performance.
+
 * Calculate important business KPIs.
+
 * Perform customer segmentation.
+
 * Analyze customer retention and lifetime value.
+
 * Identify sales trends and business patterns.
+
 * Analyze customer revenue contribution.
+
 * Identify high-value customers.
+
 * Analyze customer churn.
+
 * Perform customer cohort and retention analysis.
+
 * Identify repeat, one-time, and loyal customers.
+
 * Analyze customer purchase frequency.
+
 * Analyze product purchasing behavior.
+
 * Identify high-demand and high-revenue products.
+
 * Analyze product customer reach.
+
 * Analyze product affinity and product relationships.
+
 * Identify cross-selling opportunities.
+
 * Analyze customer-product purchasing relationships.
+
 * Analyze customer-product revenue contribution.
+
 * Identify frequently purchased product pairs.
+
 * Calculate product affinity scores.
+
 * Generate product recommendations.
+
 * Estimate cross-selling revenue opportunities.
+
+* Analyze customer purchase journeys and purchase frequency.
+
+* Analyze customer basket size and average order value.
+
+* Identify one-time and repeat customers.
+
 * Apply advanced SQL techniques to business problems.
+
 * Convert raw sales data into actionable business insights.
+
 * Create structured business reports using SQL analysis.
 
 ---
@@ -96,396 +177,634 @@ The main objectives of this project are to:
 ## 🗄️ Database & SQL Fundamentals
 
 * Relational database design
+
 * Database creation
+
 * Table creation
+
 * Primary Keys
+
 * Foreign Keys
+
 * Data insertion
+
 * Data manipulation
+
 * Data retrieval
+
 * Filtering
+
 * Sorting
+
 * DISTINCT
+
 * LIMIT
+
 * Pattern matching
+
 * Date-based filtering
 
 ## 🔗 SQL JOIN Operations
 
 * INNER JOIN
+
 * LEFT JOIN
+
 * RIGHT JOIN
+
 * Multi-table JOINs
+
 * Customer-order analysis
+
 * Order-product analysis
+
 * Payment analysis
+
 * Customer-product analysis
+
 * Product pair analysis
+
 * Cross-selling JOIN analysis
 
 ## 📊 SQL Aggregation & Analysis
 
 * COUNT()
+
 * SUM()
+
 * AVG()
+
 * MIN()
+
 * MAX()
+
 * GROUP BY
+
 * HAVING
+
 * Revenue calculations
+
 * Order calculations
+
 * Customer-level aggregation
+
 * Product-level aggregation
+
 * Customer-product aggregation
+
 * Product-pair aggregation
+
 * Customer overlap analysis
 
 ## 🧠 Advanced SQL
 
 * Subqueries
+
 * Views
+
 * Stored Procedures
+
 * Triggers
+
 * Indexes
+
 * Window Functions
+
 * Common Table Expressions (CTEs)
+
 * CASE statements
+
 * Advanced JOIN analysis
+
 * Self-JOIN analysis
+
 * RANK()
+
 * NTILE()
+
 * ROW_NUMBER()
+
 * Cumulative calculations
+
 * Revenue contribution analysis
+
 * Cohort analysis
+
 * Retention analysis
+
 * Customer purchase frequency analysis
+
 * Product purchase behavior analysis
+
 * Product ranking
+
 * Product segmentation
+
 * Product affinity analysis
+
 * Product pair analysis
+
 * Cross-selling analysis
+
 * Product recommendation analysis
+
 * Customer-product revenue ranking
+
 * Customer-product relationship analysis
+
+* Customer purchase journey analysis
+
+* Purchase gap analysis
+
+* Basket size analysis
+
+* Repeat purchase analysis
 
 ## ⚡ SQL Optimization
 
 * SQL indexes
+
 * Query execution analysis
+
 * EXPLAIN
+
 * Query performance analysis
+
 * Query optimization
+
 * Efficient JOIN strategies
+
 * Performance-oriented SQL design
 
 ## 👥 Customer Analytics
 
 * Customer revenue analysis
+
 * Customer behavior analysis
+
 * Customer purchase frequency
+
 * Customer retention analysis
+
 * Customer Lifetime Value
+
 * RFM customer segmentation
+
 * Customer revenue contribution
+
 * High-value customer identification
+
 * Customer ranking
+
 * Customer segmentation
+
 * Customer churn analysis
+
 * Churned customer identification
+
 * Repeat customer analysis
+
 * One-time customer analysis
+
 * Loyal customer analysis
+
 * Customer cohort analysis
+
 * Cohort retention analysis
+
 * Monthly customer activity
+
 * Customer-product purchase analysis
+
 * Customer-product purchase frequency
+
 * Customer-product spending analysis
+
 * Customer product diversity
+
 * Customer-product revenue ranking
+
 * High-value customer-product relationships
+
 * Customer-based product recommendations
+
 * Customer cross-selling opportunities
+
+* Customer purchase journey analysis
+
+* First and last purchase analysis
+
+* Purchase frequency classification
+
+* Average days between purchases
+
+* Repeat purchase analysis
+
+* Customer purchase behavior classification
+
+* Customer basket analysis
 
 ## 📦 Product Analytics
 
 * Product sales analysis
+
 * Product revenue analysis
+
 * Product sales ranking
+
 * Product performance classification
+
 * Product revenue contribution
+
 * Top-selling products
+
 * Product-level business insights
+
 * Product profitability analysis
+
 * Product purchase behavior
+
 * Product customer reach
+
 * Product purchase frequency
+
 * Repeat product purchases
+
 * Product sales volume segmentation
+
 * Customer-product analysis
+
 * Product affinity analysis
+
 * Product pair analysis
+
 * Product pair customer count
+
 * Product pair revenue analysis
+
 * Product affinity ranking
+
 * Cross-selling opportunities
+
 * Top cross-selling product pairs
+
 * Product recommendation analysis
+
 * Product bundle opportunities
 
 ## 💰 Revenue & KPI Analysis
 
 * Total revenue
+
 * Total orders
+
 * Total customers
+
 * Total units sold
+
 * Average Order Value
+
 * Customer Lifetime Value
+
 * Revenue contribution
+
 * Customer purchase frequency
+
 * Product revenue
+
 * Sales performance
+
 * Customer revenue contribution
+
 * Average customer revenue
+
 * Customer retention rate
+
 * Repeat customer rate
+
 * Product revenue contribution
+
 * Product revenue ranking
+
 * Customer-product revenue
+
 * Product pair revenue
+
 * Cross-selling revenue opportunity
+
 * Estimated bundle value
+
 * Product recommendation revenue potential
+
+* Customer basket size
+
+* Average products per order
 
 ## 📈 Sales Trend & Time-Series Analysis
 
 * Daily sales trends
+
 * Monthly sales trends
+
 * Revenue trends
+
 * Order trends
+
 * Time-series analysis
+
 * Period-based performance analysis
 
 ## 🔄 Cohort & Retention Analysis
 
 * Customer first purchase analysis
+
 * Cohort identification
+
 * Cohort month calculation
+
 * Monthly customer activity
+
 * Customer retention analysis
+
 * Cohort retention rate
+
 * Month 0 retention
+
 * Month 1 retention
+
 * Month 2 retention
+
 * Repeat customer analysis
+
 * One-time customer analysis
+
 * Customer retention segmentation
+
 * Customer purchasing frequency
 
 ## 🛒 Product Purchase Behavior Analysis
 
 * Product purchase summaries
+
 * Product customer reach
+
 * Product purchase frequency
+
 * Repeat product purchases
+
 * Product revenue contribution
+
 * Product revenue ranking
+
 * Product performance classification
+
 * Product sales segmentation
+
 * Customer-product analysis
+
 * Unique customer analysis
+
 * Revenue contribution percentage
+
 * High-volume product identification
+
 * High-performing product identification
 
 ## 🤝 Product Customer Affinity & Cross-Selling
 
 * Customer-product purchase mapping
+
 * Product pair analysis
+
 * Product pair customer count
+
 * Product pair revenue analysis
+
 * Product affinity score
+
 * Product affinity ranking
+
 * High-affinity product identification
+
 * Cross-selling opportunities
+
 * Top cross-selling product pairs
+
 * Customer purchasing relationships
+
 * Product relationship analysis
+
 * Customer-based product recommendations
+
 * Cross-selling revenue opportunity
 
 ## 💼 Business Intelligence
 
 * Business performance analysis
+
 * Customer segmentation
+
 * Product performance analysis
+
 * Revenue contribution analysis
+
 * Business KPI analysis
+
 * Advanced business case studies
+
 * Customer analytics
+
 * Product analytics
+
 * Customer churn analysis
+
 * Cohort analysis
+
 * Retention analysis
+
 * Product purchase behavior analysis
+
 * Product customer affinity analysis
+
 * Cross-selling analysis
+
 * Product recommendation analysis
+
 * Customer-product purchase analysis
+
 * Customer-product revenue analysis
+
+* Customer purchase journey analysis
+
+* Purchase frequency analysis
+
+* Basket behavior analysis
+
+* Repeat purchase analysis
+
+* Customer lifetime analysis
+
 * Business reporting
+
 * Actionable business insights
 
 ## 🔧 Development & Version Control
 
 * Git
+
 * GitHub
+
 * VS Code
+
 * MySQL Workbench
+
 * SQL documentation
 
 ---
 
 # 📅 Project Progress
 
-| Phase                                                    |        Days | Status          |
-| -------------------------------------------------------- | ----------: | --------------- |
-| SQL & Database Fundamentals                              |     Day 1–7 | ✅ Completed     |
-| Intermediate SQL Analysis                                |    Day 8–14 | ✅ Completed     |
-| Advanced SQL & Optimization                              |   Day 15–17 | ✅ Completed     |
-| Customer & Business Analytics                            |   Day 18–22 | ✅ Completed     |
-| Sales Trend & Time-Series Analysis                       |      Day 23 | ✅ Completed     |
-| Product Performance Analysis                             |      Day 24 | ✅ Completed     |
-| Sales Profitability Analysis                             |      Day 25 | ✅ Completed     |
-| Customer Revenue Contribution Analysis                   |      Day 26 | ✅ Completed     |
-| Customer Churn Analysis                                  |      Day 27 | ✅ Completed     |
-| Customer Cohort & Retention Analysis                     |      Day 28 | ✅ Completed     |
-| Customer Purchase Frequency Analysis                     |      Day 29 | ✅ Completed     |
-| Day 30 Analysis                                          |      Day 30 | ✅ Completed     |
-| Product Purchase Behavior Analysis                       |      Day 31 | ✅ Completed     |
-| Product Customer Affinity & Cross-Selling                |      Day 32 | ✅ Completed     |
-| Customer-Product Purchase Analysis                       |      Day 33 | ✅ Completed     |
-| Customer Cross-Selling & Product Recommendation Analysis |      Day 34 | ✅ Completed     |
-| **Overall Progress**                                     | **34 Days** | **✅ Completed** |
+| Phase                                                    |            Days | Status              |
+| -------------------------------------------------------- | --------------: | ------------------- |
+| SQL & Database Fundamentals                              |         Day 1–7 | ✅ Completed         |
+| Intermediate SQL Analysis                                |        Day 8–14 | ✅ Completed         |
+| Advanced SQL & Optimization                              |       Day 15–17 | ✅ Completed         |
+| Customer & Business Analytics                            |       Day 18–22 | ✅ Completed         |
+| Sales Trend & Time-Series Analysis                       |          Day 23 | ✅ Completed         |
+| Product Performance Analysis                             |          Day 24 | ✅ Completed         |
+| Sales Profitability Analysis                             |          Day 25 | ✅ Completed         |
+| Customer Revenue Contribution Analysis                   |          Day 26 | ✅ Completed         |
+| Customer Churn Analysis                                  |          Day 27 | ✅ Completed         |
+| Customer Cohort & Retention Analysis                     |          Day 28 | ✅ Completed         |
+| Customer Purchase Frequency Analysis                     |          Day 29 | ✅ Completed         |
+| Day 30 Analysis                                          |          Day 30 | ✅ Completed         |
+| Product Purchase Behavior Analysis                       |          Day 31 | ✅ Completed         |
+| Product Customer Affinity & Cross-Selling                |          Day 32 | ✅ Completed         |
+| Customer-Product Purchase Analysis                       |          Day 33 | ✅ Completed         |
+| Customer Cross-Selling & Product Recommendation Analysis |          Day 34 | ✅ Completed         |
+| Customer Purchase Journey & Basket Analysis              |          Day 35 | ✅ Completed         |
+| ****Overall Progress****                                 | ****35 Days**** | ****✅ Completed**** |
 
 ---
 
 # 🏆 Current Milestone
 
-## 34 Days of SQL Business Analysis Completed
+## 35 Days of SQL Business Analysis Completed
 
-The project has progressed from basic relational database operations to advanced SQL analytics, customer lifecycle analysis, product analytics, business intelligence, retention analysis, churn analysis, cohort analysis, purchase frequency analysis, product purchasing behavior, product affinity, cross-selling analysis, customer-product purchase analysis, and product recommendation analytics.
+The project has progressed from basic relational database operations to advanced SQL analytics, customer lifecycle analysis, product analytics, business intelligence, retention analysis, churn analysis, cohort analysis, purchase frequency analysis, product purchasing behavior, product affinity, cross-selling analysis, customer-product purchase analysis, product recommendation analytics, customer purchase journey analysis, basket analysis, purchase frequency analysis, repeat purchase analysis, and customer behavior classification.
 
 ### Current Learning Journey
 
-**Database Design**
+****Database Design****
 
 ↓
 
-**SQL Fundamentals**
+****SQL Fundamentals****
 
 ↓
 
-**JOINs & Aggregations**
+****JOINs & Aggregations****
 
 ↓
 
-**Subqueries**
+****Subqueries****
 
 ↓
 
-**Advanced SQL**
+****Advanced SQL****
 
 ↓
 
-**Views, Procedures & Triggers**
+****Views, Procedures & Triggers****
 
 ↓
 
-**Indexes & Query Optimization**
+****Indexes & Query Optimization****
 
 ↓
 
-**Window Functions & CTEs**
+****Window Functions & CTEs****
 
 ↓
 
-**Customer Analytics**
+****Customer Analytics****
 
 ↓
 
-**RFM Customer Segmentation**
+****RFM Customer Segmentation****
 
 ↓
 
-**Customer Retention**
+****Customer Retention****
 
 ↓
 
-**Customer Lifetime Value**
+****Customer Lifetime Value****
 
 ↓
 
-**Sales Trend Analysis**
+****Sales Trend Analysis****
 
 ↓
 
-**Product Performance Analysis**
+****Product Performance Analysis****
 
 ↓
 
-**Sales Profitability Analysis**
+****Sales Profitability Analysis****
 
 ↓
 
-**Customer Revenue Contribution Analysis**
+****Customer Revenue Contribution Analysis****
 
 ↓
 
-**Customer Churn Analysis**
+****Customer Churn Analysis****
 
 ↓
 
-**Customer Cohort & Retention Analysis**
+****Customer Cohort & Retention Analysis****
 
 ↓
 
-**Customer Purchase Frequency Analysis**
+****Customer Purchase Frequency Analysis****
 
 ↓
 
-**Product Purchase Behavior Analysis**
+****Product Purchase Behavior Analysis****
 
 ↓
 
-**Product Customer Affinity & Cross-Selling Analysis**
+****Product Customer Affinity & Cross-Selling Analysis****
 
 ↓
 
-**Customer-Product Purchase Analysis**
+****Customer-Product Purchase Analysis****
 
 ↓
 
-**Customer Cross-Selling & Product Recommendation Analysis**
+****Customer Cross-Selling & Product Recommendation Analysis****
 
 ↓
 
-**Business Insights**
+****Customer Purchase Journey & Basket Analysis****
+
+↓
+
+****Business Insights****
 
 ---
 
 # 🛠️ Technologies Used
 
-| Technology          | Purpose                                   |
-| ------------------- | ----------------------------------------- |
-| **MySQL 8.0**       | Database management and SQL analysis      |
-| **MySQL Workbench** | Database development and query execution  |
-| **SQL**             | Data querying, analysis, and optimization |
-| **Git**             | Version control                           |
-| **GitHub**          | Project management and portfolio          |
-| **VS Code**         | SQL development and documentation         |
+| Technology              | Purpose                                   |
+| ----------------------- | ----------------------------------------- |
+| ****MySQL 8.0****       | Database management and SQL analysis      |
+| ****MySQL Workbench**** | Database development and query execution  |
+| ****SQL****             | Data querying, analysis, and optimization |
+| ****Git****             | Version control                           |
+| ****GitHub****          | Project management and portfolio          |
+| ****VS Code****         | SQL development and documentation         |
 
 ---
 
@@ -519,7 +838,6 @@ Customers
 
 ```text
 Sales_Data_Analysis_SQL/
-
 │
 ├── Database_Design/
 │   └── sales_analysis.mwb
@@ -557,7 +875,8 @@ Sales_Data_Analysis_SQL/
 │   ├── product_purchase_behavior_analysis.sql
 │   ├── product_customer_affinity_analysis.sql
 │   ├── customer_product_purchase_analysis.sql
-│   └── customer_cross_selling_analysis.sql
+│   ├── customer_cross_selling_analysis.sql
+│   └── customer_purchase_journey_analysis.sql
 │
 ├── Screenshots/
 │   ├── Day 1/
@@ -593,7 +912,8 @@ Sales_Data_Analysis_SQL/
 │   ├── Day 31/
 │   ├── Day 32/
 │   ├── Day 33/
-│   └── Day 34/
+│   ├── Day 34/
+│   └── Day 35/
 │
 ├── Presentation/
 │
@@ -616,7 +936,8 @@ Sales_Data_Analysis_SQL/
 │   ├── Day31_Product_Purchase_Behavior_Analysis.md
 │   ├── Day32_Product_Customer_Affinity_Analysis.md
 │   ├── Day33_Customer_Product_Purchase_Analysis.md
-│   └── Day34_Customer_Cross_Selling_Analysis.md
+│   ├── Day34_Customer_Cross_Selling_Analysis.md
+│   └── Day35_Customer_Purchase_Journey_Analysis.md
 │
 └── README.md
 ```
@@ -772,6 +1093,12 @@ Customer Cross-Selling & Product Recommendations
 ↓
 
 ```text
+Customer Purchase Journey & Basket Analysis
+```
+
+↓
+
+```text
 Business Insights
 ```
 
@@ -782,89 +1109,155 @@ Business Insights
 Through this project, the following practical skills are demonstrated:
 
 * SQL database design
+
 * Data querying
+
 * Data analysis
+
 * Relational database management
+
 * Advanced SQL
+
 * Window functions
+
 * CTEs
+
 * Customer analytics
+
 * Product analytics
+
 * Revenue analytics
+
 * KPI analysis
+
 * Customer segmentation
+
 * RFM analysis
+
 * Churn analysis
+
 * Cohort analysis
+
 * Retention analysis
+
 * Purchase frequency analysis
+
 * Product purchase behavior analysis
+
 * Product ranking
+
 * Product segmentation
+
 * Product customer affinity analysis
+
 * Product pair analysis
+
 * Cross-selling analysis
+
 * Product recommendation analysis
+
 * Customer-product analysis
+
 * Customer-product purchase frequency analysis
+
 * Customer-product revenue analysis
+
 * Customer-product ranking
+
 * Customer product diversity analysis
+
 * High-value customer-product identification
+
 * Customer purchasing relationship analysis
+
 * Cross-selling opportunity analysis
+
 * Revenue opportunity analysis
+
+* Customer purchase journey analysis
+
+* First and last purchase analysis
+
+* Purchase gap analysis
+
+* Purchase frequency classification
+
+* Basket size analysis
+
+* Average order value analysis
+
+* Repeat purchase analysis
+
+* Customer lifetime analysis
+
 * Query optimization
+
 * Business intelligence
+
 * Business reporting
+
 * Git version control
+
 * GitHub project management
 
 ---
 
 # 📌 Project Status
 
-**Current Status: 🟢 Active**
+****Current Status: 🟢 Active****
 
-**Completed: 34 Days**
+****Completed: 35 Days****
 
-**Primary Focus: SQL Data Analysis & Business Intelligence**
+****Primary Focus: SQL Data Analysis & Business Intelligence****
 
-The project continues to expand toward advanced business analytics, customer lifecycle analysis, product analytics, product affinity, cross-selling, customer-product analysis, product recommendations, and real-world decision-support use cases.
+The project continues to expand toward advanced business analytics, customer lifecycle analysis, product analytics, product affinity, cross-selling, customer-product analysis, product recommendations, customer purchase journey analysis, basket analysis, and real-world decision-support use cases.
 
 ---
 
-# 🚀 Day 34 Achievement
+# 🚀 Day 35 Achievement
 
-## Day 34 — Customer Cross-Selling & Product Recommendation Analysis Completed ✅
+## Day 35 — Customer Purchase Journey & Basket Analysis Completed ✅
 
-Day 34 has been successfully completed as part of the structured SQL business-analysis journey.
+Day 35 has been successfully completed as part of the structured SQL business-analysis journey.
 
-The Day 34 analysis focuses on identifying **product relationships, customer purchasing overlap, product affinity, cross-selling opportunities, product recommendations, and potential revenue opportunities**.
+The Day 35 analysis focuses on understanding ****customer purchase journeys, purchase frequency, purchase gaps, basket size, average order value, repeat purchases, customer lifetime, and customer purchasing behavior****.
 
 The analysis includes:
 
-* Customer-product purchase mapping
-* Product pair analysis
-* Top product pairs by customer count
-* Product pair revenue analysis
-* Product affinity score
-* Product pair affinity ranking
-* High-affinity product pair identification
-* Cross-selling opportunities
-* Top cross-selling product pairs
-* Customer-based product recommendations
-* Cross-selling revenue opportunity analysis
-* Final cross-selling business summary
+* Customer purchase journey analysis
 
-This extends the project to **34 consecutive days of practical SQL analysis** and strengthens the portfolio by demonstrating customer analytics, product analytics, advanced SQL, product affinity analysis, cross-selling analysis, recommendation logic, revenue analysis, and business intelligence skills.
+* First purchase date analysis
+
+* Last purchase date analysis
+
+* Total orders per customer
+
+* Average days between purchases
+
+* Purchase frequency classification
+
+* Average order value
+
+* Customer basket size
+
+* Average products per order
+
+* One-time and repeat customer analysis
+
+* Customer purchase behavior classification
+
+* Customer lifetime analysis
+
+* Customer revenue summary
+
+This extends the project to ****35 consecutive days of practical SQL analysis**** and strengthens the portfolio by demonstrating customer analytics, purchase journey analysis, basket analysis, advanced SQL, retention analysis, revenue analysis, and business intelligence skills.
 
 ---
 
 # 🏁 Portfolio Progress
 
-## 34 Days Completed
+## 35 Days Completed
 
-**SQL Fundamentals → Advanced SQL → Business Analytics → Customer Analytics → Product Analytics → Customer Lifecycle → Product Purchase Behavior → Product Customer Affinity → Cross-Selling → Customer-Product Purchase Analysis → Customer Cross-Selling & Product Recommendations**
+****SQL Fundamentals → Advanced SQL → Business Analytics → Customer Analytics → Product Analytics → Customer Lifecycle → Product Purchase Behavior → Product Customer Affinity → Cross-Selling → Customer-Product Purchase Analysis → Customer Cross-Selling & Product Recommendations → Customer Purchase Journey & Basket Analysis****
 
-The project now demonstrates a broad practical SQL workflow suitable for showcasing **Data Analyst, Business Analyst, and SQL-focused portfolio skills**.
+The project now demonstrates a broad practical SQL workflow suitable for showcasing ****Data Analyst, Business Analyst, and SQL-focused portfolio skills****.
