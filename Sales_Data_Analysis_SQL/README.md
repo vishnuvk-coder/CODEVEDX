@@ -40,15 +40,24 @@ The project covers:
 * At-Risk segment revenue analysis
 * Segment performance ranking
 * Segment business summary
-* Retention analysis
+* Customer retention analysis
+* Customer churn analysis
+* Customer churn risk indicators
+* At-Risk customer identification
+* Lost customer identification
+* Champion retention analysis
+* Loyal customer retention analysis
+* Customer inactivity analysis
+* Customer lifetime analysis
+* Revenue at risk analysis
+* Segment retention ranking
+* Customer retention strategy
 * Customer Lifetime Value
 * Sales trend analysis
 * Product performance analysis
 * Sales profitability analysis
 * Customer revenue contribution
-* Customer churn analysis
 * Customer cohort analysis
-* Customer retention analysis
 * Customer purchase frequency
 * Product purchase behavior
 * Product customer reach
@@ -152,6 +161,18 @@ The main objectives of this project are to:
 * Analyze At-Risk segment revenue.
 * Rank customer segments based on business performance.
 * Create segment-level business summaries.
+* Analyze customer retention by RFM segment.
+* Compare repeat and one-time customers across segments.
+* Identify customer churn and risk indicators.
+* Measure At-Risk customer counts.
+* Identify potentially Lost customers.
+* Analyze Champion customer retention.
+* Analyze Loyal customer retention.
+* Measure customer lifetime behavior.
+* Analyze customer inactivity periods.
+* Estimate revenue associated with inactive customers.
+* Rank customer segments based on retention performance.
+* Develop customer retention and re-engagement strategies.
 * Support targeted customer marketing strategies.
 * Apply advanced SQL techniques to business problems.
 * Convert raw sales data into actionable business insights.
@@ -193,6 +214,8 @@ The main objectives of this project are to:
 * Customer lifetime revenue JOIN analysis
 * RFM customer analysis JOINs
 * Customer segment performance JOINs
+* Customer retention analysis JOINs
+* Revenue-at-risk analysis JOINs
 
 ## 📊 SQL Aggregation & Analysis
 
@@ -220,6 +243,10 @@ The main objectives of this project are to:
 * Segment-level aggregation
 * Segment revenue aggregation
 * Segment KPI analysis
+* Retention rate calculations
+* Churn-risk calculations
+* Revenue-at-risk calculations
+* Inactivity analysis
 
 ## 🧠 Advanced SQL
 
@@ -272,6 +299,11 @@ The main objectives of this project are to:
 * Customer segment performance analysis
 * Segment revenue ranking
 * Segment KPI comparison
+* Customer retention analysis
+* Churn-risk classification
+* Customer inactivity analysis
+* Retention ranking
+* Revenue-at-risk analysis
 
 ## ⚡ SQL Optimization
 
@@ -325,12 +357,23 @@ The main objectives of this project are to:
 * Segment performance ranking
 * Customer churn analysis
 * Churned customer identification
+* Churn-risk indicators
+* At-Risk customer analysis
+* Lost customer analysis
 * Repeat customer analysis
 * One-time customer analysis
 * Loyal customer analysis
+* Champion customer retention
+* Loyal customer retention
 * Customer cohort analysis
 * Cohort retention analysis
 * Monthly customer activity
+* Customer inactivity analysis
+* Customer lifetime analysis
+* Customer retention ranking
+* Revenue-at-risk analysis
+* Customer re-engagement analysis
+* Customer retention strategy
 * Customer-product purchase analysis
 * Customer-product purchase frequency
 * Customer-product spending analysis
@@ -418,6 +461,9 @@ The main objectives of this project are to:
 * Segment average order value
 * Segment purchase frequency
 * Segment performance ranking
+* Revenue-at-risk analysis
+* Inactive customer revenue
+* Retention performance
 
 ## 📈 Sales Trend & Time-Series Analysis
 
@@ -443,6 +489,10 @@ The main objectives of this project are to:
 * One-time customer analysis
 * Customer retention segmentation
 * Customer purchasing frequency
+* Customer inactivity analysis
+* Churn-risk analysis
+* Retention ranking
+* Revenue-at-risk analysis
 
 ## 🛒 Product Purchase Behavior Analysis
 
@@ -520,12 +570,34 @@ The main objectives of this project are to:
 * Revenue opportunity by segment
 * Retention opportunity by segment
 
+## 🔄 Customer Segment Retention & Churn Risk Analysis
+
+* Customer retention by RFM segment
+* Repeat vs one-time customers by segment
+* Customer churn-risk indicators
+* At-Risk customer count
+* Lost customer count
+* Champion retention performance
+* Loyal customer retention performance
+* Customer lifetime analysis
+* Customer inactivity analysis
+* Revenue at risk from inactive customers
+* Segment retention ranking
+* Final customer retention business summary
+* Customer re-engagement opportunities
+* Customer win-back strategies
+* Retention prioritization
+* Revenue protection
+* Churn prevention
+* Segment-specific retention strategies
+
 ## 💼 Business Intelligence
 
 * Business performance analysis
 * Customer segmentation
 * RFM customer segmentation
 * Customer segment performance analysis
+* Customer segment retention analysis
 * Product performance analysis
 * Revenue contribution analysis
 * Business KPI analysis
@@ -535,6 +607,7 @@ The main objectives of this project are to:
 * Customer churn analysis
 * Cohort analysis
 * Retention analysis
+* Churn-risk analysis
 * Product purchase behavior analysis
 * Product customer affinity analysis
 * Cross-selling analysis
@@ -553,8 +626,11 @@ The main objectives of this project are to:
 * RFM-based customer targeting
 * Champion customer analysis
 * At-risk customer analysis
+* Lost customer analysis
 * Segment revenue analysis
 * Segment performance ranking
+* Segment retention ranking
+* Revenue-at-risk analysis
 * Business reporting
 * Actionable business insights
 
@@ -570,37 +646,38 @@ The main objectives of this project are to:
 
 # 📅 Project Progress
 
-| Phase                                                    |        Days | Status          |
-| -------------------------------------------------------- | ----------: | --------------- |
-| SQL & Database Fundamentals                              |     Day 1–7 | ✅ Completed     |
-| Intermediate SQL Analysis                                |    Day 8–14 | ✅ Completed     |
-| Advanced SQL & Optimization                              |   Day 15–17 | ✅ Completed     |
-| Customer & Business Analytics                            |   Day 18–22 | ✅ Completed     |
-| Sales Trend & Time-Series Analysis                       |      Day 23 | ✅ Completed     |
-| Product Performance Analysis                             |      Day 24 | ✅ Completed     |
-| Sales Profitability Analysis                             |      Day 25 | ✅ Completed     |
-| Customer Revenue Contribution Analysis                   |      Day 26 | ✅ Completed     |
-| Customer Churn Analysis                                  |      Day 27 | ✅ Completed     |
-| Customer Cohort & Retention Analysis                     |      Day 28 | ✅ Completed     |
-| Customer Purchase Frequency Analysis                     |      Day 29 | ✅ Completed     |
-| Day 30 Analysis                                          |      Day 30 | ✅ Completed     |
-| Product Purchase Behavior Analysis                       |      Day 31 | ✅ Completed     |
-| Product Customer Affinity & Cross-Selling                |      Day 32 | ✅ Completed     |
-| Customer-Product Purchase Analysis                       |      Day 33 | ✅ Completed     |
-| Customer Cross-Selling & Product Recommendation Analysis |      Day 34 | ✅ Completed     |
-| Customer Purchase Journey & Basket Analysis              |      Day 35 | ✅ Completed     |
-| Customer Lifetime Value & Revenue Contribution Analysis  |      Day 36 | ✅ Completed     |
-| Customer RFM Segmentation Analysis                       |      Day 37 | ✅ Completed     |
-| **Customer Segment Performance & Revenue Analysis**      |  **Day 38** | **✅ Completed** |
-| **Overall Progress**                                     | **38 Days** | **✅ Completed** |
+| Phase                                                    |        Days | Status             |
+| -------------------------------------------------------- | ----------: | ------------------ |
+| SQL & Database Fundamentals                              |     Day 1–7 | ✅ Completed        |
+| Intermediate SQL Analysis                                |    Day 8–14 | ✅ Completed        |
+| Advanced SQL & Optimization                              |   Day 15–17 | ✅ Completed        |
+| Customer & Business Analytics                            |   Day 18–22 | ✅ Completed        |
+| Sales Trend & Time-Series Analysis                       |      Day 23 | ✅ Completed        |
+| Product Performance Analysis                             |      Day 24 | ✅ Completed        |
+| Sales Profitability Analysis                             |      Day 25 | ✅ Completed        |
+| Customer Revenue Contribution Analysis                   |      Day 26 | ✅ Completed        |
+| Customer Churn Analysis                                  |      Day 27 | ✅ Completed        |
+| Customer Cohort & Retention Analysis                     |      Day 28 | ✅ Completed        |
+| Customer Purchase Frequency Analysis                     |      Day 29 | ✅ Completed        |
+| Day 30 Analysis                                          |      Day 30 | ✅ Completed        |
+| Product Purchase Behavior Analysis                       |      Day 31 | ✅ Completed        |
+| Product Customer Affinity & Cross-Selling                |      Day 32 | ✅ Completed        |
+| Customer-Product Purchase Analysis                       |      Day 33 | ✅ Completed        |
+| Customer Cross-Selling & Product Recommendation Analysis |      Day 34 | ✅ Completed        |
+| Customer Purchase Journey & Basket Analysis              |      Day 35 | ✅ Completed        |
+| Customer Lifetime Value & Revenue Contribution Analysis  |      Day 36 | ✅ Completed        |
+| Customer RFM Segmentation Analysis                       |      Day 37 | ✅ Completed        |
+| Customer Segment Performance & Revenue Analysis          |      Day 38 | ✅ Completed        |
+| **Customer Segment Retention & Churn Risk Analysis**     |  **Day 39** | **✅ Completed**    |
+| **Overall Progress**                                     | **39 Days** | **🚀 In Progress** |
 
 ---
 
 # 🏆 Current Milestone
 
-## 38 Days of SQL Business Analysis Completed
+## 39 Days of SQL Business Analysis Completed
 
-The project has progressed from basic relational database operations to advanced SQL analytics, customer lifecycle analysis, product analytics, business intelligence, retention analysis, churn analysis, cohort analysis, purchase frequency analysis, product purchasing behavior, product affinity, cross-selling analysis, customer-product purchase analysis, product recommendation analytics, customer purchase journey analysis, basket analysis, repeat purchase analysis, customer lifetime value analysis, customer revenue ranking, high-value customer identification, customer value segmentation, revenue concentration analysis, RFM customer segmentation, and **customer segment performance analysis**.
+The project has progressed from basic relational database operations to advanced SQL analytics, customer lifecycle analysis, product analytics, business intelligence, retention analysis, churn analysis, cohort analysis, purchase frequency analysis, product purchasing behavior, product affinity, cross-selling analysis, customer-product purchase analysis, product recommendation analytics, customer purchase journey analysis, basket analysis, repeat purchase analysis, customer lifetime value analysis, customer revenue ranking, high-value customer identification, customer value segmentation, revenue concentration analysis, RFM customer segmentation, customer segment performance analysis, and **customer segment retention & churn risk analysis**.
 
 ### Current Learning Journey
 
@@ -653,6 +730,10 @@ The project has progressed from basic relational database operations to advanced
 ↓
 
 **Customer Segment Performance Analysis**
+
+↓
+
+**Customer Segment Retention & Churn Risk Analysis**
 
 ↓
 
@@ -755,7 +836,6 @@ Customers
 
 ```text
 Sales_Data_Analysis_SQL/
-
 │
 ├── Database_Design/
 │   └── sales_analysis.mwb
@@ -797,7 +877,8 @@ Sales_Data_Analysis_SQL/
 │   ├── customer_purchase_journey_analysis.sql
 │   ├── customer_lifetime_value_analysis.sql
 │   ├── customer_rfm_segmentation_analysis.sql
-│   └── customer_segment_performance_analysis.sql
+│   ├── customer_segment_performance_analysis.sql
+│   └── customer_segment_retention_analysis.sql
 │
 ├── Screenshots/
 │   ├── Day 1/
@@ -807,7 +888,8 @@ Sales_Data_Analysis_SQL/
 │   ├── Day 35/
 │   ├── Day 36/
 │   ├── Day 37/
-│   └── Day 38/
+│   ├── Day 38/
+│   └── Day 39/
 │
 ├── Presentation/
 │
@@ -834,7 +916,8 @@ Sales_Data_Analysis_SQL/
 │   ├── Day35_Customer_Purchase_Journey_Analysis.md
 │   ├── Day36_Customer_Lifetime_Value_Analysis.md
 │   ├── Day37_Customer_RFM_Segmentation_Analysis.md
-│   └── Day38_Customer_Segment_Performance_Analysis.md
+│   ├── Day38_Customer_Segment_Performance_Analysis.md
+│   └── Day39_Customer_Segment_Retention_Analysis.md
 │
 └── README.md
 ```
@@ -949,6 +1032,36 @@ Segment KPI Comparison
 
 ```text
 Segment Performance Ranking
+```
+
+↓
+
+```text
+Customer Segment Retention
+```
+
+↓
+
+```text
+Customer Churn Risk
+```
+
+↓
+
+```text
+Customer Inactivity Analysis
+```
+
+↓
+
+```text
+Revenue-at-Risk Analysis
+```
+
+↓
+
+```text
+Retention Strategy
 ```
 
 ↓
@@ -1075,9 +1188,15 @@ Through this project, the following practical skills are demonstrated:
 * Segment performance ranking
 * Segment prioritization
 * Customer value comparison
+* Customer retention analysis
 * Churn analysis
+* Churn-risk analysis
+* Customer inactivity analysis
+* Revenue-at-risk analysis
+* Retention ranking
+* Customer re-engagement analysis
+* Customer lifecycle analysis
 * Cohort analysis
-* Retention analysis
 * Purchase frequency analysis
 * Product purchase behavior analysis
 * Product ranking
@@ -1123,40 +1242,40 @@ Through this project, the following practical skills are demonstrated:
 
 **Current Status: 🟢 Active**
 
-**Completed: 38 Days**
+**Completed: 39 Days**
 
 **Primary Focus: SQL Data Analysis & Business Intelligence**
 
-The project continues to expand toward advanced business analytics, customer lifecycle analysis, product analytics, product affinity, cross-selling, customer-product analysis, product recommendations, customer purchase journey analysis, basket analysis, repeat purchase analysis, customer lifetime value analysis, high-value customer identification, revenue contribution analysis, customer value segmentation, revenue concentration analysis, RFM-based customer segmentation, and **customer segment performance analysis**.
+The project continues to expand toward advanced business analytics, customer lifecycle analysis, product analytics, product affinity, cross-selling, customer-product analysis, product recommendations, customer purchase journey analysis, basket analysis, repeat purchase analysis, customer lifetime value analysis, high-value customer identification, revenue contribution analysis, customer value segmentation, revenue concentration analysis, RFM-based customer segmentation, customer segment performance analysis, and **customer retention and churn-risk analysis**.
 
 ---
 
-# 🚀 Day 38 Achievement
+# 🚀 Day 39 Achievement
 
-## Day 38 — Customer Segment Performance & Revenue Analysis Completed ✅
+## Day 39 — Customer Segment Retention & Churn Risk Analysis Completed ✅
 
-Day 38 has been successfully completed as part of the structured SQL business-analysis journey.
+Day 39 has been successfully completed as part of the structured SQL business-analysis journey.
 
-The Day 38 analysis builds directly on the **RFM customer segmentation framework developed in Day 37**.
+The Day 39 analysis builds directly on the **RFM customer segmentation framework developed in Day 37** and the **customer segment performance analysis completed in Day 38**.
 
-The primary objective is to understand how different customer segments perform from a business perspective.
+The primary objective is to understand customer retention, repeat purchasing behavior, inactivity, churn risk, customer lifetime behavior, and revenue associated with inactive customers.
 
-The analysis includes:
+### Key Analyses
 
-* Customer Segment Distribution
-* Revenue by RFM Segment
-* Orders by RFM Segment
-* Average Revenue per Customer by Segment
-* Average Order Value by Segment
-* Purchase Frequency by Segment
-* Revenue Contribution Percentage by Segment
-* Top Customers within Each RFM Segment
-* Champion Segment Performance
-* At-Risk Segment Revenue Analysis
-* Segment Performance Ranking
-* Final Customer Segment Business Summary
+* Customer Retention by RFM Segment
+* Repeat vs One-Time Customers by Segment
+* Customer Churn / Risk Indicators
+* At-Risk Customer Count
+* Lost Customer Count
+* Champion Retention Performance
+* Loyal Customer Retention Performance
+* Average Customer Lifetime
+* Customer Inactivity Analysis
+* Revenue at Risk from Inactive Customers
+* Segment Retention Ranking
+* Final Customer Retention Business Summary
 
-The analysis uses advanced SQL techniques including:
+### SQL Techniques Used
 
 * CTEs
 * JOINs
@@ -1164,62 +1283,73 @@ The analysis uses advanced SQL techniques including:
 * COUNT()
 * SUM()
 * AVG()
+* MIN()
+* MAX()
 * CASE statements
+* DATEDIFF()
 * NTILE()
 * RANK()
 * ROW_NUMBER()
 * Window Functions
-* Revenue calculations
-* Percentage calculations
+* Conditional aggregation
 * Customer segmentation
-* Segment-level aggregation
-* KPI analysis
-* Revenue ranking
+* Retention calculations
+* Churn-risk classification
+* Inactivity analysis
+* Revenue-at-risk analysis
 
 ### Business Analysis Focus
 
-Day 38 answers important business questions such as:
+Day 39 answers important business questions such as:
 
-* Which customer segment has the most customers?
-* Which customer segment generates the most revenue?
-* Which segment generates the most orders?
-* Which segment has the highest average revenue per customer?
-* Which segment has the highest average order value?
-* Which segment purchases most frequently?
-* What percentage of total revenue comes from each segment?
-* Who are the top customers within each segment?
-* How valuable are Champion customers?
-* How much revenue is associated with At-Risk customers?
-* Which customer segments should receive the highest business priority?
+* Which customer segments have the strongest retention?
+* Which segments have the highest repeat-customer rate?
+* How many customers are at risk of churn?
+* How many customers may be lost?
+* How well are Champion customers being retained?
+* How well are Loyal customers being retained?
+* Which customers have been inactive for long periods?
+* How long do customers remain engaged with the business?
+* How much historical revenue is associated with inactive customers?
+* Which customer segments have the strongest retention performance?
+* Which segments require immediate retention attention?
 
 ### Business Applications
 
-Customer segment performance analysis can support:
+Customer retention and churn-risk analysis can support:
 
 * Customer retention
+* Churn prevention
+* Customer lifecycle management
+* Revenue protection
+* Revenue-at-risk analysis
+* Re-engagement campaigns
+* Win-back campaigns
+* Loyalty programs
+* Champion customer retention
+* Loyal customer retention
+* At-Risk customer recovery
+* Lost customer analysis
 * Targeted marketing
 * Customer prioritization
-* Revenue optimization
-* Loyalty programs
-* Upselling
-* Cross-selling
-* Re-engagement campaigns
-* At-Risk customer recovery
-* Champion customer retention
-* Segment-specific promotions
-* Customer lifecycle management
-* Business performance monitoring
+* Segment-specific retention strategies
 
-The Day 38 analysis extends the RFM framework from simply **classifying customers** to understanding the **business performance and revenue impact of each customer segment**.
+The Day 39 analysis extends the project from **classifying customers and measuring segment performance** to understanding **customer retention, inactivity, churn risk, and potential revenue loss**.
 
-This strengthens the project by connecting customer segmentation with measurable business KPIs and decision-making.
+This strengthens the project's business intelligence capabilities by connecting customer segmentation with actionable customer lifecycle and retention strategies.
 
 ---
 
 # 🏁 Portfolio Progress
 
-## 38 Days Completed
+## 39 Days Completed
 
-**SQL Fundamentals → Advanced SQL → Business Analytics → Customer Analytics → Customer Retention → Customer Lifetime Value → RFM Customer Segmentation → Customer Segment Performance → Product Analytics → Product Purchase Behavior → Product Customer Affinity → Cross-Selling → Customer-Product Purchase Analysis → Customer Cross-Selling & Product Recommendations → Customer Purchase Journey & Basket Analysis → Customer Lifetime Value & Revenue Contribution Analysis → Business Insights**
+**SQL Fundamentals → Advanced SQL → Business Analytics → Customer Analytics → Customer Retention → Customer Lifetime Value → RFM Customer Segmentation → Customer Segment Performance → Customer Segment Retention & Churn Risk → Product Analytics → Product Purchase Behavior → Product Customer Affinity → Cross-Selling → Customer-Product Purchase Analysis → Customer Cross-Selling & Product Recommendations → Customer Purchase Journey & Basket Analysis → Customer Lifetime Value & Revenue Contribution Analysis → Business Insights**
 
 The project now demonstrates a broad practical SQL workflow suitable for showcasing **Data Analyst, Business Analyst, and SQL-focused portfolio skills**.
+
+---
+
+# 🎯 Next Stage
+
+The next stage of the project can move toward more advanced **customer analytics, retention strategy, revenue forecasting, dashboard-oriented KPIs, and management-level business analysis**, building on the customer lifecycle framework developed through Days 35–39.
