@@ -1,6 +1,6 @@
 # 📊 Sales Data Analysis Using SQL
 
-A hands-on SQL portfolio project focused on **relational database design, advanced SQL analytics, query optimization, customer analytics, product analytics, business intelligence, customer retention, cohort analysis, and business reporting** using MySQL.
+A hands-on SQL portfolio project focused on **relational database design, advanced SQL analytics, query optimization, customer analytics, product analytics, business intelligence, customer retention, cohort analysis, customer lifecycle analysis, repeat purchase analysis, and business reporting** using MySQL.
 
 This project simulates a real-world sales management system and demonstrates practical SQL skills relevant to **Data Analyst, Business Analyst, and SQL Developer roles**.
 
@@ -97,6 +97,17 @@ The project covers:
 * Champion customer identification
 * At-risk customer identification
 * Customer segment classification
+* Customer lifecycle analysis
+* Customer first purchase analysis
+* Customer second purchase analysis
+* Days to second purchase
+* Repeat purchase rate
+* Purchase interval analysis
+* Customer lifecycle stage classification
+* Repeat customer revenue analysis
+* Repeat vs one-time customer comparison
+* Loyal customer identification
+* Customer lifecycle ranking
 * Business intelligence
 * Business reporting
 
@@ -158,6 +169,14 @@ The main objectives of this project are to:
 * Compare repeat-purchase behavior across cohorts.
 * Rank customer cohorts by revenue.
 * Identify high- and low-performing cohorts.
+* Analyze customer lifecycle stages.
+* Identify customers making second purchases.
+* Calculate days to second purchase.
+* Calculate repeat purchase rate.
+* Analyze purchase intervals.
+* Compare repeat and one-time customer revenue.
+* Identify loyal and highly engaged customers.
+* Rank customers according to purchase frequency.
 * Convert raw sales data into actionable business insights.
 * Create structured business reports using SQL analysis.
 
@@ -199,6 +218,8 @@ The main objectives of this project are to:
 * Customer segment performance JOINs
 * Customer retention JOINs
 * Cohort analysis JOINs
+* Customer lifecycle JOINs
+* Repeat customer revenue JOINs
 
 ## 📊 SQL Aggregation & Analysis
 
@@ -228,6 +249,8 @@ The main objectives of this project are to:
 * Revenue-at-risk calculations
 * Inactivity analysis
 * Cohort aggregation
+* Repeat purchase aggregation
+* Customer lifecycle aggregation
 
 ## 🧠 Advanced SQL
 
@@ -245,6 +268,7 @@ The main objectives of this project are to:
 * DENSE_RANK()
 * NTILE()
 * ROW_NUMBER()
+* LAG()
 * Cumulative calculations
 * Revenue contribution analysis
 * Cohort analysis
@@ -270,6 +294,11 @@ The main objectives of this project are to:
 * Churn-risk classification
 * Customer inactivity analysis
 * Revenue-at-risk analysis
+* Customer lifecycle analysis
+* Repeat purchase analysis
+* Purchase interval analysis
+* Second purchase analysis
+* Customer lifecycle ranking
 
 ## ⚡ SQL Optimization
 
@@ -322,6 +351,18 @@ The main objectives of this project are to:
 * Cohort repeat-purchase analysis
 * Cohort performance ranking
 * Customer re-engagement analysis
+* Customer lifecycle analysis
+* First purchase analysis
+* Second purchase analysis
+* Days to second purchase
+* Repeat purchase rate
+* Purchase interval analysis
+* Lifecycle stage classification
+* Repeat customer revenue
+* One-time customer analysis
+* Loyal customer analysis
+* Highly engaged customer analysis
+* Customer lifecycle ranking
 
 ## 📦 Product Analytics
 
@@ -383,6 +424,9 @@ The main objectives of this project are to:
 * Segment purchase frequency
 * Revenue-at-risk analysis
 * Inactive customer revenue
+* Repeat customer revenue
+* One-time customer revenue
+* Customer lifecycle revenue
 
 ## 📈 Sales Trend & Time-Series Analysis
 
@@ -514,6 +558,40 @@ The main objectives of this project are to:
 * Churn prevention
 * Segment-specific retention strategies
 
+## 👤 Customer Lifecycle & Repeat Purchase Analysis
+
+* Customer first purchase
+* Customer second purchase
+* Days to second purchase
+* Repeat purchase rate
+* One-time customer identification
+* Repeat customer identification
+* Customer purchase frequency
+* Purchase interval analysis
+* Customer lifecycle stage classification
+* Repeat customer revenue
+* One-time customer revenue
+* Repeat vs one-time customer comparison
+* Loyal customer identification
+* Highly engaged customer identification
+* Customer lifecycle ranking
+* Customer lifetime duration
+* Customer engagement analysis
+* Customer loyalty analysis
+* Repeat-purchase opportunities
+* Customer re-engagement opportunities
+
+### Customer Lifecycle Stages
+
+| Total Orders | Lifecycle Stage |
+| -----------: | --------------- |
+|            1 | One-Time        |
+|          2–3 | Developing      |
+|          4–6 | Loyal           |
+|           7+ | Highly Engaged  |
+
+These lifecycle thresholds are business-analysis rules and can be adjusted depending on the business context.
+
 ## 💼 Business Intelligence
 
 * Business performance analysis
@@ -538,6 +616,7 @@ The main objectives of this project are to:
 * Customer purchase journey
 * Basket behavior analysis
 * Repeat purchase analysis
+* Customer lifecycle analysis
 * Customer lifetime analysis
 * Customer Lifetime Value
 * Revenue concentration analysis
@@ -583,16 +662,17 @@ The main objectives of this project are to:
 | Customer RFM Segmentation Analysis                       |      Day 37 | ✅ Completed        |
 | Customer Segment Performance & Revenue Analysis          |      Day 38 | ✅ Completed        |
 | Customer Segment Retention & Churn Risk Analysis         |      Day 39 | ✅ Completed        |
-| **Customer Cohort & Retention Trend Analysis**           |  **Day 40** | **✅ Completed**    |
-| **Overall Progress**                                     | **40 Days** | **🚀 In Progress** |
+| Customer Cohort & Retention Trend Analysis               |      Day 40 | ✅ Completed        |
+| **Customer Lifecycle & Repeat Purchase Analysis**        |  **Day 41** | **✅ Completed**    |
+| **Overall Progress**                                     | **41 Days** | **🚀 In Progress** |
 
 ---
 
 # 🏆 Current Milestone
 
-## 40 Days of SQL Business Analysis Completed 🎉
+## 41 Days of SQL Business Analysis Completed 🎉
 
-The project has progressed from basic relational database operations to advanced SQL analytics, customer lifecycle analysis, product analytics, business intelligence, RFM segmentation, customer segment performance, retention and churn-risk analysis, and now **customer cohort and retention trend analysis**.
+The project has progressed from basic relational database operations to advanced SQL analytics, customer analytics, product analytics, RFM segmentation, customer segment performance, retention and churn-risk analysis, cohort analysis, and now **customer lifecycle and repeat-purchase analysis**.
 
 ### Current Learning Journey
 
@@ -653,6 +733,10 @@ The project has progressed from basic relational database operations to advanced
 ↓
 
 **Customer Cohort & Retention Trend Analysis**
+
+↓
+
+**Customer Lifecycle & Repeat Purchase Analysis**
 
 ↓
 
@@ -785,7 +869,8 @@ Sales_Data_Analysis_SQL/
 │   ├── customer_rfm_segmentation_analysis.sql
 │   ├── customer_segment_performance_analysis.sql
 │   ├── customer_segment_retention_analysis.sql
-│   └── customer_cohort_retention_analysis.sql
+│   ├── customer_cohort_retention_analysis.sql
+│   └── customer_lifecycle_analysis.sql
 │
 ├── Screenshots/
 │   ├── Day 1/
@@ -796,7 +881,8 @@ Sales_Data_Analysis_SQL/
 │   ├── Day 37/
 │   ├── Day 38/
 │   ├── Day 39/
-│   └── Day 40/
+│   ├── Day 40/
+│   └── Day 41/
 │
 ├── Presentation/
 │
@@ -825,7 +911,8 @@ Sales_Data_Analysis_SQL/
 │   ├── Day37_Customer_RFM_Segmentation_Analysis.md
 │   ├── Day38_Customer_Segment_Performance_Analysis.md
 │   ├── Day39_Customer_Segment_Retention_Analysis.md
-│   └── Day40_Customer_Cohort_Retention_Analysis.md
+│   ├── Day40_Customer_Cohort_Retention_Analysis.md
+│   └── Day41_Customer_Lifecycle_Analysis.md
 │
 └── README.md
 ```
@@ -893,6 +980,26 @@ Cohort Revenue Analysis
         ↓
 Cohort Performance Ranking
         ↓
+Customer Lifecycle Analysis
+        ↓
+First Purchase
+        ↓
+Second Purchase
+        ↓
+Days to Second Purchase
+        ↓
+Repeat Purchase Rate
+        ↓
+Purchase Interval Analysis
+        ↓
+Lifecycle Stage Classification
+        ↓
+Repeat vs One-Time Customer Analysis
+        ↓
+Loyal Customer Identification
+        ↓
+Customer Lifecycle Ranking
+        ↓
 Sales Trend Analysis
         ↓
 Product Performance
@@ -955,6 +1062,17 @@ Through this project, the following practical skills are demonstrated:
 * Customer inactivity analysis
 * Revenue-at-risk analysis
 * Customer lifecycle analysis
+* First purchase analysis
+* Second purchase analysis
+* Days-to-second-purchase analysis
+* Repeat purchase rate analysis
+* Purchase interval analysis
+* Lifecycle stage classification
+* Repeat customer revenue analysis
+* One-time customer analysis
+* Loyal customer identification
+* Highly engaged customer identification
+* Customer lifecycle ranking
 * Cohort analysis
 * Cohort retention analysis
 * Monthly customer activity
@@ -993,38 +1111,36 @@ Through this project, the following practical skills are demonstrated:
 
 **Current Status: 🟢 Active**
 
-**Completed: 40 Days**
+**Completed: 41 Days**
 
 **Primary Focus: SQL Data Analysis & Business Intelligence**
 
-The project continues to expand toward advanced business analytics, customer lifecycle analysis, product analytics, product affinity, cross-selling, customer-product analysis, product recommendations, customer purchase journey analysis, basket analysis, repeat purchase analysis, customer lifetime value analysis, RFM segmentation, customer segment performance, churn-risk analysis, and **customer cohort and retention trend analysis**.
+The project continues to expand toward advanced business analytics, customer lifecycle analysis, repeat-purchase analysis, retention strategy, product analytics, product affinity, cross-selling, customer-product analysis, product recommendations, customer purchase journey analysis, basket analysis, customer lifetime value analysis, RFM segmentation, customer segment performance, churn-risk analysis, and cohort retention analysis.
 
 ---
 
-# 🚀 Day 40 Achievement
+# 🚀 Day 41 Achievement
 
-## Day 40 — Customer Cohort & Retention Trend Analysis Completed ✅
+## Day 41 — Customer Lifecycle & Repeat Purchase Analysis Completed ✅
 
-Day 40 has been successfully completed as part of the structured SQL business-analysis journey.
+Day 41 has been successfully completed as part of the structured SQL business-analysis journey.
 
-The Day 40 analysis focuses on **customer cohorts, monthly customer activity, retention rates, repeat purchasing behavior, cohort revenue, and cohort performance**.
-
-Customers are grouped according to their **first purchase month**, allowing their purchasing behavior to be tracked across subsequent months.
+The Day 41 analysis focuses on understanding how customers progress through their purchasing lifecycle, from their first purchase to repeat purchases and higher levels of engagement.
 
 ### Key Analyses
 
-1. Customer Cohort Identification
-2. Cohort Customer Distribution
-3. Monthly Customer Activity
-4. Cohort Retention Rate
-5. Month-1 Retention
-6. Month-2 Retention
-7. Month-3 Retention
-8. Cohort Revenue Analysis
-9. Cohort Repeat Purchase Analysis
-10. Cohort Performance Ranking
-11. Best & Worst Performing Cohorts
-12. Final Cohort Retention Business Summary
+1. Customer First Purchase
+2. Customer Second Purchase
+3. Days to Second Purchase
+4. Repeat Purchase Rate
+5. Customer Purchase Frequency
+6. Purchase Interval Analysis
+7. Customer Lifecycle Stage
+8. Repeat Customer Revenue
+9. Repeat vs One-Time Customer Comparison
+10. Loyal Customer Identification
+11. Customer Lifecycle Ranking
+12. Final Customer Lifecycle Business Summary
 
 ### SQL Techniques Used
 
@@ -1034,64 +1150,75 @@ Customers are grouped according to their **first purchase month**, allowing thei
 * COUNT()
 * COUNT(DISTINCT)
 * SUM()
-* MIN()
 * AVG()
-* DATE_FORMAT()
-* TIMESTAMPDIFF()
+* MIN()
+* MAX()
 * CASE statements
+* DATEDIFF()
+* LAG()
+* ROW_NUMBER()
 * RANK()
 * Window Functions
-* Conditional aggregation
-* Percentage calculations
-* Cohort identification
-* Retention calculations
-* Repeat customer analysis
-* Revenue analysis
-* Cohort performance classification
+* Customer-level aggregation
+* Revenue calculations
+* Repeat-purchase calculations
+* Purchase interval calculations
+* Lifecycle classification
+
+### Customer Lifecycle Stages
+
+Customers are classified according to their number of purchases:
+
+* **One-Time:** 1 order
+* **Developing:** 2–3 orders
+* **Loyal:** 4–6 orders
+* **Highly Engaged:** 7+ orders
+
+These thresholds are business-analysis rules and can be adjusted depending on the business context.
 
 ### Business Analysis Focus
 
-Day 40 answers important business questions such as:
+Day 41 answers important business questions such as:
 
-* Which month acquired the most customers?
-* How many customers belong to each cohort?
-* How active are customers after their first purchase?
-* Which cohorts have stronger retention?
-* What is the Month-1 retention rate?
-* What is the Month-2 retention rate?
-* What is the Month-3 retention rate?
-* Which cohorts generate the most revenue?
-* Which cohorts have stronger repeat purchasing?
-* Which cohorts perform better financially?
-* Which cohorts are high performing?
-* Which cohorts require retention improvement?
+* When did each customer make their first purchase?
+* Which customers made a second purchase?
+* How quickly do customers return?
+* What percentage of customers are repeat customers?
+* How many customers are one-time customers?
+* What is the purchase interval between orders?
+* Which customers are developing?
+* Which customers are loyal?
+* Which customers are highly engaged?
+* How much revenue comes from repeat customers?
+* How do repeat customers compare with one-time customers?
+* Which customers should receive loyalty or re-engagement campaigns?
 
 ### Business Applications
 
-Cohort and retention analysis can support:
+Customer lifecycle analysis can support:
 
 * Customer retention
-* Customer lifecycle management
 * Repeat-purchase strategy
-* Customer engagement
-* Re-engagement campaigns
 * Loyalty programs
-* Cohort performance benchmarking
-* Revenue analysis
-* Customer acquisition evaluation
-* Retention strategy
-* Marketing optimization
-* Revenue protection
+* Re-engagement campaigns
+* Personalized marketing
+* Customer segmentation
+* Customer engagement
+* Revenue growth
+* Customer relationship management
+* Churn prevention
+* Customer win-back campaigns
+* Customer lifetime management
 
-Day 40 extends the project from **individual customer and segment-level retention analysis** into **time-based cohort analysis**, allowing customer behavior to be compared across acquisition periods.
+Day 41 extends the project from **customer segment and cohort-level analysis** into a more detailed **individual customer lifecycle analysis**, connecting purchasing frequency, purchase intervals, repeat behavior, engagement, and revenue.
 
 ---
 
 # 🏁 Portfolio Progress
 
-## 40 Days Completed 🚀
+## 41 Days Completed 🚀
 
-**SQL Fundamentals → Advanced SQL → Business Analytics → Customer Analytics → Customer Retention → Customer Lifetime Value → RFM Customer Segmentation → Customer Segment Performance → Customer Segment Retention & Churn Risk → Customer Cohort & Retention Trend Analysis → Product Analytics → Product Purchase Behavior → Product Customer Affinity → Cross-Selling → Customer-Product Purchase Analysis → Product Recommendations → Customer Purchase Journey & Basket Analysis → Business Insights**
+**SQL Fundamentals → Advanced SQL → Business Analytics → Customer Analytics → Customer Retention → Customer Lifetime Value → RFM Customer Segmentation → Customer Segment Performance → Customer Segment Retention & Churn Risk → Customer Cohort & Retention Trend Analysis → Customer Lifecycle & Repeat Purchase Analysis → Product Analytics → Product Purchase Behavior → Product Customer Affinity → Cross-Selling → Customer-Product Purchase Analysis → Product Recommendations → Customer Purchase Journey & Basket Analysis → Business Insights**
 
 The project now demonstrates a broad practical SQL workflow suitable for showcasing **Data Analyst, Business Analyst, and SQL-focused portfolio skills**.
 
@@ -1102,8 +1229,8 @@ The project now demonstrates a broad practical SQL workflow suitable for showcas
 The next stage of the project can move toward more advanced:
 
 * Customer lifecycle analytics
-* Retention strategy
-* Churn analysis
+* Advanced retention strategy
+* Churn prediction concepts
 * Revenue forecasting
 * Customer revenue forecasting
 * Product demand analysis
@@ -1111,8 +1238,9 @@ The next stage of the project can move toward more advanced:
 * Dashboard-oriented analytics
 * Management-level business analysis
 * Executive business reporting
+* Customer behavior forecasting
 
-**Next Milestone: Day 41 → 41/55 🔥**
+**Next Milestone: Day 42 → 42/55 🔥**
 
 ---
 
