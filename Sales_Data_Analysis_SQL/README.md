@@ -1,6 +1,6 @@
 # 📊 Sales Data Analysis Using SQL
 
-A hands-on SQL portfolio project focused on **relational database design, advanced SQL analytics, query optimization, customer analytics, product analytics, business intelligence, customer retention, cohort analysis, customer lifecycle analysis, repeat purchase analysis, purchase frequency analysis, and business reporting** using MySQL.
+A hands-on SQL portfolio project focused on **relational database design, advanced SQL analytics, query optimization, customer analytics, product analytics, business intelligence, customer retention, cohort analysis, customer lifecycle analysis, repeat purchase analysis, purchase frequency analysis, revenue forecasting, monthly sales projection, and business reporting** using MySQL.
 
 This project simulates a real-world sales management system and demonstrates practical SQL skills relevant to **Data Analyst, Business Analyst, and SQL Developer roles**.
 
@@ -27,97 +27,22 @@ The project covers:
 * Business KPI analysis
 * Customer segmentation
 * RFM customer segmentation
-* Customer segment performance analysis
-* Segment revenue analysis
-* Segment customer distribution
-* Segment order analysis
-* Average revenue per customer by segment
-* Average order value by segment
-* Segment purchase frequency
-* Segment revenue contribution
-* Top customers within RFM segments
-* Champion segment performance
-* At-Risk segment revenue analysis
-* Segment performance ranking
-* Segment business summary
-* Customer retention analysis
-* Customer churn analysis
-* Customer churn risk indicators
-* At-Risk customer identification
-* Lost customer identification
-* Champion retention analysis
-* Loyal customer retention analysis
-* Customer inactivity analysis
-* Customer lifetime analysis
-* Revenue at risk analysis
-* Segment retention ranking
-* Customer retention strategy
-* Customer Lifetime Value
-* Sales trend analysis
-* Product performance analysis
-* Sales profitability analysis
-* Customer revenue contribution
-* Customer cohort analysis
-* Cohort retention analysis
-* Monthly customer activity
-* Month-1, Month-2, and Month-3 retention
-* Customer purchase frequency
-* Product purchase behavior
-* Product customer reach
-* Product revenue ranking
-* Product revenue contribution
-* Product performance classification
-* Product customer affinity
-* Product pair analysis
-* Cross-selling analysis
-* Customer-product purchase analysis
-* Customer-product revenue analysis
-* Customer-product purchase frequency
-* Customer cross-selling analysis
-* Product recommendation analysis
-* Product affinity scoring
-* Revenue opportunity analysis
-* Customer purchase journey analysis
-* First and last purchase analysis
-* Purchase gap analysis
-* Basket size analysis
+* Customer retention and churn analysis
+* Cohort and lifecycle analysis
 * Repeat purchase analysis
-* Customer lifetime revenue analysis
-* Customer total orders analysis
-* Customer average order value
-* Customer revenue ranking
-* High-value customer identification
-* Customer revenue contribution percentage
-* Customer value classification
-* Revenue concentration analysis
-* RFM recency analysis
-* RFM frequency analysis
-* RFM monetary analysis
-* RFM scoring
-* Champion customer identification
-* At-risk customer identification
-* Customer segment classification
-* Customer lifecycle analysis
-* Customer first purchase analysis
-* Customer second purchase analysis
-* Days to second purchase
-* Repeat purchase rate
-* Purchase interval analysis
-* Customer lifecycle stage classification
-* Repeat customer revenue analysis
-* Repeat vs one-time customer comparison
-* Loyal customer identification
-* Customer lifecycle ranking
-* Customer purchase frequency analysis
-* Monthly orders per customer
-* Average days between purchases
-* Purchase interval distribution
-* High-frequency customer identification
-* Low-frequency customer identification
-* Purchase frequency classification
-* Frequency category distribution
-* Purchase frequency vs revenue analysis
-* Top customers by purchase frequency
+* Purchase frequency analysis
+* Customer Lifetime Value analysis
+* Product purchase behavior
+* Product affinity and cross-selling
+* Customer-product analysis
+* Customer purchase journey analysis
+* Basket size analysis
+* Monthly revenue analysis
+* Revenue growth analysis
+* Month-over-month comparison
+* Sales trend analysis
+* Monthly sales projection
+* Revenue forecasting concepts
 * Business intelligence
 * Business reporting
 
@@ -132,64 +57,20 @@ The main objectives of this project are to:
 * Analyze customer purchasing behavior.
 * Analyze product sales and revenue performance.
 * Calculate important business KPIs.
-* Perform customer segmentation.
-* Perform RFM customer segmentation.
-* Analyze customer retention and lifetime value.
-* Identify sales trends and business patterns.
-* Analyze customer revenue contribution.
-* Identify high-value customers.
-* Analyze customer churn.
-* Perform customer cohort and retention analysis.
-* Identify repeat, one-time, and loyal customers.
-* Analyze customer purchase frequency.
-* Analyze product purchasing behavior.
-* Identify high-demand and high-revenue products.
-* Analyze product customer reach.
-* Analyze product affinity and product relationships.
-* Identify cross-selling opportunities.
-* Analyze customer-product purchasing relationships.
-* Calculate product affinity scores.
-* Generate product recommendations.
-* Estimate cross-selling revenue opportunities.
-* Analyze customer purchase journeys and purchase frequency.
-* Analyze customer basket size and average order value.
-* Calculate customer lifetime revenue.
-* Analyze customer lifetime duration.
-* Rank customers by lifetime revenue.
-* Identify top high-value customers.
-* Calculate customer revenue contribution percentage.
-* Classify customers based on lifetime value.
-* Analyze revenue concentration among customers.
-* Analyze customer recency, frequency, and monetary value.
-* Calculate RFM scores.
-* Identify Champion, Loyal, New, At-Risk, and Lost customers.
-* Analyze customer segment performance.
-* Compare revenue generated by different customer segments.
-* Compare customer counts across RFM segments.
-* Analyze order volume by customer segment.
-* Calculate average revenue per customer by segment.
-* Analyze average order value by segment.
-* Compare purchasing frequency between segments.
-* Calculate segment revenue contribution percentage.
-* Analyze customer retention by RFM segment.
-* Identify churn-risk indicators.
-* Analyze inactive customers and revenue at risk.
-* Perform cohort-based customer retention analysis.
-* Measure Month-1, Month-2, and Month-3 retention.
-* Compare repeat-purchase behavior across cohorts.
-* Rank customer cohorts by revenue.
-* Identify high- and low-performing cohorts.
-* Analyze customer lifecycle stages.
-* Identify customers making second purchases.
-* Calculate days to second purchase.
-* Calculate repeat purchase rate.
-* Analyze purchase intervals.
-* Compare repeat and one-time customer revenue.
-* Identify loyal and highly engaged customers.
-* Rank customers according to purchase frequency.
-* Analyze monthly customer order frequency.
-* Identify high-frequency and low-frequency customers.
-* Compare customer purchase frequency with revenue.
+* Perform customer segmentation and RFM analysis.
+* Analyze customer retention, churn, and customer lifetime value.
+* Perform cohort and customer lifecycle analysis.
+* Identify repeat, one-time, loyal, and highly engaged customers.
+* Analyze customer purchase frequency and purchase intervals.
+* Identify cross-selling and product recommendation opportunities.
+* Analyze customer purchase journeys and basket size.
+* Calculate customer lifetime revenue and revenue contribution.
+* Analyze monthly sales and revenue trends.
+* Compare current-month revenue with previous-month revenue.
+* Calculate monthly revenue growth.
+* Identify the highest- and lowest-revenue months.
+* Analyze monthly customer and order activity.
+* Develop revenue forecasting and sales projection concepts.
 * Convert raw sales data into actionable business insights.
 * Create structured business reports using SQL analysis.
 
@@ -234,6 +115,7 @@ The main objectives of this project are to:
 * Customer lifecycle JOINs
 * Repeat customer revenue JOINs
 * Purchase frequency analysis JOINs
+* Monthly revenue analysis JOINs
 
 ## 📊 SQL Aggregation & Analysis
 
@@ -249,24 +131,22 @@ The main objectives of this project are to:
 * Customer-level aggregation
 * Product-level aggregation
 * Customer-product aggregation
-* Product-pair aggregation
 * Customer lifetime revenue aggregation
 * Revenue contribution calculations
 * RFM metric aggregation
-* Recency calculation
-* Frequency calculation
-* Monetary value calculation
 * Segment-level aggregation
-* Segment KPI analysis
 * Retention rate calculations
 * Churn-risk calculations
 * Revenue-at-risk calculations
-* Inactivity analysis
 * Cohort aggregation
 * Repeat purchase aggregation
 * Customer lifecycle aggregation
 * Purchase frequency aggregation
 * Purchase interval aggregation
+* Monthly revenue aggregation
+* Monthly order aggregation
+* Monthly customer aggregation
+* Revenue growth calculations
 
 ## 🧠 Advanced SQL
 
@@ -291,32 +171,20 @@ The main objectives of this project are to:
 * Retention analysis
 * Customer purchase frequency
 * Product purchase behavior
-* Product ranking
-* Product segmentation
 * Product affinity analysis
-* Product pair analysis
 * Cross-selling analysis
 * Product recommendation analysis
-* Customer-product revenue ranking
 * Customer purchase journey analysis
-* Purchase gap analysis
 * Basket size analysis
 * Customer Lifetime Value analysis
-* Revenue concentration analysis
 * RFM analysis
-* RFM scoring
-* Customer RFM segmentation
 * Customer segment performance analysis
-* Churn-risk classification
-* Customer inactivity analysis
-* Revenue-at-risk analysis
 * Customer lifecycle analysis
 * Repeat purchase analysis
 * Purchase interval analysis
-* Second purchase analysis
-* Customer lifecycle ranking
-* Purchase frequency classification
-* Frequency vs revenue analysis
+* Revenue trend analysis
+* Month-over-month analysis
+* Revenue growth analysis
 
 ## ⚡ SQL Optimization
 
@@ -338,10 +206,7 @@ The main objectives of this project are to:
 * Customer lifetime revenue
 * Customer lifetime duration
 * RFM customer segmentation
-* Customer recency analysis
-* Customer frequency analysis
-* Customer monetary value analysis
-* RFM scoring
+* Customer recency, frequency, and monetary analysis
 * Champion customer identification
 * Loyal customer identification
 * New customer identification
@@ -349,43 +214,20 @@ The main objectives of this project are to:
 * Lost customer identification
 * Customer revenue contribution
 * High-value customer identification
-* Customer ranking
-* Customer value segmentation
 * Customer segment performance
-* Segment revenue analysis
-* Segment customer distribution
-* Segment purchase frequency
-* Segment revenue contribution
 * Customer churn analysis
 * Customer inactivity analysis
 * Revenue-at-risk analysis
 * Customer cohort analysis
 * Cohort retention analysis
-* Monthly customer activity
-* Month-1 retention
-* Month-2 retention
-* Month-3 retention
-* Cohort revenue analysis
-* Cohort repeat-purchase analysis
-* Cohort performance ranking
-* Customer re-engagement analysis
 * Customer lifecycle analysis
-* First purchase analysis
-* Second purchase analysis
+* First and second purchase analysis
 * Days to second purchase
 * Repeat purchase rate
 * Purchase interval analysis
-* Lifecycle stage classification
-* Repeat customer revenue
-* One-time customer analysis
-* Loyal customer analysis
-* Highly engaged customer analysis
-* Customer lifecycle ranking
 * Monthly customer purchase frequency
-* High-frequency customer analysis
-* Low-frequency customer analysis
-* Frequency category distribution
-* Purchase frequency vs revenue
+* High-frequency and low-frequency customer analysis
+* Purchase frequency versus revenue analysis
 
 ## 📦 Product Analytics
 
@@ -395,16 +237,12 @@ The main objectives of this project are to:
 * Product performance classification
 * Product revenue contribution
 * Top-selling products
-* Product profitability analysis
 * Product purchase behavior
 * Product customer reach
 * Product purchase frequency
 * Customer-product analysis
 * Product affinity analysis
 * Product pair analysis
-* Product pair customer count
-* Product pair revenue analysis
-* Product affinity ranking
 * Cross-selling opportunities
 * Product recommendations
 * Product bundle opportunities
@@ -419,7 +257,6 @@ The main objectives of this project are to:
 * Customer Lifetime Value
 * Customer lifetime revenue
 * Revenue contribution
-* Customer revenue contribution
 * Customer revenue contribution percentage
 * Customer purchase frequency
 * Product revenue
@@ -427,31 +264,26 @@ The main objectives of this project are to:
 * Average customer revenue
 * Customer retention rate
 * Repeat customer rate
-* Product revenue contribution
-* Product revenue ranking
-* Customer-product revenue
-* Product pair revenue
-* Cross-selling revenue opportunity
 * Customer basket size
 * Average products per order
-* Customer revenue ranking
-* Customer value classification
 * Revenue concentration
-* Cumulative revenue contribution
-* High-value customer analysis
-* RFM monetary value
-* Customer segment revenue
 * Segment revenue contribution
-* Average revenue per customer
-* Segment average order value
-* Segment purchase frequency
 * Revenue-at-risk analysis
-* Inactive customer revenue
 * Repeat customer revenue
 * One-time customer revenue
 * Customer lifecycle revenue
 * Purchase frequency revenue analysis
-* Average customer revenue by frequency category
+* Monthly revenue
+* Monthly order count
+* Monthly customer count
+* Monthly units sold
+* Monthly average order value
+* Revenue growth percentage
+* Month-over-month revenue change
+* Highest-revenue month
+* Lowest-revenue month
+* Revenue forecasting concepts
+* Monthly sales projection
 
 ## 📈 Sales Trend & Time-Series Analysis
 
@@ -459,8 +291,14 @@ The main objectives of this project are to:
 * Monthly sales trends
 * Revenue trends
 * Order trends
+* Customer activity trends
 * Time-series analysis
 * Period-based performance analysis
+* Monthly revenue comparison
+* Month-over-month revenue growth
+* Revenue change percentage
+* Monthly sales projection
+* Revenue forecasting concepts
 
 ## 🔄 Cohort & Retention Analysis
 
@@ -471,21 +309,15 @@ The main objectives of this project are to:
 * Monthly customer activity
 * Customer retention analysis
 * Cohort retention rate
-* Month 0 retention
-* Month 1 retention
-* Month 2 retention
-* Month 3 retention
+* Month-0 retention
+* Month-1 retention
+* Month-2 retention
+* Month-3 retention
 * Repeat customer analysis
-* One-time customer analysis
 * Cohort revenue analysis
-* Cohort repeat-purchase analysis
 * Cohort performance ranking
-* High-performing cohort identification
-* Low-performing cohort identification
-* Customer retention segmentation
 * Customer inactivity analysis
 * Churn-risk analysis
-* Retention ranking
 * Revenue-at-risk analysis
 * Customer re-engagement opportunities
 
@@ -500,7 +332,6 @@ The main objectives of this project are to:
 * Product performance classification
 * Product sales segmentation
 * Customer-product analysis
-* Unique customer analysis
 * High-volume product identification
 * High-performing product identification
 
@@ -514,10 +345,8 @@ The main objectives of this project are to:
 * Product affinity ranking
 * High-affinity product identification
 * Cross-selling opportunities
-* Top cross-selling product pairs
-* Customer purchasing relationships
-* Product relationship analysis
-* Customer-based product recommendations
+* Product recommendations
+* Product bundle opportunities
 * Cross-selling revenue opportunity
 
 ## 📌 Customer RFM Segmentation
@@ -539,7 +368,6 @@ The main objectives of this project are to:
 * Potential customer identification
 * Customer value-based targeting
 * Customer engagement analysis
-* Customer retention strategy
 * Targeted marketing opportunities
 
 ## 📊 Customer Segment Performance Analysis
@@ -554,25 +382,23 @@ The main objectives of this project are to:
 * Revenue contribution percentage by segment
 * Top customers within each RFM segment
 * Champion segment performance
-* At-Risk segment revenue analysis
+* At-risk segment revenue analysis
 * Segment performance ranking
 * Segment KPI analysis
 * Customer segment comparison
 * Segment prioritization
-* Customer value comparison
 * Revenue opportunity by segment
 * Retention opportunity by segment
 
 ## 🔄 Customer Segment Retention & Churn Risk Analysis
 
 * Customer retention by RFM segment
-* Repeat vs one-time customers by segment
+* Repeat versus one-time customers by segment
 * Customer churn-risk indicators
-* At-Risk customer count
+* At-risk customer count
 * Lost customer count
 * Champion retention performance
 * Loyal customer retention performance
-* Customer lifetime analysis
 * Customer inactivity analysis
 * Revenue at risk from inactive customers
 * Segment retention ranking
@@ -581,7 +407,6 @@ The main objectives of this project are to:
 * Retention prioritization
 * Revenue protection
 * Churn prevention
-* Segment-specific retention strategies
 
 ## 👤 Customer Lifecycle & Repeat Purchase Analysis
 
@@ -596,12 +421,11 @@ The main objectives of this project are to:
 * Customer lifecycle stage classification
 * Repeat customer revenue
 * One-time customer revenue
-* Repeat vs one-time customer comparison
+* Repeat versus one-time customer comparison
 * Loyal customer identification
 * Highly engaged customer identification
 * Customer lifecycle ranking
 * Customer lifetime duration
-* Customer engagement analysis
 * Customer loyalty analysis
 * Repeat-purchase opportunities
 * Customer re-engagement opportunities
@@ -628,7 +452,7 @@ These lifecycle thresholds are business-analysis rules and can be adjusted depen
 * Low-frequency customer identification
 * Purchase frequency classification
 * Frequency category distribution
-* Purchase frequency vs revenue
+* Purchase frequency versus revenue
 * Top customers by purchase frequency
 * Customer purchase frequency ranking
 * Customer order frequency analysis
@@ -648,41 +472,48 @@ These lifecycle thresholds are business-analysis rules and can be adjusted depen
 
 These frequency categories are business-analysis rules and can be adjusted according to the business context.
 
+## 📈 Customer Revenue Forecasting & Monthly Sales Projection Analysis
+
+* Monthly revenue analysis
+* Monthly order analysis
+* Monthly customer count
+* Monthly units sold
+* Monthly average order value
+* Monthly revenue growth
+* Previous-month revenue comparison
+* Month-over-month revenue change
+* Monthly revenue growth percentage
+* Highest-revenue month identification
+* Lowest-revenue month identification
+* Monthly revenue forecasting summary
+* Revenue trend identification
+* Monthly sales projection
+* Historical revenue comparison
+* Business forecasting concepts
+* Revenue planning
+* Sales target planning
+* Future business performance estimation
+
 ## 💼 Business Intelligence
 
 * Business performance analysis
 * Customer segmentation
-* RFM customer segmentation
-* Customer segment performance
-* Customer segment retention
+* Customer retention
+* Customer churn analysis
+* Cohort analysis
 * Product performance
 * Revenue contribution analysis
 * Business KPI analysis
 * Customer analytics
 * Product analytics
-* Customer churn analysis
-* Cohort analysis
-* Retention analysis
-* Churn-risk analysis
-* Product purchase behavior
-* Product customer affinity
 * Cross-selling analysis
 * Product recommendation analysis
-* Customer-product analysis
 * Customer purchase journey
 * Basket behavior analysis
-* Repeat purchase analysis
-* Customer lifecycle analysis
-* Customer lifetime analysis
 * Customer Lifetime Value
 * Revenue concentration analysis
-* High-value customer identification
-* Segment revenue analysis
-* Segment performance ranking
-* Segment retention ranking
-* Revenue-at-risk analysis
-* Customer purchase frequency
-* Repeat behavior analysis
+* Revenue forecasting
+* Monthly sales projection
 * Actionable business insights
 
 ## 🔧 Development & Version Control
@@ -697,41 +528,42 @@ These frequency categories are business-analysis rules and can be adjusted accor
 
 # 📅 Project Progress
 
-| Phase                                                      |        Days | Status             |
-| ---------------------------------------------------------- | ----------: | ------------------ |
-| SQL & Database Fundamentals                                |     Day 1–7 | ✅ Completed        |
-| Intermediate SQL Analysis                                  |    Day 8–14 | ✅ Completed        |
-| Advanced SQL & Optimization                                |   Day 15–17 | ✅ Completed        |
-| Customer & Business Analytics                              |   Day 18–22 | ✅ Completed        |
-| Sales Trend & Time-Series Analysis                         |      Day 23 | ✅ Completed        |
-| Product Performance Analysis                               |      Day 24 | ✅ Completed        |
-| Sales Profitability Analysis                               |      Day 25 | ✅ Completed        |
-| Customer Revenue Contribution Analysis                     |      Day 26 | ✅ Completed        |
-| Customer Churn Analysis                                    |      Day 27 | ✅ Completed        |
-| Customer Cohort & Retention Analysis                       |      Day 28 | ✅ Completed        |
-| Customer Purchase Frequency Analysis                       |      Day 29 | ✅ Completed        |
-| Day 30 Analysis                                            |      Day 30 | ✅ Completed        |
-| Product Purchase Behavior Analysis                         |      Day 31 | ✅ Completed        |
-| Product Customer Affinity & Cross-Selling                  |      Day 32 | ✅ Completed        |
-| Customer-Product Purchase Analysis                         |      Day 33 | ✅ Completed        |
-| Customer Cross-Selling & Product Recommendation Analysis   |      Day 34 | ✅ Completed        |
-| Customer Purchase Journey & Basket Analysis                |      Day 35 | ✅ Completed        |
-| Customer Lifetime Value & Revenue Contribution Analysis    |      Day 36 | ✅ Completed        |
-| Customer RFM Segmentation Analysis                         |      Day 37 | ✅ Completed        |
-| Customer Segment Performance & Revenue Analysis            |      Day 38 | ✅ Completed        |
-| Customer Segment Retention & Churn Risk Analysis           |      Day 39 | ✅ Completed        |
-| Customer Cohort & Retention Trend Analysis                 |      Day 40 | ✅ Completed        |
-| Customer Lifecycle & Repeat Purchase Analysis              |      Day 41 | ✅ Completed        |
-| **Customer Purchase Frequency & Repeat Behavior Analysis** |  **Day 42** | **✅ Completed**    |
-| **Overall Progress**                                       | **42 Days** | **🚀 In Progress** |
+| Phase                                                                |        Days | Status             |
+| -------------------------------------------------------------------- | ----------: | ------------------ |
+| SQL & Database Fundamentals                                          |     Day 1–7 | ✅ Completed        |
+| Intermediate SQL Analysis                                            |    Day 8–14 | ✅ Completed        |
+| Advanced SQL & Optimization                                          |   Day 15–17 | ✅ Completed        |
+| Customer & Business Analytics                                        |   Day 18–22 | ✅ Completed        |
+| Sales Trend & Time-Series Analysis                                   |      Day 23 | ✅ Completed        |
+| Product Performance Analysis                                         |      Day 24 | ✅ Completed        |
+| Sales Profitability Analysis                                         |      Day 25 | ✅ Completed        |
+| Customer Revenue Contribution Analysis                               |      Day 26 | ✅ Completed        |
+| Customer Churn Analysis                                              |      Day 27 | ✅ Completed        |
+| Customer Cohort & Retention Analysis                                 |      Day 28 | ✅ Completed        |
+| Customer Purchase Frequency Analysis                                 |      Day 29 | ✅ Completed        |
+| Day 30 Analysis                                                      |      Day 30 | ✅ Completed        |
+| Product Purchase Behavior Analysis                                   |      Day 31 | ✅ Completed        |
+| Product Customer Affinity & Cross-Selling                            |      Day 32 | ✅ Completed        |
+| Customer-Product Purchase Analysis                                   |      Day 33 | ✅ Completed        |
+| Customer Cross-Selling & Product Recommendation Analysis             |      Day 34 | ✅ Completed        |
+| Customer Purchase Journey & Basket Analysis                          |      Day 35 | ✅ Completed        |
+| Customer Lifetime Value & Revenue Contribution Analysis              |      Day 36 | ✅ Completed        |
+| Customer RFM Segmentation Analysis                                   |      Day 37 | ✅ Completed        |
+| Customer Segment Performance & Revenue Analysis                      |      Day 38 | ✅ Completed        |
+| Customer Segment Retention & Churn Risk Analysis                     |      Day 39 | ✅ Completed        |
+| Customer Cohort & Retention Trend Analysis                           |      Day 40 | ✅ Completed        |
+| Customer Lifecycle & Repeat Purchase Analysis                        |      Day 41 | ✅ Completed        |
+| Customer Purchase Frequency & Repeat Behavior Analysis               |      Day 42 | ✅ Completed        |
+| **Customer Revenue Forecasting & Monthly Sales Projection Analysis** |  **Day 43** | **✅ Completed**    |
+| **Overall Progress**                                                 | **43 Days** | **🚀 In Progress** |
 
 ---
 
 # 🏆 Current Milestone
 
-## 42 Days of SQL Business Analysis Completed 🎉
+## 43 Days of SQL Business Analysis Completed 🎉
 
-The project has progressed from basic relational database operations to advanced SQL analytics, customer analytics, product analytics, RFM segmentation, customer segment performance, retention and churn-risk analysis, cohort analysis, customer lifecycle analysis, repeat-purchase analysis, and detailed customer purchase-frequency analysis.
+The project has progressed from basic relational database operations to advanced SQL analytics, customer analytics, product analytics, RFM segmentation, customer segment performance, retention and churn-risk analysis, cohort analysis, customer lifecycle analysis, repeat-purchase analysis, purchase-frequency analysis, and monthly revenue forecasting analysis.
 
 ### Current Learning Journey
 
@@ -803,6 +635,10 @@ The project has progressed from basic relational database operations to advanced
 
 ↓
 
+**Customer Revenue Forecasting & Monthly Sales Projection Analysis**
+
+↓
+
 **Sales Trend Analysis**
 
 ↓
@@ -849,14 +685,14 @@ The project has progressed from basic relational database operations to advanced
 
 # 🛠️ Technologies Used
 
-| Technology          | Purpose                                   |
-| ------------------- | ----------------------------------------- |
-| **MySQL 8.0**       | Database management and SQL analysis      |
-| **MySQL Workbench** | Database development and query execution  |
-| **SQL**             | Data querying, analysis, and optimization |
-| **Git**             | Version control                           |
-| **GitHub**          | Project management and portfolio          |
-| **VS Code**         | SQL development and documentation         |
+| Technology      | Purpose                                   |
+| --------------- | ----------------------------------------- |
+| MySQL 8.0       | Database management and SQL analysis      |
+| MySQL Workbench | Database development and query execution  |
+| SQL             | Data querying, analysis, and optimization |
+| Git             | Version control                           |
+| GitHub          | Project management and portfolio          |
+| VS Code         | SQL development and documentation         |
 
 ---
 
@@ -934,15 +770,16 @@ Sales_Data_Analysis_SQL/
 │   ├── customer_segment_retention_analysis.sql
 │   ├── customer_cohort_retention_analysis.sql
 │   ├── customer_lifecycle_analysis.sql
-│   └── customer_purchase_frequency_repeat_behavior_analysis.sql
+│   ├── customer_purchase_frequency_repeat_behavior_analysis.sql
+│   └── customer_revenue_forecasting_analysis.sql
 │
 ├── Screenshots/
 │   ├── Day 1/
 │   ├── Day 2/
 │   ├── ...
-│   ├── Day 40/
 │   ├── Day 41/
-│   └── Day 42/
+│   ├── Day 42/
+│   └── Day 43/
 │
 ├── Presentation/
 │
@@ -973,7 +810,8 @@ Sales_Data_Analysis_SQL/
 │   ├── Day39_Customer_Segment_Retention_Analysis.md
 │   ├── Day40_Customer_Cohort_Retention_Analysis.md
 │   ├── Day41_Customer_Lifecycle_Analysis.md
-│   └── Day42 _Customer_Purchase_Frequency_&_Repeat_Behavior_Analysis.md
+│   ├── Day42_Customer_Purchase_Frequency_Repeat_Behavior_Analysis.md
+│   └── Day43_Customer_Revenue_Forecasting_Analysis.md
 │
 └── README.md
 ```
@@ -986,237 +824,61 @@ This project demonstrates an end-to-end progression from raw relational data to 
 
 ```text
 Raw Sales Data
-
         ↓
-
 Database Design
-
         ↓
-
 SQL Fundamentals
-
         ↓
-
 JOINs & Aggregations
-
         ↓
-
 Advanced SQL
-
         ↓
-
 Query Optimization
-
         ↓
-
 Business KPIs
-
         ↓
-
 Customer Analytics
-
         ↓
-
-Customer Behavior
-
-        ↓
-
 Customer Retention
-
         ↓
-
 Customer Lifetime Value
-
         ↓
-
 RFM Customer Segmentation
-
         ↓
-
-Champion & At-Risk Customer Identification
-
-        ↓
-
 Customer Segment Performance
-
         ↓
-
-Segment Revenue Analysis
-
-        ↓
-
-Segment KPI Comparison
-
-        ↓
-
-Segment Performance Ranking
-
-        ↓
-
 Customer Segment Retention
-
         ↓
-
 Customer Churn Risk
-
         ↓
-
-Customer Inactivity Analysis
-
+Customer Cohort Analysis
         ↓
-
-Revenue-at-Risk Analysis
-
-        ↓
-
-Retention Strategy
-
-        ↓
-
-Customer Cohort Identification
-
-        ↓
-
-Monthly Cohort Activity
-
-        ↓
-
-Cohort Retention Rate
-
-        ↓
-
-Month-1 / Month-2 / Month-3 Retention
-
-        ↓
-
-Cohort Revenue Analysis
-
-        ↓
-
-Cohort Performance Ranking
-
-        ↓
-
 Customer Lifecycle Analysis
-
         ↓
-
-First Purchase
-
+Repeat Purchase Analysis
         ↓
-
-Second Purchase
-
-        ↓
-
-Days to Second Purchase
-
-        ↓
-
-Repeat Purchase Rate
-
-        ↓
-
-Purchase Interval Analysis
-
-        ↓
-
-Lifecycle Stage Classification
-
-        ↓
-
-Repeat vs One-Time Customer Analysis
-
-        ↓
-
-Loyal Customer Identification
-
-        ↓
-
-Customer Lifecycle Ranking
-
-        ↓
-
 Customer Purchase Frequency
-
         ↓
-
-Monthly Orders per Customer
-
+Monthly Revenue Analysis
         ↓
-
-Average Days Between Purchases
-
+Revenue Growth Analysis
         ↓
-
-Purchase Interval Distribution
-
+Month-over-Month Comparison
         ↓
-
-High-Frequency Customer Identification
-
+Monthly Sales Projection
         ↓
-
-Low-Frequency Customer Identification
-
+Revenue Forecasting Concepts
         ↓
-
-Frequency Category Classification
-
+Product Analytics
         ↓
-
-Purchase Frequency vs Revenue
-
+Product Affinity
         ↓
-
-Top Customers by Purchase Frequency
-
-        ↓
-
-Sales Trend Analysis
-
-        ↓
-
-Product Performance
-
-        ↓
-
-Sales Profitability
-
-        ↓
-
-Customer Revenue Contribution
-
-        ↓
-
-Product Purchase Behavior
-
-        ↓
-
-Product Customer Affinity
-
-        ↓
-
 Cross-Selling Analysis
-
         ↓
-
-Customer-Product Purchase Analysis
-
-        ↓
-
 Product Recommendations
-
         ↓
-
-Customer Purchase Journey & Basket Analysis
-
+Customer Purchase Journey
         ↓
-
-Customer Lifetime Value & Revenue Contribution
-
-        ↓
-
 Business Insights
 ```
 
@@ -1239,68 +901,28 @@ Through this project, the following practical skills are demonstrated:
 * KPI analysis
 * Customer segmentation
 * RFM analysis
-* RFM scoring
-* Recency analysis
-* Frequency analysis
-* Monetary analysis
-* Champion customer identification
-* At-risk customer identification
-* Lost customer identification
-* Customer targeting
-* Customer segment performance analysis
-* Segment revenue analysis
-* Segment KPI comparison
-* Segment performance ranking
 * Customer retention analysis
-* Churn analysis
 * Churn-risk analysis
-* Customer inactivity analysis
-* Revenue-at-risk analysis
-* Customer lifecycle analysis
-* First purchase analysis
-* Second purchase analysis
-* Days-to-second-purchase analysis
-* Repeat purchase rate analysis
-* Purchase interval analysis
-* Lifecycle stage classification
-* Repeat customer revenue analysis
-* One-time customer analysis
-* Loyal customer identification
-* Highly engaged customer identification
-* Customer lifecycle ranking
 * Cohort analysis
-* Cohort retention analysis
-* Monthly customer activity
-* Month-1 retention analysis
-* Month-2 retention analysis
-* Month-3 retention analysis
-* Cohort revenue analysis
-* Cohort performance ranking
-* Purchase frequency analysis
-* Monthly customer order analysis
+* Customer lifecycle analysis
+* Repeat purchase analysis
 * Purchase interval analysis
-* High-frequency customer analysis
-* Low-frequency customer analysis
-* Purchase frequency classification
-* Frequency category distribution
-* Purchase frequency vs revenue analysis
-* Product purchase behavior analysis
-* Product ranking
-* Product segmentation
-* Product customer affinity
-* Product pair analysis
-* Cross-selling analysis
-* Product recommendation analysis
-* Customer-product analysis
-* Customer-product revenue analysis
+* Purchase frequency analysis
 * Customer purchase journey analysis
-* Purchase gap analysis
 * Basket size analysis
-* Average order value analysis
 * Customer Lifetime Value analysis
 * Customer revenue ranking
 * Revenue concentration analysis
-* Query optimization
+* Product affinity analysis
+* Cross-selling analysis
+* Product recommendation analysis
+* Monthly revenue analysis
+* Monthly sales analysis
+* Revenue growth analysis
+* Month-over-month comparison
+* Sales trend analysis
+* Monthly sales projection
+* Revenue forecasting concepts
 * Business intelligence
 * Business reporting
 * Git version control
@@ -1312,36 +934,36 @@ Through this project, the following practical skills are demonstrated:
 
 **Current Status: 🟢 Active**
 
-**Completed: 42 Days**
+**Completed: 43 Days**
 
 **Primary Focus: SQL Data Analysis & Business Intelligence**
 
-The project continues to expand toward advanced business analytics, customer lifecycle analysis, repeat-purchase analysis, purchase-frequency analysis, retention strategy, product analytics, product affinity, cross-selling, customer-product analysis, product recommendations, customer purchase journey analysis, basket analysis, customer lifetime value analysis, RFM segmentation, customer segment performance, churn-risk analysis, and cohort retention analysis.
+The project continues to expand toward advanced business analytics, customer lifecycle analysis, repeat-purchase analysis, purchase-frequency analysis, retention strategy, product analytics, product affinity, cross-selling, customer-product analysis, product recommendations, customer purchase journey analysis, basket analysis, customer lifetime value analysis, RFM segmentation, customer segment performance, churn-risk analysis, cohort retention analysis, monthly revenue analysis, sales trend analysis, and revenue forecasting concepts.
 
 ---
 
-# 🚀 Day 42 Achievement
+# 🚀 Day 43 Achievement
 
-## Day 42 — Customer Purchase Frequency & Repeat Behavior Analysis Completed ✅
+## Day 43 — Customer Revenue Forecasting & Monthly Sales Projection Analysis Completed ✅
 
-Day 42 has been successfully completed as part of the structured SQL business-analysis journey.
+Day 43 has been successfully completed as part of the structured SQL business-analysis journey.
 
-The Day 42 analysis focuses on understanding **how frequently customers purchase, how quickly they return, which customers demonstrate strong purchasing engagement, and how purchase frequency relates to revenue**.
+The Day 43 analysis focuses on understanding **monthly sales performance, revenue growth, order trends, customer activity, month-over-month changes, and revenue forecasting concepts**.
 
 ### Key Analyses
 
-1. Customer Purchase Frequency
-2. Orders per Month per Customer
-3. Average Days Between Purchases
-4. Repeat Purchase Rate
-5. Purchase Interval Distribution
-6. High-Frequency Customers
-7. Low-Frequency Customers
-8. Customer Purchase Frequency Classification
-9. Frequency Category Distribution
-10. Purchase Frequency vs Revenue
-11. Top Customers by Purchase Frequency
-12. Final Customer Purchase Frequency Summary
+1. Monthly Revenue Analysis
+2. Monthly Order Analysis
+3. Monthly Customer Count
+4. Monthly Units Sold
+5. Monthly Average Order Value
+6. Monthly Revenue Growth
+7. Previous Month Revenue Comparison
+8. Month-over-Month Revenue Change
+9. Monthly Revenue Growth Percentage
+10. Highest Revenue Month Identification
+11. Lowest Revenue Month Identification
+12. Final Monthly Revenue Forecasting Summary
 
 ### SQL Techniques Used
 
@@ -1356,75 +978,59 @@ The Day 42 analysis focuses on understanding **how frequently customers purchase
 * MAX()
 * ROUND()
 * DATE_FORMAT()
-* DATEDIFF()
-* CASE statements
 * LAG()
-* RANK()
+* CASE statements
 * Window Functions
-* Customer-level aggregation
+* Monthly aggregation
 * Revenue calculations
 * Percentage calculations
-* Purchase interval calculations
-* Frequency classification
-* Frequency-based segmentation
-* Revenue comparison
-
-### Customer Purchase Frequency Categories
-
-Customers are classified according to their number of orders:
-
-* **One-Time:** 1 order
-* **Occasional:** 2–3 orders
-* **Regular:** 4–6 orders
-* **Frequent:** 7+ orders
-
-These thresholds are business-analysis rules and can be adjusted depending on the business context.
+* Month-over-month comparison
+* Revenue trend analysis
+* Forecasting concepts
 
 ### Business Analysis Focus
 
-Day 42 answers important business questions such as:
+Day 43 answers important business questions such as:
 
-* How frequently does each customer purchase?
-* How many orders does each customer place per month?
-* What is the average time between customer purchases?
-* What percentage of customers are repeat customers?
-* What are the most common purchase intervals?
-* Which customers purchase frequently?
-* Which customers have low purchase frequency?
-* How should customers be classified based on purchase frequency?
-* Which frequency category contains the most customers?
-* Do frequent customers generate more revenue?
-* Who are the top customers by purchase frequency?
-* Which customers should receive loyalty campaigns?
-* Which customers should receive re-engagement campaigns?
+* How much revenue was generated each month?
+* How many orders were placed each month?
+* How many customers purchased each month?
+* How many units were sold each month?
+* What was the average order value each month?
+* How did revenue change compared with the previous month?
+* Which months experienced revenue growth?
+* Which months experienced revenue decline?
+* What was the monthly revenue growth percentage?
+* Which month generated the highest revenue?
+* Which month generated the lowest revenue?
+* What revenue trends can support future business planning?
 
 ### Business Applications
 
-Customer purchase-frequency analysis can support:
+Monthly revenue forecasting analysis can support:
 
-* Customer retention
-* Repeat-purchase strategy
-* Loyalty programs
-* Customer engagement
-* Re-engagement campaigns
-* Personalized marketing
-* Customer segmentation
-* CRM strategy
-* Purchase-timing optimization
-* Revenue growth
-* High-frequency customer targeting
-* Low-frequency customer reactivation
-* Customer behavior monitoring
+* Revenue planning
+* Sales forecasting
+* Monthly performance monitoring
+* Business budgeting
+* Sales target planning
+* Revenue trend identification
+* Growth measurement
+* Performance comparison
+* Management reporting
+* Financial planning
+* Business decision-making
+* Future sales strategy
 
-Day 42 extends the previous customer lifecycle analysis by focusing specifically on **purchase frequency, purchase intervals, customer engagement, and the relationship between purchase frequency and revenue**.
+Day 43 extends the previous customer-focused analysis by examining **monthly revenue performance, sales trends, revenue growth, month-over-month comparisons, and forecasting-oriented business insights**.
 
 ---
 
 # 🏁 Portfolio Progress
 
-## 42 Days Completed 🚀
+## 43 Days Completed 🚀
 
-**SQL Fundamentals → Advanced SQL → Business Analytics → Customer Analytics → Customer Retention → Customer Lifetime Value → RFM Customer Segmentation → Customer Segment Performance → Customer Segment Retention & Churn Risk → Customer Cohort & Retention Trend Analysis → Customer Lifecycle & Repeat Purchase Analysis → Customer Purchase Frequency & Repeat Behavior Analysis → Product Analytics → Product Purchase Behavior → Product Customer Affinity → Cross-Selling → Customer-Product Purchase Analysis → Product Recommendations → Customer Purchase Journey & Basket Analysis → Business Insights**
+**SQL Fundamentals → Advanced SQL → Business Analytics → Customer Analytics → Customer Retention → Customer Lifetime Value → RFM Customer Segmentation → Customer Segment Performance → Customer Segment Retention & Churn Risk → Customer Cohort & Retention Trend Analysis → Customer Lifecycle & Repeat Purchase Analysis → Customer Purchase Frequency & Repeat Behavior Analysis → Customer Revenue Forecasting & Monthly Sales Projection Analysis → Product Analytics → Product Purchase Behavior → Product Customer Affinity → Cross-Selling → Customer-Product Purchase Analysis → Product Recommendations → Customer Purchase Journey & Basket Analysis → Business Insights**
 
 The project now demonstrates a broad practical SQL workflow suitable for showcasing **Data Analyst, Business Analyst, and SQL-focused portfolio skills**.
 
@@ -1434,19 +1040,19 @@ The project now demonstrates a broad practical SQL workflow suitable for showcas
 
 The next stage of the project can move toward more advanced:
 
-* Customer lifecycle analytics
-* Advanced retention strategy
-* Churn prediction concepts
-* Revenue forecasting
-* Customer revenue forecasting
-* Product demand analysis
+* Advanced revenue forecasting
+* Sales prediction concepts
+* Product demand forecasting
+* Customer behavior forecasting
 * Advanced business KPIs
 * Dashboard-oriented analytics
 * Management-level business analysis
 * Executive business reporting
-* Customer behavior forecasting
+* Customer segmentation dashboards
+* Revenue performance dashboards
+* Business performance monitoring
 
-**Next Milestone: Day 43 → 43/55 🔥**
+**Next Milestone: Day 44 → 44/55 🔥**
 
 ---
 
