@@ -1,6 +1,6 @@
 # 📊 Sales Data Analysis Using SQL
 
-A hands-on SQL portfolio project focused on **relational database design, advanced SQL analytics, query optimization, customer analytics, product analytics, business intelligence, customer retention, cohort analysis, customer lifecycle analysis, repeat purchase analysis, purchase frequency analysis, revenue forecasting, monthly sales projection, and business reporting** using MySQL.
+A hands-on SQL portfolio project focused on **relational database design, advanced SQL analytics, query optimization, customer analytics, product analytics, business intelligence, customer retention, cohort analysis, customer lifecycle analysis, repeat purchase analysis, purchase frequency analysis, payment status analysis, payment method analysis, customer payment behavior analysis, revenue forecasting, monthly sales projection, and business reporting** using MySQL.
 
 This project simulates a real-world sales management system and demonstrates practical SQL skills relevant to **Data Analyst, Business Analyst, and SQL Developer roles**.
 
@@ -43,6 +43,10 @@ The project covers:
 * Sales trend analysis
 * Monthly sales projection
 * Revenue forecasting concepts
+* Payment status analysis
+* Payment method analysis
+* Customer payment behavior analysis
+* Payment transaction monitoring
 * Business intelligence
 * Business reporting
 
@@ -70,6 +74,9 @@ The main objectives of this project are to:
 * Calculate monthly revenue growth.
 * Identify the highest- and lowest-revenue months.
 * Analyze monthly customer and order activity.
+* Analyze payment methods and payment statuses.
+* Identify customers with pending or failed payments.
+* Analyze customer payment activity and payment behavior.
 * Develop revenue forecasting and sales projection concepts.
 * Convert raw sales data into actionable business insights.
 * Create structured business reports using SQL analysis.
@@ -116,6 +123,8 @@ The main objectives of this project are to:
 * Repeat customer revenue JOINs
 * Purchase frequency analysis JOINs
 * Monthly revenue analysis JOINs
+* Customer payment behavior JOINs
+* Payment transaction analysis JOINs
 
 ## 📊 SQL Aggregation & Analysis
 
@@ -147,6 +156,9 @@ The main objectives of this project are to:
 * Monthly order aggregation
 * Monthly customer aggregation
 * Revenue growth calculations
+* Payment status aggregation
+* Payment method aggregation
+* Customer payment activity aggregation
 
 ## 🧠 Advanced SQL
 
@@ -185,6 +197,10 @@ The main objectives of this project are to:
 * Revenue trend analysis
 * Month-over-month analysis
 * Revenue growth analysis
+* Payment status analysis
+* Payment method ranking
+* Customer payment behavior classification
+* Payment activity ranking
 
 ## ⚡ SQL Optimization
 
@@ -228,6 +244,13 @@ The main objectives of this project are to:
 * Monthly customer purchase frequency
 * High-frequency and low-frequency customer analysis
 * Purchase frequency versus revenue analysis
+* Customer payment behavior analysis
+* Customer payment activity
+* Customer payment status distribution
+* Customer payment method usage
+* Customers with multiple payment methods
+* Customers with pending payments
+* Customers with failed payments
 
 ## 📦 Product Analytics
 
@@ -494,6 +517,50 @@ These frequency categories are business-analysis rules and can be adjusted accor
 * Sales target planning
 * Future business performance estimation
 
+## 💳 PAYMENT STATUS & PAYMENT METHOD ANALYSIS
+
+* Payment method distribution
+* Payment status distribution
+* Payment method and payment status combination
+* Monthly payment activity
+* Monthly payment status summary
+* Payment method usage by month
+* Payment status summary
+* Pending payment order analysis
+* Payment details with order information
+* Payment method ranking
+* Payment transaction monitoring
+* Payment status comparison
+* Payment method usage analysis
+* Payment process monitoring
+* Payment-related business reporting
+
+## 👤 Customer Payment Behavior Analysis
+
+* Total payments per customer
+* Payment methods used by each customer
+* Customer payment status distribution
+* Customers using multiple payment methods
+* Customers with pending payments
+* Customers with failed payments
+* Customer payment activity by month
+* Most frequently used payment method by customer
+* Customers with the highest number of payments
+* Customer payment behavior classification
+* Customer payment activity ranking
+* Final customer payment behavior summary
+
+### Customer Payment Behavior Categories
+
+| Payment Activity | Customer Category              |
+| ---------------: | ------------------------------ |
+|        1 payment | Single Payment Customer        |
+|     2–4 payments | Occasional Payment Customer    |
+|     5–9 payments | Regular Payment Customer       |
+|     10+ payments | High Activity Payment Customer |
+
+These categories are business-analysis rules and can be adjusted according to the business context.
+
 ## 💼 Business Intelligence
 
 * Business performance analysis
@@ -514,6 +581,9 @@ These frequency categories are business-analysis rules and can be adjusted accor
 * Revenue concentration analysis
 * Revenue forecasting
 * Monthly sales projection
+* Payment transaction monitoring
+* Payment status reporting
+* Payment method reporting
 * Actionable business insights
 
 ## 🔧 Development & Version Control
@@ -528,42 +598,43 @@ These frequency categories are business-analysis rules and can be adjusted accor
 
 # 📅 Project Progress
 
-| Phase                                                                |        Days | Status             |
-| -------------------------------------------------------------------- | ----------: | ------------------ |
-| SQL & Database Fundamentals                                          |     Day 1–7 | ✅ Completed        |
-| Intermediate SQL Analysis                                            |    Day 8–14 | ✅ Completed        |
-| Advanced SQL & Optimization                                          |   Day 15–17 | ✅ Completed        |
-| Customer & Business Analytics                                        |   Day 18–22 | ✅ Completed        |
-| Sales Trend & Time-Series Analysis                                   |      Day 23 | ✅ Completed        |
-| Product Performance Analysis                                         |      Day 24 | ✅ Completed        |
-| Sales Profitability Analysis                                         |      Day 25 | ✅ Completed        |
-| Customer Revenue Contribution Analysis                               |      Day 26 | ✅ Completed        |
-| Customer Churn Analysis                                              |      Day 27 | ✅ Completed        |
-| Customer Cohort & Retention Analysis                                 |      Day 28 | ✅ Completed        |
-| Customer Purchase Frequency Analysis                                 |      Day 29 | ✅ Completed        |
-| Day 30 Analysis                                                      |      Day 30 | ✅ Completed        |
-| Product Purchase Behavior Analysis                                   |      Day 31 | ✅ Completed        |
-| Product Customer Affinity & Cross-Selling                            |      Day 32 | ✅ Completed        |
-| Customer-Product Purchase Analysis                                   |      Day 33 | ✅ Completed        |
-| Customer Cross-Selling & Product Recommendation Analysis             |      Day 34 | ✅ Completed        |
-| Customer Purchase Journey & Basket Analysis                          |      Day 35 | ✅ Completed        |
-| Customer Lifetime Value & Revenue Contribution Analysis              |      Day 36 | ✅ Completed        |
-| Customer RFM Segmentation Analysis                                   |      Day 37 | ✅ Completed        |
-| Customer Segment Performance & Revenue Analysis                      |      Day 38 | ✅ Completed        |
-| Customer Segment Retention & Churn Risk Analysis                     |      Day 39 | ✅ Completed        |
-| Customer Cohort & Retention Trend Analysis                           |      Day 40 | ✅ Completed        |
-| Customer Lifecycle & Repeat Purchase Analysis                        |      Day 41 | ✅ Completed        |
-| Customer Purchase Frequency & Repeat Behavior Analysis               |      Day 42 | ✅ Completed        |
-| **Customer Revenue Forecasting & Monthly Sales Projection Analysis** |  **Day 43** | **✅ Completed**    |
-| **Overall Progress**                                                 | **43 Days** | **🚀 In Progress** |
+| Phase                                                    |        Days | Status             |
+| -------------------------------------------------------- | ----------: | ------------------ |
+| SQL & Database Fundamentals                              |     Day 1–7 | ✅ Completed        |
+| Intermediate SQL Analysis                                |    Day 8–14 | ✅ Completed        |
+| Advanced SQL & Optimization                              |   Day 15–17 | ✅ Completed        |
+| Customer & Business Analytics                            |   Day 18–22 | ✅ Completed        |
+| Sales Trend & Time-Series Analysis                       |      Day 23 | ✅ Completed        |
+| Product Performance Analysis                             |      Day 24 | ✅ Completed        |
+| Sales Profitability Analysis                             |      Day 25 | ✅ Completed        |
+| Customer Revenue Contribution Analysis                   |      Day 26 | ✅ Completed        |
+| Customer Churn Analysis                                  |      Day 27 | ✅ Completed        |
+| Customer Cohort & Retention Analysis                     |      Day 28 | ✅ Completed        |
+| Customer Purchase Frequency Analysis                     |      Day 29 | ✅ Completed        |
+| Day 30 Analysis                                          |      Day 30 | ✅ Completed        |
+| Product Purchase Behavior Analysis                       |      Day 31 | ✅ Completed        |
+| Product Customer Affinity & Cross-Selling                |      Day 32 | ✅ Completed        |
+| Customer-Product Purchase Analysis                       |      Day 33 | ✅ Completed        |
+| Customer Cross-Selling & Product Recommendation Analysis |      Day 34 | ✅ Completed        |
+| Customer Purchase Journey & Basket Analysis              |      Day 35 | ✅ Completed        |
+| Customer Lifetime Value & Revenue Contribution Analysis  |      Day 36 | ✅ Completed        |
+| Customer RFM Segmentation Analysis                       |      Day 37 | ✅ Completed        |
+| Customer Segment Performance & Revenue Analysis          |      Day 38 | ✅ Completed        |
+| Customer Segment Retention & Churn Risk Analysis         |      Day 39 | ✅ Completed        |
+| Customer Cohort & Retention Trend Analysis               |      Day 40 | ✅ Completed        |
+| Customer Lifecycle & Repeat Purchase Analysis            |      Day 41 | ✅ Completed        |
+| Customer Purchase Frequency & Repeat Behavior Analysis   |      Day 42 | ✅ Completed        |
+| **PAYMENT STATUS & PAYMENT METHOD ANALYSIS**             |  **Day 43** | **✅ Completed**    |
+| **Customer Payment Behavior Analysis**                   |  **Day 44** | **✅ Completed**    |
+| **Overall Progress**                                     | **44 Days** | **🚀 In Progress** |
 
 ---
 
 # 🏆 Current Milestone
 
-## 43 Days of SQL Business Analysis Completed 🎉
+## 44 Days of SQL Business Analysis Completed 🎉
 
-The project has progressed from basic relational database operations to advanced SQL analytics, customer analytics, product analytics, RFM segmentation, customer segment performance, retention and churn-risk analysis, cohort analysis, customer lifecycle analysis, repeat-purchase analysis, purchase-frequency analysis, and monthly revenue forecasting analysis.
+The project has progressed from basic relational database operations to advanced SQL analytics, customer analytics, product analytics, RFM segmentation, customer segment performance, retention and churn-risk analysis, cohort analysis, customer lifecycle analysis, repeat-purchase analysis, purchase-frequency analysis, payment status analysis, payment method analysis, and customer payment behavior analysis.
 
 ### Current Learning Journey
 
@@ -635,7 +706,11 @@ The project has progressed from basic relational database operations to advanced
 
 ↓
 
-**Customer Revenue Forecasting & Monthly Sales Projection Analysis**
+**PAYMENT STATUS & PAYMENT METHOD ANALYSIS**
+
+↓
+
+**Customer Payment Behavior Analysis**
 
 ↓
 
@@ -726,7 +801,6 @@ Customers
 
 ```text
 Sales_Data_Analysis_SQL/
-
 │
 ├── Database_Design/
 │   └── sales_analysis.mwb
@@ -771,7 +845,8 @@ Sales_Data_Analysis_SQL/
 │   ├── customer_cohort_retention_analysis.sql
 │   ├── customer_lifecycle_analysis.sql
 │   ├── customer_purchase_frequency_repeat_behavior_analysis.sql
-│   └── customer_revenue_forecasting_analysis.sql
+│   ├── payment_status_method_analysis.sql
+│   └── customer_payment_behavior_analysis.sql
 │
 ├── Screenshots/
 │   ├── Day 1/
@@ -779,7 +854,8 @@ Sales_Data_Analysis_SQL/
 │   ├── ...
 │   ├── Day 41/
 │   ├── Day 42/
-│   └── Day 43/
+│   ├── Day 43/
+│   └── Day 44/
 │
 ├── Presentation/
 │
@@ -811,7 +887,8 @@ Sales_Data_Analysis_SQL/
 │   ├── Day40_Customer_Cohort_Retention_Analysis.md
 │   ├── Day41_Customer_Lifecycle_Analysis.md
 │   ├── Day42_Customer_Purchase_Frequency_Repeat_Behavior_Analysis.md
-│   └── Day43_Customer_Revenue_Forecasting_Analysis.md
+│   ├── Day43_Payment_Status_Method_Analysis.md
+│   └── Day44_Customer_Payment_Behavior_Analysis.md
 │
 └── README.md
 ```
@@ -858,6 +935,10 @@ Customer Lifecycle Analysis
 Repeat Purchase Analysis
         ↓
 Customer Purchase Frequency
+        ↓
+PAYMENT STATUS & PAYMENT METHOD ANALYSIS
+        ↓
+Customer Payment Behavior Analysis
         ↓
 Monthly Revenue Analysis
         ↓
@@ -923,6 +1004,13 @@ Through this project, the following practical skills are demonstrated:
 * Sales trend analysis
 * Monthly sales projection
 * Revenue forecasting concepts
+* Payment status analysis
+* Payment method analysis
+* Payment transaction monitoring
+* Customer payment behavior analysis
+* Customer payment activity ranking
+* Pending payment analysis
+* Failed payment analysis
 * Business intelligence
 * Business reporting
 * Git version control
@@ -934,36 +1022,36 @@ Through this project, the following practical skills are demonstrated:
 
 **Current Status: 🟢 Active**
 
-**Completed: 43 Days**
+**Completed: 44 Days**
 
 **Primary Focus: SQL Data Analysis & Business Intelligence**
 
-The project continues to expand toward advanced business analytics, customer lifecycle analysis, repeat-purchase analysis, purchase-frequency analysis, retention strategy, product analytics, product affinity, cross-selling, customer-product analysis, product recommendations, customer purchase journey analysis, basket analysis, customer lifetime value analysis, RFM segmentation, customer segment performance, churn-risk analysis, cohort retention analysis, monthly revenue analysis, sales trend analysis, and revenue forecasting concepts.
+The project continues to expand toward advanced business analytics, customer lifecycle analysis, repeat-purchase analysis, purchase-frequency analysis, retention strategy, product analytics, product affinity, cross-selling, customer-product analysis, product recommendations, customer purchase journey analysis, basket analysis, customer lifetime value analysis, RFM segmentation, customer segment performance, churn-risk analysis, cohort retention analysis, monthly revenue analysis, sales trend analysis, payment status analysis, payment method analysis, customer payment behavior analysis, and revenue forecasting concepts.
 
 ---
 
 # 🚀 Day 43 Achievement
 
-## Day 43 — Customer Revenue Forecasting & Monthly Sales Projection Analysis Completed ✅
+## Day 43 — PAYMENT STATUS & PAYMENT METHOD ANALYSIS Completed ✅
 
-Day 43 has been successfully completed as part of the structured SQL business-analysis journey.
+Day 43 focused on analyzing payment transactions using SQL.
 
-The Day 43 analysis focuses on understanding **monthly sales performance, revenue growth, order trends, customer activity, month-over-month changes, and revenue forecasting concepts**.
+The analysis examined payment methods, payment statuses, monthly payment activity, pending payment transactions, and payment transaction monitoring.
 
 ### Key Analyses
 
-1. Monthly Revenue Analysis
-2. Monthly Order Analysis
-3. Monthly Customer Count
-4. Monthly Units Sold
-5. Monthly Average Order Value
-6. Monthly Revenue Growth
-7. Previous Month Revenue Comparison
-8. Month-over-Month Revenue Change
-9. Monthly Revenue Growth Percentage
-10. Highest Revenue Month Identification
-11. Lowest Revenue Month Identification
-12. Final Monthly Revenue Forecasting Summary
+1. Payment Method Distribution
+2. Payment Status Distribution
+3. Payment Method and Payment Status Combination
+4. Monthly Payment Activity
+5. Monthly Payment Status Summary
+6. Payment Method Usage by Month
+7. Payment Status Summary
+8. Pending Payment Order Analysis
+9. Payment Details with Order Information
+10. Payment Method Ranking
+11. Payment Status Comparison
+12. Final Payment Status and Payment Method Business Summary
 
 ### SQL Techniques Used
 
@@ -972,67 +1060,136 @@ The Day 43 analysis focuses on understanding **monthly sales performance, revenu
 * GROUP BY
 * COUNT()
 * COUNT(DISTINCT)
-* SUM()
-* AVG()
-* MIN()
-* MAX()
-* ROUND()
 * DATE_FORMAT()
-* LAG()
 * CASE statements
-* Window Functions
 * Monthly aggregation
-* Revenue calculations
-* Percentage calculations
-* Month-over-month comparison
-* Revenue trend analysis
-* Forecasting concepts
+* Payment status aggregation
+* Payment method aggregation
+* Payment method ranking
+* Transaction monitoring
+* Business summary analysis
 
 ### Business Analysis Focus
 
-Day 43 answers important business questions such as:
+Day 43 answered important business questions such as:
 
-* How much revenue was generated each month?
-* How many orders were placed each month?
-* How many customers purchased each month?
-* How many units were sold each month?
-* What was the average order value each month?
-* How did revenue change compared with the previous month?
-* Which months experienced revenue growth?
-* Which months experienced revenue decline?
-* What was the monthly revenue growth percentage?
-* Which month generated the highest revenue?
-* Which month generated the lowest revenue?
-* What revenue trends can support future business planning?
+* Which payment method is used most frequently?
+* What is the distribution of payment statuses?
+* How many payment transactions occur each month?
+* Which payment methods are used over time?
+* How many pending payment transactions exist?
+* How are payment methods related to payment statuses?
+* What payment information can support business monitoring?
 
 ### Business Applications
 
-Monthly revenue forecasting analysis can support:
+* Payment transaction monitoring
+* Payment method analysis
+* Payment status reporting
+* Pending payment monitoring
+* Payment process improvement
+* Operational reporting
+* Business intelligence
+* Payment-related decision-making
 
-* Revenue planning
-* Sales forecasting
-* Monthly performance monitoring
-* Business budgeting
-* Sales target planning
-* Revenue trend identification
-* Growth measurement
-* Performance comparison
-* Management reporting
-* Financial planning
-* Business decision-making
-* Future sales strategy
+---
 
-Day 43 extends the previous customer-focused analysis by examining **monthly revenue performance, sales trends, revenue growth, month-over-month comparisons, and forecasting-oriented business insights**.
+# 🚀 Day 44 Achievement
+
+## Day 44 — Customer Payment Behavior Analysis Completed ✅
+
+Day 44 focused on analyzing customer-level payment behavior using SQL.
+
+The analysis examined customer payment activity, payment method usage, payment status distribution, pending payments, failed payments, and customer payment behavior classification.
+
+### Key Analyses
+
+1. Total Payments per Customer
+2. Payment Methods Used by Each Customer
+3. Customer Payment Status Distribution
+4. Customers Using Multiple Payment Methods
+5. Customers with Pending Payments
+6. Customers with Failed Payments
+7. Customer Payment Activity by Month
+8. Most Frequently Used Payment Method by Customer
+9. Customers with the Highest Number of Payments
+10. Customer Payment Behavior Classification
+11. Customer Payment Activity Ranking
+12. Final Customer Payment Behavior Summary
+
+### SQL Techniques Used
+
+* CTEs
+* JOINs
+* GROUP BY
+* HAVING
+* COUNT()
+* COUNT(DISTINCT)
+* MIN()
+* MAX()
+* SUM()
+* CASE statements
+* LOWER()
+* DATE_FORMAT()
+* GROUP_CONCAT()
+* RANK()
+* DENSE_RANK()
+* Window functions
+* Customer-level aggregation
+* Monthly payment activity analysis
+* Payment status classification
+* Payment method comparison
+* Customer payment ranking
+
+### Customer Payment Behavior Categories
+
+| Payment Activity | Customer Category              |
+| ---------------: | ------------------------------ |
+|        1 payment | Single Payment Customer        |
+|     2–4 payments | Occasional Payment Customer    |
+|     5–9 payments | Regular Payment Customer       |
+|     10+ payments | High Activity Payment Customer |
+
+### Business Analysis Focus
+
+Day 44 answered important business questions such as:
+
+* Which customers make the highest number of payments?
+* Which payment methods are used by each customer?
+* Which customers use multiple payment methods?
+* Which customers have pending payments?
+* Which customers have failed payments?
+* How does customer payment activity change monthly?
+* What is the most frequently used payment method for each customer?
+* Which customers have high payment activity?
+* Which customers may require payment-related support?
+
+### Business Applications
+
+Customer payment behavior analysis can support:
+
+* Customer payment monitoring
+* Payment issue identification
+* Pending payment follow-up
+* Failed payment monitoring
+* Payment method optimization
+* Customer support improvement
+* Customer transaction segmentation
+* Payment process improvement
+* Operational reporting
+* Business intelligence
+
+Day 44 extends the payment analysis journey by moving from general payment status and payment method analysis to detailed **customer-level payment behavior analysis**.
 
 ---
 
 # 🏁 Portfolio Progress
 
-## 43 Days Completed 🚀
+## 44 Days Completed 🚀
 
-**SQL Fundamentals → Advanced SQL → Business Analytics → Customer Analytics → Customer Retention → Customer Lifetime Value → RFM Customer Segmentation → Customer Segment Performance → Customer Segment Retention & Churn Risk → Customer Cohort & Retention Trend Analysis → Customer Lifecycle & Repeat Purchase Analysis → Customer Purchase Frequency & Repeat Behavior Analysis → Customer Revenue Forecasting & Monthly Sales Projection Analysis → Product Analytics → Product Purchase Behavior → Product Customer Affinity → Cross-Selling → Customer-Product Purchase Analysis → Product Recommendations → Customer Purchase Journey & Basket Analysis → Business Insights**
+**SQL Fundamentals → Advanced SQL → Business Analytics → Customer Analytics → Customer Retention → Customer Lifetime Value → RFM Customer Segmentation → Customer Segment Performance → Customer Segment Retention & Churn Risk → Customer Cohort & Retention Trend Analysis → Customer Lifecycle & Repeat Purchase Analysis → Customer Purchase Frequency & Repeat Behavior Analysis → PAYMENT STATUS & PAYMENT METHOD ANALYSIS → Customer Payment Behavior Analysis → Product Analytics → Product Purchase Behavior → Product Customer Affinity → Cross-Selling → Customer-Product Purchase Analysis → Product Recommendations → Customer Purchase Journey & Basket Analysis → Business Insights**
 
-The project now demonstrates a broad practical SQL workflow suitable for showcasing **Data Analyst, Business Analyst, and SQL-focused portfolio skills**.
+The project now demonstrates a broad practical SQL workflow suitable for showcasing **Data Analyst, Business Analyst, SQL Developer, Reporting Analyst, and MIS Analyst portfolio skills**.
 
 ---
 
@@ -1050,9 +1207,11 @@ The next stage of the project can move toward more advanced:
 * Executive business reporting
 * Customer segmentation dashboards
 * Revenue performance dashboards
+* Payment monitoring dashboards
+* Customer payment behavior dashboards
 * Business performance monitoring
 
-**Next Milestone: Day 44 → 44/55 🔥**
+**Next Milestone: Day 45 → 45/55 🔥**
 
 ---
 
