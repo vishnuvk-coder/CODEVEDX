@@ -1,6 +1,6 @@
 # 📊 Sales Data Analysis Using SQL
 
-A hands-on SQL portfolio project focused on **relational database design, advanced SQL analytics, query optimization, customer analytics, product analytics, business intelligence, customer retention, cohort analysis, customer lifecycle analysis, repeat purchase analysis, purchase frequency analysis, payment status analysis, payment method analysis, customer payment behavior analysis, revenue forecasting, monthly sales projection, and business reporting** using MySQL.
+A hands-on SQL portfolio project focused on **relational database design, advanced SQL analytics, query optimization, customer analytics, product analytics, business intelligence, customer retention, cohort analysis, customer lifecycle analysis, repeat purchase analysis, purchase frequency analysis, payment status analysis, payment method analysis, customer payment behavior analysis, customer payment risk analysis, pending payment analysis, and business reporting** using MySQL.
 
 This project simulates a real-world sales management system and demonstrates practical SQL skills relevant to **Data Analyst, Business Analyst, and SQL Developer roles**.
 
@@ -47,6 +47,10 @@ The project covers:
 * Payment method analysis
 * Customer payment behavior analysis
 * Payment transaction monitoring
+* Pending payment analysis
+* Failed payment analysis
+* Customer payment risk classification
+* Repeated payment record analysis
 * Business intelligence
 * Business reporting
 
@@ -77,6 +81,9 @@ The main objectives of this project are to:
 * Analyze payment methods and payment statuses.
 * Identify customers with pending or failed payments.
 * Analyze customer payment activity and payment behavior.
+* Identify repeated payment records and multiple payment attempts.
+* Analyze customer payment risk indicators.
+* Classify customers according to payment activity and payment risk.
 * Develop revenue forecasting and sales projection concepts.
 * Convert raw sales data into actionable business insights.
 * Create structured business reports using SQL analysis.
@@ -125,6 +132,8 @@ The main objectives of this project are to:
 * Monthly revenue analysis JOINs
 * Customer payment behavior JOINs
 * Payment transaction analysis JOINs
+* Customer payment risk JOINs
+* Payment monitoring JOINs
 
 ## 📊 SQL Aggregation & Analysis
 
@@ -159,6 +168,9 @@ The main objectives of this project are to:
 * Payment status aggregation
 * Payment method aggregation
 * Customer payment activity aggregation
+* Pending payment aggregation
+* Failed payment aggregation
+* Payment risk aggregation
 
 ## 🧠 Advanced SQL
 
@@ -201,6 +213,10 @@ The main objectives of this project are to:
 * Payment method ranking
 * Customer payment behavior classification
 * Payment activity ranking
+* Pending payment analysis
+* Failed payment analysis
+* Customer payment risk classification
+* Repeated payment record analysis
 
 ## ⚡ SQL Optimization
 
@@ -251,6 +267,9 @@ The main objectives of this project are to:
 * Customers with multiple payment methods
 * Customers with pending payments
 * Customers with failed payments
+* Customer payment risk analysis
+* Customer payment activity classification
+* Customer payment risk ranking
 
 ## 📦 Product Analytics
 
@@ -561,6 +580,41 @@ These frequency categories are business-analysis rules and can be adjusted accor
 
 These categories are business-analysis rules and can be adjusted according to the business context.
 
+## ⚠️ Customer Payment Risk & Pending Payment Analysis
+
+* Identification of all payment statuses
+* Payment status distribution
+* Payment method distribution
+* Payment status by payment method
+* Monthly payment activity
+* Monthly payment status analysis
+* Monthly payment method analysis
+* Pending payment identification
+* Failed payment identification
+* Orders with multiple payment records
+* Customer-level payment risk analysis
+* Customer pending payment count
+* Customer failed payment count
+* Customer payment activity monitoring
+* Customer payment risk classification
+* High payment-risk customer identification
+* Repeated payment attempt analysis
+* Payment issue monitoring
+* Payment operations reporting
+
+### Customer Payment Risk Categories
+
+| Condition                    | Payment Risk Category    |
+| ---------------------------- | ------------------------ |
+| Pending and failed payments  | High Payment Risk        |
+| At least one failed payment  | Failed Payment Risk      |
+| At least one pending payment | Pending Payment Risk     |
+| 10 or more payment records   | High Payment Activity    |
+| 5–9 payment records          | Regular Payment Activity |
+| Fewer than 5 payment records | Low Payment Activity     |
+
+These categories are business-analysis rules and can be adjusted according to the business context.
+
 ## 💼 Business Intelligence
 
 * Business performance analysis
@@ -584,6 +638,10 @@ These categories are business-analysis rules and can be adjusted according to th
 * Payment transaction monitoring
 * Payment status reporting
 * Payment method reporting
+* Customer payment behavior reporting
+* Pending payment monitoring
+* Failed payment monitoring
+* Customer payment risk reporting
 * Actionable business insights
 
 ## 🔧 Development & Version Control
@@ -626,15 +684,16 @@ These categories are business-analysis rules and can be adjusted according to th
 | Customer Purchase Frequency & Repeat Behavior Analysis   |      Day 42 | ✅ Completed        |
 | **PAYMENT STATUS & PAYMENT METHOD ANALYSIS**             |  **Day 43** | **✅ Completed**    |
 | **Customer Payment Behavior Analysis**                   |  **Day 44** | **✅ Completed**    |
-| **Overall Progress**                                     | **44 Days** | **🚀 In Progress** |
+| **Customer Payment Risk & Pending Payment Analysis**     |  **Day 45** | **✅ Completed**    |
+| **Overall Progress**                                     | **45 Days** | **🚀 In Progress** |
 
 ---
 
 # 🏆 Current Milestone
 
-## 44 Days of SQL Business Analysis Completed 🎉
+## 45 Days of SQL Business Analysis Completed 🎉
 
-The project has progressed from basic relational database operations to advanced SQL analytics, customer analytics, product analytics, RFM segmentation, customer segment performance, retention and churn-risk analysis, cohort analysis, customer lifecycle analysis, repeat-purchase analysis, purchase-frequency analysis, payment status analysis, payment method analysis, and customer payment behavior analysis.
+The project has progressed from basic relational database operations to advanced SQL analytics, customer analytics, product analytics, RFM segmentation, customer segment performance, retention and churn-risk analysis, cohort analysis, customer lifecycle analysis, repeat-purchase analysis, purchase-frequency analysis, payment status analysis, payment method analysis, customer payment behavior analysis, and customer payment risk analysis.
 
 ### Current Learning Journey
 
@@ -711,6 +770,10 @@ The project has progressed from basic relational database operations to advanced
 ↓
 
 **Customer Payment Behavior Analysis**
+
+↓
+
+**Customer Payment Risk & Pending Payment Analysis**
 
 ↓
 
@@ -801,11 +864,17 @@ Customers
 
 ```text
 Sales_Data_Analysis_SQL/
+
 │
+
 ├── Database_Design/
+
 │   └── sales_analysis.mwb
+
 │
+
 ├── SQL/
+
 │   ├── create_database.sql
 │   ├── insert_data.sql
 │   ├── basic_queries.sql
@@ -846,20 +915,30 @@ Sales_Data_Analysis_SQL/
 │   ├── customer_lifecycle_analysis.sql
 │   ├── customer_purchase_frequency_repeat_behavior_analysis.sql
 │   ├── payment_status_method_analysis.sql
-│   └── customer_payment_behavior_analysis.sql
+│   ├── customer_payment_behavior_analysis.sql
+│   └── payment_risk_pending_analysis.sql
+
 │
+
 ├── Screenshots/
+
 │   ├── Day 1/
 │   ├── Day 2/
 │   ├── ...
 │   ├── Day 41/
 │   ├── Day 42/
 │   ├── Day 43/
-│   └── Day 44/
+│   ├── Day 44/
+│   └── Day 45/
+
 │
+
 ├── Presentation/
+
 │
+
 ├── Report/
+
 │   ├── Week1_Report.md
 │   ├── Week2_Report.md
 │   ├── Day17_Business_Analysis.md
@@ -888,8 +967,11 @@ Sales_Data_Analysis_SQL/
 │   ├── Day41_Customer_Lifecycle_Analysis.md
 │   ├── Day42_Customer_Purchase_Frequency_Repeat_Behavior_Analysis.md
 │   ├── Day43_Payment_Status_Method_Analysis.md
-│   └── Day44_Customer_Payment_Behavior_Analysis.md
+│   ├── Day44_Customer_Payment_Behavior_Analysis.md
+│   └── Day45_Customer_Payment_Risk_Analysis.md
+
 │
+
 └── README.md
 ```
 
@@ -901,65 +983,129 @@ This project demonstrates an end-to-end progression from raw relational data to 
 
 ```text
 Raw Sales Data
+
         ↓
+
 Database Design
+
         ↓
+
 SQL Fundamentals
+
         ↓
+
 JOINs & Aggregations
+
         ↓
+
 Advanced SQL
+
         ↓
+
 Query Optimization
+
         ↓
+
 Business KPIs
+
         ↓
+
 Customer Analytics
+
         ↓
+
 Customer Retention
+
         ↓
+
 Customer Lifetime Value
+
         ↓
+
 RFM Customer Segmentation
+
         ↓
+
 Customer Segment Performance
+
         ↓
+
 Customer Segment Retention
+
         ↓
+
 Customer Churn Risk
+
         ↓
+
 Customer Cohort Analysis
+
         ↓
+
 Customer Lifecycle Analysis
+
         ↓
+
 Repeat Purchase Analysis
+
         ↓
+
 Customer Purchase Frequency
+
         ↓
+
 PAYMENT STATUS & PAYMENT METHOD ANALYSIS
+
         ↓
+
 Customer Payment Behavior Analysis
+
         ↓
+
+Customer Payment Risk & Pending Payment Analysis
+
+        ↓
+
 Monthly Revenue Analysis
+
         ↓
+
 Revenue Growth Analysis
+
         ↓
+
 Month-over-Month Comparison
+
         ↓
+
 Monthly Sales Projection
+
         ↓
+
 Revenue Forecasting Concepts
+
         ↓
+
 Product Analytics
+
         ↓
+
 Product Affinity
+
         ↓
+
 Cross-Selling Analysis
+
         ↓
+
 Product Recommendations
+
         ↓
+
 Customer Purchase Journey
+
         ↓
+
 Business Insights
 ```
 
@@ -1011,6 +1157,9 @@ Through this project, the following practical skills are demonstrated:
 * Customer payment activity ranking
 * Pending payment analysis
 * Failed payment analysis
+* Customer payment risk analysis
+* Repeated payment record analysis
+* Payment risk classification
 * Business intelligence
 * Business reporting
 * Git version control
@@ -1022,11 +1171,11 @@ Through this project, the following practical skills are demonstrated:
 
 **Current Status: 🟢 Active**
 
-**Completed: 44 Days**
+**Completed: 45 Days**
 
 **Primary Focus: SQL Data Analysis & Business Intelligence**
 
-The project continues to expand toward advanced business analytics, customer lifecycle analysis, repeat-purchase analysis, purchase-frequency analysis, retention strategy, product analytics, product affinity, cross-selling, customer-product analysis, product recommendations, customer purchase journey analysis, basket analysis, customer lifetime value analysis, RFM segmentation, customer segment performance, churn-risk analysis, cohort retention analysis, monthly revenue analysis, sales trend analysis, payment status analysis, payment method analysis, customer payment behavior analysis, and revenue forecasting concepts.
+The project continues to expand toward advanced business analytics, customer lifecycle analysis, repeat-purchase analysis, purchase-frequency analysis, retention strategy, product analytics, product affinity, cross-selling, customer-product analysis, product recommendations, customer purchase journey analysis, basket analysis, customer lifetime value analysis, RFM segmentation, customer segment performance, churn-risk analysis, cohort retention analysis, monthly revenue analysis, sales trend analysis, payment status analysis, payment method analysis, customer payment behavior analysis, customer payment risk analysis, pending payment analysis, failed payment analysis, repeated payment record analysis, and revenue forecasting concepts.
 
 ---
 
@@ -1179,15 +1328,118 @@ Customer payment behavior analysis can support:
 * Operational reporting
 * Business intelligence
 
-Day 44 extends the payment analysis journey by moving from general payment status and payment method analysis to detailed **customer-level payment behavior analysis**.
+Day 44 extended the payment analysis journey by moving from general payment status and payment method analysis to detailed **customer-level payment behavior analysis**.
+
+---
+
+# 🚀 Day 45 Achievement
+
+## Day 45 — Customer Payment Risk & Pending Payment Analysis Completed ✅
+
+Day 45 focused on identifying customer payment risks using SQL.
+
+The analysis examined payment statuses, payment methods, monthly payment activity, pending payments, failed payments, repeated payment records, customer-level payment behavior, and payment-risk classification.
+
+> **Important:** The `payments` table does not contain a payment amount column. Therefore, this analysis focuses on payment records, payment statuses, payment methods, and risk indicators instead of payment revenue.
+
+### Key Analyses
+
+1. Identify All Payment Statuses
+2. Payment Status Distribution
+3. Payment Method Distribution
+4. Payment Status by Payment Method
+5. Monthly Payment Activity
+6. Monthly Payment Status Analysis
+7. Monthly Payment Method Analysis
+8. Pending Payment Analysis
+9. Failed Payment Analysis
+10. Orders with Multiple Payment Records
+11. Customer-Level Payment Risk Analysis
+12. Final Customer Payment Risk Classification
+
+### SQL Techniques Used
+
+* CTEs
+* INNER JOIN
+* GROUP BY
+* HAVING
+* COUNT()
+* COUNT(DISTINCT)
+* MIN()
+* MAX()
+* CASE statements
+* LOWER()
+* DATE_FORMAT()
+* Customer-level aggregation
+* Monthly payment aggregation
+* Payment status aggregation
+* Payment method aggregation
+* Pending payment analysis
+* Failed payment analysis
+* Repeated payment record analysis
+* Customer payment risk classification
+* Business summary analysis
+
+### Customer Payment Risk Categories
+
+| Condition                    | Payment Risk Category    |
+| ---------------------------- | ------------------------ |
+| Pending and failed payments  | High Payment Risk        |
+| At least one failed payment  | Failed Payment Risk      |
+| At least one pending payment | Pending Payment Risk     |
+| 10 or more payment records   | High Payment Activity    |
+| 5–9 payment records          | Regular Payment Activity |
+| Fewer than 5 payment records | Low Payment Activity     |
+
+These categories are business-analysis rules and can be adjusted according to the business context.
+
+### Business Analysis Focus
+
+Day 45 answered important business questions such as:
+
+* What payment statuses exist in the database?
+* Which payment statuses are most common?
+* Which payment methods are used most frequently?
+* How are payment statuses distributed across payment methods?
+* How does payment activity change monthly?
+* How do payment statuses change over time?
+* Which payment records are pending?
+* Which payment records have failed?
+* Which orders have multiple payment records?
+* Which customers have pending or failed payments?
+* Which customers may have high payment risk?
+* Which customers have high payment activity?
+
+### Business Applications
+
+Customer payment risk analysis can support:
+
+* Pending payment monitoring
+* Failed payment monitoring
+* Payment issue identification
+* Payment method monitoring
+* Repeated payment attempt analysis
+* Customer payment-risk identification
+* Payment follow-up processes
+* Customer support operations
+* Payment process improvement
+* Operational reporting
+* Business intelligence
+* Payment risk management
+
+### Day 45 Learning Outcome
+
+Day 45 strengthened practical SQL skills related to payment monitoring, customer-level aggregation, payment status analysis, repeated payment record analysis, and risk classification.
+
+The analysis demonstrated how businesses can use SQL to identify payment problems, monitor customer payment activity, and support better payment operations.
 
 ---
 
 # 🏁 Portfolio Progress
 
-## 44 Days Completed 🚀
+## 45 Days Completed 🚀
 
-**SQL Fundamentals → Advanced SQL → Business Analytics → Customer Analytics → Customer Retention → Customer Lifetime Value → RFM Customer Segmentation → Customer Segment Performance → Customer Segment Retention & Churn Risk → Customer Cohort & Retention Trend Analysis → Customer Lifecycle & Repeat Purchase Analysis → Customer Purchase Frequency & Repeat Behavior Analysis → PAYMENT STATUS & PAYMENT METHOD ANALYSIS → Customer Payment Behavior Analysis → Product Analytics → Product Purchase Behavior → Product Customer Affinity → Cross-Selling → Customer-Product Purchase Analysis → Product Recommendations → Customer Purchase Journey & Basket Analysis → Business Insights**
+**SQL Fundamentals → Advanced SQL → Business Analytics → Customer Analytics → Customer Retention → Customer Lifetime Value → RFM Customer Segmentation → Customer Segment Performance → Customer Segment Retention & Churn Risk → Customer Cohort & Retention Trend Analysis → Customer Lifecycle & Repeat Purchase Analysis → Customer Purchase Frequency & Repeat Behavior Analysis → PAYMENT STATUS & PAYMENT METHOD ANALYSIS → Customer Payment Behavior Analysis → Customer Payment Risk & Pending Payment Analysis → Product Analytics → Product Purchase Behavior → Product Customer Affinity → Cross-Selling → Customer-Product Purchase Analysis → Product Recommendations → Customer Purchase Journey & Basket Analysis → Business Insights**
 
 The project now demonstrates a broad practical SQL workflow suitable for showcasing **Data Analyst, Business Analyst, SQL Developer, Reporting Analyst, and MIS Analyst portfolio skills**.
 
@@ -1209,9 +1461,10 @@ The next stage of the project can move toward more advanced:
 * Revenue performance dashboards
 * Payment monitoring dashboards
 * Customer payment behavior dashboards
+* Payment risk monitoring dashboards
 * Business performance monitoring
 
-**Next Milestone: Day 45 → 45/55 🔥**
+**Next Milestone: Day 46 → 46/55 🔥**
 
 ---
 
