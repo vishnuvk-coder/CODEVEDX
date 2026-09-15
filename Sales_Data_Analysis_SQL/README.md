@@ -1,8 +1,8 @@
 # 📊 Sales Data Analysis Using SQL
 
-A hands-on SQL portfolio project focused on **relational database design, advanced SQL analytics, query optimization, customer analytics, product analytics, business intelligence, customer retention, cohort analysis, customer lifecycle analysis, repeat purchase analysis, purchase frequency analysis, payment status analysis, payment method analysis, customer payment behavior analysis, customer payment risk analysis, pending payment analysis, and business reporting** using MySQL.
+A hands-on SQL portfolio project focused on **relational database design, advanced SQL analytics, query optimization, customer analytics, product analytics, business intelligence, customer retention, cohort analysis, customer lifecycle analysis, repeat purchase analysis, purchase frequency analysis, payment status analysis, payment method analysis, customer payment behavior analysis, customer payment risk analysis, pending payment analysis, data quality analysis, data integrity analysis, and business reporting** using MySQL.
 
-This project simulates a real-world sales management system and demonstrates practical SQL skills relevant to **Data Analyst, Business Analyst, and SQL Developer roles**.
+This project simulates a real-world sales management system and demonstrates practical SQL skills relevant to **Data Analyst, Business Analyst, SQL Developer, Reporting Analyst, and MIS Analyst roles**.
 
 ---
 
@@ -51,6 +51,13 @@ The project covers:
 * Failed payment analysis
 * Customer payment risk classification
 * Repeated payment record analysis
+* Data quality analysis
+* Data integrity analysis
+* Duplicate record detection
+* Null value checking
+* Referential integrity checking
+* Orphan record detection
+* Invalid quantity and price validation
 * Business intelligence
 * Business reporting
 
@@ -84,6 +91,10 @@ The main objectives of this project are to:
 * Identify repeated payment records and multiple payment attempts.
 * Analyze customer payment risk indicators.
 * Classify customers according to payment activity and payment risk.
+* Identify duplicate records and possible data-quality issues.
+* Check missing relationships between related tables.
+* Validate order quantities and product prices.
+* Identify orphan records and incomplete transactions.
 * Develop revenue forecasting and sales projection concepts.
 * Convert raw sales data into actionable business insights.
 * Create structured business reports using SQL analysis.
@@ -134,16 +145,18 @@ The main objectives of this project are to:
 * Payment transaction analysis JOINs
 * Customer payment risk JOINs
 * Payment monitoring JOINs
+* Data integrity JOINs
+* Orphan record detection using LEFT JOINs
 
 ## 📊 SQL Aggregation & Analysis
 
-* COUNT()
-* SUM()
-* AVG()
-* MIN()
-* MAX()
-* GROUP BY
-* HAVING
+* `COUNT()`
+* `SUM()`
+* `AVG()`
+* `MIN()`
+* `MAX()`
+* `GROUP BY`
+* `HAVING`
 * Revenue calculations
 * Order calculations
 * Customer-level aggregation
@@ -171,6 +184,10 @@ The main objectives of this project are to:
 * Pending payment aggregation
 * Failed payment aggregation
 * Payment risk aggregation
+* Data-quality issue aggregation
+* Duplicate record counting
+* Null value counting
+* Integrity issue counting
 
 ## 🧠 Advanced SQL
 
@@ -184,11 +201,11 @@ The main objectives of this project are to:
 * CASE statements
 * Advanced JOIN analysis
 * Self-JOIN analysis
-* RANK()
-* DENSE_RANK()
-* NTILE()
-* ROW_NUMBER()
-* LAG()
+* `RANK()`
+* `DENSE_RANK()`
+* `NTILE()`
+* `ROW_NUMBER()`
+* `LAG()`
 * Cumulative calculations
 * Revenue contribution analysis
 * Cohort analysis
@@ -217,12 +234,15 @@ The main objectives of this project are to:
 * Failed payment analysis
 * Customer payment risk classification
 * Repeated payment record analysis
+* Duplicate record detection
+* Referential integrity analysis
+* Data validation using conditional expressions
 
 ## ⚡ SQL Optimization
 
 * SQL indexes
 * Query execution analysis
-* EXPLAIN
+* `EXPLAIN`
 * Query performance analysis
 * Query optimization
 * Efficient JOIN strategies
@@ -536,7 +556,7 @@ These frequency categories are business-analysis rules and can be adjusted accor
 * Sales target planning
 * Future business performance estimation
 
-## 💳 PAYMENT STATUS & PAYMENT METHOD ANALYSIS
+## 💳 Payment Status & Payment Method Analysis
 
 * Payment method distribution
 * Payment status distribution
@@ -615,7 +635,36 @@ These categories are business-analysis rules and can be adjusted according to th
 
 These categories are business-analysis rules and can be adjusted according to the business context.
 
-## 💼 Business Intelligence
+## 🧹 Data Quality & Integrity Analysis
+
+Day 46 focused on checking the reliability, consistency, and integrity of the sales database.
+
+* Table structure checking
+* Null customer ID checking
+* Duplicate customer record detection
+* Duplicate product record detection
+* Duplicate order record detection
+* Duplicate payment record detection
+* Orders without matching customers
+* Order items without matching orders
+* Order items without matching products
+* Payments without matching orders
+* Invalid order quantity detection
+* Invalid product price detection
+* Orders without order items
+* Products that have never been ordered
+* Missing order date checking
+* Missing payment date checking
+* Multiple payment record analysis
+* Database record count summary
+* Data quality issue summary
+* Referential integrity checking
+* Orphan record detection
+* Data validation
+
+---
+
+# 💼 Business Intelligence
 
 * Business performance analysis
 * Customer segmentation
@@ -642,6 +691,10 @@ These categories are business-analysis rules and can be adjusted according to th
 * Pending payment monitoring
 * Failed payment monitoring
 * Customer payment risk reporting
+* Data quality monitoring
+* Database integrity monitoring
+* Duplicate record monitoring
+* Orphan record monitoring
 * Actionable business insights
 
 ## 🔧 Development & Version Control
@@ -682,18 +735,19 @@ These categories are business-analysis rules and can be adjusted according to th
 | Customer Cohort & Retention Trend Analysis               |      Day 40 | ✅ Completed        |
 | Customer Lifecycle & Repeat Purchase Analysis            |      Day 41 | ✅ Completed        |
 | Customer Purchase Frequency & Repeat Behavior Analysis   |      Day 42 | ✅ Completed        |
-| **PAYMENT STATUS & PAYMENT METHOD ANALYSIS**             |  **Day 43** | **✅ Completed**    |
+| **Payment Status & Payment Method Analysis**             |  **Day 43** | **✅ Completed**    |
 | **Customer Payment Behavior Analysis**                   |  **Day 44** | **✅ Completed**    |
 | **Customer Payment Risk & Pending Payment Analysis**     |  **Day 45** | **✅ Completed**    |
-| **Overall Progress**                                     | **45 Days** | **🚀 In Progress** |
+| **Data Quality & Integrity Analysis**                    |  **Day 46** | **✅ Completed**    |
+| **Overall Progress**                                     | **46 Days** | **🚀 In Progress** |
 
 ---
 
 # 🏆 Current Milestone
 
-## 45 Days of SQL Business Analysis Completed 🎉
+## 46 Days of SQL Business Analysis Completed 🎉
 
-The project has progressed from basic relational database operations to advanced SQL analytics, customer analytics, product analytics, RFM segmentation, customer segment performance, retention and churn-risk analysis, cohort analysis, customer lifecycle analysis, repeat-purchase analysis, purchase-frequency analysis, payment status analysis, payment method analysis, customer payment behavior analysis, and customer payment risk analysis.
+The project has progressed from basic relational database operations to advanced SQL analytics, customer analytics, product analytics, RFM segmentation, customer segment performance, retention and churn-risk analysis, cohort analysis, customer lifecycle analysis, repeat-purchase analysis, purchase-frequency analysis, payment status analysis, payment method analysis, customer payment behavior analysis, customer payment risk analysis, and data quality and integrity analysis.
 
 ### Current Learning Journey
 
@@ -765,7 +819,7 @@ The project has progressed from basic relational database operations to advanced
 
 ↓
 
-**PAYMENT STATUS & PAYMENT METHOD ANALYSIS**
+**Payment Status & Payment Method Analysis**
 
 ↓
 
@@ -774,6 +828,10 @@ The project has progressed from basic relational database operations to advanced
 ↓
 
 **Customer Payment Risk & Pending Payment Analysis**
+
+↓
+
+**Data Quality & Integrity Analysis**
 
 ↓
 
@@ -866,15 +924,10 @@ Customers
 Sales_Data_Analysis_SQL/
 
 │
-
 ├── Database_Design/
-
 │   └── sales_analysis.mwb
-
 │
-
 ├── SQL/
-
 │   ├── create_database.sql
 │   ├── insert_data.sql
 │   ├── basic_queries.sql
@@ -916,12 +969,10 @@ Sales_Data_Analysis_SQL/
 │   ├── customer_purchase_frequency_repeat_behavior_analysis.sql
 │   ├── payment_status_method_analysis.sql
 │   ├── customer_payment_behavior_analysis.sql
-│   └── payment_risk_pending_analysis.sql
-
+│   ├── payment_risk_pending_analysis.sql
+│   └── data_quality_integrity_analysis.sql
 │
-
 ├── Screenshots/
-
 │   ├── Day 1/
 │   ├── Day 2/
 │   ├── ...
@@ -929,16 +980,12 @@ Sales_Data_Analysis_SQL/
 │   ├── Day 42/
 │   ├── Day 43/
 │   ├── Day 44/
-│   └── Day 45/
-
+│   ├── Day 45/
+│   └── Day 46/
 │
-
 ├── Presentation/
-
 │
-
 ├── Report/
-
 │   ├── Week1_Report.md
 │   ├── Week2_Report.md
 │   ├── Day17_Business_Analysis.md
@@ -968,10 +1015,9 @@ Sales_Data_Analysis_SQL/
 │   ├── Day42_Customer_Purchase_Frequency_Repeat_Behavior_Analysis.md
 │   ├── Day43_Payment_Status_Method_Analysis.md
 │   ├── Day44_Customer_Payment_Behavior_Analysis.md
-│   └── Day45_Customer_Payment_Risk_Analysis.md
-
+│   ├── Day45_Customer_Payment_Risk_Analysis.md
+│   └── Day46_Data_Quality_Integrity_Analysis.md
 │
-
 └── README.md
 ```
 
@@ -983,129 +1029,69 @@ This project demonstrates an end-to-end progression from raw relational data to 
 
 ```text
 Raw Sales Data
-
         ↓
-
 Database Design
-
         ↓
-
 SQL Fundamentals
-
         ↓
-
 JOINs & Aggregations
-
         ↓
-
 Advanced SQL
-
         ↓
-
 Query Optimization
-
         ↓
-
 Business KPIs
-
         ↓
-
 Customer Analytics
-
         ↓
-
 Customer Retention
-
         ↓
-
 Customer Lifetime Value
-
         ↓
-
 RFM Customer Segmentation
-
         ↓
-
 Customer Segment Performance
-
         ↓
-
 Customer Segment Retention
-
         ↓
-
 Customer Churn Risk
-
         ↓
-
 Customer Cohort Analysis
-
         ↓
-
 Customer Lifecycle Analysis
-
         ↓
-
 Repeat Purchase Analysis
-
         ↓
-
 Customer Purchase Frequency
-
         ↓
-
-PAYMENT STATUS & PAYMENT METHOD ANALYSIS
-
+Payment Status & Payment Method Analysis
         ↓
-
 Customer Payment Behavior Analysis
-
         ↓
-
 Customer Payment Risk & Pending Payment Analysis
-
         ↓
-
+Data Quality & Integrity Analysis
+        ↓
 Monthly Revenue Analysis
-
         ↓
-
 Revenue Growth Analysis
-
         ↓
-
 Month-over-Month Comparison
-
         ↓
-
 Monthly Sales Projection
-
         ↓
-
 Revenue Forecasting Concepts
-
         ↓
-
 Product Analytics
-
         ↓
-
 Product Affinity
-
         ↓
-
 Cross-Selling Analysis
-
         ↓
-
 Product Recommendations
-
         ↓
-
 Customer Purchase Journey
-
         ↓
-
 Business Insights
 ```
 
@@ -1160,6 +1146,13 @@ Through this project, the following practical skills are demonstrated:
 * Customer payment risk analysis
 * Repeated payment record analysis
 * Payment risk classification
+* Duplicate record detection
+* Null value checking
+* Data validation
+* Referential integrity checking
+* Orphan record detection
+* Database quality monitoring
+* Data integrity analysis
 * Business intelligence
 * Business reporting
 * Git version control
@@ -1171,11 +1164,11 @@ Through this project, the following practical skills are demonstrated:
 
 **Current Status: 🟢 Active**
 
-**Completed: 45 Days**
+**Completed: 46 Days**
 
 **Primary Focus: SQL Data Analysis & Business Intelligence**
 
-The project continues to expand toward advanced business analytics, customer lifecycle analysis, repeat-purchase analysis, purchase-frequency analysis, retention strategy, product analytics, product affinity, cross-selling, customer-product analysis, product recommendations, customer purchase journey analysis, basket analysis, customer lifetime value analysis, RFM segmentation, customer segment performance, churn-risk analysis, cohort retention analysis, monthly revenue analysis, sales trend analysis, payment status analysis, payment method analysis, customer payment behavior analysis, customer payment risk analysis, pending payment analysis, failed payment analysis, repeated payment record analysis, and revenue forecasting concepts.
+The project continues to expand toward advanced business analytics, customer lifecycle analysis, repeat-purchase analysis, purchase-frequency analysis, retention strategy, product analytics, product affinity, cross-selling, customer-product analysis, product recommendations, customer purchase journey analysis, basket analysis, customer lifetime value analysis, RFM segmentation, customer segment performance, churn-risk analysis, cohort retention analysis, monthly revenue analysis, sales trend analysis, payment status analysis, payment method analysis, customer payment behavior analysis, customer payment risk analysis, pending payment analysis, failed payment analysis, repeated payment record analysis, data quality analysis, database integrity analysis, and revenue forecasting concepts.
 
 ---
 
@@ -1206,10 +1199,10 @@ The analysis examined payment methods, payment statuses, monthly payment activit
 
 * CTEs
 * JOINs
-* GROUP BY
-* COUNT()
-* COUNT(DISTINCT)
-* DATE_FORMAT()
+* `GROUP BY`
+* `COUNT()`
+* `COUNT(DISTINCT)`
+* `DATE_FORMAT()`
 * CASE statements
 * Monthly aggregation
 * Payment status aggregation
@@ -1270,19 +1263,19 @@ The analysis examined customer payment activity, payment method usage, payment s
 
 * CTEs
 * JOINs
-* GROUP BY
-* HAVING
-* COUNT()
-* COUNT(DISTINCT)
-* MIN()
-* MAX()
-* SUM()
+* `GROUP BY`
+* `HAVING`
+* `COUNT()`
+* `COUNT(DISTINCT)`
+* `MIN()`
+* `MAX()`
+* `SUM()`
 * CASE statements
-* LOWER()
-* DATE_FORMAT()
-* GROUP_CONCAT()
-* RANK()
-* DENSE_RANK()
+* `LOWER()`
+* `DATE_FORMAT()`
+* `GROUP_CONCAT()`
+* `RANK()`
+* `DENSE_RANK()`
 * Window functions
 * Customer-level aggregation
 * Monthly payment activity analysis
@@ -1361,15 +1354,15 @@ The analysis examined payment statuses, payment methods, monthly payment activit
 
 * CTEs
 * INNER JOIN
-* GROUP BY
-* HAVING
-* COUNT()
-* COUNT(DISTINCT)
-* MIN()
-* MAX()
+* `GROUP BY`
+* `HAVING`
+* `COUNT()`
+* `COUNT(DISTINCT)`
+* `MIN()`
+* `MAX()`
 * CASE statements
-* LOWER()
-* DATE_FORMAT()
+* `LOWER()`
+* `DATE_FORMAT()`
 * Customer-level aggregation
 * Monthly payment aggregation
 * Payment status aggregation
@@ -1435,11 +1428,122 @@ The analysis demonstrated how businesses can use SQL to identify payment problem
 
 ---
 
+# 🚀 Day 46 Achievement
+
+## Day 46 — Data Quality & Integrity Analysis Completed ✅
+
+Day 46 focused on checking the quality, consistency, completeness, and integrity of the sales analysis database.
+
+The analysis examined duplicate records, missing relationships, invalid values, missing dates, orphan records, incomplete orders, and possible database-quality issues.
+
+### Key Analyses
+
+1. Table Structure Checking
+2. Null Customer ID Checking
+3. Duplicate Customer Records
+4. Duplicate Product Records
+5. Duplicate Order Records
+6. Duplicate Payment Records
+7. Orders Without Matching Customers
+8. Order Items Without Matching Orders
+9. Order Items Without Matching Products
+10. Payments Without Matching Orders
+11. Invalid Order Quantities
+12. Invalid Product Prices
+13. Orders Without Order Items
+14. Products That Have Never Been Ordered
+15. Missing Order Dates
+16. Missing Payment Dates
+17. Multiple Payment Records per Order
+18. Database Record Count Summary
+19. Data Quality Issue Summary
+
+### SQL Techniques Used
+
+* `DESCRIBE`
+* `SELECT`
+* `COUNT()`
+* `SUM()`
+* `GROUP BY`
+* `HAVING`
+* `ORDER BY`
+* `LEFT JOIN`
+* `WHERE`
+* `IS NULL`
+* `UNION ALL`
+* Conditional expressions
+* Duplicate record detection
+* Null value checking
+* Data validation
+* Referential integrity checking
+* Orphan record detection
+* Database quality issue aggregation
+
+### Data Quality Issue Categories
+
+| Issue Category        | Description                                        |
+| --------------------- | -------------------------------------------------- |
+| Duplicate Records     | The same identifier appears multiple times         |
+| Missing Relationships | A record has no matching record in a related table |
+| Invalid Quantities    | Quantity is missing, zero, or negative             |
+| Invalid Prices        | Price is missing, zero, or negative                |
+| Missing Dates         | Order or payment date is unavailable               |
+| Orphan Records        | A child record has no matching parent record       |
+| Incomplete Orders     | An order does not contain related order items      |
+| Unused Products       | A product has no related order item                |
+
+### Business Analysis Focus
+
+Day 46 answered important business questions such as:
+
+* Are there duplicate customer records?
+* Are there duplicate product records?
+* Are there duplicate order records?
+* Are there duplicate payment records?
+* Are any orders missing matching customers?
+* Are any order items missing matching orders?
+* Are any order items missing matching products?
+* Are any payments missing matching orders?
+* Are there invalid order quantities?
+* Are there invalid product prices?
+* Are there orders without order items?
+* Which products have never been ordered?
+* Are any order dates missing?
+* Are any payment dates missing?
+* Which orders have multiple payment records?
+* What data-quality issues exist in the database?
+
+### Business Applications
+
+Data quality and integrity analysis can support:
+
+* Database accuracy improvement
+* Duplicate record monitoring
+* Reliable customer reporting
+* Incomplete order identification
+* Payment record validation
+* Revenue calculation accuracy
+* Product analysis accuracy
+* Referential integrity monitoring
+* Database maintenance
+* Data validation
+* Business dashboard reliability
+* Business decision-making
+* Data governance and quality control
+
+### Day 46 Learning Outcome
+
+Day 46 strengthened practical SQL skills related to data validation, duplicate detection, null checking, referential integrity, orphan record detection, and database quality monitoring.
+
+The analysis demonstrated why clean and reliable data is necessary before performing advanced business intelligence and analytics.
+
+---
+
 # 🏁 Portfolio Progress
 
-## 45 Days Completed 🚀
+## 46 Days Completed 🚀
 
-**SQL Fundamentals → Advanced SQL → Business Analytics → Customer Analytics → Customer Retention → Customer Lifetime Value → RFM Customer Segmentation → Customer Segment Performance → Customer Segment Retention & Churn Risk → Customer Cohort & Retention Trend Analysis → Customer Lifecycle & Repeat Purchase Analysis → Customer Purchase Frequency & Repeat Behavior Analysis → PAYMENT STATUS & PAYMENT METHOD ANALYSIS → Customer Payment Behavior Analysis → Customer Payment Risk & Pending Payment Analysis → Product Analytics → Product Purchase Behavior → Product Customer Affinity → Cross-Selling → Customer-Product Purchase Analysis → Product Recommendations → Customer Purchase Journey & Basket Analysis → Business Insights**
+**SQL Fundamentals → Advanced SQL → Business Analytics → Customer Analytics → Customer Retention → Customer Lifetime Value → RFM Customer Segmentation → Customer Segment Performance → Customer Segment Retention & Churn Risk → Customer Cohort & Retention Trend Analysis → Customer Lifecycle & Repeat Purchase Analysis → Customer Purchase Frequency & Repeat Behavior Analysis → Payment Status & Payment Method Analysis → Customer Payment Behavior Analysis → Customer Payment Risk & Pending Payment Analysis → Data Quality & Integrity Analysis → Product Analytics → Product Purchase Behavior → Product Customer Affinity → Cross-Selling → Customer-Product Purchase Analysis → Product Recommendations → Customer Purchase Journey & Basket Analysis → Business Insights**
 
 The project now demonstrates a broad practical SQL workflow suitable for showcasing **Data Analyst, Business Analyst, SQL Developer, Reporting Analyst, and MIS Analyst portfolio skills**.
 
@@ -1462,9 +1566,10 @@ The next stage of the project can move toward more advanced:
 * Payment monitoring dashboards
 * Customer payment behavior dashboards
 * Payment risk monitoring dashboards
+* Data quality monitoring dashboards
 * Business performance monitoring
 
-**Next Milestone: Day 46 → 46/55 🔥**
+**Next Milestone: Day 47 → 47/55 🔥**
 
 ---
 
@@ -1472,6 +1577,6 @@ The next stage of the project can move toward more advanced:
 
 The long-term goal is to transform this project into a complete **SQL + Business Analytics portfolio project** demonstrating the ability to:
 
-**Query → Analyze → Measure → Segment → Compare → Identify Problems → Generate Insights → Recommend Business Actions**
+**Query → Analyze → Measure → Validate → Segment → Compare → Identify Problems → Generate Insights → Recommend Business Actions**
 
 ---
