@@ -1,6 +1,6 @@
 # 📊 Sales Data Analysis Using SQL
 
-A hands-on SQL portfolio project focused on **relational database design, advanced SQL analytics, query optimization, customer analytics, product analytics, business intelligence, customer retention, cohort analysis, customer lifecycle analysis, repeat purchase analysis, purchase frequency analysis, payment status analysis, payment method analysis, customer payment behavior analysis, customer payment risk analysis, pending payment analysis, data quality analysis, data integrity analysis, sales performance KPI analysis, and business reporting** using MySQL.
+A hands-on SQL portfolio project focused on **relational database design, advanced SQL analytics, query optimization, customer analytics, product analytics, business intelligence, customer retention, cohort analysis, customer lifecycle analysis, repeat purchase analysis, purchase frequency analysis, payment status analysis, payment method analysis, customer payment behavior analysis, customer payment risk analysis, pending payment analysis, data quality analysis, data integrity analysis, sales performance KPI analysis, sales growth analysis, month-over-month analysis, time-series analysis, and business reporting** using MySQL.
 
 This project simulates a real-world sales management system and demonstrates practical SQL skills relevant to **Data Analyst, Business Analyst, SQL Developer, Reporting Analyst, and MIS Analyst roles**.
 
@@ -26,6 +26,9 @@ The project covers:
 * Revenue analysis
 * Business KPI analysis
 * Sales performance KPI analysis
+* Sales growth analysis
+* Month-over-month comparison
+* Monthly revenue analysis
 * Customer segmentation
 * RFM customer segmentation
 * Customer retention and churn analysis
@@ -38,10 +41,6 @@ The project covers:
 * Customer-product analysis
 * Customer purchase journey analysis
 * Basket size analysis
-* Monthly revenue analysis
-* Revenue growth analysis
-* Month-over-month comparison
-* Sales trend analysis
 * Monthly sales projection
 * Revenue forecasting concepts
 * Payment status analysis
@@ -85,7 +84,10 @@ The main objectives of this project are to:
 * Analyze monthly sales and revenue trends.
 * Compare current-month revenue with previous-month revenue.
 * Calculate monthly revenue growth.
-* Identify the highest- and lowest-revenue months.
+* Identify months with revenue increases and decreases.
+* Identify the highest revenue growth month.
+* Identify the largest revenue decline month.
+* Calculate cumulative revenue over time.
 * Analyze monthly customer and order activity.
 * Analyze payment methods and payment statuses.
 * Identify customers with pending or failed payments.
@@ -180,6 +182,8 @@ The main objectives of this project are to:
 * Monthly order aggregation
 * Monthly customer aggregation
 * Revenue growth calculations
+* Revenue change calculations
+* Cumulative revenue calculations
 * Payment status aggregation
 * Payment method aggregation
 * Customer payment activity aggregation
@@ -233,6 +237,10 @@ The main objectives of this project are to:
 * Revenue trend analysis
 * Month-over-month analysis
 * Revenue growth analysis
+* Monthly revenue comparison
+* Previous-period comparison
+* Cumulative revenue analysis
+* Monthly revenue ranking
 * Payment status analysis
 * Payment method ranking
 * Customer payment behavior classification
@@ -362,6 +370,10 @@ The main objectives of this project are to:
 * Month-over-month revenue change
 * Highest-revenue month
 * Lowest-revenue month
+* Cumulative revenue
+* Monthly revenue ranking
+* Highest revenue growth month
+* Largest revenue decline month
 * Revenue forecasting concepts
 * Monthly sales projection
 
@@ -375,10 +387,16 @@ The main objectives of this project are to:
 * Time-series analysis
 * Period-based performance analysis
 * Monthly revenue comparison
+* Previous-month revenue comparison
 * Month-over-month revenue growth
 * Revenue change percentage
 * Monthly sales projection
 * Revenue forecasting concepts
+* Cumulative revenue analysis
+* Monthly revenue ranking
+* Revenue growth classification
+* Highest revenue growth identification
+* Largest revenue decline identification
 
 ## 🔄 Cohort & Retention Analysis
 
@@ -718,6 +736,75 @@ Day 47 focused on converting transactional sales data into measurable **business
 | Revenue per Customer    | Average revenue relative to customer base |
 | Orders per Customer     | Average order activity per customer       |
 
+## 📈 Sales Growth & Month-over-Month Analysis
+
+Day 48 focused on analyzing **monthly sales growth and time-based performance** using SQL.
+
+The analysis extends the Day 47 KPI work by comparing current-month sales performance with previous-month performance.
+
+### Day 48 Key Analyses
+
+* Monthly revenue
+* Monthly order count
+* Monthly units sold
+* Previous-month revenue comparison
+* Month-over-month revenue change
+* Month-over-month revenue growth percentage
+* Monthly sales growth classification
+* Cumulative revenue
+* Monthly revenue ranking
+* Highest revenue growth month
+* Largest revenue decline month
+* Final monthly sales growth summary
+
+### Day 48 SQL Techniques
+
+* `DATE_FORMAT()`
+* `SUM()`
+* `COUNT()`
+* `COUNT(DISTINCT)`
+* `GROUP BY`
+* `ORDER BY`
+* `LAG()`
+* `RANK()`
+* `SUM() OVER()`
+* Common Table Expressions
+* `CASE`
+* `ROUND()`
+* `NULLIF()`
+* Percentage growth calculations
+* Running total calculations
+* Previous-period comparison
+
+### Day 48 Business Metrics
+
+| Metric                 | Business Meaning                              |
+| ---------------------- | --------------------------------------------- |
+| Monthly Revenue        | Revenue generated during a month              |
+| Monthly Orders         | Number of orders during a month               |
+| Monthly Units Sold     | Total units sold during a month               |
+| Previous Month Revenue | Revenue from the previous month               |
+| Revenue Change         | Absolute increase or decrease in revenue      |
+| MoM Growth %           | Percentage increase or decrease               |
+| Cumulative Revenue     | Revenue accumulated over time                 |
+| Revenue Rank           | Monthly revenue ranking                       |
+| Growth Status          | Increase, decrease, unchanged, or first month |
+
+### Day 48 Business Applications
+
+Sales Growth & MoM Analysis can support:
+
+* Monthly sales monitoring
+* Revenue growth tracking
+* Sales decline detection
+* Revenue performance comparison
+* Cumulative revenue monitoring
+* Monthly business reporting
+* Sales trend dashboards
+* Management reporting
+* Revenue planning
+* Business performance monitoring
+
 ---
 
 # 💼 Business Intelligence
@@ -731,6 +818,9 @@ Day 47 focused on converting transactional sales data into measurable **business
 * Revenue contribution analysis
 * Business KPI analysis
 * Sales performance KPI analysis
+* Sales growth analysis
+* Month-over-month analysis
+* Time-series analysis
 * Customer analytics
 * Product analytics
 * Cross-selling analysis
@@ -756,7 +846,9 @@ Day 47 focused on converting transactional sales data into measurable **business
 * Business performance monitoring
 * Actionable business insights
 
-## 🔧 Development & Version Control
+---
+
+# 🔧 Development & Version Control
 
 * Git
 * GitHub
@@ -799,15 +891,16 @@ Day 47 focused on converting transactional sales data into measurable **business
 | **Customer Payment Risk & Pending Payment Analysis**     |  **Day 45** | **✅ Completed**    |
 | **Data Quality & Integrity Analysis**                    |  **Day 46** | **✅ Completed**    |
 | **Sales Performance KPI Analysis**                       |  **Day 47** | **✅ Completed**    |
-| **Overall Progress**                                     | **47 Days** | **🚀 In Progress** |
+| **Sales Growth & Month-over-Month Analysis**             |  **Day 48** | **✅ Completed**    |
+| **Overall Progress**                                     | **48 Days** | **🚀 In Progress** |
 
 ---
 
 # 🏆 Current Milestone
 
-## 47 Days of SQL Business Analysis Completed 🎉
+## 48 Days of SQL Business Analysis Completed 🎉
 
-The project has progressed from basic relational database operations to advanced SQL analytics, customer analytics, product analytics, RFM segmentation, customer segment performance, retention and churn-risk analysis, cohort analysis, customer lifecycle analysis, repeat-purchase analysis, purchase-frequency analysis, payment status analysis, payment method analysis, customer payment behavior analysis, customer payment risk analysis, data quality and integrity analysis, and sales performance KPI analysis.
+The project has progressed from basic relational database operations to advanced SQL analytics, customer analytics, product analytics, RFM segmentation, customer segment performance, retention and churn-risk analysis, cohort analysis, customer lifecycle analysis, repeat-purchase analysis, purchase-frequency analysis, payment status analysis, payment method analysis, customer payment behavior analysis, customer payment risk analysis, data quality and integrity analysis, sales performance KPI analysis, and sales growth and month-over-month analysis.
 
 ### Current Learning Journey
 
@@ -899,27 +992,15 @@ The project has progressed from basic relational database operations to advanced
 
 ↓
 
-**Sales Trend Analysis**
+**Sales Growth & Month-over-Month Analysis**
 
 ↓
 
-**Product Performance Analysis**
+**Product Analytics**
 
 ↓
 
-**Sales Profitability Analysis**
-
-↓
-
-**Customer Revenue Contribution Analysis**
-
-↓
-
-**Product Purchase Behavior**
-
-↓
-
-**Product Customer Affinity**
+**Product Affinity**
 
 ↓
 
@@ -972,7 +1053,6 @@ The project uses a relational sales database consisting of five primary tables.
 
 ```text
 Customers
-
    │
    └── Orders
           │
@@ -987,6 +1067,7 @@ Customers
 
 ```text
 Sales_Data_Analysis_SQL/
+
 │
 ├── Database_Design/
 │   └── sales_analysis.mwb
@@ -1035,7 +1116,8 @@ Sales_Data_Analysis_SQL/
 │   ├── customer_payment_behavior_analysis.sql
 │   ├── payment_risk_pending_analysis.sql
 │   ├── data_quality_integrity_analysis.sql
-│   └── sales_performance_kpi_analysis.sql
+│   ├── sales_performance_kpi_analysis.sql
+│   └── sales_growth_mom_analysis.sql
 │
 ├── Screenshots/
 │   ├── Day 1/
@@ -1047,7 +1129,8 @@ Sales_Data_Analysis_SQL/
 │   ├── Day 44/
 │   ├── Day 45/
 │   ├── Day 46/
-│   └── Day 47/
+│   ├── Day 47/
+│   └── Day 48/
 │
 ├── Presentation/
 │
@@ -1083,7 +1166,8 @@ Sales_Data_Analysis_SQL/
 │   ├── Day44_Customer_Payment_Behavior_Analysis.md
 │   ├── Day45_Customer_Payment_Risk_Analysis.md
 │   ├── Day46_Data_Quality_Integrity_Analysis.md
-│   └── Day47_Sales_Performance_KPI_Analysis.md
+│   ├── Day47_Sales_Performance_KPI_Analysis.md
+│   └── Day48_Sales_Growth_MOM_Analysis.md
 │
 └── README.md
 ```
@@ -1096,137 +1180,73 @@ This project demonstrates an end-to-end progression from raw relational data to 
 
 ```text
 Raw Sales Data
-
         ↓
-
 Database Design
-
         ↓
-
 SQL Fundamentals
-
         ↓
-
 JOINs & Aggregations
-
         ↓
-
 Advanced SQL
-
         ↓
-
 Query Optimization
-
         ↓
-
 Business KPIs
-
         ↓
-
 Customer Analytics
-
         ↓
-
 Customer Retention
-
         ↓
-
 Customer Lifetime Value
-
         ↓
-
 RFM Customer Segmentation
-
         ↓
-
 Customer Segment Performance
-
         ↓
-
 Customer Segment Retention
-
         ↓
-
 Customer Churn Risk
-
         ↓
-
 Customer Cohort Analysis
-
         ↓
-
 Customer Lifecycle Analysis
-
         ↓
-
 Repeat Purchase Analysis
-
         ↓
-
 Customer Purchase Frequency
-
         ↓
-
 Payment Status & Payment Method Analysis
-
         ↓
-
 Customer Payment Behavior Analysis
-
         ↓
-
 Customer Payment Risk & Pending Payment Analysis
-
         ↓
-
 Data Quality & Integrity Analysis
-
         ↓
-
 Sales Performance KPI Analysis
-
         ↓
-
 Monthly Revenue Analysis
-
         ↓
-
 Revenue Growth Analysis
-
         ↓
-
 Month-over-Month Comparison
-
         ↓
-
-Monthly Sales Projection
-
+Cumulative Revenue Analysis
         ↓
-
-Revenue Forecasting Concepts
-
+Sales Growth Classification
         ↓
-
+Monthly Revenue Ranking
+        ↓
 Product Analytics
-
         ↓
-
 Product Affinity
-
         ↓
-
 Cross-Selling Analysis
-
         ↓
-
 Product Recommendations
-
         ↓
-
 Customer Purchase Journey
-
         ↓
-
 Business Insights
 ```
 
@@ -1248,8 +1268,14 @@ Through this project, the following practical skills are demonstrated:
 * Revenue analytics
 * KPI analysis
 * Sales performance KPI analysis
-* Total revenue analysis
-* Average Order Value analysis
+* Sales growth analysis
+* Monthly revenue analysis
+* Month-over-month comparison
+* Revenue change analysis
+* Revenue growth percentage calculation
+* Cumulative revenue analysis
+* Monthly revenue ranking
+* Previous-period comparison
 * Customer revenue analysis
 * Product revenue contribution analysis
 * Customer segmentation
@@ -1269,10 +1295,6 @@ Through this project, the following practical skills are demonstrated:
 * Product affinity analysis
 * Cross-selling analysis
 * Product recommendation analysis
-* Monthly revenue analysis
-* Monthly sales analysis
-* Revenue growth analysis
-* Month-over-month comparison
 * Sales trend analysis
 * Monthly sales projection
 * Revenue forecasting concepts
@@ -1304,11 +1326,11 @@ Through this project, the following practical skills are demonstrated:
 
 **Current Status: 🟢 Active**
 
-**Completed: 47 Days**
+**Completed: 48 Days**
 
 **Primary Focus: SQL Data Analysis & Business Intelligence**
 
-The project continues to expand toward advanced business analytics, customer lifecycle analysis, repeat-purchase analysis, purchase-frequency analysis, retention strategy, product analytics, product affinity, cross-selling, customer-product analysis, product recommendations, customer purchase journey analysis, basket analysis, customer lifetime value analysis, RFM segmentation, customer segment performance, churn-risk analysis, cohort retention analysis, monthly revenue analysis, sales trend analysis, payment status analysis, payment method analysis, customer payment behavior analysis, customer payment risk analysis, pending payment analysis, failed payment analysis, repeated payment record analysis, data quality analysis, database integrity analysis, sales performance KPI analysis, and revenue forecasting concepts.
+The project continues to expand toward advanced business analytics, customer lifecycle analysis, repeat-purchase analysis, purchase-frequency analysis, retention strategy, product analytics, product affinity, cross-selling, customer-product analysis, product recommendations, customer purchase journey analysis, basket analysis, customer lifetime value analysis, RFM segmentation, customer segment performance, churn-risk analysis, cohort retention analysis, monthly revenue analysis, sales trend analysis, month-over-month growth analysis, payment status analysis, payment method analysis, customer payment behavior analysis, customer payment risk analysis, pending payment analysis, failed payment analysis, repeated payment record analysis, data quality analysis, database integrity analysis, sales performance KPI analysis, and revenue forecasting concepts.
 
 ---
 
@@ -1354,23 +1376,6 @@ The analysis measured overall sales performance across orders, customers, produc
 * Revenue contribution calculations
 * KPI calculations
 
-### Business Analysis Focus
-
-Day 47 answered important business questions such as:
-
-* How many orders were placed?
-* How many customers are in the database?
-* How many products are available?
-* How much total revenue was generated?
-* How many units were sold?
-* What is the Average Order Value?
-* How many units are purchased per order on average?
-* How much revenue is generated per customer?
-* How many orders does each customer place on average?
-* How does sales performance change month by month?
-* Which customers contribute the most revenue?
-* Which products contribute the most revenue?
-
 ### Business Applications
 
 Sales Performance KPI Analysis can support:
@@ -1387,19 +1392,96 @@ Sales Performance KPI Analysis can support:
 * Sales planning
 * Business performance monitoring
 
-### Day 47 Learning Outcome
+---
 
-Day 47 strengthened practical SQL skills related to KPI calculation, sales performance measurement, order-level aggregation, customer-level aggregation, product-level aggregation, monthly analysis, revenue contribution analysis, and business reporting.
+# 🚀 Day 48 Achievement
 
-The analysis demonstrated how raw transactional sales data can be transformed into measurable KPIs that support business intelligence and decision-support activities.
+## Day 48 — Sales Growth & Month-over-Month Analysis Completed ✅
+
+Day 48 focused on analyzing **sales growth, monthly performance, and time-based revenue changes** using SQL.
+
+The analysis used previous-period comparisons and window functions to understand how monthly sales performance changes over time.
+
+### Key Analyses
+
+1. Monthly Revenue
+2. Monthly Order Count
+3. Monthly Units Sold
+4. Monthly Revenue with Previous Month Revenue
+5. Month-over-Month Revenue Change
+6. Month-over-Month Revenue Growth Percentage
+7. Monthly Sales Growth Classification
+8. Cumulative Revenue Over Time
+9. Monthly Revenue Ranking
+10. Highest Revenue Growth Month
+11. Largest Revenue Decline Month
+12. Final Monthly Sales Growth Summary
+
+### SQL Techniques Used
+
+* `DATE_FORMAT()`
+* `SUM()`
+* `COUNT()`
+* `COUNT(DISTINCT)`
+* `GROUP BY`
+* `ORDER BY`
+* `LAG()`
+* `RANK()`
+* Window Functions
+* Common Table Expressions
+* `CASE`
+* `ROUND()`
+* `NULLIF()`
+* Previous-period comparison
+* Percentage growth calculations
+* Revenue change calculations
+* Running total calculations
+
+### Business Analysis Focus
+
+Day 48 answered important business questions such as:
+
+* What is the monthly revenue?
+* How many orders were generated each month?
+* How many units were sold each month?
+* What was the previous month's revenue?
+* How much did revenue change?
+* What is the month-over-month growth percentage?
+* Did revenue increase or decrease compared with the previous month?
+* What is the cumulative revenue over time?
+* Which months generated the highest revenue?
+* Which month recorded the highest revenue growth?
+* Which month experienced the largest revenue decline?
+* What is the complete monthly sales growth picture?
+
+### Business Applications
+
+Sales Growth & Month-over-Month Analysis can support:
+
+* Monthly sales performance monitoring
+* Revenue growth tracking
+* Revenue decline detection
+* Historical performance comparison
+* Cumulative revenue monitoring
+* Monthly management reporting
+* Sales trend dashboards
+* Revenue planning
+* Business performance monitoring
+* Sales growth analysis
+
+### Day 48 Learning Outcome
+
+Day 48 strengthened practical SQL skills related to **time-series sales analysis, previous-period comparison, `LAG()`, `RANK()`, CTEs, cumulative calculations, growth percentages, revenue changes, and business performance classification**.
+
+The analysis demonstrated how transactional sales data can be transformed into monthly growth metrics that support business reporting and decision-support activities.
 
 ---
 
 # 🏁 Portfolio Progress
 
-## 47 Days Completed 🚀
+## 48 Days Completed 🚀
 
-**SQL Fundamentals → Advanced SQL → Business Analytics → Customer Analytics → Customer Retention → Customer Lifetime Value → RFM Customer Segmentation → Customer Segment Performance → Customer Segment Retention & Churn Risk → Customer Cohort & Retention Trend Analysis → Customer Lifecycle & Repeat Purchase Analysis → Customer Purchase Frequency & Repeat Behavior Analysis → Payment Status & Payment Method Analysis → Customer Payment Behavior Analysis → Customer Payment Risk & Pending Payment Analysis → Data Quality & Integrity Analysis → Sales Performance KPI Analysis → Product Analytics → Product Purchase Behavior → Product Customer Affinity → Cross-Selling → Customer-Product Purchase Analysis → Product Recommendations → Customer Purchase Journey & Basket Analysis → Business Insights**
+**SQL Fundamentals → Advanced SQL → Business Analytics → Customer Analytics → Customer Retention → Customer Lifetime Value → RFM Customer Segmentation → Customer Segment Performance → Customer Segment Retention & Churn Risk → Customer Cohort & Retention Trend Analysis → Customer Lifecycle & Repeat Purchase Analysis → Customer Purchase Frequency & Repeat Behavior Analysis → Payment Status & Payment Method Analysis → Customer Payment Behavior Analysis → Customer Payment Risk & Pending Payment Analysis → Data Quality & Integrity Analysis → Sales Performance KPI Analysis → Sales Growth & Month-over-Month Analysis → Product Analytics → Product Purchase Behavior → Product Customer Affinity → Cross-Selling → Customer-Product Purchase Analysis → Product Recommendations → Customer Purchase Journey & Basket Analysis → Business Insights**
 
 The project now demonstrates a broad practical SQL workflow suitable for showcasing **Data Analyst, Business Analyst, SQL Developer, Reporting Analyst, and MIS Analyst portfolio skills**.
 
@@ -1426,7 +1508,7 @@ The next stage of the project can move toward more advanced:
 * Data quality monitoring dashboards
 * Business performance monitoring
 
-**Next Milestone: Day 48 → 48/55 🔥**
+**Next Milestone: Day 49 → 49/55 🔥**
 
 ---
 
