@@ -1,6 +1,6 @@
 # 📊 Sales Data Analysis Using SQL
 
-A hands-on SQL portfolio project focused on **relational database design, advanced SQL analytics, query optimization, customer analytics, product analytics, business intelligence, customer retention, cohort analysis, customer lifecycle analysis, repeat purchase analysis, purchase frequency analysis, payment status analysis, payment method analysis, customer payment behavior analysis, customer payment risk analysis, pending payment analysis, data quality analysis, data integrity analysis, sales performance KPI analysis, sales growth analysis, month-over-month analysis, time-series analysis, and business reporting** using MySQL.
+A hands-on SQL portfolio project focused on **relational database design, advanced SQL analytics, query optimization, customer analytics, product analytics, business intelligence, customer retention, cohort analysis, customer lifecycle analysis, repeat purchase analysis, purchase frequency analysis, payment status analysis, payment method analysis, customer payment behavior analysis, customer payment risk analysis, pending payment analysis, data quality analysis, data integrity analysis, sales performance KPI analysis, sales growth analysis, month-over-month analysis, time-series analysis, order value analysis, basket analysis, and business reporting** using MySQL.
 
 This project simulates a real-world sales management system and demonstrates practical SQL skills relevant to **Data Analyst, Business Analyst, SQL Developer, Reporting Analyst, and MIS Analyst roles**.
 
@@ -41,6 +41,8 @@ The project covers:
 * Customer-product analysis
 * Customer purchase journey analysis
 * Basket size analysis
+* Order value analysis
+* High-value order analysis
 * Monthly sales projection
 * Revenue forecasting concepts
 * Payment status analysis
@@ -80,6 +82,9 @@ The main objectives of this project are to:
 * Analyze customer purchase frequency and purchase intervals.
 * Identify cross-selling and product recommendation opportunities.
 * Analyze customer purchase journeys and basket size.
+* Analyze order values and transaction-level sales performance.
+* Identify low-value, medium-value, high-value, and very high-value orders.
+* Identify high-value transactions.
 * Calculate customer lifetime revenue and revenue contribution.
 * Analyze monthly sales and revenue trends.
 * Compare current-month revenue with previous-month revenue.
@@ -151,6 +156,8 @@ The main objectives of this project are to:
 * Payment monitoring JOINs
 * Data integrity JOINs
 * Orphan record detection using LEFT JOINs
+* Order value analysis JOINs
+* Basket analysis JOINs
 
 ## 📊 SQL Aggregation & Analysis
 
@@ -199,6 +206,8 @@ The main objectives of this project are to:
 * Customer-level KPI aggregation
 * Product-level KPI aggregation
 * Monthly KPI aggregation
+* Order value aggregation
+* Basket size aggregation
 
 ## 🧠 Advanced SQL
 
@@ -228,6 +237,8 @@ The main objectives of this project are to:
 * Product recommendation analysis
 * Customer purchase journey analysis
 * Basket size analysis
+* Order value analysis
+* High-value order analysis
 * Customer Lifetime Value analysis
 * RFM analysis
 * Customer segment performance analysis
@@ -257,6 +268,9 @@ The main objectives of this project are to:
 * Revenue per customer analysis
 * Orders per customer analysis
 * Product revenue contribution analysis
+* Order value classification
+* Monthly order value analysis
+* Order value ranking
 
 ## ⚡ SQL Optimization
 
@@ -268,7 +282,9 @@ The main objectives of this project are to:
 * Efficient JOIN strategies
 * Performance-oriented SQL design
 
-## 👥 Customer Analytics
+---
+
+# 👥 Customer Analytics
 
 * Customer revenue analysis
 * Customer behavior analysis
@@ -311,7 +327,9 @@ The main objectives of this project are to:
 * Customer payment activity classification
 * Customer payment risk ranking
 
-## 📦 Product Analytics
+---
+
+# 📦 Product Analytics
 
 * Product sales analysis
 * Product revenue analysis
@@ -329,7 +347,9 @@ The main objectives of this project are to:
 * Product recommendations
 * Product bundle opportunities
 
-## 💰 Revenue & KPI Analysis
+---
+
+# 💰 Revenue & KPI Analysis
 
 * Total revenue
 * Total orders
@@ -376,8 +396,20 @@ The main objectives of this project are to:
 * Largest revenue decline month
 * Revenue forecasting concepts
 * Monthly sales projection
+* Order value analysis
+* Minimum order value
+* Maximum order value
+* Average order value by month
+* Order value ranking
+* High-value order analysis
+* Order value classification
+* Average units per order
+* Minimum units per order
+* Maximum units per order
 
-## 📈 Sales Trend & Time-Series Analysis
+---
+
+# 📈 Sales Trend & Time-Series Analysis
 
 * Daily sales trends
 * Monthly sales trends
@@ -398,7 +430,9 @@ The main objectives of this project are to:
 * Highest revenue growth identification
 * Largest revenue decline identification
 
-## 🔄 Cohort & Retention Analysis
+---
+
+# 🔄 Cohort & Retention Analysis
 
 * Customer first purchase analysis
 * Cohort identification
@@ -419,7 +453,9 @@ The main objectives of this project are to:
 * Revenue-at-risk analysis
 * Customer re-engagement opportunities
 
-## 🛒 Product Purchase Behavior Analysis
+---
+
+# 🛒 Product Purchase Behavior Analysis
 
 * Product purchase summaries
 * Product customer reach
@@ -433,7 +469,9 @@ The main objectives of this project are to:
 * High-volume product identification
 * High-performing product identification
 
-## 🤝 Product Customer Affinity & Cross-Selling
+---
+
+# 🤝 Product Customer Affinity & Cross-Selling
 
 * Customer-product purchase mapping
 * Product pair analysis
@@ -447,7 +485,9 @@ The main objectives of this project are to:
 * Product bundle opportunities
 * Cross-selling revenue opportunity
 
-## 📌 Customer RFM Segmentation
+---
+
+# 📌 Customer RFM Segmentation
 
 * Customer recency analysis
 * Customer frequency analysis
@@ -468,7 +508,9 @@ The main objectives of this project are to:
 * Customer engagement analysis
 * Targeted marketing opportunities
 
-## 📊 Customer Segment Performance Analysis
+---
+
+# 📊 Customer Segment Performance Analysis
 
 * Customer segment distribution
 * Customer count by RFM segment
@@ -488,7 +530,9 @@ The main objectives of this project are to:
 * Revenue opportunity by segment
 * Retention opportunity by segment
 
-## 🔄 Customer Segment Retention & Churn Risk Analysis
+---
+
+# 🔄 Customer Segment Retention & Churn Risk Analysis
 
 * Customer retention by RFM segment
 * Repeat versus one-time customers by segment
@@ -506,7 +550,9 @@ The main objectives of this project are to:
 * Revenue protection
 * Churn prevention
 
-## 👤 Customer Lifecycle & Repeat Purchase Analysis
+---
+
+# 👤 Customer Lifecycle & Repeat Purchase Analysis
 
 * Customer first purchase
 * Customer second purchase
@@ -539,7 +585,9 @@ The main objectives of this project are to:
 
 These lifecycle thresholds are business-analysis rules and can be adjusted depending on the business context.
 
-## 🔁 Customer Purchase Frequency & Repeat Behavior Analysis
+---
+
+# 🔁 Customer Purchase Frequency & Repeat Behavior Analysis
 
 * Customer purchase frequency
 * Monthly orders per customer
@@ -570,7 +618,9 @@ These lifecycle thresholds are business-analysis rules and can be adjusted depen
 
 These frequency categories are business-analysis rules and can be adjusted according to the business context.
 
-## 📈 Customer Revenue Forecasting & Monthly Sales Projection Analysis
+---
+
+# 📈 Customer Revenue Forecasting & Monthly Sales Projection Analysis
 
 * Monthly revenue analysis
 * Monthly order analysis
@@ -592,7 +642,9 @@ These frequency categories are business-analysis rules and can be adjusted accor
 * Sales target planning
 * Future business performance estimation
 
-## 💳 Payment Status & Payment Method Analysis
+---
+
+# 💳 Payment Status & Payment Method Analysis
 
 * Payment method distribution
 * Payment status distribution
@@ -610,7 +662,9 @@ These frequency categories are business-analysis rules and can be adjusted accor
 * Payment process monitoring
 * Payment-related business reporting
 
-## 👤 Customer Payment Behavior Analysis
+---
+
+# 👤 Customer Payment Behavior Analysis
 
 * Total payments per customer
 * Payment methods used by each customer
@@ -636,7 +690,9 @@ These frequency categories are business-analysis rules and can be adjusted accor
 
 These categories are business-analysis rules and can be adjusted according to the business context.
 
-## ⚠️ Customer Payment Risk & Pending Payment Analysis
+---
+
+# ⚠️ Customer Payment Risk & Pending Payment Analysis
 
 * Identification of all payment statuses
 * Payment status distribution
@@ -671,7 +727,9 @@ These categories are business-analysis rules and can be adjusted according to th
 
 These categories are business-analysis rules and can be adjusted according to the business context.
 
-## 🧹 Data Quality & Integrity Analysis
+---
+
+# 🧹 Data Quality & Integrity Analysis
 
 Day 46 focused on checking the reliability, consistency, and integrity of the sales database.
 
@@ -698,7 +756,9 @@ Day 46 focused on checking the reliability, consistency, and integrity of the sa
 * Orphan record detection
 * Data validation
 
-## 📊 Sales Performance KPI Analysis
+---
+
+# 📊 Sales Performance KPI Analysis
 
 Day 47 focused on converting transactional sales data into measurable **business performance KPIs**.
 
@@ -736,11 +796,13 @@ Day 47 focused on converting transactional sales data into measurable **business
 | Revenue per Customer    | Average revenue relative to customer base |
 | Orders per Customer     | Average order activity per customer       |
 
-## 📈 Sales Growth & Month-over-Month Analysis
+---
+
+# 📈 Sales Growth & Month-over-Month Analysis
 
 Day 48 focused on analyzing **monthly sales growth and time-based performance** using SQL.
 
-The analysis extends the Day 47 KPI work by comparing current-month sales performance with previous-month performance.
+The analysis extended the Day 47 KPI work by comparing current-month sales performance with previous-month performance.
 
 ### Day 48 Key Analyses
 
@@ -792,7 +854,7 @@ The analysis extends the Day 47 KPI work by comparing current-month sales perfor
 
 ### Day 48 Business Applications
 
-Sales Growth & MoM Analysis can support:
+Sales Growth & Month-over-Month Analysis can support:
 
 * Monthly sales monitoring
 * Revenue growth tracking
@@ -804,6 +866,122 @@ Sales Growth & MoM Analysis can support:
 * Management reporting
 * Revenue planning
 * Business performance monitoring
+
+---
+
+# 🛒 Sales Order Value & Basket Analysis
+
+Day 49 focused on analyzing **order-level sales value and customer basket behavior** using SQL.
+
+The analysis extends the previous KPI and sales-growth work by examining how much revenue individual orders generate and how many units customers purchase in each order.
+
+### Day 49 Key Analyses
+
+1. Total Number of Orders
+2. Total Sales Revenue
+3. Revenue Generated by Each Order
+4. Average Order Value
+5. Minimum Order Value
+6. Maximum Order Value
+7. Average Units per Order
+8. Minimum and Maximum Units per Order
+9. Order Value Classification
+10. High-Value Order Analysis
+11. Monthly Order Value Analysis
+12. Order Value Ranking
+13. Final Order Value & Basket Summary
+
+### Day 49 SQL Techniques
+
+* `COUNT()`
+* `SUM()`
+* `AVG()`
+* `MIN()`
+* `MAX()`
+* `ROUND()`
+* `JOIN`
+* `GROUP BY`
+* `ORDER BY`
+* `WHERE`
+* `WITH` / Common Table Expressions
+* `CASE`
+* `DATE_FORMAT()`
+* `RANK() OVER()`
+* Order-level aggregation
+* Monthly aggregation
+* Revenue calculation
+* Order value classification
+* Basket size calculation
+* High-value order identification
+* Order ranking
+
+### Day 49 Business Metrics
+
+| Metric                  | Business Meaning                            |
+| ----------------------- | ------------------------------------------- |
+| Total Orders            | Number of unique orders                     |
+| Total Revenue           | Revenue generated from sales                |
+| Average Order Value     | Average revenue generated per order         |
+| Minimum Order Value     | Lowest order value                          |
+| Maximum Order Value     | Highest order value                         |
+| Average Units per Order | Average number of units purchased per order |
+| Minimum Units per Order | Smallest basket size                        |
+| Maximum Units per Order | Largest basket size                         |
+| Order Value Category    | Classification of orders by monetary value  |
+| Order Value Rank        | Ranking of orders by revenue                |
+
+### Day 49 Order Value Categories
+
+|    Order Value | Category              |
+| -------------: | --------------------- |
+|      Below 500 | Low Value Order       |
+|      500–1,999 | Medium Value Order    |
+|    2,000–4,999 | High Value Order      |
+| 5,000 or above | Very High Value Order |
+
+These thresholds are **business-analysis rules defined for this project** and can be adjusted depending on the business context.
+
+### Day 49 Business Questions
+
+The analysis answers questions such as:
+
+* How many orders are present in the sales database?
+* What is the total sales revenue?
+* How much revenue does each order generate?
+* What is the Average Order Value?
+* What is the minimum order value?
+* What is the maximum order value?
+* How many units are typically purchased per order?
+* What is the smallest basket size?
+* What is the largest basket size?
+* How can orders be classified according to their value?
+* Which orders are high-value transactions?
+* How does Average Order Value change by month?
+* Which orders have the highest revenue?
+* What does the overall order-value and basket summary look like?
+
+### Day 49 Business Applications
+
+Sales Order Value & Basket Analysis can support:
+
+* Order-value monitoring
+* Average Order Value monitoring
+* Basket-size analysis
+* High-value transaction identification
+* Sales performance monitoring
+* Customer purchasing behavior analysis
+* Monthly order-value reporting
+* Revenue optimization analysis
+* Transaction-level business reporting
+* Sales KPI dashboards
+* Management reporting
+* Business intelligence
+
+### Day 49 Learning Outcome
+
+Day 49 strengthened practical SQL skills related to **order-level aggregation, Average Order Value, basket-size analysis, CTEs, CASE classification, monthly order-value analysis, high-value transaction identification, and window-function-based order ranking**.
+
+The analysis demonstrates how transactional order, product, and quantity data can be transformed into practical business metrics for sales and customer purchasing analysis.
 
 ---
 
@@ -827,6 +1005,8 @@ Sales Growth & MoM Analysis can support:
 * Product recommendation analysis
 * Customer purchase journey
 * Basket behavior analysis
+* Order value analysis
+* High-value transaction analysis
 * Customer Lifetime Value
 * Revenue concentration analysis
 * Revenue forecasting
@@ -892,15 +1072,16 @@ Sales Growth & MoM Analysis can support:
 | **Data Quality & Integrity Analysis**                    |  **Day 46** | **✅ Completed**    |
 | **Sales Performance KPI Analysis**                       |  **Day 47** | **✅ Completed**    |
 | **Sales Growth & Month-over-Month Analysis**             |  **Day 48** | **✅ Completed**    |
-| **Overall Progress**                                     | **48 Days** | **🚀 In Progress** |
+| **Sales Order Value & Basket Analysis**                  |  **Day 49** | **✅ Completed**    |
+| **Overall Progress**                                     | **49 Days** | **🚀 In Progress** |
 
 ---
 
 # 🏆 Current Milestone
 
-## 48 Days of SQL Business Analysis Completed 🎉
+## 49 Days of SQL Business Analysis Completed 🎉
 
-The project has progressed from basic relational database operations to advanced SQL analytics, customer analytics, product analytics, RFM segmentation, customer segment performance, retention and churn-risk analysis, cohort analysis, customer lifecycle analysis, repeat-purchase analysis, purchase-frequency analysis, payment status analysis, payment method analysis, customer payment behavior analysis, customer payment risk analysis, data quality and integrity analysis, sales performance KPI analysis, and sales growth and month-over-month analysis.
+The project has progressed from basic relational database operations to advanced SQL analytics, customer analytics, product analytics, RFM segmentation, customer segment performance, retention and churn-risk analysis, cohort analysis, customer lifecycle analysis, repeat-purchase analysis, purchase-frequency analysis, payment status analysis, payment method analysis, customer payment behavior analysis, customer payment risk analysis, data quality and integrity analysis, sales performance KPI analysis, sales growth and month-over-month analysis, and order value and basket analysis.
 
 ### Current Learning Journey
 
@@ -993,6 +1174,10 @@ The project has progressed from basic relational database operations to advanced
 ↓
 
 **Sales Growth & Month-over-Month Analysis**
+
+↓
+
+**Sales Order Value & Basket Analysis**
 
 ↓
 
@@ -1117,7 +1302,8 @@ Sales_Data_Analysis_SQL/
 │   ├── payment_risk_pending_analysis.sql
 │   ├── data_quality_integrity_analysis.sql
 │   ├── sales_performance_kpi_analysis.sql
-│   └── sales_growth_mom_analysis.sql
+│   ├── sales_growth_mom_analysis.sql
+│   └── sales_order_value_basket_analysis.sql
 │
 ├── Screenshots/
 │   ├── Day 1/
@@ -1130,7 +1316,8 @@ Sales_Data_Analysis_SQL/
 │   ├── Day 45/
 │   ├── Day 46/
 │   ├── Day 47/
-│   └── Day 48/
+│   ├── Day 48/
+│   └── Day 49/
 │
 ├── Presentation/
 │
@@ -1167,7 +1354,8 @@ Sales_Data_Analysis_SQL/
 │   ├── Day45_Customer_Payment_Risk_Analysis.md
 │   ├── Day46_Data_Quality_Integrity_Analysis.md
 │   ├── Day47_Sales_Performance_KPI_Analysis.md
-│   └── Day48_Sales_Growth_MOM_Analysis.md
+│   ├── Day48_Sales_Growth_MOM_Analysis.md
+│   └── Day49_Sales_Order_Value_Basket_Analysis.md
 │
 └── README.md
 ```
@@ -1180,73 +1368,153 @@ This project demonstrates an end-to-end progression from raw relational data to 
 
 ```text
 Raw Sales Data
+
         ↓
+
 Database Design
+
         ↓
+
 SQL Fundamentals
+
         ↓
+
 JOINs & Aggregations
+
         ↓
+
 Advanced SQL
+
         ↓
+
 Query Optimization
+
         ↓
+
 Business KPIs
+
         ↓
+
 Customer Analytics
+
         ↓
+
 Customer Retention
+
         ↓
+
 Customer Lifetime Value
+
         ↓
+
 RFM Customer Segmentation
+
         ↓
+
 Customer Segment Performance
+
         ↓
+
 Customer Segment Retention
+
         ↓
+
 Customer Churn Risk
+
         ↓
+
 Customer Cohort Analysis
+
         ↓
+
 Customer Lifecycle Analysis
+
         ↓
+
 Repeat Purchase Analysis
+
         ↓
+
 Customer Purchase Frequency
+
         ↓
+
 Payment Status & Payment Method Analysis
+
         ↓
+
 Customer Payment Behavior Analysis
+
         ↓
+
 Customer Payment Risk & Pending Payment Analysis
+
         ↓
+
 Data Quality & Integrity Analysis
+
         ↓
+
 Sales Performance KPI Analysis
+
         ↓
+
 Monthly Revenue Analysis
+
         ↓
+
 Revenue Growth Analysis
+
         ↓
+
 Month-over-Month Comparison
+
         ↓
+
 Cumulative Revenue Analysis
+
         ↓
+
 Sales Growth Classification
+
         ↓
+
 Monthly Revenue Ranking
+
         ↓
+
+Order Value Analysis
+
+        ↓
+
+Basket Size Analysis
+
+        ↓
+
+High-Value Order Analysis
+
+        ↓
+
 Product Analytics
+
         ↓
+
 Product Affinity
+
         ↓
+
 Cross-Selling Analysis
+
         ↓
+
 Product Recommendations
+
         ↓
+
 Customer Purchase Journey
+
         ↓
+
 Business Insights
 ```
 
@@ -1289,6 +1557,11 @@ Through this project, the following practical skills are demonstrated:
 * Purchase frequency analysis
 * Customer purchase journey analysis
 * Basket size analysis
+* Order value analysis
+* High-value order identification
+* Order value classification
+* Monthly order-value analysis
+* Order value ranking
 * Customer Lifetime Value analysis
 * Customer revenue ranking
 * Revenue concentration analysis
@@ -1326,11 +1599,11 @@ Through this project, the following practical skills are demonstrated:
 
 **Current Status: 🟢 Active**
 
-**Completed: 48 Days**
+**Completed: 49 Days**
 
 **Primary Focus: SQL Data Analysis & Business Intelligence**
 
-The project continues to expand toward advanced business analytics, customer lifecycle analysis, repeat-purchase analysis, purchase-frequency analysis, retention strategy, product analytics, product affinity, cross-selling, customer-product analysis, product recommendations, customer purchase journey analysis, basket analysis, customer lifetime value analysis, RFM segmentation, customer segment performance, churn-risk analysis, cohort retention analysis, monthly revenue analysis, sales trend analysis, month-over-month growth analysis, payment status analysis, payment method analysis, customer payment behavior analysis, customer payment risk analysis, pending payment analysis, failed payment analysis, repeated payment record analysis, data quality analysis, database integrity analysis, sales performance KPI analysis, and revenue forecasting concepts.
+The project continues to expand toward advanced business analytics, customer lifecycle analysis, repeat-purchase analysis, purchase-frequency analysis, retention strategy, product analytics, product affinity, cross-selling, customer-product analysis, product recommendations, customer purchase journey analysis, basket analysis, order value analysis, high-value transaction analysis, customer lifetime value analysis, RFM segmentation, customer segment performance, churn-risk analysis, cohort retention analysis, monthly revenue analysis, sales trend analysis, month-over-month growth analysis, payment status analysis, payment method analysis, customer payment behavior analysis, customer payment risk analysis, pending payment analysis, failed payment analysis, repeated payment record analysis, data quality analysis, database integrity analysis, sales performance KPI analysis, and revenue forecasting concepts.
 
 ---
 
@@ -1356,41 +1629,6 @@ The analysis measured overall sales performance across orders, customers, produc
 10. Monthly Sales Performance
 11. Customer Revenue Contribution
 12. Product Revenue Contribution
-
-### SQL Techniques Used
-
-* `COUNT()`
-* `SUM()`
-* `AVG()`
-* `ROUND()`
-* `GROUP BY`
-* `ORDER BY`
-* `COUNT(DISTINCT)`
-* JOINs
-* Subqueries
-* `DATE_FORMAT()`
-* Customer-level aggregation
-* Product-level aggregation
-* Order-level aggregation
-* Monthly aggregation
-* Revenue contribution calculations
-* KPI calculations
-
-### Business Applications
-
-Sales Performance KPI Analysis can support:
-
-* Sales performance monitoring
-* Revenue monitoring
-* Order volume monitoring
-* Customer performance analysis
-* Product performance analysis
-* Monthly sales reporting
-* KPI dashboards
-* Business intelligence
-* Management reporting
-* Sales planning
-* Business performance monitoring
 
 ---
 
@@ -1437,51 +1675,105 @@ The analysis used previous-period comparisons and window functions to understand
 * Revenue change calculations
 * Running total calculations
 
+---
+
+# 🚀 Day 49 Achievement
+
+## Day 49 — Sales Order Value & Basket Analysis Completed ✅
+
+Day 49 focused on analyzing **order-level sales value and basket behavior** using SQL.
+
+The analysis examined the monetary value of individual orders, average transaction value, basket size, high-value transactions, monthly order-value performance, and order-level revenue rankings.
+
+### Key Analyses
+
+1. Total Number of Orders
+2. Total Sales Revenue
+3. Revenue Generated by Each Order
+4. Average Order Value
+5. Minimum Order Value
+6. Maximum Order Value
+7. Average Units per Order
+8. Minimum and Maximum Units per Order
+9. Order Value Classification
+10. High-Value Order Analysis
+11. Monthly Order Value Analysis
+12. Order Value Ranking
+13. Final Order Value & Basket Summary
+
+### SQL Techniques Used
+
+* `COUNT()`
+* `SUM()`
+* `AVG()`
+* `MIN()`
+* `MAX()`
+* `ROUND()`
+* JOINs
+* `GROUP BY`
+* `ORDER BY`
+* `WHERE`
+* Common Table Expressions
+* `CASE`
+* `DATE_FORMAT()`
+* `RANK() OVER()`
+* Order-level aggregation
+* Monthly aggregation
+* Revenue calculations
+* Order value classification
+* Basket size calculations
+* High-value order identification
+* Order ranking
+
 ### Business Analysis Focus
 
-Day 48 answered important business questions such as:
+Day 49 answered important business questions such as:
 
-* What is the monthly revenue?
-* How many orders were generated each month?
-* How many units were sold each month?
-* What was the previous month's revenue?
-* How much did revenue change?
-* What is the month-over-month growth percentage?
-* Did revenue increase or decrease compared with the previous month?
-* What is the cumulative revenue over time?
-* Which months generated the highest revenue?
-* Which month recorded the highest revenue growth?
-* Which month experienced the largest revenue decline?
-* What is the complete monthly sales growth picture?
+* How many orders are present in the sales database?
+* What is the total sales revenue?
+* How much revenue does each order generate?
+* What is the Average Order Value?
+* What is the minimum order value?
+* What is the maximum order value?
+* How many units are typically purchased per order?
+* What is the smallest basket size?
+* What is the largest basket size?
+* How can orders be classified according to their value?
+* Which orders are high-value transactions?
+* How does Average Order Value change by month?
+* Which orders generate the highest revenue?
+* What is the overall order-value and basket summary?
 
 ### Business Applications
 
-Sales Growth & Month-over-Month Analysis can support:
+Sales Order Value & Basket Analysis can support:
 
-* Monthly sales performance monitoring
-* Revenue growth tracking
-* Revenue decline detection
-* Historical performance comparison
-* Cumulative revenue monitoring
-* Monthly management reporting
-* Sales trend dashboards
-* Revenue planning
-* Business performance monitoring
-* Sales growth analysis
+* Order-value monitoring
+* Average Order Value monitoring
+* Basket-size analysis
+* High-value transaction identification
+* Sales performance monitoring
+* Customer purchasing behavior analysis
+* Monthly order-value reporting
+* Revenue optimization analysis
+* Transaction-level business reporting
+* Sales KPI dashboards
+* Management reporting
+* Business intelligence
 
-### Day 48 Learning Outcome
+### Day 49 Learning Outcome
 
-Day 48 strengthened practical SQL skills related to **time-series sales analysis, previous-period comparison, `LAG()`, `RANK()`, CTEs, cumulative calculations, growth percentages, revenue changes, and business performance classification**.
+Day 49 strengthened practical SQL skills related to **order-level aggregation, Average Order Value, basket-size analysis, CTEs, CASE classification, monthly order-value analysis, high-value transaction identification, and window-function-based order ranking**.
 
-The analysis demonstrated how transactional sales data can be transformed into monthly growth metrics that support business reporting and decision-support activities.
+The analysis demonstrated how transactional sales data can be transformed into practical order-level business metrics that support sales performance and customer purchasing analysis.
 
 ---
 
 # 🏁 Portfolio Progress
 
-## 48 Days Completed 🚀
+## 49 Days Completed 🚀
 
-**SQL Fundamentals → Advanced SQL → Business Analytics → Customer Analytics → Customer Retention → Customer Lifetime Value → RFM Customer Segmentation → Customer Segment Performance → Customer Segment Retention & Churn Risk → Customer Cohort & Retention Trend Analysis → Customer Lifecycle & Repeat Purchase Analysis → Customer Purchase Frequency & Repeat Behavior Analysis → Payment Status & Payment Method Analysis → Customer Payment Behavior Analysis → Customer Payment Risk & Pending Payment Analysis → Data Quality & Integrity Analysis → Sales Performance KPI Analysis → Sales Growth & Month-over-Month Analysis → Product Analytics → Product Purchase Behavior → Product Customer Affinity → Cross-Selling → Customer-Product Purchase Analysis → Product Recommendations → Customer Purchase Journey & Basket Analysis → Business Insights**
+**SQL Fundamentals → Advanced SQL → Business Analytics → Customer Analytics → Customer Retention → Customer Lifetime Value → RFM Customer Segmentation → Customer Segment Performance → Customer Segment Retention & Churn Risk → Customer Cohort & Retention Trend Analysis → Customer Lifecycle & Repeat Purchase Analysis → Customer Purchase Frequency & Repeat Behavior Analysis → Payment Status & Payment Method Analysis → Customer Payment Behavior Analysis → Customer Payment Risk & Pending Payment Analysis → Data Quality & Integrity Analysis → Sales Performance KPI Analysis → Sales Growth & Month-over-Month Analysis → Sales Order Value & Basket Analysis → Product Analytics → Product Purchase Behavior → Product Customer Affinity → Cross-Selling → Customer-Product Purchase Analysis → Product Recommendations → Customer Purchase Journey & Basket Analysis → Business Insights**
 
 The project now demonstrates a broad practical SQL workflow suitable for showcasing **Data Analyst, Business Analyst, SQL Developer, Reporting Analyst, and MIS Analyst portfolio skills**.
 
@@ -1508,7 +1800,7 @@ The next stage of the project can move toward more advanced:
 * Data quality monitoring dashboards
 * Business performance monitoring
 
-**Next Milestone: Day 49 → 49/55 🔥**
+**Next Milestone: Day 50 → 50/55 🔥**
 
 ---
 
