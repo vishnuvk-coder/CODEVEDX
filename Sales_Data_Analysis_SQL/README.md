@@ -1,6 +1,6 @@
 # 📊 Sales Data Analysis Using SQL
 
-A hands-on SQL portfolio project focused on **relational database design, advanced SQL analytics, query optimization, customer analytics, product analytics, business intelligence, customer retention, cohort analysis, customer lifecycle analysis, repeat purchase analysis, purchase frequency analysis, payment status analysis, payment method analysis, customer payment behavior analysis, customer payment risk analysis, pending payment analysis, data quality analysis, data integrity analysis, sales performance KPI analysis, sales growth analysis, month-over-month analysis, time-series analysis, order value analysis, basket analysis, revenue forecasting, future sales projection, and business reporting** using MySQL.
+A hands-on SQL portfolio project focused on **relational database design, advanced SQL analytics, query optimization, customer analytics, product analytics, business intelligence, customer retention, cohort analysis, customer lifecycle analysis, repeat purchase analysis, purchase frequency analysis, payment analysis, data quality analysis, sales KPI analysis, sales growth analysis, order value analysis, basket analysis, revenue forecasting, product demand forecasting, and business reporting** using MySQL.
 
 This project simulates a real-world sales management system and demonstrates practical SQL skills relevant to **Data Analyst, Business Analyst, SQL Developer, Reporting Analyst, and MIS Analyst roles**.
 
@@ -43,23 +43,23 @@ The project covers:
 * Basket size analysis
 * Order value analysis
 * High-value order analysis
-* Monthly sales projection
-* Revenue forecasting concepts
+* Revenue forecasting
+* Future sales projection
 * Payment status analysis
 * Payment method analysis
 * Customer payment behavior analysis
-* Payment transaction monitoring
+* Customer payment risk analysis
 * Pending payment analysis
 * Failed payment analysis
-* Customer payment risk classification
-* Repeated payment record analysis
 * Data quality analysis
 * Data integrity analysis
 * Duplicate record detection
 * Null value checking
 * Referential integrity checking
 * Orphan record detection
-* Invalid quantity and price validation
+* Sales performance monitoring
+* Product demand analysis
+* Product demand forecasting
 * Business intelligence
 * Business reporting
 
@@ -83,24 +83,19 @@ The main objectives of this project are to:
 * Identify cross-selling and product recommendation opportunities.
 * Analyze customer purchase journeys and basket size.
 * Analyze order values and transaction-level sales performance.
-* Identify low-value, medium-value, high-value, and very high-value orders.
 * Identify high-value transactions.
 * Calculate customer lifetime revenue and revenue contribution.
 * Analyze monthly sales and revenue trends.
 * Compare current-month revenue with previous-month revenue.
 * Calculate monthly revenue growth.
 * Identify months with revenue increases and decreases.
-* Identify the highest revenue growth month.
-* Identify the largest revenue decline month.
 * Calculate cumulative revenue over time.
-* Analyze monthly customer and order activity.
 * Analyze payment methods and payment statuses.
 * Identify customers with pending or failed payments.
 * Analyze customer payment activity and payment behavior.
 * Identify repeated payment records and multiple payment attempts.
 * Analyze customer payment risk indicators.
-* Classify customers according to payment activity and payment risk.
-* Identify duplicate records and possible data-quality issues.
+* Identify duplicate records and data-quality issues.
 * Check missing relationships between related tables.
 * Validate order quantities and product prices.
 * Identify orphan records and incomplete transactions.
@@ -108,6 +103,12 @@ The main objectives of this project are to:
 * Analyze historical revenue trends.
 * Calculate moving-average revenue.
 * Create simple SQL-based baseline revenue projections.
+* Analyze product-level demand.
+* Calculate monthly product demand.
+* Analyze product demand growth.
+* Calculate product demand moving averages.
+* Rank products by units sold and revenue.
+* Create simple product-level demand projections.
 * Convert raw sales data into actionable business insights.
 * Create structured business reports using SQL.
 
@@ -144,23 +145,18 @@ The main objectives of this project are to:
 * Customer-product analysis
 * Product pair analysis
 * Cross-selling JOIN analysis
-* Customer lifetime revenue JOIN analysis
-* RFM customer analysis JOINs
-* Customer segment performance JOINs
+* Customer lifetime revenue JOINs
+* RFM analysis JOINs
 * Customer retention JOINs
 * Cohort analysis JOINs
 * Customer lifecycle JOINs
-* Repeat customer revenue JOINs
-* Purchase frequency analysis JOINs
-* Monthly revenue analysis JOINs
-* Customer payment behavior JOINs
-* Payment transaction analysis JOINs
-* Customer payment risk JOINs
-* Payment monitoring JOINs
+* Purchase frequency JOINs
+* Payment transaction JOINs
 * Data integrity JOINs
 * Orphan record detection using LEFT JOINs
 * Order value analysis JOINs
 * Basket analysis JOINs
+* Product demand analysis JOINs
 
 ## 📊 SQL Aggregation & Analysis
 
@@ -176,16 +172,13 @@ The main objectives of this project are to:
 * Customer-level aggregation
 * Product-level aggregation
 * Customer-product aggregation
-* Customer lifetime revenue aggregation
 * Revenue contribution calculations
 * RFM metric aggregation
 * Segment-level aggregation
-* Retention rate calculations
+* Retention calculations
 * Churn-risk calculations
-* Revenue-at-risk calculations
 * Cohort aggregation
 * Repeat purchase aggregation
-* Customer lifecycle aggregation
 * Purchase frequency aggregation
 * Purchase interval aggregation
 * Monthly revenue aggregation
@@ -197,13 +190,10 @@ The main objectives of this project are to:
 * Payment status aggregation
 * Payment method aggregation
 * Customer payment activity aggregation
-* Pending payment aggregation
-* Failed payment aggregation
 * Payment risk aggregation
 * Data-quality issue aggregation
 * Duplicate record counting
 * Null value counting
-* Integrity issue counting
 * Sales KPI aggregation
 * Order-level KPI aggregation
 * Customer-level KPI aggregation
@@ -211,6 +201,9 @@ The main objectives of this project are to:
 * Monthly KPI aggregation
 * Order value aggregation
 * Basket size aggregation
+* Product demand aggregation
+* Product demand growth calculations
+* Product-level moving averages
 
 ## 🧠 Advanced SQL
 
@@ -241,7 +234,6 @@ The main objectives of this project are to:
 * Customer purchase journey analysis
 * Basket size analysis
 * Order value analysis
-* High-value order analysis
 * Customer Lifetime Value analysis
 * RFM analysis
 * Customer segment performance analysis
@@ -262,10 +254,9 @@ The main objectives of this project are to:
 * Pending payment analysis
 * Failed payment analysis
 * Customer payment risk classification
-* Repeated payment record analysis
 * Duplicate record detection
 * Referential integrity analysis
-* Data validation using conditional expressions
+* Data validation
 * Sales performance KPI analysis
 * Average Order Value analysis
 * Revenue per customer analysis
@@ -278,6 +269,11 @@ The main objectives of this project are to:
 * Revenue trend classification
 * Baseline revenue forecasting
 * Future revenue projection
+* Product demand analysis
+* Product demand ranking
+* Product demand trend classification
+* Product demand moving-average analysis
+* Product demand forecasting
 
 ## ⚡ SQL Optimization
 
@@ -353,6 +349,17 @@ The main objectives of this project are to:
 * Cross-selling opportunities
 * Product recommendations
 * Product bundle opportunities
+* Product demand analysis
+* Monthly product demand
+* Monthly product revenue
+* Product demand growth
+* Previous-month product demand
+* Product demand moving average
+* Product demand trend classification
+* Product demand ranking
+* Product revenue ranking
+* Product demand forecasting
+* Next-month product demand projection
 
 ---
 
@@ -395,13 +402,11 @@ The main objectives of this project are to:
 * Monthly average order value
 * Revenue growth percentage
 * Month-over-month revenue change
-* Highest-revenue month
-* Lowest-revenue month
 * Cumulative revenue
 * Monthly revenue ranking
 * Highest revenue growth month
 * Largest revenue decline month
-* Revenue forecasting concepts
+* Revenue forecasting
 * Monthly sales projection
 * Historical average revenue
 * Recent 3-month average revenue
@@ -417,6 +422,7 @@ The main objectives of this project are to:
 * Average units per order
 * Minimum units per order
 * Maximum units per order
+* Product demand forecasting
 
 ---
 
@@ -441,8 +447,6 @@ The main objectives of this project are to:
 * Cumulative revenue analysis
 * Monthly revenue ranking
 * Revenue growth classification
-* Highest revenue growth identification
-* Largest revenue decline identification
 * Future revenue projection
 
 ---
@@ -541,7 +545,6 @@ The main objectives of this project are to:
 * Segment performance ranking
 * Segment KPI analysis
 * Customer segment comparison
-* Segment prioritization
 * Revenue opportunity by segment
 * Retention opportunity by segment
 
@@ -558,10 +561,10 @@ The main objectives of this project are to:
 * Loyal customer retention performance
 * Customer inactivity analysis
 * Revenue at risk from inactive customers
-* Segment retention ranking
+* Segment retention analysis
 * Customer re-engagement opportunities
-* Customer win-back strategies
-* Retention prioritization
+* Customer win-back analysis
+* Retention analysis
 * Revenue protection
 * Churn prevention
 
@@ -630,8 +633,6 @@ These lifecycle thresholds are business-analysis rules and can be adjusted depen
 |          2–3 | Occasional         |
 |          4–6 | Regular            |
 |           7+ | Frequent           |
-
-These frequency categories are business-analysis rules and can be adjusted according to the business context.
 
 ---
 
@@ -707,8 +708,6 @@ These frequency categories are business-analysis rules and can be adjusted accor
 |     5–9 payments | Regular Payment Customer       |
 |     10+ payments | High Activity Payment Customer |
 
-These categories are business-analysis rules and can be adjusted according to the business context.
-
 ---
 
 # ⚠️ Customer Payment Risk & Pending Payment Analysis
@@ -728,7 +727,6 @@ These categories are business-analysis rules and can be adjusted according to th
 * Customer failed payment count
 * Customer payment activity monitoring
 * Customer payment risk classification
-* High payment-risk customer identification
 * Repeated payment attempt analysis
 * Payment issue monitoring
 * Payment operations reporting
@@ -781,25 +779,20 @@ Day 46 focused on checking the reliability, consistency, and integrity of the sa
 
 Day 47 focused on converting transactional sales data into measurable **business performance KPIs**.
 
-* Total orders
-* Total customers
-* Total products
-* Total revenue
-* Total units sold
-* Average Order Value
-* Average units per order
-* Revenue per customer
-* Orders per customer
-* Monthly sales performance
-* Monthly orders
-* Monthly units sold
-* Monthly revenue
-* Monthly Average Order Value
-* Customer revenue contribution
-* Customer revenue contribution percentage
-* Product revenue contribution
-* Product revenue contribution percentage
-* Overall sales KPI summary
+### Day 47 Key Analyses
+
+1. Total Orders
+2. Total Customers
+3. Total Products
+4. Total Revenue
+5. Total Units Sold
+6. Average Order Value
+7. Average Units per Order
+8. Revenue per Customer
+9. Orders per Customer
+10. Monthly Sales Performance
+11. Customer Revenue Contribution
+12. Product Revenue Contribution
 
 ### Day 47 KPI Framework
 
@@ -821,22 +814,20 @@ Day 47 focused on converting transactional sales data into measurable **business
 
 Day 48 focused on analyzing **monthly sales growth and time-based performance** using SQL.
 
-The analysis extended the Day 47 KPI work by comparing current-month sales performance with previous-month performance.
-
 ### Day 48 Key Analyses
 
-* Monthly revenue
-* Monthly order count
-* Monthly units sold
-* Previous-month revenue comparison
-* Month-over-month revenue change
-* Month-over-month revenue growth percentage
-* Monthly sales growth classification
-* Cumulative revenue
-* Monthly revenue ranking
-* Highest revenue growth month
-* Largest revenue decline month
-* Final monthly sales growth summary
+1. Monthly revenue
+2. Monthly order count
+3. Monthly units sold
+4. Previous-month revenue comparison
+5. Month-over-month revenue change
+6. Month-over-month revenue growth percentage
+7. Monthly sales growth classification
+8. Cumulative revenue
+9. Monthly revenue ranking
+10. Highest revenue growth month
+11. Largest revenue decline month
+12. Final monthly sales growth summary
 
 ### Day 48 SQL Techniques
 
@@ -857,42 +848,11 @@ The analysis extended the Day 47 KPI work by comparing current-month sales perfo
 * Running total calculations
 * Previous-period comparison
 
-### Day 48 Business Metrics
-
-| Metric                 | Business Meaning                              |
-| ---------------------- | --------------------------------------------- |
-| Monthly Revenue        | Revenue generated during a month              |
-| Monthly Orders         | Number of orders during a month               |
-| Monthly Units Sold     | Total units sold during a month               |
-| Previous Month Revenue | Revenue from the previous month               |
-| Revenue Change         | Absolute increase or decrease in revenue      |
-| MoM Growth %           | Percentage increase or decrease               |
-| Cumulative Revenue     | Revenue accumulated over time                 |
-| Revenue Rank           | Monthly revenue ranking                       |
-| Growth Status          | Increase, decrease, unchanged, or first month |
-
-### Day 48 Business Applications
-
-Sales Growth & Month-over-Month Analysis can support:
-
-* Monthly sales monitoring
-* Revenue growth tracking
-* Sales decline detection
-* Revenue performance comparison
-* Cumulative revenue monitoring
-* Monthly business reporting
-* Sales trend dashboards
-* Management reporting
-* Revenue planning
-* Business performance monitoring
-
 ---
 
 # 🛒 Sales Order Value & Basket Analysis
 
 Day 49 focused on analyzing **order-level sales value and customer basket behavior** using SQL.
-
-The analysis extends the previous KPI and sales-growth work by examining how much revenue individual orders generate and how many units customers purchase in each order.
 
 ### Day 49 Key Analyses
 
@@ -910,45 +870,6 @@ The analysis extends the previous KPI and sales-growth work by examining how muc
 12. Order Value Ranking
 13. Final Order Value & Basket Summary
 
-### Day 49 SQL Techniques
-
-* `COUNT()`
-* `SUM()`
-* `AVG()`
-* `MIN()`
-* `MAX()`
-* `ROUND()`
-* `JOIN`
-* `GROUP BY`
-* `ORDER BY`
-* `WHERE`
-* `WITH` / Common Table Expressions
-* `CASE`
-* `DATE_FORMAT()`
-* `RANK() OVER()`
-* Order-level aggregation
-* Monthly aggregation
-* Revenue calculation
-* Order value classification
-* Basket size calculation
-* High-value order identification
-* Order ranking
-
-### Day 49 Business Metrics
-
-| Metric                  | Business Meaning                            |
-| ----------------------- | ------------------------------------------- |
-| Total Orders            | Number of unique orders                     |
-| Total Revenue           | Revenue generated from sales                |
-| Average Order Value     | Average revenue generated per order         |
-| Minimum Order Value     | Lowest order value                          |
-| Maximum Order Value     | Highest order value                         |
-| Average Units per Order | Average number of units purchased per order |
-| Minimum Units per Order | Smallest basket size                        |
-| Maximum Units per Order | Largest basket size                         |
-| Order Value Category    | Classification of orders by monetary value  |
-| Order Value Rank        | Ranking of orders by revenue                |
-
 ### Day 49 Order Value Categories
 
 |    Order Value | Category              |
@@ -958,57 +879,13 @@ The analysis extends the previous KPI and sales-growth work by examining how muc
 |    2,000–4,999 | High Value Order      |
 | 5,000 or above | Very High Value Order |
 
-These thresholds are **business-analysis rules defined for this project** and can be adjusted depending on the business context.
-
-### Day 49 Business Questions
-
-The analysis answers questions such as:
-
-* How many orders are present in the sales database?
-* What is the total sales revenue?
-* How much revenue does each order generate?
-* What is the Average Order Value?
-* What is the minimum order value?
-* What is the maximum order value?
-* How many units are typically purchased per order?
-* What is the smallest basket size?
-* What is the largest basket size?
-* How can orders be classified according to their value?
-* Which orders are high-value transactions?
-* How does Average Order Value change by month?
-* Which orders have the highest revenue?
-* What does the overall order-value and basket summary look like?
-
-### Day 49 Business Applications
-
-Sales Order Value & Basket Analysis can support:
-
-* Order-value monitoring
-* Average Order Value monitoring
-* Basket-size analysis
-* High-value transaction identification
-* Sales performance monitoring
-* Customer purchasing behavior analysis
-* Monthly order-value reporting
-* Revenue optimization analysis
-* Transaction-level business reporting
-* Sales KPI dashboards
-* Management reporting
-* Business intelligence
-
-### Day 49 Learning Outcome
-
-Day 49 strengthened practical SQL skills related to **order-level aggregation, Average Order Value, basket-size analysis, CTEs, CASE classification, monthly order-value analysis, high-value transaction identification, and window-function-based order ranking**.
-
-The analysis demonstrates how transactional order, product, and quantity data can be transformed into practical business metrics for sales and customer purchasing analysis.
+These thresholds are business-analysis rules defined for this project.
 
 ---
 
 # 🔮 Sales Revenue Forecasting & Future Projection Analysis
 
 Day 50 focused on analyzing historical sales performance and developing **SQL-based revenue forecasting and future sales projection concepts**.
-
-The analysis builds on the previous monthly sales-growth and order-value work by using historical revenue trends, previous-month comparisons, and moving averages to create simple baseline revenue projections.
 
 ### Day 50 Key Analyses
 
@@ -1025,79 +902,177 @@ The analysis builds on the previous monthly sales-growth and order-value work by
 11. Next-Month Projection Using Recent 3-Month Average
 12. Final Sales Forecasting Summary
 
-### Day 50 SQL Techniques
-
-* `SUM()`
-* `COUNT()`
-* `COUNT(DISTINCT)`
-* `AVG()`
-* `GROUP BY`
-* `ORDER BY`
-* `DATE_FORMAT()`
-* `DATE_ADD()`
-* `CAST()`
-* `LAG()`
-* Window Functions
-* Common Table Expressions
-* `CASE`
-* `ROUND()`
-* `NULLIF()`
-* Moving average calculations
-* Previous-period comparison
-* Percentage growth calculations
-* Revenue trend classification
-* Baseline forecasting calculations
-
-### Day 50 Business Metrics
-
-| Metric                     | Business Meaning                                    |
-| -------------------------- | --------------------------------------------------- |
-| Monthly Revenue            | Revenue generated during each month                 |
-| Monthly Orders             | Number of orders during each month                  |
-| Monthly Units Sold         | Total units sold during each month                  |
-| Previous Month Revenue     | Revenue generated during the previous month         |
-| MoM Revenue Growth         | Percentage change compared with the previous month  |
-| 3-Month Moving Average     | Smoothed recent revenue trend                       |
-| Historical Average Revenue | Average revenue across historical months            |
-| Revenue Trend              | Growth, decline, stable, or baseline classification |
-| Next-Month Projection      | Baseline estimate for the next month                |
-
 ### Day 50 Forecasting Methods
-
-The project uses simple SQL-based baseline forecasting methods:
 
 * Historical average monthly revenue
 * Recent 3-month average revenue
 * 3-month moving average analysis
 
-These methods are intended for business-analysis learning and baseline projections rather than statistical or machine-learning forecasting.
-
-### Day 50 Business Applications
-
-Sales Revenue Forecasting & Future Projection Analysis can support:
-
-* Revenue planning
-* Sales target planning
-* Monthly performance monitoring
-* Future revenue estimation
-* Sales trend monitoring
-* Revenue growth monitoring
-* Revenue decline detection
-* Business planning
-* Management reporting
-* Business intelligence
-
-### Day 50 Learning Outcome
-
-Day 50 strengthened practical SQL skills related to **time-series analysis, moving averages, previous-period comparison, revenue trend classification, and SQL-based baseline revenue forecasting**.
-
-The analysis demonstrates how historical sales data can be transformed into simple future revenue projections that can support business planning and decision-making.
+These are SQL-based baseline forecasting methods for business-analysis learning rather than statistical or machine-learning forecasting.
 
 ### Day 50 Project Files
 
 * `SQL/sales_revenue_forecasting_analysis.sql`
 * `Report/Day50_Sales_Revenue_Forecasting_Analysis.md`
 * `Screenshots/Day 50/`
+
+---
+
+# 📦 Product Demand & Sales Forecasting Analysis
+
+Day 51 focused on **product-level demand analysis and product demand forecasting** using SQL.
+
+The analysis extends the previous revenue forecasting work by moving from overall sales forecasting to individual product demand forecasting.
+
+## Day 51 Key Analyses
+
+1. Product-Wise Total Units Sold
+2. Product-Wise Total Revenue
+3. Monthly Product Demand
+4. Monthly Product Revenue
+5. Previous-Month Product Demand
+6. Month-over-Month Product Demand Growth
+7. 3-Month Moving Average Product Demand
+8. Product Demand Trend Classification
+9. Product Demand Ranking
+10. Product Revenue Ranking
+11. Next-Month Product Demand Projection Using Recent 3-Month Average
+12. Final Product Demand Forecasting Summary
+
+## Day 51 SQL Techniques
+
+* `SUM()`
+* `COUNT()`
+* `AVG()`
+* `ROUND()`
+* `CEIL()`
+* `GROUP BY`
+* `ORDER BY`
+* `DATE_FORMAT()`
+* `LAG()`
+* `RANK()`
+* Window Functions
+* Common Table Expressions
+* `CASE`
+* `NULLIF()`
+* Previous-month comparison
+* Demand growth calculation
+* Moving-average calculation
+* Product ranking
+* Revenue ranking
+* Demand trend classification
+* Baseline demand forecasting
+
+## Day 51 Business Metrics
+
+| Metric                      | Business Meaning                            |
+| --------------------------- | ------------------------------------------- |
+| Total Units Sold            | Total quantity sold for each product        |
+| Total Product Revenue       | Revenue generated by each product           |
+| Monthly Product Demand      | Product units sold during each month        |
+| Monthly Product Revenue     | Product revenue generated during each month |
+| Previous-Month Demand       | Previous available month's product demand   |
+| Demand Growth %             | Percentage change in product demand         |
+| 3-Month Moving Average      | Smoothed recent product demand              |
+| Demand Trend                | Growth, decline, stable, or baseline        |
+| Product Demand Rank         | Product ranking based on units sold         |
+| Product Revenue Rank        | Product ranking based on revenue            |
+| Projected Next-Month Demand | Baseline estimate of future product demand  |
+
+## Day 51 Demand Trend Classification
+
+The project uses the following SQL-based business rules:
+
+|                Demand Change | Demand Status  |
+| ---------------------------: | -------------- |
+|        First available month | Baseline Month |
+|                 More than 5% | Strong Growth  |
+|                 More than 0% | Growth         |
+|                           0% | Stable         |
+| Greater than or equal to -5% | Decline        |
+|                    Below -5% | Strong Decline |
+
+These thresholds are business-analysis rules created for this project and can be adjusted according to business requirements.
+
+## Day 51 Forecasting Method
+
+The project uses a simple SQL-based baseline forecasting approach:
+
+1. Calculate monthly product demand.
+2. Compare current demand with the previous available month.
+3. Calculate product demand growth.
+4. Calculate the recent 3-row moving average.
+5. Identify the latest available product demand.
+6. Calculate projected next-month demand using the recent average.
+7. Classify product demand trends.
+
+The forecasting method is intended for SQL and business-analysis learning and is not a statistical or machine-learning forecasting model.
+
+## Day 51 Business Questions
+
+The analysis answers questions such as:
+
+* Which products sell the highest number of units?
+* Which products generate the highest revenue?
+* How does product demand change month by month?
+* What was the previous month's demand for each product?
+* Which products are experiencing demand growth?
+* Which products are experiencing demand decline?
+* What is the recent average demand for each product?
+* Which products have the highest demand ranking?
+* Which products have the highest revenue ranking?
+* What is the projected demand for the next month?
+* Which products may require closer inventory monitoring?
+* What is the overall product demand forecasting summary?
+
+## Day 51 Business Applications
+
+Product Demand & Sales Forecasting Analysis can support:
+
+* Inventory planning
+* Stock-level monitoring
+* Product demand monitoring
+* Product performance monitoring
+* Sales planning
+* Product-level forecasting
+* Procurement planning
+* Inventory replenishment
+* Product performance reporting
+* Revenue planning
+* Product prioritization
+* Business intelligence
+* Management reporting
+
+## Day 51 Learning Outcome
+
+Day 51 strengthened practical SQL skills related to **product-level aggregation, monthly demand analysis, previous-period comparison, growth calculations, moving averages, product ranking, revenue ranking, trend classification, CTEs, window functions, and baseline product demand forecasting**.
+
+The analysis demonstrates how transactional sales data can be transformed into product-level demand insights and simple future demand projections.
+
+## Day 51 Project Files
+
+```text
+SQL/
+└── product_demand_forecasting_analysis.sql
+
+Report/
+└── Day51_Product_Demand_Forecasting_Analysis.md
+
+Screenshots/
+└── Day 51/
+    ├── Screenshot 2026-09-21 001641.png
+    ├── Screenshot 2026-09-21 001656.png
+    ├── Screenshot 2026-09-21 001709.png
+    ├── Screenshot 2026-09-21 001719.png
+    ├── Screenshot 2026-09-21 001731.png
+    ├── Screenshot 2026-09-21 001743.png
+    ├── Screenshot 2026-09-21 001753.png
+    ├── Screenshot 2026-09-21 001817.png
+    ├── Screenshot 2026-09-21 001827.png
+    ├── Screenshot 2026-09-21 001838.png
+    ├── Screenshot 2026-09-21 001851.png
+    └── Screenshot 2026-09-21 001902.png
+```
 
 ---
 
@@ -1109,6 +1084,8 @@ The analysis demonstrates how historical sales data can be transformed into simp
 * Customer churn analysis
 * Cohort analysis
 * Product performance
+* Product demand analysis
+* Product demand forecasting
 * Revenue contribution analysis
 * Business KPI analysis
 * Sales performance KPI analysis
@@ -1127,7 +1104,6 @@ The analysis demonstrates how historical sales data can be transformed into simp
 * Revenue concentration analysis
 * Revenue forecasting
 * Monthly sales projection
-* Historical revenue analysis
 * Moving-average analysis
 * Payment transaction monitoring
 * Payment status reporting
@@ -1153,6 +1129,8 @@ The analysis demonstrates how historical sales data can be transformed into simp
 * VS Code
 * MySQL Workbench
 * SQL documentation
+* Structured business reports
+* Screenshot-based query documentation
 
 ---
 
@@ -1184,23 +1162,24 @@ The analysis demonstrates how historical sales data can be transformed into simp
 | Customer Cohort & Retention Trend Analysis               |      Day 40 | ✅ Completed     |
 | Customer Lifecycle & Repeat Purchase Analysis            |      Day 41 | ✅ Completed     |
 | Customer Purchase Frequency & Repeat Behavior Analysis   |      Day 42 | ✅ Completed     |
-| **Payment Status & Payment Method Analysis**             |  **Day 43** | **✅ Completed** |
-| **Customer Payment Behavior Analysis**                   |  **Day 44** | **✅ Completed** |
-| **Customer Payment Risk & Pending Payment Analysis**     |  **Day 45** | **✅ Completed** |
-| **Data Quality & Integrity Analysis**                    |  **Day 46** | **✅ Completed** |
-| **Sales Performance KPI Analysis**                       |  **Day 47** | **✅ Completed** |
-| **Sales Growth & Month-over-Month Analysis**             |  **Day 48** | **✅ Completed** |
-| **Sales Order Value & Basket Analysis**                  |  **Day 49** | **✅ Completed** |
-| **Sales Revenue Forecasting & Future Projection**        |  **Day 50** | **✅ Completed** |
-| **Overall Progress**                                     | **50 Days** | **✅ Completed** |
+| Payment Status & Payment Method Analysis                 |      Day 43 | ✅ Completed     |
+| Customer Payment Behavior Analysis                       |      Day 44 | ✅ Completed     |
+| Customer Payment Risk & Pending Payment Analysis         |      Day 45 | ✅ Completed     |
+| Data Quality & Integrity Analysis                        |      Day 46 | ✅ Completed     |
+| Sales Performance KPI Analysis                           |      Day 47 | ✅ Completed     |
+| Sales Growth & Month-over-Month Analysis                 |      Day 48 | ✅ Completed     |
+| Sales Order Value & Basket Analysis                      |      Day 49 | ✅ Completed     |
+| Sales Revenue Forecasting & Future Projection            |      Day 50 | ✅ Completed     |
+| **Product Demand & Sales Forecasting Analysis**          |  **Day 51** | **✅ Completed** |
+| **Overall Progress**                                     | **51 Days** | **✅ Completed** |
 
 ---
 
 # 🏆 Current Milestone
 
-## 50 Days of SQL Business Analysis Completed 🎉
+## 51 Days of SQL Business Analysis Completed 🎉
 
-The project has progressed from basic relational database operations to advanced SQL analytics, customer analytics, product analytics, RFM segmentation, customer segment performance, retention and churn-risk analysis, cohort analysis, customer lifecycle analysis, repeat-purchase analysis, purchase-frequency analysis, payment status analysis, payment method analysis, customer payment behavior analysis, customer payment risk analysis, data quality and integrity analysis, sales performance KPI analysis, sales growth and month-over-month analysis, order value and basket analysis, and revenue forecasting and future projection.
+The project has progressed from basic relational database operations to advanced SQL analytics, customer analytics, product analytics, RFM segmentation, customer segment performance, retention and churn-risk analysis, cohort analysis, customer lifecycle analysis, repeat-purchase analysis, purchase-frequency analysis, payment analysis, data quality and integrity analysis, sales performance KPI analysis, sales growth and month-over-month analysis, order value and basket analysis, revenue forecasting, and product demand forecasting.
 
 ### Current Learning Journey
 
@@ -1308,7 +1287,11 @@ The project has progressed from basic relational database operations to advanced
 
 ↓
 
-**Product Affinity**
+**Product Purchase Behavior**
+
+↓
+
+**Product Customer Affinity**
 
 ↓
 
@@ -1324,7 +1307,11 @@ The project has progressed from basic relational database operations to advanced
 
 ↓
 
-**Customer Purchase Journey & Basket Analysis**
+**Product Demand Analysis**
+
+↓
+
+**Product Demand Forecasting**
 
 ↓
 
@@ -1351,11 +1338,11 @@ The project uses a relational sales database consisting of five primary tables.
 
 | Table         | Description                        |
 | ------------- | ---------------------------------- |
-| `Customers`   | Stores customer information        |
-| `Products`    | Stores product details and pricing |
-| `Orders`      | Stores customer order records      |
-| `Order_Items` | Stores products included in orders |
-| `Payments`    | Stores payment information         |
+| `customers`   | Stores customer information        |
+| `products`    | Stores product details and pricing |
+| `orders`      | Stores customer order records      |
+| `order_items` | Stores products included in orders |
+| `payments`    | Stores payment information         |
 
 ## 🔗 Database Relationships
 
@@ -1373,29 +1360,36 @@ Customers
 
 # 📁 Project Structure
 
+The project is organized into database design, SQL scripts, screenshots, reports, presentation materials, and documentation.
+
 ```text
 Sales_Data_Analysis_SQL/
-
 │
 ├── Database_Design/
 │   └── sales_analysis.mwb
 │
 ├── SQL/
+│   │
 │   ├── create_database.sql
+│   ├── create_tables.sql
 │   ├── insert_data.sql
+│   │
 │   ├── basic_queries.sql
 │   ├── join_queries.sql
 │   ├── aggregate_queries.sql
 │   ├── subqueries.sql
+│   ├── sales_analysis_report.sql
 │   ├── views.sql
 │   ├── stored_procedures.sql
 │   ├── triggers.sql
 │   ├── indexes.sql
 │   ├── window_functions.sql
 │   ├── cte_queries.sql
+│   ├── cte_analysis.sql
 │   ├── advanced_business_analysis.sql
 │   ├── query_optimization.sql
 │   ├── business_kpi_analysis.sql
+│   │
 │   ├── customer_revenue_analytics.sql
 │   ├── customer_behavior_analysis.sql
 │   ├── customer_retention_analysis.sql
@@ -1408,6 +1402,7 @@ Sales_Data_Analysis_SQL/
 │   ├── customer_churn_analysis.sql
 │   ├── customer_cohort_analysis.sql
 │   ├── customer_purchase_frequency_analysis.sql
+│   │
 │   ├── product_purchase_behavior_analysis.sql
 │   ├── product_customer_affinity_analysis.sql
 │   ├── customer_product_purchase_analysis.sql
@@ -1420,19 +1415,61 @@ Sales_Data_Analysis_SQL/
 │   ├── customer_cohort_retention_analysis.sql
 │   ├── customer_lifecycle_analysis.sql
 │   ├── customer_purchase_frequency_repeat_behavior_analysis.sql
+│   │
 │   ├── payment_status_method_analysis.sql
 │   ├── customer_payment_behavior_analysis.sql
 │   ├── payment_risk_pending_analysis.sql
 │   ├── data_quality_integrity_analysis.sql
+│   │
 │   ├── sales_performance_kpi_analysis.sql
 │   ├── sales_growth_mom_analysis.sql
 │   ├── sales_order_value_basket_analysis.sql
-│   └── sales_revenue_forecasting_analysis.sql
+│   ├── sales_revenue_forecasting_analysis.sql
+│   │
+│   └── product_demand_forecasting_analysis.sql
 │
 ├── Screenshots/
+│   │
 │   ├── Day 1/
 │   ├── Day 2/
-│   ├── ...
+│   ├── Day 3/
+│   ├── Day 4/
+│   ├── Day 5/
+│   ├── Day 6/
+│   ├── Day 7/
+│   ├── Day 8/
+│   ├── Day 9/
+│   ├── Day 10/
+│   ├── Day 11/
+│   ├── Day 12/
+│   ├── Day 13/
+│   ├── Day 14/
+│   ├── Day 15/
+│   ├── Day 16/
+│   ├── Day 17/
+│   ├── Day 18/
+│   ├── Day 19/
+│   ├── Day 20/
+│   ├── Day 21/
+│   ├── Day 22/
+│   ├── Day 23/
+│   ├── Day 24/
+│   ├── Day 25/
+│   ├── Day 26/
+│   ├── Day 27/
+│   ├── Day 28/
+│   ├── Day 29/
+│   ├── Day 30/
+│   ├── Day 31/
+│   ├── Day 32/
+│   ├── Day 33/
+│   ├── Day 34/
+│   ├── Day 35/
+│   ├── Day 36/
+│   ├── Day 37/
+│   ├── Day 38/
+│   ├── Day 39/
+│   ├── Day 40/
 │   ├── Day 41/
 │   ├── Day 42/
 │   ├── Day 43/
@@ -1442,11 +1479,26 @@ Sales_Data_Analysis_SQL/
 │   ├── Day 47/
 │   ├── Day 48/
 │   ├── Day 49/
-│   └── Day 50/
+│   ├── Day 50/
+│   │
+│   └── Day 51/
+│       ├── Screenshot 2026-09-21 001641.png
+│       ├── Screenshot 2026-09-21 001656.png
+│       ├── Screenshot 2026-09-21 001709.png
+│       ├── Screenshot 2026-09-21 001719.png
+│       ├── Screenshot 2026-09-21 001731.png
+│       ├── Screenshot 2026-09-21 001743.png
+│       ├── Screenshot 2026-09-21 001753.png
+│       ├── Screenshot 2026-09-21 001817.png
+│       ├── Screenshot 2026-09-21 001827.png
+│       ├── Screenshot 2026-09-21 001838.png
+│       ├── Screenshot 2026-09-21 001851.png
+│       └── Screenshot 2026-09-21 001902.png
 │
 ├── Presentation/
 │
 ├── Report/
+│   │
 │   ├── Week1_Report.md
 │   ├── Week2_Report.md
 │   ├── Day17_Business_Analysis.md
@@ -1481,10 +1533,67 @@ Sales_Data_Analysis_SQL/
 │   ├── Day47_Sales_Performance_KPI_Analysis.md
 │   ├── Day48_Sales_Growth_MOM_Analysis.md
 │   ├── Day49_Sales_Order_Value_Basket_Analysis.md
-│   └── Day50_Sales_Revenue_Forecasting_Analysis.md
+│   ├── Day50_Sales_Revenue_Forecasting_Analysis.md
+│   └── Day51_Product_Demand_Forecasting_Analysis.md
 │
 └── README.md
 ```
+
+### 📅 Daily Project Organization
+
+|        Day | Main Work                                       |
+| ---------: | ----------------------------------------------- |
+|      Day 1 | Database fundamentals                           |
+|      Day 2 | SQL table and data operations                   |
+|      Day 3 | Basic SQL queries                               |
+|      Day 4 | SQL filtering and analysis                      |
+|      Day 5 | SQL aggregation                                 |
+|      Day 6 | JOIN operations                                 |
+|      Day 7 | SQL fundamentals review                         |
+|      Day 8 | Intermediate SQL                                |
+|      Day 9 | Stored Procedures                               |
+|     Day 10 | Advanced SQL                                    |
+|     Day 11 | Views                                           |
+|     Day 12 | Triggers                                        |
+|     Day 13 | Indexes                                         |
+|     Day 14 | Advanced Business Analysis                      |
+|     Day 15 | Window Functions                                |
+|     Day 16 | CTEs                                            |
+|     Day 17 | Query Optimization & Business Analysis          |
+|     Day 18 | Customer Analytics                              |
+|     Day 19 | Customer Behavior Analysis                      |
+|     Day 20 | Customer Retention Analysis                     |
+|     Day 21 | Customer Lifetime Value                         |
+|     Day 22 | RFM Customer Segmentation                       |
+|     Day 23 | Sales Trend Analysis                            |
+|     Day 24 | Product Performance Analysis                    |
+|     Day 25 | Sales Profitability Analysis                    |
+|     Day 26 | Customer Revenue Contribution                   |
+|     Day 27 | Customer Churn Analysis                         |
+|     Day 28 | Customer Cohort & Retention                     |
+|     Day 29 | Customer Purchase Frequency                     |
+|     Day 30 | Customer Segmentation & Revenue Analysis        |
+|     Day 31 | Product Purchase Behavior                       |
+|     Day 32 | Product Customer Affinity                       |
+|     Day 33 | Customer-Product Purchase Analysis              |
+|     Day 34 | Customer Cross-Selling & Product Recommendation |
+|     Day 35 | Customer Purchase Journey & Basket Analysis     |
+|     Day 36 | Customer Lifetime Value & Revenue Contribution  |
+|     Day 37 | Customer RFM Segmentation                       |
+|     Day 38 | Customer Segment Performance & Revenue          |
+|     Day 39 | Customer Segment Retention & Churn Risk         |
+|     Day 40 | Customer Cohort & Retention Trend               |
+|     Day 41 | Customer Lifecycle & Repeat Purchase            |
+|     Day 42 | Customer Purchase Frequency & Repeat Behavior   |
+|     Day 43 | Payment Status & Payment Method                 |
+|     Day 44 | Customer Payment Behavior                       |
+|     Day 45 | Customer Payment Risk & Pending Payments        |
+|     Day 46 | Data Quality & Integrity                        |
+|     Day 47 | Sales Performance KPI                           |
+|     Day 48 | Sales Growth & Month-over-Month                 |
+|     Day 49 | Sales Order Value & Basket                      |
+|     Day 50 | Sales Revenue Forecasting & Future Projection   |
+| **Day 51** | **Product Demand & Sales Forecasting**          |
 
 ---
 
@@ -1494,165 +1603,93 @@ This project demonstrates an end-to-end progression from raw relational data to 
 
 ```text
 Raw Sales Data
-
         ↓
-
 Database Design
-
         ↓
-
 SQL Fundamentals
-
         ↓
-
 JOINs & Aggregations
-
         ↓
-
 Advanced SQL
-
         ↓
-
 Query Optimization
-
         ↓
-
 Business KPIs
-
         ↓
-
 Customer Analytics
-
         ↓
-
 Customer Retention
-
         ↓
-
 Customer Lifetime Value
-
         ↓
-
 RFM Customer Segmentation
-
         ↓
-
 Customer Segment Performance
-
         ↓
-
 Customer Segment Retention
-
         ↓
-
 Customer Churn Risk
-
         ↓
-
 Customer Cohort Analysis
-
         ↓
-
 Customer Lifecycle Analysis
-
         ↓
-
 Repeat Purchase Analysis
-
         ↓
-
 Customer Purchase Frequency
-
         ↓
-
 Payment Status & Payment Method Analysis
-
         ↓
-
-Customer Payment Behavior Analysis
-
+Customer Payment Behavior
         ↓
-
-Customer Payment Risk & Pending Payment Analysis
-
+Customer Payment Risk
         ↓
-
-Data Quality & Integrity Analysis
-
+Data Quality & Integrity
         ↓
-
-Sales Performance KPI Analysis
-
+Sales Performance KPI
         ↓
-
 Monthly Revenue Analysis
-
         ↓
-
 Revenue Growth Analysis
-
         ↓
-
 Month-over-Month Comparison
-
         ↓
-
 Cumulative Revenue Analysis
-
         ↓
-
-Sales Growth Classification
-
-        ↓
-
-Monthly Revenue Ranking
-
-        ↓
-
 Order Value Analysis
-
         ↓
-
 Basket Size Analysis
-
         ↓
-
 High-Value Order Analysis
-
         ↓
-
 Revenue Forecasting
-
         ↓
-
 Moving-Average Analysis
-
         ↓
-
 Future Revenue Projection
-
         ↓
-
 Product Analytics
-
         ↓
-
+Product Purchase Behavior
+        ↓
 Product Affinity
-
         ↓
-
-Cross-Selling Analysis
-
+Cross-Selling
         ↓
-
 Product Recommendations
-
         ↓
-
-Customer Purchase Journey
-
+Product Demand Analysis
         ↓
-
+Product Demand Growth
+        ↓
+Product Demand Moving Average
+        ↓
+Product Demand Ranking
+        ↓
+Product Demand Forecasting
+        ↓
+Future Product Demand Projection
+        ↓
 Business Insights
 ```
 
@@ -1698,11 +1735,8 @@ Through this project, the following practical skills are demonstrated:
 * Order value analysis
 * High-value order identification
 * Order value classification
-* Monthly order-value analysis
 * Order value ranking
 * Customer Lifetime Value analysis
-* Customer revenue ranking
-* Revenue concentration analysis
 * Product affinity analysis
 * Cross-selling analysis
 * Product recommendation analysis
@@ -1716,11 +1750,9 @@ Through this project, the following practical skills are demonstrated:
 * Payment method analysis
 * Payment transaction monitoring
 * Customer payment behavior analysis
-* Customer payment activity ranking
 * Pending payment analysis
 * Failed payment analysis
 * Customer payment risk analysis
-* Repeated payment record analysis
 * Payment risk classification
 * Duplicate record detection
 * Null value checking
@@ -1729,10 +1761,14 @@ Through this project, the following practical skills are demonstrated:
 * Orphan record detection
 * Database quality monitoring
 * Data integrity analysis
-* Business intelligence
-* Business reporting
+* Product demand analysis
+* Product demand growth analysis
+* Product demand ranking
+* Product demand forecasting
 * Git version control
 * GitHub project management
+* Business intelligence
+* Business reporting
 
 ---
 
@@ -1740,13 +1776,13 @@ Through this project, the following practical skills are demonstrated:
 
 **Current Status: 🟢 Active**
 
-**Completed: 50 Days**
+**Completed: 51 Days**
 
 **Primary Focus: SQL Data Analysis & Business Intelligence**
 
-The project has completed 50 days of structured SQL learning and business analysis.
+The project has completed **51 days of structured SQL learning and business analysis**.
 
-The project now covers database design, SQL fundamentals, advanced SQL, query optimization, customer analytics, product analytics, customer segmentation, RFM analysis, customer retention, churn analysis, cohort analysis, customer lifecycle analysis, repeat purchase analysis, purchase frequency analysis, payment analysis, payment risk analysis, data quality analysis, sales KPI analysis, sales growth analysis, month-over-month analysis, order value analysis, basket analysis, time-series analysis, and SQL-based revenue forecasting and future projection concepts.
+The project now covers database design, SQL fundamentals, advanced SQL, query optimization, customer analytics, product analytics, customer segmentation, RFM analysis, customer retention, churn analysis, cohort analysis, customer lifecycle analysis, repeat purchase analysis, purchase frequency analysis, payment analysis, payment risk analysis, data quality analysis, sales KPI analysis, sales growth analysis, month-over-month analysis, order value analysis, basket analysis, revenue forecasting, and product demand forecasting.
 
 ---
 
@@ -1755,8 +1791,6 @@ The project now covers database design, SQL fundamentals, advanced SQL, query op
 ## Day 47 — Sales Performance KPI Analysis Completed ✅
 
 Day 47 focused on transforming sales transaction data into measurable **business performance KPIs** using SQL.
-
-The analysis measured overall sales performance across orders, customers, products, revenue, units sold, customer contribution, product contribution, and monthly sales activity.
 
 ### Key Analyses
 
@@ -1781,8 +1815,6 @@ The analysis measured overall sales performance across orders, customers, produc
 
 Day 48 focused on analyzing **sales growth, monthly performance, and time-based revenue changes** using SQL.
 
-The analysis used previous-period comparisons and window functions to understand how monthly sales performance changes over time.
-
 ### Key Analyses
 
 1. Monthly Revenue
@@ -1798,26 +1830,6 @@ The analysis used previous-period comparisons and window functions to understand
 11. Largest Revenue Decline Month
 12. Final Monthly Sales Growth Summary
 
-### SQL Techniques Used
-
-* `DATE_FORMAT()`
-* `SUM()`
-* `COUNT()`
-* `COUNT(DISTINCT)`
-* `GROUP BY`
-* `ORDER BY`
-* `LAG()`
-* `RANK()`
-* Window Functions
-* Common Table Expressions
-* `CASE`
-* `ROUND()`
-* `NULLIF()`
-* Previous-period comparison
-* Percentage growth calculations
-* Revenue change calculations
-* Running total calculations
-
 ---
 
 # 🚀 Day 49 Achievement
@@ -1825,8 +1837,6 @@ The analysis used previous-period comparisons and window functions to understand
 ## Day 49 — Sales Order Value & Basket Analysis Completed ✅
 
 Day 49 focused on analyzing **order-level sales value and basket behavior** using SQL.
-
-The analysis examined the monetary value of individual orders, average transaction value, basket size, high-value transactions, monthly order-value performance, and order-level revenue rankings.
 
 ### Key Analyses
 
@@ -1844,72 +1854,6 @@ The analysis examined the monetary value of individual orders, average transacti
 12. Order Value Ranking
 13. Final Order Value & Basket Summary
 
-### SQL Techniques Used
-
-* `COUNT()`
-* `SUM()`
-* `AVG()`
-* `MIN()`
-* `MAX()`
-* `ROUND()`
-* JOINs
-* `GROUP BY`
-* `ORDER BY`
-* `WHERE`
-* Common Table Expressions
-* `CASE`
-* `DATE_FORMAT()`
-* `RANK() OVER()`
-* Order-level aggregation
-* Monthly aggregation
-* Revenue calculations
-* Order value classification
-* Basket size calculations
-* High-value order identification
-* Order ranking
-
-### Business Analysis Focus
-
-Day 49 answered important business questions such as:
-
-* How many orders are present in the sales database?
-* What is the total sales revenue?
-* How much revenue does each order generate?
-* What is the Average Order Value?
-* What is the minimum order value?
-* What is the maximum order value?
-* How many units are typically purchased per order?
-* What is the smallest basket size?
-* What is the largest basket size?
-* How can orders be classified according to their value?
-* Which orders are high-value transactions?
-* How does Average Order Value change by month?
-* Which orders generate the highest revenue?
-* What is the overall order-value and basket summary?
-
-### Business Applications
-
-Sales Order Value & Basket Analysis can support:
-
-* Order-value monitoring
-* Average Order Value monitoring
-* Basket-size analysis
-* High-value transaction identification
-* Sales performance monitoring
-* Customer purchasing behavior analysis
-* Monthly order-value reporting
-* Revenue optimization analysis
-* Transaction-level business reporting
-* Sales KPI dashboards
-* Management reporting
-* Business intelligence
-
-### Day 49 Learning Outcome
-
-Day 49 strengthened practical SQL skills related to **order-level aggregation, Average Order Value, basket-size analysis, CTEs, CASE classification, monthly order-value analysis, high-value transaction identification, and window-function-based order ranking**.
-
-The analysis demonstrated how transactional sales data can be transformed into practical order-level business metrics that support sales performance and customer purchasing analysis.
-
 ---
 
 # 🚀 Day 50 Achievement
@@ -1917,8 +1861,6 @@ The analysis demonstrated how transactional sales data can be transformed into p
 ## Day 50 — Sales Revenue Forecasting & Future Projection Completed ✅
 
 Day 50 focused on analyzing historical sales performance and developing **SQL-based revenue forecasting and future sales projection concepts**.
-
-The analysis builds on the previous monthly sales-growth and order-value work by using historical revenue trends, previous-month comparisons, and moving averages to create simple baseline revenue projections.
 
 ### Key Analyses
 
@@ -1935,77 +1877,6 @@ The analysis builds on the previous monthly sales-growth and order-value work by
 11. Next-Month Projection Using Recent 3-Month Average
 12. Final Sales Forecasting Summary
 
-### SQL Techniques Used
-
-* `SUM()`
-* `COUNT()`
-* `COUNT(DISTINCT)`
-* `AVG()`
-* `GROUP BY`
-* `ORDER BY`
-* `DATE_FORMAT()`
-* `DATE_ADD()`
-* `CAST()`
-* `LAG()`
-* Window Functions
-* Common Table Expressions
-* `CASE`
-* `ROUND()`
-* `NULLIF()`
-* Moving average calculations
-* Previous-period comparison
-* Percentage growth calculations
-* Revenue trend classification
-* Baseline forecasting calculations
-
-### Business Analysis Focus
-
-Day 50 answered questions such as:
-
-* What is the historical monthly revenue?
-* How many orders are generated each month?
-* How many units are sold each month?
-* What was the previous month's revenue?
-* How is monthly revenue changing?
-* What is the 3-month moving average revenue?
-* What is the recent average order volume?
-* Is the latest revenue showing growth, stability, or decline?
-* What is the historical average monthly revenue?
-* What is the projected revenue for the next month using the historical average?
-* What is the projected revenue using the recent 3-month average?
-* What does the final revenue forecasting summary indicate?
-
-### Day 50 Forecasting Methods
-
-The project uses simple SQL-based baseline forecasting methods:
-
-* Historical average monthly revenue
-* Recent 3-month average revenue
-* 3-month moving average analysis
-
-These methods are intended for business-analysis learning and baseline projections rather than statistical or machine-learning forecasting.
-
-### Day 50 Business Applications
-
-Sales Revenue Forecasting & Future Projection Analysis can support:
-
-* Revenue planning
-* Sales target planning
-* Monthly performance monitoring
-* Future revenue estimation
-* Sales trend monitoring
-* Revenue growth monitoring
-* Revenue decline detection
-* Business planning
-* Management reporting
-* Business intelligence
-
-### Day 50 Learning Outcome
-
-Day 50 strengthened practical SQL skills related to **time-series analysis, moving averages, previous-period comparison, revenue trend classification, and SQL-based baseline revenue forecasting**.
-
-The analysis demonstrates how historical sales data can be transformed into simple future revenue projections that can support business planning and decision-making.
-
 ### Day 50 Project Files
 
 * `SQL/sales_revenue_forecasting_analysis.sql`
@@ -2014,23 +1885,79 @@ The analysis demonstrates how historical sales data can be transformed into simp
 
 ---
 
+# 🚀 Day 51 Achievement
+
+## Day 51 — Product Demand & Sales Forecasting Completed ✅
+
+Day 51 focused on **product-level demand analysis and product demand forecasting** using SQL.
+
+The analysis extended the previous revenue forecasting work by analyzing demand at the individual product level.
+
+### Key Analyses
+
+1. Product-Wise Total Units Sold
+2. Product-Wise Total Revenue
+3. Monthly Product Demand
+4. Monthly Product Revenue
+5. Previous-Month Product Demand
+6. Month-over-Month Product Demand Growth
+7. 3-Month Moving Average Product Demand
+8. Product Demand Trend Classification
+9. Product Demand Ranking
+10. Product Revenue Ranking
+11. Next-Month Product Demand Projection
+12. Final Product Demand Forecasting Summary
+
+### SQL Techniques Used
+
+* Aggregations
+* `SUM()`
+* `AVG()`
+* `LAG()`
+* `RANK()`
+* Window Functions
+* CTEs
+* `CASE`
+* `NULLIF()`
+* `CEIL()`
+* Monthly time-series analysis
+* Moving averages
+* Growth calculations
+* Product ranking
+* Demand trend classification
+* Baseline demand forecasting
+
+### Day 51 Project Files
+
+* `SQL/product_demand_forecasting_analysis.sql`
+* `Report/Day51_Product_Demand_Forecasting_Analysis.md`
+* `Screenshots/Day 51/`
+
+### Day 51 Achievement
+
+**Product Demand & Sales Forecasting Analysis completed successfully. ✅**
+
+The project has now reached **51 completed days of SQL business analysis. 🚀**
+
+---
+
 # 🏁 Portfolio Progress
 
-## 50 Days Completed 🚀
+## 51 Days Completed 🚀
 
-**SQL Fundamentals → Advanced SQL → Business Analytics → Customer Analytics → Customer Retention → Customer Lifetime Value → RFM Customer Segmentation → Customer Segment Performance → Customer Segment Retention & Churn Risk → Customer Cohort & Retention Trend Analysis → Customer Lifecycle & Repeat Purchase Analysis → Customer Purchase Frequency & Repeat Behavior Analysis → Payment Status & Payment Method Analysis → Customer Payment Behavior Analysis → Customer Payment Risk & Pending Payment Analysis → Data Quality & Integrity Analysis → Sales Performance KPI Analysis → Sales Growth & Month-over-Month Analysis → Sales Order Value & Basket Analysis → Sales Revenue Forecasting & Future Projection → Product Analytics → Product Purchase Behavior → Product Customer Affinity → Cross-Selling → Customer-Product Purchase Analysis → Product Recommendations → Customer Purchase Journey & Basket Analysis → Business Insights**
+**SQL Fundamentals → Advanced SQL → Business Analytics → Customer Analytics → Customer Retention → Customer Lifetime Value → RFM Customer Segmentation → Customer Segment Performance → Customer Segment Retention & Churn Risk → Customer Cohort & Retention Trend Analysis → Customer Lifecycle & Repeat Purchase Analysis → Customer Purchase Frequency & Repeat Behavior Analysis → Payment Status & Payment Method Analysis → Customer Payment Behavior Analysis → Customer Payment Risk & Pending Payment Analysis → Data Quality & Integrity Analysis → Sales Performance KPI Analysis → Sales Growth & Month-over-Month Analysis → Sales Order Value & Basket Analysis → Sales Revenue Forecasting & Future Projection → Product Demand & Sales Forecasting → Business Insights**
 
-The project now demonstrates a broad practical SQL workflow suitable for showcasing **Data Analyst, Business Analyst, SQL Developer, Reporting Analyst, and MIS Analyst portfolio skills**.
+The project demonstrates a broad practical SQL workflow suitable for showcasing **Data Analyst, Business Analyst, SQL Developer, Reporting Analyst, and MIS Analyst portfolio skills**.
 
 ---
 
 # 🎯 Next Stage
 
-The next stage of the project can move toward more advanced:
+The next stage of the project can move toward:
 
 * Advanced revenue forecasting
+* Advanced product demand forecasting
 * Sales prediction concepts
-* Product demand forecasting
 * Customer behavior forecasting
 * Advanced business KPIs
 * Dashboard-oriented analytics
@@ -2039,13 +1966,14 @@ The next stage of the project can move toward more advanced:
 * Customer segmentation dashboards
 * Revenue performance dashboards
 * Sales KPI dashboards
+* Product demand dashboards
 * Payment monitoring dashboards
 * Customer payment behavior dashboards
 * Payment risk monitoring dashboards
 * Data quality monitoring dashboards
 * Business performance monitoring
 
-**Next Milestone: Day 51 → 51/55 🔥**
+**Next Milestone: Day 52 → 52/55 🔥**
 
 ---
 
@@ -2053,14 +1981,16 @@ The next stage of the project can move toward more advanced:
 
 The long-term goal is to transform this project into a complete **SQL + Business Analytics portfolio project** demonstrating the ability to:
 
-**Query → Analyze → Measure → Validate → Segment → Compare → Identify Problems → Generate Insights → Recommend Business Actions**
+**Query → Analyze → Measure → Validate → Segment → Compare → Identify Problems → Forecast → Generate Insights → Recommend Business Actions**
 
 ---
 
-## 🎉 50-Day Milestone
+# 🎉 51-Day Milestone
 
-**Day 50 is completed successfully. ✅**
+**Day 51 is completed successfully. ✅**
 
-**50 Days of continuous SQL business analysis completed. 🚀**
+**51 Days of continuous SQL business analysis completed. 🚀**
 
-**Next target: Day 51. 🔥**
+**Product Demand & Sales Forecasting Analysis completed. 📦📈**
+
+**Next target: Day 52. 🔥**
