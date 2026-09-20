@@ -1,6 +1,6 @@
 # 📊 Sales Data Analysis Using SQL
 
-A hands-on SQL portfolio project focused on **relational database design, advanced SQL analytics, query optimization, customer analytics, product analytics, business intelligence, customer retention, cohort analysis, customer lifecycle analysis, repeat purchase analysis, purchase frequency analysis, payment status analysis, payment method analysis, customer payment behavior analysis, customer payment risk analysis, pending payment analysis, data quality analysis, data integrity analysis, sales performance KPI analysis, sales growth analysis, month-over-month analysis, time-series analysis, order value analysis, basket analysis, and business reporting** using MySQL.
+A hands-on SQL portfolio project focused on **relational database design, advanced SQL analytics, query optimization, customer analytics, product analytics, business intelligence, customer retention, cohort analysis, customer lifecycle analysis, repeat purchase analysis, purchase frequency analysis, payment status analysis, payment method analysis, customer payment behavior analysis, customer payment risk analysis, pending payment analysis, data quality analysis, data integrity analysis, sales performance KPI analysis, sales growth analysis, month-over-month analysis, time-series analysis, order value analysis, basket analysis, revenue forecasting, future sales projection, and business reporting** using MySQL.
 
 This project simulates a real-world sales management system and demonstrates practical SQL skills relevant to **Data Analyst, Business Analyst, SQL Developer, Reporting Analyst, and MIS Analyst roles**.
 
@@ -105,6 +105,9 @@ The main objectives of this project are to:
 * Validate order quantities and product prices.
 * Identify orphan records and incomplete transactions.
 * Develop revenue forecasting and sales projection concepts.
+* Analyze historical revenue trends.
+* Calculate moving-average revenue.
+* Create simple SQL-based baseline revenue projections.
 * Convert raw sales data into actionable business insights.
 * Create structured business reports using SQL.
 
@@ -271,6 +274,10 @@ The main objectives of this project are to:
 * Order value classification
 * Monthly order value analysis
 * Order value ranking
+* Moving-average analysis
+* Revenue trend classification
+* Baseline revenue forecasting
+* Future revenue projection
 
 ## ⚡ SQL Optimization
 
@@ -396,6 +403,10 @@ The main objectives of this project are to:
 * Largest revenue decline month
 * Revenue forecasting concepts
 * Monthly sales projection
+* Historical average revenue
+* Recent 3-month average revenue
+* Moving-average revenue
+* Future revenue projection
 * Order value analysis
 * Minimum order value
 * Maximum order value
@@ -424,11 +435,15 @@ The main objectives of this project are to:
 * Revenue change percentage
 * Monthly sales projection
 * Revenue forecasting concepts
+* Historical revenue analysis
+* 3-month moving average revenue
+* 3-month moving average order volume
 * Cumulative revenue analysis
 * Monthly revenue ranking
 * Revenue growth classification
 * Highest revenue growth identification
 * Largest revenue decline identification
+* Future revenue projection
 
 ---
 
@@ -637,10 +652,14 @@ These frequency categories are business-analysis rules and can be adjusted accor
 * Revenue trend identification
 * Monthly sales projection
 * Historical revenue comparison
+* Historical average revenue
+* Recent 3-month average revenue
+* 3-month moving average analysis
 * Business forecasting concepts
 * Revenue planning
 * Sales target planning
 * Future business performance estimation
+* Baseline revenue projection
 
 ---
 
@@ -985,6 +1004,103 @@ The analysis demonstrates how transactional order, product, and quantity data ca
 
 ---
 
+# 🔮 Sales Revenue Forecasting & Future Projection Analysis
+
+Day 50 focused on analyzing historical sales performance and developing **SQL-based revenue forecasting and future sales projection concepts**.
+
+The analysis builds on the previous monthly sales-growth and order-value work by using historical revenue trends, previous-month comparisons, and moving averages to create simple baseline revenue projections.
+
+### Day 50 Key Analyses
+
+1. Monthly Historical Revenue
+2. Monthly Order Volume
+3. Monthly Units Sold
+4. Previous-Month Revenue
+5. Month-over-Month Revenue Growth
+6. 3-Month Moving Average Revenue
+7. 3-Month Moving Average Order Volume
+8. Revenue Trend Classification
+9. Average Historical Monthly Revenue
+10. Next-Month Revenue Projection Using Historical Average
+11. Next-Month Projection Using Recent 3-Month Average
+12. Final Sales Forecasting Summary
+
+### Day 50 SQL Techniques
+
+* `SUM()`
+* `COUNT()`
+* `COUNT(DISTINCT)`
+* `AVG()`
+* `GROUP BY`
+* `ORDER BY`
+* `DATE_FORMAT()`
+* `DATE_ADD()`
+* `CAST()`
+* `LAG()`
+* Window Functions
+* Common Table Expressions
+* `CASE`
+* `ROUND()`
+* `NULLIF()`
+* Moving average calculations
+* Previous-period comparison
+* Percentage growth calculations
+* Revenue trend classification
+* Baseline forecasting calculations
+
+### Day 50 Business Metrics
+
+| Metric                     | Business Meaning                                    |
+| -------------------------- | --------------------------------------------------- |
+| Monthly Revenue            | Revenue generated during each month                 |
+| Monthly Orders             | Number of orders during each month                  |
+| Monthly Units Sold         | Total units sold during each month                  |
+| Previous Month Revenue     | Revenue generated during the previous month         |
+| MoM Revenue Growth         | Percentage change compared with the previous month  |
+| 3-Month Moving Average     | Smoothed recent revenue trend                       |
+| Historical Average Revenue | Average revenue across historical months            |
+| Revenue Trend              | Growth, decline, stable, or baseline classification |
+| Next-Month Projection      | Baseline estimate for the next month                |
+
+### Day 50 Forecasting Methods
+
+The project uses simple SQL-based baseline forecasting methods:
+
+* Historical average monthly revenue
+* Recent 3-month average revenue
+* 3-month moving average analysis
+
+These methods are intended for business-analysis learning and baseline projections rather than statistical or machine-learning forecasting.
+
+### Day 50 Business Applications
+
+Sales Revenue Forecasting & Future Projection Analysis can support:
+
+* Revenue planning
+* Sales target planning
+* Monthly performance monitoring
+* Future revenue estimation
+* Sales trend monitoring
+* Revenue growth monitoring
+* Revenue decline detection
+* Business planning
+* Management reporting
+* Business intelligence
+
+### Day 50 Learning Outcome
+
+Day 50 strengthened practical SQL skills related to **time-series analysis, moving averages, previous-period comparison, revenue trend classification, and SQL-based baseline revenue forecasting**.
+
+The analysis demonstrates how historical sales data can be transformed into simple future revenue projections that can support business planning and decision-making.
+
+### Day 50 Project Files
+
+* `SQL/sales_revenue_forecasting_analysis.sql`
+* `Report/Day50_Sales_Revenue_Forecasting_Analysis.md`
+* `Screenshots/Day 50/`
+
+---
+
 # 💼 Business Intelligence
 
 * Business performance analysis
@@ -1011,6 +1127,8 @@ The analysis demonstrates how transactional order, product, and quantity data ca
 * Revenue concentration analysis
 * Revenue forecasting
 * Monthly sales projection
+* Historical revenue analysis
+* Moving-average analysis
 * Payment transaction monitoring
 * Payment status reporting
 * Payment method reporting
@@ -1040,48 +1158,49 @@ The analysis demonstrates how transactional order, product, and quantity data ca
 
 # 📅 Project Progress
 
-| Phase                                                    |        Days | Status             |
-| -------------------------------------------------------- | ----------: | ------------------ |
-| SQL & Database Fundamentals                              |     Day 1–7 | ✅ Completed        |
-| Intermediate SQL Analysis                                |    Day 8–14 | ✅ Completed        |
-| Advanced SQL & Optimization                              |   Day 15–17 | ✅ Completed        |
-| Customer & Business Analytics                            |   Day 18–22 | ✅ Completed        |
-| Sales Trend & Time-Series Analysis                       |      Day 23 | ✅ Completed        |
-| Product Performance Analysis                             |      Day 24 | ✅ Completed        |
-| Sales Profitability Analysis                             |      Day 25 | ✅ Completed        |
-| Customer Revenue Contribution Analysis                   |      Day 26 | ✅ Completed        |
-| Customer Churn Analysis                                  |      Day 27 | ✅ Completed        |
-| Customer Cohort & Retention Analysis                     |      Day 28 | ✅ Completed        |
-| Customer Purchase Frequency Analysis                     |      Day 29 | ✅ Completed        |
-| Day 30 Analysis                                          |      Day 30 | ✅ Completed        |
-| Product Purchase Behavior Analysis                       |      Day 31 | ✅ Completed        |
-| Product Customer Affinity & Cross-Selling                |      Day 32 | ✅ Completed        |
-| Customer-Product Purchase Analysis                       |      Day 33 | ✅ Completed        |
-| Customer Cross-Selling & Product Recommendation Analysis |      Day 34 | ✅ Completed        |
-| Customer Purchase Journey & Basket Analysis              |      Day 35 | ✅ Completed        |
-| Customer Lifetime Value & Revenue Contribution Analysis  |      Day 36 | ✅ Completed        |
-| Customer RFM Segmentation Analysis                       |      Day 37 | ✅ Completed        |
-| Customer Segment Performance & Revenue Analysis          |      Day 38 | ✅ Completed        |
-| Customer Segment Retention & Churn Risk Analysis         |      Day 39 | ✅ Completed        |
-| Customer Cohort & Retention Trend Analysis               |      Day 40 | ✅ Completed        |
-| Customer Lifecycle & Repeat Purchase Analysis            |      Day 41 | ✅ Completed        |
-| Customer Purchase Frequency & Repeat Behavior Analysis   |      Day 42 | ✅ Completed        |
-| **Payment Status & Payment Method Analysis**             |  **Day 43** | **✅ Completed**    |
-| **Customer Payment Behavior Analysis**                   |  **Day 44** | **✅ Completed**    |
-| **Customer Payment Risk & Pending Payment Analysis**     |  **Day 45** | **✅ Completed**    |
-| **Data Quality & Integrity Analysis**                    |  **Day 46** | **✅ Completed**    |
-| **Sales Performance KPI Analysis**                       |  **Day 47** | **✅ Completed**    |
-| **Sales Growth & Month-over-Month Analysis**             |  **Day 48** | **✅ Completed**    |
-| **Sales Order Value & Basket Analysis**                  |  **Day 49** | **✅ Completed**    |
-| **Overall Progress**                                     | **49 Days** | **🚀 In Progress** |
+| Phase                                                    |        Days | Status          |
+| -------------------------------------------------------- | ----------: | --------------- |
+| SQL & Database Fundamentals                              |     Day 1–7 | ✅ Completed     |
+| Intermediate SQL Analysis                                |    Day 8–14 | ✅ Completed     |
+| Advanced SQL & Optimization                              |   Day 15–17 | ✅ Completed     |
+| Customer & Business Analytics                            |   Day 18–22 | ✅ Completed     |
+| Sales Trend & Time-Series Analysis                       |      Day 23 | ✅ Completed     |
+| Product Performance Analysis                             |      Day 24 | ✅ Completed     |
+| Sales Profitability Analysis                             |      Day 25 | ✅ Completed     |
+| Customer Revenue Contribution Analysis                   |      Day 26 | ✅ Completed     |
+| Customer Churn Analysis                                  |      Day 27 | ✅ Completed     |
+| Customer Cohort & Retention Analysis                     |      Day 28 | ✅ Completed     |
+| Customer Purchase Frequency Analysis                     |      Day 29 | ✅ Completed     |
+| Day 30 Analysis                                          |      Day 30 | ✅ Completed     |
+| Product Purchase Behavior Analysis                       |      Day 31 | ✅ Completed     |
+| Product Customer Affinity & Cross-Selling                |      Day 32 | ✅ Completed     |
+| Customer-Product Purchase Analysis                       |      Day 33 | ✅ Completed     |
+| Customer Cross-Selling & Product Recommendation Analysis |      Day 34 | ✅ Completed     |
+| Customer Purchase Journey & Basket Analysis              |      Day 35 | ✅ Completed     |
+| Customer Lifetime Value & Revenue Contribution Analysis  |      Day 36 | ✅ Completed     |
+| Customer RFM Segmentation Analysis                       |      Day 37 | ✅ Completed     |
+| Customer Segment Performance & Revenue Analysis          |      Day 38 | ✅ Completed     |
+| Customer Segment Retention & Churn Risk Analysis         |      Day 39 | ✅ Completed     |
+| Customer Cohort & Retention Trend Analysis               |      Day 40 | ✅ Completed     |
+| Customer Lifecycle & Repeat Purchase Analysis            |      Day 41 | ✅ Completed     |
+| Customer Purchase Frequency & Repeat Behavior Analysis   |      Day 42 | ✅ Completed     |
+| **Payment Status & Payment Method Analysis**             |  **Day 43** | **✅ Completed** |
+| **Customer Payment Behavior Analysis**                   |  **Day 44** | **✅ Completed** |
+| **Customer Payment Risk & Pending Payment Analysis**     |  **Day 45** | **✅ Completed** |
+| **Data Quality & Integrity Analysis**                    |  **Day 46** | **✅ Completed** |
+| **Sales Performance KPI Analysis**                       |  **Day 47** | **✅ Completed** |
+| **Sales Growth & Month-over-Month Analysis**             |  **Day 48** | **✅ Completed** |
+| **Sales Order Value & Basket Analysis**                  |  **Day 49** | **✅ Completed** |
+| **Sales Revenue Forecasting & Future Projection**        |  **Day 50** | **✅ Completed** |
+| **Overall Progress**                                     | **50 Days** | **✅ Completed** |
 
 ---
 
 # 🏆 Current Milestone
 
-## 49 Days of SQL Business Analysis Completed 🎉
+## 50 Days of SQL Business Analysis Completed 🎉
 
-The project has progressed from basic relational database operations to advanced SQL analytics, customer analytics, product analytics, RFM segmentation, customer segment performance, retention and churn-risk analysis, cohort analysis, customer lifecycle analysis, repeat-purchase analysis, purchase-frequency analysis, payment status analysis, payment method analysis, customer payment behavior analysis, customer payment risk analysis, data quality and integrity analysis, sales performance KPI analysis, sales growth and month-over-month analysis, and order value and basket analysis.
+The project has progressed from basic relational database operations to advanced SQL analytics, customer analytics, product analytics, RFM segmentation, customer segment performance, retention and churn-risk analysis, cohort analysis, customer lifecycle analysis, repeat-purchase analysis, purchase-frequency analysis, payment status analysis, payment method analysis, customer payment behavior analysis, customer payment risk analysis, data quality and integrity analysis, sales performance KPI analysis, sales growth and month-over-month analysis, order value and basket analysis, and revenue forecasting and future projection.
 
 ### Current Learning Journey
 
@@ -1178,6 +1297,10 @@ The project has progressed from basic relational database operations to advanced
 ↓
 
 **Sales Order Value & Basket Analysis**
+
+↓
+
+**Sales Revenue Forecasting & Future Projection**
 
 ↓
 
@@ -1303,7 +1426,8 @@ Sales_Data_Analysis_SQL/
 │   ├── data_quality_integrity_analysis.sql
 │   ├── sales_performance_kpi_analysis.sql
 │   ├── sales_growth_mom_analysis.sql
-│   └── sales_order_value_basket_analysis.sql
+│   ├── sales_order_value_basket_analysis.sql
+│   └── sales_revenue_forecasting_analysis.sql
 │
 ├── Screenshots/
 │   ├── Day 1/
@@ -1317,7 +1441,8 @@ Sales_Data_Analysis_SQL/
 │   ├── Day 46/
 │   ├── Day 47/
 │   ├── Day 48/
-│   └── Day 49/
+│   ├── Day 49/
+│   └── Day 50/
 │
 ├── Presentation/
 │
@@ -1355,7 +1480,8 @@ Sales_Data_Analysis_SQL/
 │   ├── Day46_Data_Quality_Integrity_Analysis.md
 │   ├── Day47_Sales_Performance_KPI_Analysis.md
 │   ├── Day48_Sales_Growth_MOM_Analysis.md
-│   └── Day49_Sales_Order_Value_Basket_Analysis.md
+│   ├── Day49_Sales_Order_Value_Basket_Analysis.md
+│   └── Day50_Sales_Revenue_Forecasting_Analysis.md
 │
 └── README.md
 ```
@@ -1495,6 +1621,18 @@ High-Value Order Analysis
 
         ↓
 
+Revenue Forecasting
+
+        ↓
+
+Moving-Average Analysis
+
+        ↓
+
+Future Revenue Projection
+
+        ↓
+
 Product Analytics
 
         ↓
@@ -1571,6 +1709,9 @@ Through this project, the following practical skills are demonstrated:
 * Sales trend analysis
 * Monthly sales projection
 * Revenue forecasting concepts
+* Moving-average analysis
+* Revenue trend classification
+* Baseline revenue projection
 * Payment status analysis
 * Payment method analysis
 * Payment transaction monitoring
@@ -1599,11 +1740,13 @@ Through this project, the following practical skills are demonstrated:
 
 **Current Status: 🟢 Active**
 
-**Completed: 49 Days**
+**Completed: 50 Days**
 
 **Primary Focus: SQL Data Analysis & Business Intelligence**
 
-The project continues to expand toward advanced business analytics, customer lifecycle analysis, repeat-purchase analysis, purchase-frequency analysis, retention strategy, product analytics, product affinity, cross-selling, customer-product analysis, product recommendations, customer purchase journey analysis, basket analysis, order value analysis, high-value transaction analysis, customer lifetime value analysis, RFM segmentation, customer segment performance, churn-risk analysis, cohort retention analysis, monthly revenue analysis, sales trend analysis, month-over-month growth analysis, payment status analysis, payment method analysis, customer payment behavior analysis, customer payment risk analysis, pending payment analysis, failed payment analysis, repeated payment record analysis, data quality analysis, database integrity analysis, sales performance KPI analysis, and revenue forecasting concepts.
+The project has completed 50 days of structured SQL learning and business analysis.
+
+The project now covers database design, SQL fundamentals, advanced SQL, query optimization, customer analytics, product analytics, customer segmentation, RFM analysis, customer retention, churn analysis, cohort analysis, customer lifecycle analysis, repeat purchase analysis, purchase frequency analysis, payment analysis, payment risk analysis, data quality analysis, sales KPI analysis, sales growth analysis, month-over-month analysis, order value analysis, basket analysis, time-series analysis, and SQL-based revenue forecasting and future projection concepts.
 
 ---
 
@@ -1769,11 +1912,113 @@ The analysis demonstrated how transactional sales data can be transformed into p
 
 ---
 
+# 🚀 Day 50 Achievement
+
+## Day 50 — Sales Revenue Forecasting & Future Projection Completed ✅
+
+Day 50 focused on analyzing historical sales performance and developing **SQL-based revenue forecasting and future sales projection concepts**.
+
+The analysis builds on the previous monthly sales-growth and order-value work by using historical revenue trends, previous-month comparisons, and moving averages to create simple baseline revenue projections.
+
+### Key Analyses
+
+1. Monthly Historical Revenue
+2. Monthly Order Volume
+3. Monthly Units Sold
+4. Previous-Month Revenue
+5. Month-over-Month Revenue Growth
+6. 3-Month Moving Average Revenue
+7. 3-Month Moving Average Order Volume
+8. Revenue Trend Classification
+9. Average Historical Monthly Revenue
+10. Next-Month Revenue Projection Using Historical Average
+11. Next-Month Projection Using Recent 3-Month Average
+12. Final Sales Forecasting Summary
+
+### SQL Techniques Used
+
+* `SUM()`
+* `COUNT()`
+* `COUNT(DISTINCT)`
+* `AVG()`
+* `GROUP BY`
+* `ORDER BY`
+* `DATE_FORMAT()`
+* `DATE_ADD()`
+* `CAST()`
+* `LAG()`
+* Window Functions
+* Common Table Expressions
+* `CASE`
+* `ROUND()`
+* `NULLIF()`
+* Moving average calculations
+* Previous-period comparison
+* Percentage growth calculations
+* Revenue trend classification
+* Baseline forecasting calculations
+
+### Business Analysis Focus
+
+Day 50 answered questions such as:
+
+* What is the historical monthly revenue?
+* How many orders are generated each month?
+* How many units are sold each month?
+* What was the previous month's revenue?
+* How is monthly revenue changing?
+* What is the 3-month moving average revenue?
+* What is the recent average order volume?
+* Is the latest revenue showing growth, stability, or decline?
+* What is the historical average monthly revenue?
+* What is the projected revenue for the next month using the historical average?
+* What is the projected revenue using the recent 3-month average?
+* What does the final revenue forecasting summary indicate?
+
+### Day 50 Forecasting Methods
+
+The project uses simple SQL-based baseline forecasting methods:
+
+* Historical average monthly revenue
+* Recent 3-month average revenue
+* 3-month moving average analysis
+
+These methods are intended for business-analysis learning and baseline projections rather than statistical or machine-learning forecasting.
+
+### Day 50 Business Applications
+
+Sales Revenue Forecasting & Future Projection Analysis can support:
+
+* Revenue planning
+* Sales target planning
+* Monthly performance monitoring
+* Future revenue estimation
+* Sales trend monitoring
+* Revenue growth monitoring
+* Revenue decline detection
+* Business planning
+* Management reporting
+* Business intelligence
+
+### Day 50 Learning Outcome
+
+Day 50 strengthened practical SQL skills related to **time-series analysis, moving averages, previous-period comparison, revenue trend classification, and SQL-based baseline revenue forecasting**.
+
+The analysis demonstrates how historical sales data can be transformed into simple future revenue projections that can support business planning and decision-making.
+
+### Day 50 Project Files
+
+* `SQL/sales_revenue_forecasting_analysis.sql`
+* `Report/Day50_Sales_Revenue_Forecasting_Analysis.md`
+* `Screenshots/Day 50/`
+
+---
+
 # 🏁 Portfolio Progress
 
-## 49 Days Completed 🚀
+## 50 Days Completed 🚀
 
-**SQL Fundamentals → Advanced SQL → Business Analytics → Customer Analytics → Customer Retention → Customer Lifetime Value → RFM Customer Segmentation → Customer Segment Performance → Customer Segment Retention & Churn Risk → Customer Cohort & Retention Trend Analysis → Customer Lifecycle & Repeat Purchase Analysis → Customer Purchase Frequency & Repeat Behavior Analysis → Payment Status & Payment Method Analysis → Customer Payment Behavior Analysis → Customer Payment Risk & Pending Payment Analysis → Data Quality & Integrity Analysis → Sales Performance KPI Analysis → Sales Growth & Month-over-Month Analysis → Sales Order Value & Basket Analysis → Product Analytics → Product Purchase Behavior → Product Customer Affinity → Cross-Selling → Customer-Product Purchase Analysis → Product Recommendations → Customer Purchase Journey & Basket Analysis → Business Insights**
+**SQL Fundamentals → Advanced SQL → Business Analytics → Customer Analytics → Customer Retention → Customer Lifetime Value → RFM Customer Segmentation → Customer Segment Performance → Customer Segment Retention & Churn Risk → Customer Cohort & Retention Trend Analysis → Customer Lifecycle & Repeat Purchase Analysis → Customer Purchase Frequency & Repeat Behavior Analysis → Payment Status & Payment Method Analysis → Customer Payment Behavior Analysis → Customer Payment Risk & Pending Payment Analysis → Data Quality & Integrity Analysis → Sales Performance KPI Analysis → Sales Growth & Month-over-Month Analysis → Sales Order Value & Basket Analysis → Sales Revenue Forecasting & Future Projection → Product Analytics → Product Purchase Behavior → Product Customer Affinity → Cross-Selling → Customer-Product Purchase Analysis → Product Recommendations → Customer Purchase Journey & Basket Analysis → Business Insights**
 
 The project now demonstrates a broad practical SQL workflow suitable for showcasing **Data Analyst, Business Analyst, SQL Developer, Reporting Analyst, and MIS Analyst portfolio skills**.
 
@@ -1800,7 +2045,7 @@ The next stage of the project can move toward more advanced:
 * Data quality monitoring dashboards
 * Business performance monitoring
 
-**Next Milestone: Day 50 → 50/55 🔥**
+**Next Milestone: Day 51 → 51/55 🔥**
 
 ---
 
@@ -1811,3 +2056,11 @@ The long-term goal is to transform this project into a complete **SQL + Business
 **Query → Analyze → Measure → Validate → Segment → Compare → Identify Problems → Generate Insights → Recommend Business Actions**
 
 ---
+
+## 🎉 50-Day Milestone
+
+**Day 50 is completed successfully. ✅**
+
+**50 Days of continuous SQL business analysis completed. 🚀**
+
+**Next target: Day 51. 🔥**
