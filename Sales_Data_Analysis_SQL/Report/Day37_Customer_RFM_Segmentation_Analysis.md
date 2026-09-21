@@ -717,8 +717,35 @@ products
 ```text
 Sales_Data_Analysis_SQL/
 │
+├── README.md
+│
 ├── SQL/
-│   ├── ...
+│   │
+│   ├── create_tables.sql
+│   ├── insert_data.sql
+│   ├── basic_queries.sql
+│   ├── join_queries.sql
+│   ├── aggregate_queries.sql
+│   ├── subqueries.sql
+│   ├── sales_analysis_report.sql
+│   ├── views.sql
+│   ├── stored_procedures.sql
+│   ├── triggers.sql
+│   ├── indexes.sql
+│   ├── window_functions.sql
+│   ├── cte_queries.sql
+│   ├── advanced_business_analysis.sql
+│   ├── query_optimization.sql
+│   │
+│   ├── [Day 16–38 SQL files]
+│   │
+│   ├── customer_segment_retention_analysis.sql
+│   ├── customer_cohort_retention_analysis.sql
+│   │
+│   ├── payment_status_method_analysis.sql
+│   ├── customer_payment_behavior_analysis.sql
+│   ├── payment_risk_pending_analysis.sql
+│   ├── data_quality_integrity_analysis.sql
 │   ├── sales_performance_kpi_analysis.sql
 │   ├── sales_growth_mon_analysis.sql
 │   ├── sales_order_value_basket_analysis.sql
@@ -726,7 +753,32 @@ Sales_Data_Analysis_SQL/
 │   └── product_demand_forecasting_analysis.sql
 │
 ├── Report/
-│   ├── ...
+│   │
+│   ├── Week1_Report.md
+│   ├── Week2_Report.md
+│   ├── Day17_Business_Analysis.md
+│   ├── Day19_Customer_Behavior_Analysis.md
+│   ├── Day20_Customer_Retention_Analysis.md
+│   ├── Day21_Customer_Lifetime_Value.md
+│   ├── Day22_RFM_Customer_Segmentation.md
+│   ├── Day23_Sales_Trend_Analysis.md
+│   ├── Day24_Product_Performance_Analysis.md
+│   ├── Day25_Sales_Profitability_Analysis.md
+│   ├── Day26_Customer_Revenue_Contribution.md
+│   ├── Day27_Customer_Churn_Analysis.md
+│   ├── Day28_Customer_Cohort_Analysis.md
+│   ├── Day29_Customer_Purchase_Frequency_Analysis.md
+│   ├── Day30_Analysis.md
+│   │
+│   ├── [Day 31–38 reports]
+│   │
+│   ├── Day39_Customer_Segment_Retention_Analysis.md
+│   ├── Day40_Customer_Cohort_Retention_Analysis.md
+│   │
+│   ├── Day43_Payment_Status_Method_Analysis.md
+│   ├── Day44_Customer_Payment_Behavior_Analysis.md
+│   ├── Day45_Customer_Payment_Risk_Analysis.md
+│   ├── Day46_Data_Quality_Integrity_Analysis.md
 │   ├── Day47_Sales_Performance_KPI_Analysis.md
 │   ├── Day48_Sales_Growth_MON_Analysis.md
 │   ├── Day49_Sales_Order_Value_Basket_Analysis.md
@@ -734,7 +786,53 @@ Sales_Data_Analysis_SQL/
 │   └── Day51_Product_Demand_Forecasting_Analysis.md
 │
 ├── Screenshots/
-│   ├── ...
+│   │
+│   ├── Day 01/
+│   ├── Day 02/
+│   ├── Day 03/
+│   ├── Day 04/
+│   ├── Day 05/
+│   ├── Day 06/
+│   ├── Day 07/
+│   ├── Day 08/
+│   ├── Day 09/
+│   ├── Day 10/
+│   ├── Day 11/
+│   ├── Day 12/
+│   ├── Day 13/
+│   ├── Day 14/
+│   ├── Day 15/
+│   ├── Day 16/
+│   ├── Day 17/
+│   ├── Day 18/
+│   ├── Day 19/
+│   ├── Day 20/
+│   ├── Day 21/
+│   ├── Day 22/
+│   ├── Day 23/
+│   ├── Day 24/
+│   ├── Day 25/
+│   ├── Day 26/
+│   ├── Day 27/
+│   ├── Day 28/
+│   ├── Day 29/
+│   ├── Day 30/
+│   ├── Day 31/
+│   ├── Day 32/
+│   ├── Day 33/
+│   ├── Day 34/
+│   ├── Day 35/
+│   ├── Day 36/
+│   ├── Day 37/
+│   ├── Day 38/
+│   ├── Day 39/
+│   ├── Day 40/
+│   ├── Day 41/
+│   ├── Day 42/
+│   ├── Day 43/
+│   ├── Day 44/
+│   ├── Day 45/
+│   ├── Day 46/
 │   ├── Day 47/
 │   ├── Day 48/
 │   ├── Day 49/
@@ -753,7 +851,10 @@ Sales_Data_Analysis_SQL/
 │       ├── Query_11.png
 │       └── Query_12.png
 │
-└── README.md
+└── Database/
+    ├── database_schema.sql
+    ├── table_creation.sql
+    └── sample_data.sql
 ```
 
 ---
