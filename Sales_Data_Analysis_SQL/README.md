@@ -1,6 +1,6 @@
 # 📊 Sales Data Analysis Using SQL
 
-A hands-on SQL portfolio project focused on **relational database design, advanced SQL analytics, query optimization, customer analytics, product analytics, business intelligence, customer retention, cohort analysis, customer lifecycle analysis, repeat purchase analysis, purchase frequency analysis, payment analysis, data quality analysis, sales KPI analysis, sales growth analysis, order value analysis, basket analysis, revenue forecasting, product demand forecasting, customer repeat purchase prediction, and business reporting** using MySQL.
+A hands-on SQL portfolio project focused on **relational database design, advanced SQL analytics, query optimization, customer analytics, product analytics, business intelligence, customer retention, cohort analysis, customer lifecycle analysis, repeat purchase analysis, purchase frequency analysis, payment analysis, data quality analysis, sales KPI analysis, sales growth analysis, order value analysis, basket analysis, revenue forecasting, product demand forecasting, customer repeat purchase prediction, customer purchase propensity analysis, and business reporting** using MySQL.
 
 This project simulates a real-world sales management system and demonstrates practical SQL skills relevant to **Data Analyst, Business Analyst, SQL Developer, Reporting Analyst, and MIS Analyst roles**.
 
@@ -48,6 +48,10 @@ The project covers:
 * Product demand analysis
 * Product demand forecasting
 * Customer repeat purchase prediction
+* Customer purchase propensity analysis
+* Customer propensity scoring
+* Customer purchase recency analysis
+* Customer purchase frequency classification
 * Payment status analysis
 * Payment method analysis
 * Customer payment behavior analysis
@@ -92,6 +96,10 @@ The main objectives of this project are to:
 * Measure purchase recency and frequency.
 * Calculate repeat purchase counts.
 * Create rule-based repeat-purchase classifications.
+* Analyze customer purchase propensity.
+* Build rule-based customer propensity scores.
+* Classify customers according to purchase propensity.
+* Rank customers based on purchasing behavior.
 * Convert raw sales data into actionable business insights.
 * Create structured business reports using SQL.
 
@@ -138,6 +146,7 @@ The main objectives of this project are to:
 * Order value analysis JOINs
 * Basket analysis JOINs
 * Product demand analysis JOINs
+* Customer propensity analysis JOINs
 
 ## 📊 SQL Aggregation & Analysis
 
@@ -164,6 +173,7 @@ The main objectives of this project are to:
 * Order-value aggregation
 * Product demand aggregation
 * Customer repeat-purchase aggregation
+* Customer propensity aggregation
 
 ## 🧠 Advanced SQL
 
@@ -187,9 +197,12 @@ The main objectives of this project are to:
 * Revenue forecasting
 * Product demand forecasting
 * Customer purchase prediction
+* Customer purchase propensity scoring
 * Purchase interval analysis
 * Repeat purchase classification
 * Customer activity scoring
+* Customer recency analysis
+* Customer frequency classification
 
 ## ⚡ SQL Optimization
 
@@ -224,11 +237,16 @@ The main objectives of this project are to:
 * Customer activity analysis
 * Customer purchase recency
 * Customer repeat-purchase prediction
+* Customer purchase propensity analysis
+* Customer purchase propensity scoring
 * Customer purchase activity scoring
 * One-time customer identification
 * Repeat customer identification
 * Loyal customer identification
 * At-risk customer identification
+* High-value customer identification
+* Customer propensity classification
+* Customer propensity ranking
 
 ---
 
@@ -286,6 +304,7 @@ The main objectives of this project are to:
 * Revenue forecasting
 * Future revenue projection
 * Product demand forecasting
+* Customer propensity scoring
 
 ---
 
@@ -309,6 +328,7 @@ The project includes:
 * Product demand moving average
 * Product demand ranking
 * Product demand forecasting
+* Next-month product demand projection
 
 ---
 
@@ -330,6 +350,8 @@ The project includes:
 * Revenue-at-risk analysis
 * Customer re-engagement
 * Customer win-back analysis
+* Customer purchase recency
+* Customer purchase propensity
 
 ---
 
@@ -369,7 +391,7 @@ The project includes:
 
 Day 50 focused on historical sales performance and SQL-based revenue forecasting.
 
-Key analyses included:
+### Key Analyses
 
 1. Monthly Historical Revenue
 2. Monthly Order Volume
@@ -384,11 +406,13 @@ Key analyses included:
 11. Recent 3-Month Average Projection
 12. Final Sales Forecasting Summary
 
-**Project Files:**
+### Project Files
 
 ```text
 SQL/sales_revenue_forecasting_analysis.sql
+
 Report/Day50_Sales_Revenue_Forecasting_Analysis.md
+
 Screenshots/Day 50/
 ```
 
@@ -417,7 +441,9 @@ Day 51 focused on **product-level demand analysis and product demand forecasting
 
 ```text
 SQL/product_demand_forecasting_analysis.sql
+
 Report/Day51_Product_Demand_Forecasting_Analysis.md
+
 Screenshots/Day 51/
 ```
 
@@ -522,7 +548,148 @@ Screenshots/
 
 **Customer Repeat Purchase Prediction & Analysis completed successfully. ✅**
 
-The project has now reached **52 completed days of SQL business analysis. 🚀**
+The project reached **52 completed days of SQL business analysis. 🚀**
+
+---
+
+# 🎯 Day 53 — Customer Purchase Propensity Analysis
+
+Day 53 focused on **customer purchase propensity analysis** using customer purchase frequency, purchase recency, and revenue contribution.
+
+The analysis develops a **rule-based customer purchase propensity scoring framework** to classify and rank customers according to their historical purchasing behavior.
+
+## Day 53 Key Analyses
+
+1. Total Orders per Customer
+2. Total Revenue per Customer
+3. Average Order Value per Customer
+4. Customer Purchase Recency
+5. Average Days Between Purchases
+6. Customer Purchase Recency Classification
+7. Customer Purchase Frequency Classification
+8. Customer Revenue Classification
+9. Customer Purchase Propensity Score
+10. Purchase Propensity Classification
+11. Customer Purchase Propensity Ranking
+12. Final Customer Purchase Propensity Summary
+
+## Day 53 SQL Techniques
+
+* `COUNT()`
+* `COUNT(DISTINCT)`
+* `SUM()`
+* `MAX()`
+* `AVG()`
+* `ROUND()`
+* `DATEDIFF()`
+* `COALESCE()`
+* `NULLIF()`
+* `CASE`
+* CTEs
+* Window Functions
+* `LAG()`
+* `RANK()`
+* Purchase frequency analysis
+* Purchase recency analysis
+* Customer revenue classification
+* Rule-based customer scoring
+* Customer propensity classification
+* Customer ranking
+
+## Day 53 Propensity Scoring
+
+The propensity score combines three customer behavior signals:
+
+```text
+Purchase Frequency Score
+        +
+Purchase Recency Score
+        +
+Customer Revenue Score
+        ↓
+Purchase Propensity Score
+```
+
+### Purchase Frequency Score
+
+| Condition  | Score |
+| ---------- | ----: |
+| 10+ orders |    +3 |
+| 5–9 orders |    +2 |
+| 2–4 orders |    +1 |
+| 1 order    |    +0 |
+
+### Purchase Recency Score
+
+| Condition | Score |
+| --------- | ----: |
+| ≤ 30 days |    +3 |
+| ≤ 60 days |    +2 |
+| ≤ 90 days |    +1 |
+| > 90 days |    +0 |
+
+### Customer Revenue Score
+
+| Condition     | Score |
+| ------------- | ----: |
+| ₹10,000+      |    +3 |
+| ₹5,000–₹9,999 |    +2 |
+| ₹1,000–₹4,999 |    +1 |
+| Below ₹1,000  |    +0 |
+
+### Maximum Score
+
+**9 points**
+
+## Day 53 Propensity Categories
+
+| Score | Classification                |
+| ----: | ----------------------------- |
+|   7–9 | Very High Purchase Propensity |
+|   5–6 | High Purchase Propensity      |
+|   3–4 | Moderate Purchase Propensity  |
+|   1–2 | Low Purchase Propensity       |
+|     0 | Very Low Purchase Propensity  |
+
+## Day 53 Business Applications
+
+The analysis can support:
+
+* Customer targeting
+* Marketing campaign segmentation
+* Customer re-engagement
+* Loyalty programs
+* Customer behavior monitoring
+* Revenue growth analysis
+* Customer lifecycle management
+* High-value customer identification
+* Purchase propensity segmentation
+* Business decision support
+
+## Day 53 Methodology Limitation
+
+The Day 53 propensity model is a **rule-based SQL scoring system**, not a machine-learning model.
+
+The score represents a structured business-analysis indicator based on historical customer behavior. It should not be interpreted as a statistically validated probability of future purchase.
+
+## Day 53 Project Files
+
+```text
+SQL/
+└── customer_purchase_propensity_analysis.sql
+
+Report/
+└── Day53_Customer_Purchase_Propensity_Analysis.md
+
+Screenshots/
+└── Day 53/
+```
+
+## Day 53 Achievement
+
+**Customer Purchase Propensity Analysis completed successfully. ✅**
+
+The project has now reached **53 completed days of SQL business analysis. 🚀**
 
 ---
 
@@ -573,6 +740,8 @@ Product Demand Forecasting
       ↓
 Customer Repeat Purchase Prediction
       ↓
+Customer Purchase Propensity Analysis
+      ↓
 Business Insights
 ```
 
@@ -608,6 +777,7 @@ Customers
 
 ```text
 Sales_Data_Analysis_SQL/
+
 │
 ├── Database_Design/
 │   └── sales_analysis.mwb
@@ -664,7 +834,8 @@ Sales_Data_Analysis_SQL/
 │   ├── sales_order_value_basket_analysis.sql
 │   ├── sales_revenue_forecasting_analysis.sql
 │   ├── product_demand_forecasting_analysis.sql
-│   └── customer_repeat_purchase_prediction.sql
+│   ├── customer_repeat_purchase_prediction.sql
+│   └── customer_purchase_propensity_analysis.sql
 │
 ├── Screenshots/
 │   ├── Day 1/
@@ -674,48 +845,19 @@ Sales_Data_Analysis_SQL/
 │   ├── Day 49/
 │   ├── Day 50/
 │   ├── Day 51/
-│   └── Day 52/
+│   ├── Day 52/
+│   └── Day 53/
 │
 ├── Presentation/
 │
 ├── Report/
 │   ├── Week1_Report.md
 │   ├── Week2_Report.md
-│   ├── Day17_Business_Analysis.md
-│   ├── Day19_Customer_Behavior_Analysis.md
-│   ├── Day20_Customer_Retention_Analysis.md
-│   ├── Day21_Customer_Lifetime_Value.md
-│   ├── Day22_RFM_Customer_Segmentation.md
-│   ├── Day23_Sales_Trend_Analysis.md
-│   ├── Day24_Product_Performance_Analysis.md
-│   ├── Day25_Sales_Profitability_Analysis.md
-│   ├── Day26_Customer_Revenue_Contribution.md
-│   ├── Day27_Customer_Churn_Analysis.md
-│   ├── Day28_Customer_Cohort_Analysis.md
-│   ├── Day29_Customer_Purchase_Frequency_Analysis.md
-│   ├── Day30_Customer_Segmentation_Revenue_Analysis.md
-│   ├── Day31_Product_Purchase_Behavior_Analysis.md
-│   ├── Day32_Product_Customer_Affinity_Analysis.md
-│   ├── Day33_Customer_Product_Purchase_Analysis.md
-│   ├── Day34_Customer_Cross_Selling_Analysis.md
-│   ├── Day35_Customer_Purchase_Journey_Analysis.md
-│   ├── Day36_Customer_Lifetime_Value_Analysis.md
-│   ├── Day37_Customer_RFM_Segmentation_Analysis.md
-│   ├── Day38_Customer_Segment_Performance_Analysis.md
-│   ├── Day39_Customer_Segment_Retention_Analysis.md
-│   ├── Day40_Customer_Cohort_Retention_Analysis.md
-│   ├── Day41_Customer_Lifecycle_Analysis.md
-│   ├── Day42_Customer_Purchase_Frequency_Repeat_Behavior_Analysis.md
-│   ├── Day43_Payment_Status_Method_Analysis.md
-│   ├── Day44_Customer_Payment_Behavior_Analysis.md
-│   ├── Day45_Customer_Payment_Risk_Analysis.md
-│   ├── Day46_Data_Quality_Integrity_Analysis.md
-│   ├── Day47_Sales_Performance_KPI_Analysis.md
-│   ├── Day48_Sales_Growth_MOM_Analysis.md
-│   ├── Day49_Sales_Order_Value_Basket_Analysis.md
+│   ├── ...
 │   ├── Day50_Sales_Revenue_Forecasting_Analysis.md
 │   ├── Day51_Product_Demand_Forecasting_Analysis.md
-│   └── Day52_Customer_Repeat_Purchase_Prediction_Analysis.md
+│   ├── Day52_Customer_Repeat_Purchase_Prediction_Analysis.md
+│   └── Day53_Customer_Purchase_Propensity_Analysis.md
 │
 └── README.md
 ```
@@ -724,60 +866,61 @@ Sales_Data_Analysis_SQL/
 
 # 📅 Daily Project Organization
 
-|        Day | Main Work                                          |
-| ---------: | -------------------------------------------------- |
-|      Day 1 | Database Fundamentals                              |
-|      Day 2 | SQL Table & Data Operations                        |
-|      Day 3 | Basic SQL Queries                                  |
-|      Day 4 | SQL Filtering & Analysis                           |
-|      Day 5 | SQL Aggregation                                    |
-|      Day 6 | JOIN Operations                                    |
-|      Day 7 | SQL Fundamentals Review                            |
-|      Day 8 | Intermediate SQL                                   |
-|      Day 9 | Stored Procedures                                  |
-|     Day 10 | Advanced SQL                                       |
-|     Day 11 | Views                                              |
-|     Day 12 | Triggers                                           |
-|     Day 13 | Indexes                                            |
-|     Day 14 | Advanced Business Analysis                         |
-|     Day 15 | Window Functions                                   |
-|     Day 16 | CTEs                                               |
-|     Day 17 | Query Optimization & Business Analysis             |
-|     Day 18 | Customer Analytics                                 |
-|     Day 19 | Customer Behavior Analysis                         |
-|     Day 20 | Customer Retention Analysis                        |
-|     Day 21 | Customer Lifetime Value                            |
-|     Day 22 | RFM Customer Segmentation                          |
-|     Day 23 | Sales Trend Analysis                               |
-|     Day 24 | Product Performance Analysis                       |
-|     Day 25 | Sales Profitability Analysis                       |
-|     Day 26 | Customer Revenue Contribution                      |
-|     Day 27 | Customer Churn Analysis                            |
-|     Day 28 | Customer Cohort & Retention                        |
-|     Day 29 | Customer Purchase Frequency                        |
-|     Day 30 | Customer Segmentation & Revenue                    |
-|     Day 31 | Product Purchase Behavior                          |
-|     Day 32 | Product Customer Affinity                          |
-|     Day 33 | Customer-Product Purchase Analysis                 |
-|     Day 34 | Cross-Selling & Product Recommendation             |
-|     Day 35 | Customer Purchase Journey & Basket                 |
-|     Day 36 | Customer Lifetime Value & Revenue Contribution     |
-|     Day 37 | Customer RFM Segmentation                          |
-|     Day 38 | Customer Segment Performance                       |
-|     Day 39 | Customer Segment Retention & Churn Risk            |
-|     Day 40 | Customer Cohort & Retention Trend                  |
-|     Day 41 | Customer Lifecycle & Repeat Purchase               |
-|     Day 42 | Customer Purchase Frequency & Repeat Behavior      |
-|     Day 43 | Payment Status & Payment Method                    |
-|     Day 44 | Customer Payment Behavior                          |
-|     Day 45 | Customer Payment Risk & Pending Payments           |
-|     Day 46 | Data Quality & Integrity                           |
-|     Day 47 | Sales Performance KPI                              |
-|     Day 48 | Sales Growth & Month-over-Month                    |
-|     Day 49 | Sales Order Value & Basket                         |
-|     Day 50 | Sales Revenue Forecasting                          |
-|     Day 51 | Product Demand & Sales Forecasting                 |
-| **Day 52** | **Customer Repeat Purchase Prediction & Analysis** |
+|        Day | Main Work                                      |
+| ---------: | ---------------------------------------------- |
+|      Day 1 | Database Fundamentals                          |
+|      Day 2 | SQL Table & Data Operations                    |
+|      Day 3 | Basic SQL Queries                              |
+|      Day 4 | SQL Filtering & Analysis                       |
+|      Day 5 | SQL Aggregation                                |
+|      Day 6 | JOIN Operations                                |
+|      Day 7 | SQL Fundamentals Review                        |
+|      Day 8 | Intermediate SQL                               |
+|      Day 9 | Stored Procedures                              |
+|     Day 10 | Advanced SQL                                   |
+|     Day 11 | Views                                          |
+|     Day 12 | Triggers                                       |
+|     Day 13 | Indexes                                        |
+|     Day 14 | Advanced Business Analysis                     |
+|     Day 15 | Window Functions                               |
+|     Day 16 | CTEs                                           |
+|     Day 17 | Query Optimization & Business Analysis         |
+|     Day 18 | Customer Analytics                             |
+|     Day 19 | Customer Behavior Analysis                     |
+|     Day 20 | Customer Retention Analysis                    |
+|     Day 21 | Customer Lifetime Value                        |
+|     Day 22 | RFM Customer Segmentation                      |
+|     Day 23 | Sales Trend Analysis                           |
+|     Day 24 | Product Performance Analysis                   |
+|     Day 25 | Sales Profitability Analysis                   |
+|     Day 26 | Customer Revenue Contribution                  |
+|     Day 27 | Customer Churn Analysis                        |
+|     Day 28 | Customer Cohort & Retention                    |
+|     Day 29 | Customer Purchase Frequency                    |
+|     Day 30 | Customer Segmentation & Revenue                |
+|     Day 31 | Product Purchase Behavior                      |
+|     Day 32 | Product Customer Affinity                      |
+|     Day 33 | Customer-Product Purchase Analysis             |
+|     Day 34 | Cross-Selling & Product Recommendation         |
+|     Day 35 | Customer Purchase Journey & Basket             |
+|     Day 36 | Customer Lifetime Value & Revenue Contribution |
+|     Day 37 | Customer RFM Segmentation                      |
+|     Day 38 | Customer Segment Performance                   |
+|     Day 39 | Customer Segment Retention & Churn Risk        |
+|     Day 40 | Customer Cohort & Retention Trend              |
+|     Day 41 | Customer Lifecycle & Repeat Purchase           |
+|     Day 42 | Customer Purchase Frequency & Repeat Behavior  |
+|     Day 43 | Payment Status & Payment Method                |
+|     Day 44 | Customer Payment Behavior                      |
+|     Day 45 | Customer Payment Risk & Pending Payments       |
+|     Day 46 | Data Quality & Integrity                       |
+|     Day 47 | Sales Performance KPI                          |
+|     Day 48 | Sales Growth & Month-over-Month                |
+|     Day 49 | Sales Order Value & Basket                     |
+|     Day 50 | Sales Revenue Forecasting                      |
+|     Day 51 | Product Demand & Sales Forecasting             |
+|     Day 52 | Customer Repeat Purchase Prediction & Analysis |
+| **Day 53** | **Customer Purchase Propensity Analysis**      |
 
 ---
 
@@ -826,7 +969,7 @@ Product Demand Forecasting
       ↓
 Customer Repeat Purchase Analysis
       ↓
-Customer Purchase Prediction
+Customer Purchase Propensity Analysis
       ↓
 Business Insights
 ```
@@ -874,6 +1017,9 @@ Through this project, the following practical skills are demonstrated:
 * Customer purchase recency
 * Customer repeat-purchase classification
 * Customer activity scoring
+* Customer purchase propensity scoring
+* Customer propensity classification
+* Customer propensity ranking
 * Rule-based customer prediction
 * Payment analysis
 * Data quality analysis
@@ -889,58 +1035,58 @@ Through this project, the following practical skills are demonstrated:
 
 **Current Status: 🟢 Active**
 
-**Completed: 52 Days**
+**Completed: 53 Days**
 
 **Primary Focus: SQL Data Analysis & Business Intelligence**
 
-The project has completed **52 days of structured SQL learning and business analysis**.
+The project has completed **53 days of structured SQL learning and business analysis**.
 
-The project now covers database design, SQL fundamentals, advanced SQL, query optimization, customer analytics, product analytics, customer segmentation, RFM analysis, customer retention, churn analysis, cohort analysis, customer lifecycle analysis, repeat purchase analysis, purchase frequency analysis, payment analysis, data quality analysis, sales KPI analysis, sales growth analysis, order value analysis, revenue forecasting, product demand forecasting, and customer repeat-purchase prediction.
+The project now covers database design, SQL fundamentals, advanced SQL, query optimization, customer analytics, product analytics, customer segmentation, RFM analysis, customer retention, churn analysis, cohort analysis, customer lifecycle analysis, repeat purchase analysis, purchase frequency analysis, payment analysis, data quality analysis, sales KPI analysis, sales growth analysis, order value analysis, revenue forecasting, product demand forecasting, customer repeat-purchase prediction, and customer purchase propensity analysis.
 
 ---
 
-# 🚀 Day 52 Achievement
+# 🚀 Day 53 Achievement
 
-## Day 52 — Customer Repeat Purchase Prediction & Analysis Completed ✅
+## Day 53 — Customer Purchase Propensity Analysis Completed ✅
 
-Day 52 focused on customer-level purchasing behavior using SQL.
+Day 53 focused on customer-level purchasing behavior using SQL.
 
 ### Key Analyses
 
 1. Total Orders per Customer
-2. Total Units Purchased per Customer
-3. Total Revenue per Customer
-4. First Purchase Date
-5. Latest Purchase Date
-6. Days Since Last Purchase
-7. Average Days Between Purchases
-8. Repeat Purchase Count
-9. Customer Purchase Frequency
-10. Customer Repeat-Purchase Classification
-11. Customer Purchase Activity Score
-12. Final Customer Repeat-Purchase Prediction Summary
+2. Total Revenue per Customer
+3. Average Order Value per Customer
+4. Customer Purchase Recency
+5. Average Days Between Purchases
+6. Customer Purchase Recency Classification
+7. Customer Purchase Frequency Classification
+8. Customer Revenue Classification
+9. Customer Purchase Propensity Score
+10. Purchase Propensity Classification
+11. Customer Purchase Propensity Ranking
+12. Final Customer Purchase Propensity Summary
 
-### Day 52 Project Files
+### Day 53 Project Files
 
 ```text
-SQL/customer_repeat_purchase_prediction.sql
+SQL/customer_purchase_propensity_analysis.sql
 
-Report/Day52_Customer_Repeat_Purchase_Prediction_Analysis.md
+Report/Day53_Customer_Purchase_Propensity_Analysis.md
 
-Screenshots/Day 52/
+Screenshots/Day 53/
 ```
 
-**Customer Repeat Purchase Prediction & Analysis completed successfully. ✅**
+**Customer Purchase Propensity Analysis completed successfully. ✅**
 
-**52 Days of continuous SQL business analysis completed. 🚀**
+**53 Days of continuous SQL business analysis completed. 🚀**
 
 ---
 
 # 🏁 Portfolio Progress
 
-## 52 Days Completed 🚀
+## 53 Days Completed 🚀
 
-**SQL Fundamentals → Advanced SQL → Business Analytics → Customer Analytics → Customer Retention → Customer Lifetime Value → RFM Customer Segmentation → Customer Segment Performance → Customer Segment Retention & Churn Risk → Customer Cohort & Retention Trend Analysis → Customer Lifecycle & Repeat Purchase Analysis → Customer Purchase Frequency & Repeat Behavior Analysis → Payment Analysis → Data Quality & Integrity Analysis → Sales Performance KPI Analysis → Sales Growth & Month-over-Month Analysis → Sales Order Value & Basket Analysis → Sales Revenue Forecasting → Product Demand & Sales Forecasting → Customer Repeat Purchase Prediction → Business Insights**
+**SQL Fundamentals → Advanced SQL → Business Analytics → Customer Analytics → Customer Retention → Customer Lifetime Value → RFM Customer Segmentation → Customer Segment Performance → Customer Segment Retention & Churn Risk → Customer Cohort & Retention Trend Analysis → Customer Lifecycle & Repeat Purchase Analysis → Customer Purchase Frequency & Repeat Behavior Analysis → Payment Analysis → Data Quality & Integrity Analysis → Sales Performance KPI Analysis → Sales Growth & Month-over-Month Analysis → Sales Order Value & Basket Analysis → Sales Revenue Forecasting → Product Demand & Sales Forecasting → Customer Repeat Purchase Prediction → Customer Purchase Propensity Analysis → Business Insights**
 
 The project demonstrates a broad practical SQL workflow suitable for showcasing **Data Analyst, Business Analyst, SQL Developer, Reporting Analyst, and MIS Analyst portfolio skills**.
 
@@ -969,7 +1115,7 @@ The next stage of the project can move toward:
 * Data quality monitoring dashboards
 * Business performance monitoring
 
-**Next Milestone: Day 53 → 53/55 🔥**
+**Next Milestone: Day 54 → 54/55 🔥**
 
 ---
 
@@ -981,12 +1127,12 @@ The long-term goal is to transform this project into a complete **SQL + Business
 
 ---
 
-# 🎉 52-Day Milestone
+# 🎉 53-Day Milestone
 
-**Day 52 is completed successfully. ✅**
+**Day 53 is completed successfully. ✅**
 
-**52 Days of continuous SQL business analysis completed. 🚀**
+**53 Days of continuous SQL business analysis completed. 🚀**
 
-**Customer Repeat Purchase Prediction & Analysis completed. 🔁📊**
+**Customer Purchase Propensity Analysis completed. 🎯📊**
 
-**Next target: Day 53. 🔥**
+**Next target: Day 54. 🔥**
