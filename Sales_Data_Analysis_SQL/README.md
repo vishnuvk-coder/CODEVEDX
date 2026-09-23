@@ -1,6 +1,6 @@
 # 📊 Sales Data Analysis Using SQL
 
-A hands-on SQL portfolio project focused on **relational database design, advanced SQL analytics, query optimization, customer analytics, product analytics, business intelligence, customer retention, cohort analysis, customer lifecycle analysis, repeat purchase analysis, purchase frequency analysis, payment analysis, data quality analysis, sales KPI analysis, sales growth analysis, order value analysis, basket analysis, revenue forecasting, product demand forecasting, customer repeat purchase prediction, customer purchase propensity analysis, and business reporting** using MySQL.
+A hands-on SQL portfolio project focused on **relational database design, advanced SQL analytics, query optimization, customer analytics, product analytics, business intelligence, customer retention, cohort analysis, customer lifecycle analysis, repeat purchase analysis, purchase frequency analysis, payment analysis, data quality analysis, sales KPI analysis, sales growth analysis, order value analysis, basket analysis, revenue forecasting, product demand forecasting, customer repeat purchase prediction, customer purchase propensity analysis, customer purchase value analysis, basket-size classification, spending classification, and business reporting** using MySQL.
 
 This project simulates a real-world sales management system and demonstrates practical SQL skills relevant to **Data Analyst, Business Analyst, SQL Developer, Reporting Analyst, and MIS Analyst roles**.
 
@@ -52,6 +52,11 @@ The project covers:
 * Customer propensity scoring
 * Customer purchase recency analysis
 * Customer purchase frequency classification
+* Customer purchase value analysis
+* Customer basket behavior analysis
+* Customer spending classification
+* Purchase value scoring
+* Customer purchase value ranking
 * Payment status analysis
 * Payment method analysis
 * Customer payment behavior analysis
@@ -100,6 +105,13 @@ The main objectives of this project are to:
 * Build rule-based customer propensity scores.
 * Classify customers according to purchase propensity.
 * Rank customers based on purchasing behavior.
+* Analyze customer purchase value.
+* Calculate average order value per customer.
+* Analyze average items purchased per order.
+* Classify customers according to basket size.
+* Classify customers according to spending level.
+* Build rule-based customer purchase value scores.
+* Rank customers according to purchase value.
 * Convert raw sales data into actionable business insights.
 * Create structured business reports using SQL.
 
@@ -147,6 +159,7 @@ The main objectives of this project are to:
 * Basket analysis JOINs
 * Product demand analysis JOINs
 * Customer propensity analysis JOINs
+* Customer purchase value analysis JOINs
 
 ## 📊 SQL Aggregation & Analysis
 
@@ -171,9 +184,12 @@ The main objectives of this project are to:
 * Payment aggregation
 * Sales KPI aggregation
 * Order-value aggregation
+* Basket-size aggregation
 * Product demand aggregation
 * Customer repeat-purchase aggregation
 * Customer propensity aggregation
+* Customer purchase-value aggregation
+* Spending classification
 
 ## 🧠 Advanced SQL
 
@@ -203,6 +219,10 @@ The main objectives of this project are to:
 * Customer activity scoring
 * Customer recency analysis
 * Customer frequency classification
+* Customer basket classification
+* Customer spending classification
+* Customer purchase value scoring
+* Customer purchase value ranking
 
 ## ⚡ SQL Optimization
 
@@ -240,6 +260,12 @@ The main objectives of this project are to:
 * Customer purchase propensity analysis
 * Customer purchase propensity scoring
 * Customer purchase activity scoring
+* Customer purchase value analysis
+* Average Order Value analysis
+* Average basket-size analysis
+* Customer spending classification
+* Customer purchase value scoring
+* Customer purchase value ranking
 * One-time customer identification
 * Repeat customer identification
 * Loyal customer identification
@@ -247,6 +273,8 @@ The main objectives of this project are to:
 * High-value customer identification
 * Customer propensity classification
 * Customer propensity ranking
+* Basket-size classification
+* Spending-level classification
 
 ---
 
@@ -305,6 +333,10 @@ The main objectives of this project are to:
 * Future revenue projection
 * Product demand forecasting
 * Customer propensity scoring
+* Customer purchase value analysis
+* Customer spending classification
+* Purchase value scoring
+* Purchase value ranking
 
 ---
 
@@ -352,6 +384,8 @@ The project includes:
 * Customer win-back analysis
 * Customer purchase recency
 * Customer purchase propensity
+* Customer purchase value analysis
+* Customer basket behavior
 
 ---
 
@@ -391,7 +425,7 @@ The project includes:
 
 Day 50 focused on historical sales performance and SQL-based revenue forecasting.
 
-### Key Analyses
+## Key Analyses
 
 1. Monthly Historical Revenue
 2. Monthly Order Volume
@@ -406,7 +440,7 @@ Day 50 focused on historical sales performance and SQL-based revenue forecasting
 11. Recent 3-Month Average Projection
 12. Final Sales Forecasting Summary
 
-### Project Files
+## Project Files
 
 ```text
 SQL/sales_revenue_forecasting_analysis.sql
@@ -422,7 +456,7 @@ Screenshots/Day 50/
 
 Day 51 focused on **product-level demand analysis and product demand forecasting**.
 
-### Key Analyses
+## Key Analyses
 
 1. Product-Wise Total Units Sold
 2. Product-Wise Total Revenue
@@ -437,7 +471,7 @@ Day 51 focused on **product-level demand analysis and product demand forecasting
 11. Next-Month Product Demand Projection
 12. Final Product Demand Forecasting Summary
 
-### Project Files
+## Project Files
 
 ```text
 SQL/product_demand_forecasting_analysis.sql
@@ -602,11 +636,17 @@ The propensity score combines three customer behavior signals:
 
 ```text
 Purchase Frequency Score
+
         +
+
 Purchase Recency Score
+
         +
+
 Customer Revenue Score
+
         ↓
+
 Purchase Propensity Score
 ```
 
@@ -689,7 +729,168 @@ Screenshots/
 
 **Customer Purchase Propensity Analysis completed successfully. ✅**
 
-The project has now reached **53 completed days of SQL business analysis. 🚀**
+The project reached **53 completed days of SQL business analysis. 🚀**
+
+---
+
+# 💰 Day 54 — Customer Purchase Value & Basket Analysis
+
+Day 54 focused on **customer purchase value and basket behavior analysis** using SQL.
+
+The analysis extends the customer analytics workflow by measuring customer order value, purchase quantity, basket size, spending behavior, purchase value scoring, and customer ranking.
+
+## Day 54 Key Analyses
+
+1. Total Orders per Customer
+2. Total Units Purchased per Customer
+3. Total Revenue per Customer
+4. Average Order Value per Customer
+5. Average Items per Order
+6. Maximum Order Value per Customer
+7. Minimum Order Value per Customer
+8. Customer Basket Size Classification
+9. Customer Spending Classification
+10. Customer Purchase Value Score
+11. Customer Purchase Value Ranking
+12. Final Customer Purchase Value Summary
+
+## Day 54 SQL Techniques
+
+* `COUNT()`
+* `COUNT(DISTINCT)`
+* `SUM()`
+* `AVG()`
+* `MAX()`
+* `MIN()`
+* `ROUND()`
+* `NULLIF()`
+* `CASE`
+* CTEs
+* `JOIN`
+* Window Functions
+* `RANK()`
+* Customer-level aggregation
+* Order-level aggregation
+* Basket-size analysis
+* Spending classification
+* Rule-based scoring
+* Customer ranking
+
+## Day 54 Basket Size Classification
+
+Customers are classified according to their average number of items purchased per order.
+
+| Average Items per Order | Classification    |
+| ----------------------: | ----------------- |
+|                   `< 2` | Small Basket      |
+|                   `2–4` | Medium Basket     |
+|                   `5–9` | Large Basket      |
+|                   `10+` | Very Large Basket |
+
+## Day 54 Spending Classification
+
+Customers are classified according to total customer revenue.
+
+|    Total Revenue | Classification    |
+| ---------------: | ----------------- |
+|       `< ₹1,000` | Low Spender       |
+| ₹1,000–₹4,999.99 | Moderate Spender  |
+| ₹5,000–₹9,999.99 | High Spender      |
+|       `₹10,000+` | Very High Spender |
+
+## Day 54 Purchase Value Scoring
+
+The purchase value score combines:
+
+```text
+Average Order Value Score
+
+        +
+
+Average Basket Size Score
+
+        ↓
+
+Purchase Value Score
+```
+
+### Average Order Value Score
+
+| Average Order Value | Score |
+| ------------------: | ----: |
+|            ₹10,000+ |     4 |
+|       ₹5,000–₹9,999 |     3 |
+|       ₹2,500–₹4,999 |     2 |
+|        Below ₹2,500 |     1 |
+
+### Basket Score
+
+| Average Items per Order | Score |
+| ----------------------: | ----: |
+|                     10+ |     4 |
+|                     5–9 |     3 |
+|                     2–4 |     2 |
+|                 Below 2 |     1 |
+
+### Maximum Score
+
+**8 points**
+
+## Day 54 Customer Purchase Value Ranking
+
+Customers are ranked using:
+
+```sql
+RANK() OVER (
+    ORDER BY purchase_value_score DESC
+)
+```
+
+This provides a comparative ranking based on the rule-based purchase value score.
+
+## Day 54 Business Applications
+
+The analysis can support:
+
+* Customer segmentation
+* Customer value analysis
+* High-value customer identification
+* Marketing segmentation
+* Personalized promotions
+* Basket-size analysis
+* Spending behavior analysis
+* Revenue analysis
+* Customer targeting
+* Sales reporting
+* Business intelligence
+* Sales strategy development
+
+## Day 54 Methodology Limitation
+
+The Day 54 purchase value score is a **rule-based SQL scoring framework**.
+
+It is not a machine-learning model and does not represent a statistically validated probability of future customer behavior.
+
+The thresholds are analytical business rules created for portfolio and business-analysis purposes.
+
+## Day 54 Project Files
+
+```text
+SQL/
+└── customer_purchase_value_basket_analysis.sql
+
+Report/
+└── Day54_Customer_Purchase_Value_Basket_Analysis.md
+
+Screenshots/
+└── Day 54/
+```
+
+## Day 54 Achievement
+
+**Customer Purchase Value & Basket Analysis completed successfully. ✅**
+
+The project has now reached **54 completed days of SQL business analysis. 🚀**
 
 ---
 
@@ -699,49 +900,97 @@ The project demonstrates an end-to-end business intelligence workflow:
 
 ```text
 Raw Sales Data
+
       ↓
+
 Database Design
+
       ↓
+
 SQL Fundamentals
+
       ↓
+
 JOINs & Aggregations
+
       ↓
+
 Advanced SQL
+
       ↓
+
 Query Optimization
+
       ↓
+
 Business KPIs
+
       ↓
+
 Customer Analytics
+
       ↓
+
 Customer Retention
+
       ↓
+
 Customer Lifetime Value
+
       ↓
+
 RFM Segmentation
+
       ↓
+
 Cohort & Lifecycle Analysis
+
       ↓
+
 Repeat Purchase Analysis
+
       ↓
+
 Payment Analysis
+
       ↓
+
 Data Quality Analysis
+
       ↓
+
 Sales Performance
+
       ↓
+
 Revenue Growth
+
       ↓
+
 Order Value & Basket Analysis
+
       ↓
+
 Revenue Forecasting
+
       ↓
+
 Product Demand Forecasting
+
       ↓
+
 Customer Repeat Purchase Prediction
+
       ↓
+
 Customer Purchase Propensity Analysis
+
       ↓
+
+Customer Purchase Value & Basket Analysis
+
+      ↓
+
 Business Insights
 ```
 
@@ -835,7 +1084,8 @@ Sales_Data_Analysis_SQL/
 │   ├── sales_revenue_forecasting_analysis.sql
 │   ├── product_demand_forecasting_analysis.sql
 │   ├── customer_repeat_purchase_prediction.sql
-│   └── customer_purchase_propensity_analysis.sql
+│   ├── customer_purchase_propensity_analysis.sql
+│   └── customer_purchase_value_basket_analysis.sql
 │
 ├── Screenshots/
 │   ├── Day 1/
@@ -846,7 +1096,8 @@ Sales_Data_Analysis_SQL/
 │   ├── Day 50/
 │   ├── Day 51/
 │   ├── Day 52/
-│   └── Day 53/
+│   ├── Day 53/
+│   └── Day 54/
 │
 ├── Presentation/
 │
@@ -857,7 +1108,8 @@ Sales_Data_Analysis_SQL/
 │   ├── Day50_Sales_Revenue_Forecasting_Analysis.md
 │   ├── Day51_Product_Demand_Forecasting_Analysis.md
 │   ├── Day52_Customer_Repeat_Purchase_Prediction_Analysis.md
-│   └── Day53_Customer_Purchase_Propensity_Analysis.md
+│   ├── Day53_Customer_Purchase_Propensity_Analysis.md
+│   └── Day54_Customer_Purchase_Value_Basket_Analysis.md
 │
 └── README.md
 ```
@@ -921,6 +1173,7 @@ Sales_Data_Analysis_SQL/
 |     Day 51 | Product Demand & Sales Forecasting             |
 |     Day 52 | Customer Repeat Purchase Prediction & Analysis |
 | **Day 53** | **Customer Purchase Propensity Analysis**      |
+| **Day 54** | **Customer Purchase Value & Basket Analysis**  |
 
 ---
 
@@ -928,49 +1181,97 @@ Sales_Data_Analysis_SQL/
 
 ```text
 Raw Sales Data
+
       ↓
+
 Database Design
+
       ↓
+
 SQL Fundamentals
+
       ↓
+
 JOINs & Aggregations
+
       ↓
+
 Advanced SQL
+
       ↓
+
 Query Optimization
+
       ↓
+
 Business KPIs
+
       ↓
+
 Customer Analytics
+
       ↓
+
 Customer Retention
+
       ↓
+
 Customer Lifetime Value
+
       ↓
+
 RFM Segmentation
+
       ↓
+
 Cohort & Lifecycle Analysis
+
       ↓
+
 Repeat Purchase Analysis
+
       ↓
+
 Payment Analysis
+
       ↓
+
 Data Quality Analysis
+
       ↓
+
 Sales Performance KPI
+
       ↓
+
 Sales Growth Analysis
+
       ↓
+
 Order Value & Basket Analysis
+
       ↓
+
 Revenue Forecasting
+
       ↓
+
 Product Demand Forecasting
+
       ↓
+
 Customer Repeat Purchase Analysis
+
       ↓
+
 Customer Purchase Propensity Analysis
+
       ↓
+
+Customer Purchase Value & Basket Analysis
+
+      ↓
+
 Business Insights
 ```
 
@@ -1020,6 +1321,11 @@ Through this project, the following practical skills are demonstrated:
 * Customer purchase propensity scoring
 * Customer propensity classification
 * Customer propensity ranking
+* Customer purchase value analysis
+* Customer basket-size classification
+* Customer spending classification
+* Customer purchase value scoring
+* Customer purchase value ranking
 * Rule-based customer prediction
 * Payment analysis
 * Data quality analysis
@@ -1035,58 +1341,58 @@ Through this project, the following practical skills are demonstrated:
 
 **Current Status: 🟢 Active**
 
-**Completed: 53 Days**
+**Completed: 54 Days**
 
 **Primary Focus: SQL Data Analysis & Business Intelligence**
 
-The project has completed **53 days of structured SQL learning and business analysis**.
+The project has completed **54 days of structured SQL learning and business analysis**.
 
-The project now covers database design, SQL fundamentals, advanced SQL, query optimization, customer analytics, product analytics, customer segmentation, RFM analysis, customer retention, churn analysis, cohort analysis, customer lifecycle analysis, repeat purchase analysis, purchase frequency analysis, payment analysis, data quality analysis, sales KPI analysis, sales growth analysis, order value analysis, revenue forecasting, product demand forecasting, customer repeat-purchase prediction, and customer purchase propensity analysis.
+The project now covers database design, SQL fundamentals, advanced SQL, query optimization, customer analytics, product analytics, customer segmentation, RFM analysis, customer retention, churn analysis, cohort analysis, customer lifecycle analysis, repeat purchase analysis, purchase frequency analysis, payment analysis, data quality analysis, sales KPI analysis, sales growth analysis, order value analysis, revenue forecasting, product demand forecasting, customer repeat-purchase prediction, customer purchase propensity analysis, customer purchase value analysis, basket-size classification, spending classification, purchase value scoring, and customer purchase value ranking.
 
 ---
 
-# 🚀 Day 53 Achievement
+# 🚀 Day 54 Achievement
 
-## Day 53 — Customer Purchase Propensity Analysis Completed ✅
+## Day 54 — Customer Purchase Value & Basket Analysis Completed ✅
 
-Day 53 focused on customer-level purchasing behavior using SQL.
+Day 54 focused on customer-level purchasing value and basket behavior using SQL.
 
 ### Key Analyses
 
 1. Total Orders per Customer
-2. Total Revenue per Customer
-3. Average Order Value per Customer
-4. Customer Purchase Recency
-5. Average Days Between Purchases
-6. Customer Purchase Recency Classification
-7. Customer Purchase Frequency Classification
-8. Customer Revenue Classification
-9. Customer Purchase Propensity Score
-10. Purchase Propensity Classification
-11. Customer Purchase Propensity Ranking
-12. Final Customer Purchase Propensity Summary
+2. Total Units Purchased per Customer
+3. Total Revenue per Customer
+4. Average Order Value per Customer
+5. Average Items per Order
+6. Maximum Order Value per Customer
+7. Minimum Order Value per Customer
+8. Customer Basket Size Classification
+9. Customer Spending Classification
+10. Customer Purchase Value Score
+11. Customer Purchase Value Ranking
+12. Final Customer Purchase Value Summary
 
-### Day 53 Project Files
+### Day 54 Project Files
 
 ```text
-SQL/customer_purchase_propensity_analysis.sql
+SQL/customer_purchase_value_basket_analysis.sql
 
-Report/Day53_Customer_Purchase_Propensity_Analysis.md
+Report/Day54_Customer_Purchase_Value_Basket_Analysis.md
 
-Screenshots/Day 53/
+Screenshots/Day 54/
 ```
 
-**Customer Purchase Propensity Analysis completed successfully. ✅**
+**Customer Purchase Value & Basket Analysis completed successfully. ✅**
 
-**53 Days of continuous SQL business analysis completed. 🚀**
+**54 Days of continuous SQL business analysis completed. 🚀**
 
 ---
 
 # 🏁 Portfolio Progress
 
-## 53 Days Completed 🚀
+## 54 Days Completed 🚀
 
-**SQL Fundamentals → Advanced SQL → Business Analytics → Customer Analytics → Customer Retention → Customer Lifetime Value → RFM Customer Segmentation → Customer Segment Performance → Customer Segment Retention & Churn Risk → Customer Cohort & Retention Trend Analysis → Customer Lifecycle & Repeat Purchase Analysis → Customer Purchase Frequency & Repeat Behavior Analysis → Payment Analysis → Data Quality & Integrity Analysis → Sales Performance KPI Analysis → Sales Growth & Month-over-Month Analysis → Sales Order Value & Basket Analysis → Sales Revenue Forecasting → Product Demand & Sales Forecasting → Customer Repeat Purchase Prediction → Customer Purchase Propensity Analysis → Business Insights**
+**SQL Fundamentals → Advanced SQL → Business Analytics → Customer Analytics → Customer Retention → Customer Lifetime Value → RFM Customer Segmentation → Customer Segment Performance → Customer Segment Retention & Churn Risk → Customer Cohort & Retention Trend Analysis → Customer Lifecycle & Repeat Purchase Analysis → Customer Purchase Frequency & Repeat Behavior Analysis → Payment Analysis → Data Quality & Integrity Analysis → Sales Performance KPI Analysis → Sales Growth & Month-over-Month Analysis → Sales Order Value & Basket Analysis → Sales Revenue Forecasting → Product Demand & Sales Forecasting → Customer Repeat Purchase Prediction → Customer Purchase Propensity Analysis → Customer Purchase Value & Basket Analysis → Business Insights**
 
 The project demonstrates a broad practical SQL workflow suitable for showcasing **Data Analyst, Business Analyst, SQL Developer, Reporting Analyst, and MIS Analyst portfolio skills**.
 
@@ -1115,7 +1421,7 @@ The next stage of the project can move toward:
 * Data quality monitoring dashboards
 * Business performance monitoring
 
-**Next Milestone: Day 54 → 54/55 🔥**
+**Next Milestone: Day 55 → 55/55 🔥**
 
 ---
 
@@ -1127,12 +1433,12 @@ The long-term goal is to transform this project into a complete **SQL + Business
 
 ---
 
-# 🎉 53-Day Milestone
+# 🎉 54-Day Milestone
 
-**Day 53 is completed successfully. ✅**
+**Day 54 is completed successfully. ✅**
 
-**53 Days of continuous SQL business analysis completed. 🚀**
+**54 Days of continuous SQL business analysis completed. 🚀**
 
-**Customer Purchase Propensity Analysis completed. 🎯📊**
+**Customer Purchase Value & Basket Analysis completed. 🎯📊**
 
-**Next target: Day 54. 🔥**
+**Next target: Day 55. 🔥**
