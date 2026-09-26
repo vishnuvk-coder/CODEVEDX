@@ -1,6 +1,6 @@
 # 📊 Sales Data Analysis Using SQL
 
-A hands-on SQL portfolio project focused on **relational database design, advanced SQL analytics, query optimization, customer analytics, product analytics, business intelligence, customer retention, cohort analysis, customer lifecycle analysis, repeat purchase analysis, purchase frequency analysis, payment analysis, data quality analysis, sales KPI analysis, sales growth analysis, order value analysis, basket analysis, revenue forecasting, product demand forecasting, customer repeat purchase prediction, customer purchase propensity analysis, customer purchase value analysis, basket-size classification, spending classification, customer value segmentation, customer revenue ranking, and business reporting** using MySQL.
+A hands-on SQL portfolio project focused on **relational database design, advanced SQL analytics, query optimization, customer analytics, product analytics, business intelligence, customer retention, cohort analysis, customer lifecycle analysis, repeat purchase analysis, purchase frequency analysis, payment analysis, data quality analysis, sales KPI analysis, sales growth analysis, order value analysis, basket analysis, revenue forecasting, product demand forecasting, customer repeat purchase prediction, customer purchase propensity analysis, customer purchase value analysis, basket-size classification, spending classification, customer value segmentation, customer revenue ranking, customer revenue concentration analysis, and business reporting** using MySQL.
 
 This project simulates a real-world sales management system and demonstrates practical SQL skills relevant to **Data Analyst, Business Analyst, SQL Developer, Reporting Analyst, and MIS Analyst roles**.
 
@@ -63,6 +63,9 @@ The project covers:
 * Low-value customer identification
 * Customer revenue contribution
 * Customer revenue ranking
+* Customer revenue concentration
+* Cumulative revenue contribution
+* Top customer analysis
 * Payment status analysis
 * Payment method analysis
 * Customer payment behavior analysis
@@ -122,6 +125,9 @@ The main objectives of this project are to:
 * Identify high-value, medium-value, and low-value customers.
 * Calculate customer revenue contribution percentages.
 * Rank customers according to revenue.
+* Analyze cumulative customer revenue contribution.
+* Analyze revenue concentration among customers.
+* Identify top revenue-generating customers.
 * Convert raw sales data into actionable business insights.
 * Create structured business reports using SQL.
 
@@ -171,6 +177,7 @@ The main objectives of this project are to:
 * Customer propensity analysis JOINs
 * Customer purchase value analysis JOINs
 * Customer value segmentation JOINs
+* Customer revenue contribution JOINs
 
 ## 📊 SQL Aggregation & Analysis
 
@@ -187,6 +194,7 @@ The main objectives of this project are to:
 * Product-level aggregation
 * Monthly aggregation
 * Revenue contribution
+* Revenue concentration
 * RFM aggregation
 * Retention calculations
 * Churn-risk calculations
@@ -204,6 +212,7 @@ The main objectives of this project are to:
 * Spending classification
 * Revenue ranking
 * Revenue contribution percentage
+* Cumulative revenue contribution
 
 ## 🧠 Advanced SQL
 
@@ -238,6 +247,8 @@ The main objectives of this project are to:
 * Customer purchase value scoring
 * Customer purchase value ranking
 * Customer revenue ranking
+* Customer revenue contribution
+* Customer revenue concentration
 * Customer value segmentation
 
 ## ⚡ SQL Optimization
@@ -284,6 +295,7 @@ The main objectives of this project are to:
 * Customer purchase value ranking
 * Customer revenue contribution
 * Customer revenue ranking
+* Customer revenue concentration
 * Customer value segmentation
 * High-value customer identification
 * Medium-value customer identification
@@ -340,6 +352,7 @@ The main objectives of this project are to:
 * Customer Lifetime Value
 * Customer revenue contribution
 * Customer revenue ranking
+* Customer revenue concentration
 * Product revenue contribution
 * Sales performance KPIs
 * Monthly revenue
@@ -410,6 +423,8 @@ The project includes:
 * Customer purchase value analysis
 * Customer basket behavior
 * Customer value segmentation
+* Customer revenue contribution
+* Customer revenue concentration
 
 ---
 
@@ -468,11 +483,11 @@ Day 50 focused on historical sales performance and SQL-based revenue forecasting
 
 ```text
 SQL/sales_revenue_forecasting_analysis.sql
-
 Report/Day50_Sales_Revenue_Forecasting_Analysis.md
-
 Screenshots/Day 50/
 ```
+
+**Day 50 Status: ✅ Completed**
 
 ---
 
@@ -499,9 +514,7 @@ Day 51 focused on **product-level demand analysis and product demand forecasting
 
 ```text
 SQL/product_demand_forecasting_analysis.sql
-
 Report/Day51_Product_Demand_Forecasting_Analysis.md
-
 Screenshots/Day 51/
 ```
 
@@ -512,8 +525,6 @@ Screenshots/Day 51/
 # 🔁 Day 52 — Customer Repeat Purchase Prediction & Analysis
 
 Day 52 focused on **customer-level repeat-purchase behavior and rule-based repeat-purchase prediction** using SQL.
-
-The analysis extends the project from product-level forecasting into customer-level behavioral analysis.
 
 ## Day 52 Key Analyses
 
@@ -577,14 +588,9 @@ These are **business-analysis rules**, not machine-learning predictions.
 ## Day 52 Project Files
 
 ```text
-SQL/
-└── customer_repeat_purchase_prediction.sql
-
-Report/
-└── Day52_Customer_Repeat_Purchase_Prediction_Analysis.md
-
-Screenshots/
-└── Day 52/
+SQL/customer_repeat_purchase_prediction.sql
+Report/Day52_Customer_Repeat_Purchase_Prediction_Analysis.md
+Screenshots/Day 52/
 ```
 
 **Day 52 Achievement: Customer Repeat Purchase Prediction & Analysis completed successfully. ✅**
@@ -594,8 +600,6 @@ Screenshots/
 # 🎯 Day 53 — Customer Purchase Propensity Analysis
 
 Day 53 focused on **customer purchase propensity analysis** using customer purchase frequency, purchase recency, and revenue contribution.
-
-The analysis develops a **rule-based customer purchase propensity scoring framework** to classify and rank customers according to their historical purchasing behavior.
 
 ## Day 53 Key Analyses
 
@@ -612,32 +616,7 @@ The analysis develops a **rule-based customer purchase propensity scoring framew
 11. Customer Purchase Propensity Ranking
 12. Final Customer Purchase Propensity Summary
 
-## Day 53 SQL Techniques
-
-* `COUNT()`
-* `COUNT(DISTINCT)`
-* `SUM()`
-* `MAX()`
-* `AVG()`
-* `ROUND()`
-* `DATEDIFF()`
-* `COALESCE()`
-* `NULLIF()`
-* `CASE`
-* CTEs
-* Window Functions
-* `LAG()`
-* `RANK()`
-* Purchase frequency analysis
-* Purchase recency analysis
-* Customer revenue classification
-* Rule-based customer scoring
-* Customer propensity classification
-* Customer ranking
-
 ## Day 53 Propensity Scoring
-
-The propensity score combines three customer behavior signals:
 
 ```text
 Purchase Frequency Score
@@ -676,9 +655,7 @@ Purchase Propensity Score
 | ₹1,000–₹4,999 |    +1 |
 | Below ₹1,000  |    +0 |
 
-### Maximum Score
-
-**9 points**
+**Maximum Score: 9 points**
 
 ## Day 53 Propensity Categories
 
@@ -690,23 +667,14 @@ Purchase Propensity Score
 |   1–2 | Low Purchase Propensity       |
 |     0 | Very Low Purchase Propensity  |
 
-## Day 53 Methodology Limitation
-
-The Day 53 propensity model is a **rule-based SQL scoring system**, not a machine-learning model.
-
-The score represents a structured business-analysis indicator based on historical customer behavior. It should not be interpreted as a statistically validated probability of future purchase.
+The Day 53 propensity model is a **rule-based SQL scoring system**, not a machine-learning model or statistically validated probability.
 
 ## Day 53 Project Files
 
 ```text
-SQL/
-└── customer_purchase_propensity_analysis.sql
-
-Report/
-└── Day53_Customer_Purchase_Propensity_Analysis.md
-
-Screenshots/
-└── Day 53/
+SQL/customer_purchase_propensity_analysis.sql
+Report/Day53_Customer_Purchase_Propensity_Analysis.md
+Screenshots/Day 53/
 ```
 
 **Day 53 Achievement: Customer Purchase Propensity Analysis completed successfully. ✅**
@@ -716,8 +684,6 @@ Screenshots/
 # 💰 Day 54 — Customer Purchase Value & Basket Analysis
 
 Day 54 focused on **customer purchase value and basket behavior analysis** using SQL.
-
-The analysis extends the customer analytics workflow by measuring customer order value, purchase quantity, basket size, spending behavior, purchase value scoring, and customer ranking.
 
 ## Day 54 Key Analyses
 
@@ -734,31 +700,7 @@ The analysis extends the customer analytics workflow by measuring customer order
 11. Customer Purchase Value Ranking
 12. Final Customer Purchase Value Summary
 
-## Day 54 SQL Techniques
-
-* `COUNT()`
-* `COUNT(DISTINCT)`
-* `SUM()`
-* `AVG()`
-* `MAX()`
-* `MIN()`
-* `ROUND()`
-* `NULLIF()`
-* `CASE`
-* CTEs
-* `JOIN`
-* Window Functions
-* `RANK()`
-* Customer-level aggregation
-* Order-level aggregation
-* Basket-size analysis
-* Spending classification
-* Rule-based scoring
-* Customer ranking
-
 ## Day 54 Basket Size Classification
-
-Customers are classified according to their average number of items purchased per order.
 
 | Average Items per Order | Classification    |
 | ----------------------: | ----------------- |
@@ -788,29 +730,7 @@ Average Basket Size Score
 Purchase Value Score
 ```
 
-### Average Order Value Score
-
-| Average Order Value | Score |
-| ------------------: | ----: |
-|            ₹10,000+ |     4 |
-|       ₹5,000–₹9,999 |     3 |
-|       ₹2,500–₹4,999 |     2 |
-|        Below ₹2,500 |     1 |
-
-### Basket Score
-
-| Average Items per Order | Score |
-| ----------------------: | ----: |
-|                     10+ |     4 |
-|                     5–9 |     3 |
-|                     2–4 |     2 |
-|                 Below 2 |     1 |
-
-### Maximum Score
-
-**8 points**
-
-## Day 54 Customer Purchase Value Ranking
+**Maximum Score: 8 points**
 
 Customers are ranked using:
 
@@ -820,25 +740,14 @@ RANK() OVER (
 )
 ```
 
-This provides a comparative ranking based on the rule-based purchase value score.
-
-## Day 54 Methodology Limitation
-
-The Day 54 purchase value score is a **rule-based SQL scoring framework**.
-
-It is not a machine-learning model and does not represent a statistically validated probability of future customer behavior.
+The Day 54 purchase value score is a **rule-based SQL scoring framework**, not a machine-learning model.
 
 ## Day 54 Project Files
 
 ```text
-SQL/
-└── customer_purchase_value_basket_analysis.sql
-
-Report/
-└── Day54_Customer_Purchase_Value_Basket_Analysis.md
-
-Screenshots/
-└── Day 54/
+SQL/customer_purchase_value_basket_analysis.sql
+Report/Day54_Customer_Purchase_Value_Basket_Analysis.md
+Screenshots/Day 54/
 ```
 
 **Day 54 Achievement: Customer Purchase Value & Basket Analysis completed successfully. ✅**
@@ -850,8 +759,6 @@ Screenshots/
 Day 55 focused on **customer purchase value segmentation analysis** using SQL.
 
 The analysis extends the customer analytics workflow by analyzing customer revenue, order frequency, average order value, total units purchased, revenue contribution, revenue ranking, and customer value segments.
-
-The analysis uses **rule-based customer value segmentation** to classify customers into High-Value, Medium-Value, and Low-Value customer groups.
 
 ## Day 55 Key Analyses
 
@@ -868,31 +775,7 @@ The analysis uses **rule-based customer value segmentation** to classify custome
 11. Low-Value Customer Identification
 12. Final Customer Value Segmentation Summary
 
-## Day 55 SQL Techniques
-
-* `COUNT()`
-* `COUNT(DISTINCT)`
-* `SUM()`
-* `AVG()`
-* `ROUND()`
-* `NULLIF()`
-* `CASE`
-* `JOIN`
-* `LEFT JOIN`
-* CTEs
-* Window Functions
-* `RANK()`
-* `SUM() OVER()`
-* Customer-level aggregation
-* Revenue contribution analysis
-* Revenue ranking
-* Purchase frequency analysis
-* Customer value classification
-* Rule-based customer segmentation
-
 ## Day 55 Customer Value Segmentation
-
-Customers are classified according to total revenue:
 
 |   Total Revenue | Customer Segment      |
 | --------------: | --------------------- |
@@ -904,8 +787,6 @@ These thresholds are business-analysis rules defined for this portfolio project.
 
 ## Day 55 Customer Purchase Frequency
 
-Customers are classified according to total orders:
-
 | Orders | Classification         |
 | -----: | ---------------------- |
 |    10+ | Very Frequent Customer |
@@ -915,10 +796,9 @@ Customers are classified according to total orders:
 
 ## Day 55 Revenue Contribution
 
-Customer revenue contribution is calculated as:
-
 ```text
-Revenue Contribution % =
+Revenue Contribution %
+=
 Customer Revenue / Total Revenue × 100
 ```
 
@@ -940,90 +820,207 @@ RANK() OVER (
 )
 ```
 
-This provides a revenue-based ranking of customers.
+## Day 55 Project Files
 
-## Day 55 High-Value Customers
+```text
+SQL/customer_purchase_value_segmentation.sql
+Report/Day55_Customer_Purchase_Value_Segmentation_Analysis.md
+Screenshots/Day 55/
+```
 
-Customers generating **₹10,000 or more** are classified as:
+**Day 55 Achievement: Customer Purchase Value Segmentation Analysis completed successfully. ✅**
 
-**High-Value Customers**
+---
 
-## Day 55 Medium-Value Customers
+# 💎 Day 56 — Customer Revenue Contribution & Concentration Analysis
 
-Customers generating between **₹5,000 and ₹9,999** are classified as:
+Day 56 focused on **customer revenue contribution and revenue concentration analysis** using SQL.
 
-**Medium-Value Customers**
+The analysis extends the customer analytics workflow by measuring customer-level revenue, overall business revenue, revenue contribution percentage, revenue ranking, cumulative revenue contribution, top revenue-generating customers, and customer revenue concentration.
 
-## Day 55 Low-Value Customers
+## Day 56 Key Analyses
 
-Customers generating **below ₹5,000** are classified as:
+1. Total Revenue per Customer
+2. Overall Business Revenue
+3. Customer Revenue Contribution Percentage
+4. Customer Revenue Ranking
+5. Cumulative Revenue Contribution Percentage
+6. Top 10 Customers by Revenue
+7. Top 20% Customers' Revenue Contribution
+8. Customer Revenue Contribution Classification
+9. High-Value Revenue Customers
+10. Low-Value Revenue Customers
+11. Revenue Concentration Analysis
+12. Final Customer Revenue Contribution Summary
 
-**Low-Value Customers**
+## Day 56 SQL Techniques
 
-## Day 55 Final Customer Value Summary
+* `COUNT()`
+* `COUNT(DISTINCT)`
+* `SUM()`
+* `ROUND()`
+* `NULLIF()`
+* `CASE`
+* `JOIN`
+* CTEs
+* Window Functions
+* `RANK()`
+* `ROW_NUMBER()`
+* `SUM() OVER()`
+* `COUNT() OVER()`
+* Customer-level aggregation
+* Revenue contribution analysis
+* Revenue ranking
+* Cumulative revenue analysis
+* Top-N analysis
+* Top 20% customer analysis
+* Customer revenue segmentation
+* Revenue concentration analysis
+
+## Day 56 Revenue Contribution
+
+Customer revenue contribution is calculated as:
+
+```text
+Customer Revenue Contribution %
+=
+Customer Revenue / Overall Business Revenue × 100
+```
+
+This measures the percentage of total business revenue generated by each customer.
+
+## Day 56 Customer Revenue Ranking
+
+Customers are ranked according to total revenue using:
+
+```sql
+RANK() OVER (
+    ORDER BY total_revenue DESC
+)
+```
+
+This identifies the highest-revenue customers within the dataset.
+
+## Day 56 Cumulative Revenue Contribution
+
+Customers are ordered from highest to lowest revenue and cumulative revenue contribution is calculated using a window function.
+
+This helps identify how quickly the business reaches different portions of total revenue.
+
+## Day 56 Top 10 Customers
+
+The analysis identifies the ten customers generating the highest total revenue.
+
+This can support:
+
+* High-value customer analysis
+* Customer relationship management
+* Revenue-focused reporting
+* Retention analysis
+* Business performance monitoring
+
+## Day 56 Top 20% Customer Analysis
+
+The analysis identifies the top 20% of customers according to revenue and calculates their combined revenue contribution.
+
+This provides a practical view of revenue concentration among the highest-revenue customers.
+
+## Day 56 Revenue Contribution Classification
+
+| Revenue Contribution | Classification                |
+| -------------------: | ----------------------------- |
+|          10% or more | Very High Revenue Contributor |
+|             5%–9.99% | High Revenue Contributor      |
+|             2%–4.99% | Moderate Revenue Contributor  |
+|             1%–1.99% | Low Revenue Contributor       |
+|             Below 1% | Very Low Revenue Contributor  |
+
+These thresholds are business-analysis rules defined for this portfolio project.
+
+## Day 56 High-Value Revenue Customers
+
+Customers generating **₹10,000 or more** in total revenue are identified as:
+
+**High-Value Revenue Customers**
+
+## Day 56 Low-Value Revenue Customers
+
+Customers generating **below ₹1,000** in total revenue are identified as:
+
+**Low-Value Revenue Customers**
+
+## Day 56 Revenue Concentration Analysis
+
+The analysis classifies customers according to cumulative revenue contribution:
+
+| Cumulative Revenue | Segment                        |
+| -----------------: | ------------------------------ |
+|          Up to 20% | Top Revenue Concentration      |
+|          Up to 50% | High Revenue Concentration     |
+|          Up to 80% | Moderate Revenue Concentration |
+|          Above 80% | Long-Tail Revenue              |
+
+This provides a structured view of how revenue is distributed across customers.
+
+## Day 56 Final Customer Revenue Summary
 
 The final analysis combines:
 
 * Customer ID
-* Customer Name
-* Total Orders
-* Total Units Purchased
-* Total Revenue
-* Average Order Value
-* Customer Value Segment
-* Customer Value Rank
-* Revenue Contribution Percentage
+* Total orders
+* Total units purchased
+* Total revenue
+* Revenue contribution percentage
+* Revenue rank
+* Cumulative revenue percentage
+* Revenue contribution category
+* Customer value category
 
-This provides a consolidated customer-level view of purchasing behavior and business value.
-
-## Day 55 Business Applications
+## Day 56 Business Applications
 
 The analysis can support:
 
-* Customer relationship management
+* Customer revenue management
 * Customer segmentation
 * High-value customer identification
-* Marketing segmentation
-* Customer retention
-* Revenue contribution analysis
-* Revenue ranking
-* Personalized promotions
-* Sales strategy
-* Customer targeting
-* Business intelligence
+* Revenue concentration monitoring
+* Customer retention analysis
+* Revenue planning
 * Management reporting
+* Business intelligence
+* Revenue-focused decision support
 
-## Day 55 Methodology Limitation
+## Day 56 Methodology Limitation
 
-The Day 55 customer-value segmentation is a **rule-based SQL classification**.
+The Day 56 revenue contribution classifications and customer value thresholds are **rule-based SQL business-analysis rules**.
 
-It is not:
+They are not:
 
-* A machine-learning model
-* A statistically validated segmentation model
-* A probability prediction
-* An automatically optimized segmentation system
+* Machine-learning predictions
+* Statistically validated probabilities
+* Automatically optimized customer segments
+* Forecasted customer behavior
 
-The revenue thresholds were defined as business-analysis rules for this portfolio project.
+The analysis describes historical revenue distribution within the available sales data.
 
-## Day 55 Project Files
+## Day 56 Project Files
 
 ```text
 SQL/
-└── customer_purchase_value_segmentation.sql
+└── customer_revenue_contribution_analysis.sql
 
 Report/
-└── Day55_Customer_Purchase_Value_Segmentation_Analysis.md
+└── Day56_Customer_Revenue_Contribution_Analysis.md
 
 Screenshots/
-└── Day 55/
+└── Day 56/
 ```
 
-## Day 55 Achievement
+## Day 56 Achievement
 
-**Customer Purchase Value Segmentation Analysis completed successfully. ✅**
+**Customer Revenue Contribution & Concentration Analysis completed successfully. ✅**
 
-The project has now reached **55 completed days of SQL business analysis. 🚀**
+The project has now reached **56 completed days of SQL business analysis. 🚀**
 
 ---
 
@@ -1079,6 +1076,8 @@ Customer Purchase Propensity Analysis
 Customer Purchase Value & Basket Analysis
       ↓
 Customer Value Segmentation
+      ↓
+Customer Revenue Contribution & Concentration
       ↓
 Business Insights
 ```
@@ -1174,20 +1173,20 @@ Sales_Data_Analysis_SQL/
 │   ├── customer_repeat_purchase_prediction.sql
 │   ├── customer_purchase_propensity_analysis.sql
 │   ├── customer_purchase_value_basket_analysis.sql
-│   └── customer_purchase_value_segmentation.sql
+│   ├── customer_purchase_value_segmentation.sql
+│   └── customer_revenue_contribution_analysis.sql
 │
 ├── Screenshots/
 │   ├── Day 1/
 │   ├── Day 2/
-│   ├── Day 3/
 │   ├── ...
-│   ├── Day 49/
 │   ├── Day 50/
 │   ├── Day 51/
 │   ├── Day 52/
 │   ├── Day 53/
 │   ├── Day 54/
-│   └── Day 55/
+│   ├── Day 55/
+│   └── Day 56/
 │
 ├── Presentation/
 │
@@ -1200,7 +1199,8 @@ Sales_Data_Analysis_SQL/
 │   ├── Day52_Customer_Repeat_Purchase_Prediction_Analysis.md
 │   ├── Day53_Customer_Purchase_Propensity_Analysis.md
 │   ├── Day54_Customer_Purchase_Value_Basket_Analysis.md
-│   └── Day55_Customer_Purchase_Value_Segmentation_Analysis.md
+│   ├── Day55_Customer_Purchase_Value_Segmentation_Analysis.md
+│   └── Day56_Customer_Revenue_Contribution_Analysis.md
 │
 └── README.md
 ```
@@ -1209,63 +1209,64 @@ Sales_Data_Analysis_SQL/
 
 # 📅 Daily Project Organization
 
-|        Day | Main Work                                         |
-| ---------: | ------------------------------------------------- |
-|      Day 1 | Database Fundamentals                             |
-|      Day 2 | SQL Table & Data Operations                       |
-|      Day 3 | Basic SQL Queries                                 |
-|      Day 4 | SQL Filtering & Analysis                          |
-|      Day 5 | SQL Aggregation                                   |
-|      Day 6 | JOIN Operations                                   |
-|      Day 7 | SQL Fundamentals Review                           |
-|      Day 8 | Intermediate SQL                                  |
-|      Day 9 | Stored Procedures                                 |
-|     Day 10 | Advanced SQL                                      |
-|     Day 11 | Views                                             |
-|     Day 12 | Triggers                                          |
-|     Day 13 | Indexes                                           |
-|     Day 14 | Advanced Business Analysis                        |
-|     Day 15 | Window Functions                                  |
-|     Day 16 | CTEs                                              |
-|     Day 17 | Query Optimization & Business Analysis            |
-|     Day 18 | Customer Analytics                                |
-|     Day 19 | Customer Behavior Analysis                        |
-|     Day 20 | Customer Retention Analysis                       |
-|     Day 21 | Customer Lifetime Value                           |
-|     Day 22 | RFM Customer Segmentation                         |
-|     Day 23 | Sales Trend Analysis                              |
-|     Day 24 | Product Performance Analysis                      |
-|     Day 25 | Sales Profitability Analysis                      |
-|     Day 26 | Customer Revenue Contribution                     |
-|     Day 27 | Customer Churn Analysis                           |
-|     Day 28 | Customer Cohort & Retention                       |
-|     Day 29 | Customer Purchase Frequency                       |
-|     Day 30 | Customer Segmentation & Revenue                   |
-|     Day 31 | Product Purchase Behavior                         |
-|     Day 32 | Product Customer Affinity                         |
-|     Day 33 | Customer-Product Purchase Analysis                |
-|     Day 34 | Cross-Selling & Product Recommendation            |
-|     Day 35 | Customer Purchase Journey & Basket                |
-|     Day 36 | Customer Lifetime Value & Revenue Contribution    |
-|     Day 37 | Customer RFM Segmentation                         |
-|     Day 38 | Customer Segment Performance                      |
-|     Day 39 | Customer Segment Retention & Churn Risk           |
-|     Day 40 | Customer Cohort & Retention Trend                 |
-|     Day 41 | Customer Lifecycle & Repeat Purchase              |
-|     Day 42 | Customer Purchase Frequency & Repeat Behavior     |
-|     Day 43 | Payment Status & Payment Method                   |
-|     Day 44 | Customer Payment Behavior                         |
-|     Day 45 | Customer Payment Risk & Pending Payments          |
-|     Day 46 | Data Quality & Integrity                          |
-|     Day 47 | Sales Performance KPI                             |
-|     Day 48 | Sales Growth & Month-over-Month                   |
-|     Day 49 | Sales Order Value & Basket                        |
-|     Day 50 | Sales Revenue Forecasting                         |
-|     Day 51 | Product Demand & Sales Forecasting                |
-|     Day 52 | Customer Repeat Purchase Prediction & Analysis    |
-|     Day 53 | Customer Purchase Propensity Analysis             |
-|     Day 54 | Customer Purchase Value & Basket Analysis         |
-| **Day 55** | **Customer Purchase Value Segmentation Analysis** |
+|        Day | Main Work                                                  |
+| ---------: | ---------------------------------------------------------- |
+|      Day 1 | Database Fundamentals                                      |
+|      Day 2 | SQL Table & Data Operations                                |
+|      Day 3 | Basic SQL Queries                                          |
+|      Day 4 | SQL Filtering & Analysis                                   |
+|      Day 5 | SQL Aggregation                                            |
+|      Day 6 | JOIN Operations                                            |
+|      Day 7 | SQL Fundamentals Review                                    |
+|      Day 8 | Intermediate SQL                                           |
+|      Day 9 | Stored Procedures                                          |
+|     Day 10 | Advanced SQL                                               |
+|     Day 11 | Views                                                      |
+|     Day 12 | Triggers                                                   |
+|     Day 13 | Indexes                                                    |
+|     Day 14 | Advanced Business Analysis                                 |
+|     Day 15 | Window Functions                                           |
+|     Day 16 | CTEs                                                       |
+|     Day 17 | Query Optimization & Business Analysis                     |
+|     Day 18 | Customer Analytics                                         |
+|     Day 19 | Customer Behavior Analysis                                 |
+|     Day 20 | Customer Retention Analysis                                |
+|     Day 21 | Customer Lifetime Value                                    |
+|     Day 22 | RFM Customer Segmentation                                  |
+|     Day 23 | Sales Trend Analysis                                       |
+|     Day 24 | Product Performance Analysis                               |
+|     Day 25 | Sales Profitability Analysis                               |
+|     Day 26 | Customer Revenue Contribution                              |
+|     Day 27 | Customer Churn Analysis                                    |
+|     Day 28 | Customer Cohort & Retention                                |
+|     Day 29 | Customer Purchase Frequency                                |
+|     Day 30 | Customer Segmentation & Revenue                            |
+|     Day 31 | Product Purchase Behavior                                  |
+|     Day 32 | Product Customer Affinity                                  |
+|     Day 33 | Customer-Product Purchase Analysis                         |
+|     Day 34 | Cross-Selling & Product Recommendation                     |
+|     Day 35 | Customer Purchase Journey & Basket                         |
+|     Day 36 | Customer Lifetime Value & Revenue Contribution             |
+|     Day 37 | Customer RFM Segmentation                                  |
+|     Day 38 | Customer Segment Performance                               |
+|     Day 39 | Customer Segment Retention & Churn Risk                    |
+|     Day 40 | Customer Cohort & Retention Trend                          |
+|     Day 41 | Customer Lifecycle & Repeat Purchase                       |
+|     Day 42 | Customer Purchase Frequency & Repeat Behavior              |
+|     Day 43 | Payment Status & Payment Method                            |
+|     Day 44 | Customer Payment Behavior                                  |
+|     Day 45 | Customer Payment Risk & Pending Payments                   |
+|     Day 46 | Data Quality & Integrity                                   |
+|     Day 47 | Sales Performance KPI                                      |
+|     Day 48 | Sales Growth & Month-over-Month                            |
+|     Day 49 | Sales Order Value & Basket                                 |
+|     Day 50 | Sales Revenue Forecasting                                  |
+|     Day 51 | Product Demand & Sales Forecasting                         |
+|     Day 52 | Customer Repeat Purchase Prediction & Analysis             |
+|     Day 53 | Customer Purchase Propensity Analysis                      |
+|     Day 54 | Customer Purchase Value & Basket Analysis                  |
+|     Day 55 | Customer Purchase Value Segmentation Analysis              |
+| **Day 56** | **Customer Revenue Contribution & Concentration Analysis** |
 
 ---
 
@@ -1319,6 +1320,8 @@ Customer Purchase Propensity Analysis
 Customer Purchase Value & Basket Analysis
       ↓
 Customer Value Segmentation
+      ↓
+Customer Revenue Contribution & Concentration
       ↓
 Business Insights
 ```
@@ -1376,6 +1379,9 @@ Through this project, the following practical skills are demonstrated:
 * Customer purchase value ranking
 * Customer revenue ranking
 * Customer revenue contribution
+* Customer revenue concentration
+* Cumulative revenue analysis
+* Top-N customer analysis
 * Customer value segmentation
 * High-value customer identification
 * Medium-value customer identification
@@ -1395,58 +1401,58 @@ Through this project, the following practical skills are demonstrated:
 
 **Current Status: 🟢 Active**
 
-**Completed: 55 Days**
+**Completed: 56 Days**
 
 **Primary Focus: SQL Data Analysis & Business Intelligence**
 
-The project has completed **55 days of structured SQL learning and business analysis**.
+The project has completed **56 days of structured SQL learning and business analysis**.
 
-The project now covers database design, SQL fundamentals, advanced SQL, query optimization, customer analytics, product analytics, customer segmentation, RFM analysis, customer retention, churn analysis, cohort analysis, customer lifecycle analysis, repeat purchase analysis, purchase frequency analysis, payment analysis, data quality analysis, sales KPI analysis, sales growth analysis, order value analysis, basket analysis, revenue forecasting, product demand forecasting, customer repeat-purchase prediction, customer purchase propensity analysis, customer purchase value analysis, customer value segmentation, customer revenue ranking, basket-size classification, spending classification, purchase value scoring, and business reporting.
+The project now covers database design, SQL fundamentals, advanced SQL, query optimization, customer analytics, product analytics, customer segmentation, RFM analysis, customer retention, churn analysis, cohort analysis, customer lifecycle analysis, repeat purchase analysis, purchase frequency analysis, payment analysis, data quality analysis, sales KPI analysis, sales growth analysis, order value analysis, basket analysis, revenue forecasting, product demand forecasting, customer repeat-purchase prediction, customer purchase propensity analysis, customer purchase value analysis, customer value segmentation, customer revenue ranking, customer revenue concentration, basket-size classification, spending classification, purchase value scoring, cumulative revenue analysis, and business reporting.
 
 ---
 
-# 🚀 Day 55 Achievement
+# 🚀 Day 56 Achievement
 
-## Day 55 — Customer Purchase Value Segmentation Analysis Completed ✅
+## Day 56 — Customer Revenue Contribution & Concentration Analysis Completed ✅
 
-Day 55 focused on customer-level purchase value and revenue segmentation using SQL.
+Day 56 focused on customer-level revenue contribution, revenue ranking, cumulative revenue contribution, top-customer analysis, and revenue concentration using SQL.
 
 ### Key Analyses
 
 1. Total Revenue per Customer
-2. Total Orders per Customer
-3. Average Order Value per Customer
-4. Total Units Purchased per Customer
-5. Customer Purchase Frequency
-6. Customer Revenue Percentage Contribution
-7. Customer Revenue Rank
-8. Customer Value Classification
-9. High-Value Customer Identification
-10. Medium-Value Customer Identification
-11. Low-Value Customer Identification
-12. Final Customer Value Segmentation Summary
+2. Overall Business Revenue
+3. Customer Revenue Contribution Percentage
+4. Customer Revenue Ranking
+5. Cumulative Revenue Contribution Percentage
+6. Top 10 Customers by Revenue
+7. Top 20% Customers' Revenue Contribution
+8. Customer Revenue Contribution Classification
+9. High-Value Revenue Customers
+10. Low-Value Revenue Customers
+11. Revenue Concentration Analysis
+12. Final Customer Revenue Contribution Summary
 
-### Day 55 Project Files
+### Day 56 Project Files
 
 ```text
-SQL/customer_purchase_value_segmentation.sql
+SQL/customer_revenue_contribution_analysis.sql
 
-Report/Day55_Customer_Purchase_Value_Segmentation_Analysis.md
+Report/Day56_Customer_Revenue_Contribution_Analysis.md
 
-Screenshots/Day 55/
+Screenshots/Day 56/
 ```
 
-**Customer Purchase Value Segmentation Analysis completed successfully. ✅**
+**Customer Revenue Contribution & Concentration Analysis completed successfully. ✅**
 
-**55 Days of continuous SQL business analysis completed. 🚀**
+**56 Days of continuous SQL business analysis completed. 🚀**
 
 ---
 
 # 🏁 Portfolio Progress
 
-## 55 Days Completed 🚀
+## 56 Days Completed 🚀
 
-**SQL Fundamentals → Advanced SQL → Business Analytics → Customer Analytics → Customer Retention → Customer Lifetime Value → RFM Customer Segmentation → Customer Segment Performance → Customer Segment Retention & Churn Risk → Customer Cohort & Retention Trend Analysis → Customer Lifecycle & Repeat Purchase Analysis → Customer Purchase Frequency & Repeat Behavior Analysis → Payment Analysis → Data Quality & Integrity Analysis → Sales Performance KPI Analysis → Sales Growth & Month-over-Month Analysis → Sales Order Value & Basket Analysis → Sales Revenue Forecasting → Product Demand & Sales Forecasting → Customer Repeat Purchase Prediction → Customer Purchase Propensity Analysis → Customer Purchase Value & Basket Analysis → Customer Purchase Value Segmentation → Business Insights**
+**SQL Fundamentals → Advanced SQL → Business Analytics → Customer Analytics → Customer Retention → Customer Lifetime Value → RFM Customer Segmentation → Customer Segment Performance → Customer Segment Retention & Churn Risk → Customer Cohort & Retention Trend Analysis → Customer Lifecycle & Repeat Purchase Analysis → Customer Purchase Frequency & Repeat Behavior Analysis → Payment Analysis → Data Quality & Integrity Analysis → Sales Performance KPI Analysis → Sales Growth & Month-over-Month Analysis → Sales Order Value & Basket Analysis → Sales Revenue Forecasting → Product Demand & Sales Forecasting → Customer Repeat Purchase Prediction → Customer Purchase Propensity Analysis → Customer Purchase Value & Basket Analysis → Customer Purchase Value Segmentation → Customer Revenue Contribution & Concentration → Business Insights**
 
 The project demonstrates a broad practical SQL workflow suitable for showcasing **Data Analyst, Business Analyst, SQL Developer, Reporting Analyst, and MIS Analyst portfolio skills**.
 
@@ -1475,7 +1481,7 @@ The next stage of the project can move toward:
 * Data quality monitoring dashboards
 * Business performance monitoring
 
-**Next Milestone: Day 56 → 56/56 🔥**
+**Next Milestone: Day 57 → 57/57 🔥**
 
 ---
 
@@ -1487,12 +1493,12 @@ The long-term goal is to transform this project into a complete **SQL + Business
 
 ---
 
-# 🎉 55-Day Milestone
+# 🎉 56-Day Milestone
 
-**Day 55 is completed successfully. ✅**
+**Day 56 is completed successfully. ✅**
 
-**55 Days of continuous SQL business analysis completed. 🚀**
+**56 Days of continuous SQL business analysis completed. 🚀**
 
-**Customer Purchase Value Segmentation Analysis completed. 🎯📊**
+**Customer Revenue Contribution & Concentration Analysis completed. 🎯📊**
 
-**Next target: Day 56. 🔥**
+**Next target: Day 57. 🔥**
