@@ -150,7 +150,9 @@ Each customer's revenue contribution was calculated as:
 
 ```text
 Customer Revenue Contribution %
+
 =
+
 Customer Revenue / Total Customer Revenue × 100
 ```
 
@@ -192,15 +194,25 @@ Instead, SQL measures the actual revenue distribution in the available sales dat
 
 ```text
 Customer Ranking
+
        ↓
+
 Revenue Contribution
+
        ↓
+
 Cumulative Revenue
+
        ↓
+
 50% Revenue Threshold
+
        ↓
+
 80% Revenue Threshold
+
        ↓
+
 Pareto Concentration Analysis
 ```
 
@@ -275,12 +287,15 @@ The 80/20 principle is used as a framework for examining revenue concentration.
 
 ```text
 SQL/
+
 └── customer_revenue_pareto_analysis.sql
 
 Report/
+
 └── Day58_Customer_Revenue_Pareto_Analysis.md
 
 Screenshots/
+
 └── Day 58/
 ```
 
@@ -291,6 +306,194 @@ Screenshots/
 The project has now reached:
 
 **58 Days of continuous SQL business analysis. 🚀**
+
+---
+
+# 📈 Day 59 — Advanced Customer Revenue & Business Analysis
+
+Day 59 focused on **advanced customer revenue analysis and business-oriented customer segmentation** using MySQL.
+
+The analysis builds on the Day 58 Pareto and revenue-concentration work and continues the project toward deeper customer-level business intelligence.
+
+## 🎯 Day 59 Objective
+
+The objective of Day 59 was to extend customer revenue analysis beyond basic contribution and concentration measurements and develop a deeper understanding of customer value and revenue distribution.
+
+The analysis focuses on:
+
+* Customer revenue performance
+* Customer value comparison
+* Revenue ranking
+* Revenue contribution
+* Customer segmentation
+* High-value customer identification
+* Revenue concentration
+* Business-oriented customer analysis
+
+## 🔍 Day 59 Key Analyses
+
+1. Customer Revenue Analysis
+2. Customer Revenue Ranking
+3. Customer Revenue Contribution
+4. Customer Revenue Comparison
+5. Customer Value Classification
+6. High-Value Customer Identification
+7. Customer Revenue Segmentation
+8. Revenue Concentration Analysis
+9. Customer Revenue Distribution
+10. Business-Oriented Customer Analysis
+11. Advanced Customer Revenue Analysis
+12. Final Day 59 Business Analysis
+
+## 🧠 Day 59 SQL Techniques
+
+* `SELECT`
+* `SUM()`
+* `COUNT()`
+* `ROUND()`
+* `CASE`
+* `JOIN`
+* CTEs
+* Window Functions
+* `ROW_NUMBER()`
+* `RANK()`
+* `DENSE_RANK()`
+* Revenue calculations
+* Customer segmentation
+* Ranking analysis
+* Percentage calculations
+* Conditional classification
+* Business analysis
+
+## 📊 Day 59 Customer Revenue Analysis
+
+Customer-level revenue was analyzed to identify differences between customers based on their contribution to total sales.
+
+This provides a detailed view of customer value within the sales dataset.
+
+## 📈 Day 59 Customer Revenue Ranking
+
+Customers were ranked according to their revenue contribution.
+
+```sql
+ROW_NUMBER() OVER (
+    ORDER BY total_revenue DESC
+)
+```
+
+The ranking helps identify customers with higher and lower revenue contribution.
+
+## 🏷️ Day 59 Customer Value Segmentation
+
+Customers were classified into business-oriented revenue groups using SQL conditional logic.
+
+```sql
+CASE
+    WHEN total_revenue >= ... THEN 'High Value'
+    WHEN total_revenue >= ... THEN 'Medium Value'
+    ELSE 'Low Value'
+END
+```
+
+The exact thresholds are determined by the analysis performed on the available dataset.
+
+## 📊 Day 59 Revenue Contribution Analysis
+
+Customer revenue contribution was calculated to understand how individual customers contribute to overall sales.
+
+```text
+Customer Revenue
+
+       ↓
+
+Total Customer Revenue
+
+       ↓
+
+Revenue Contribution %
+
+       ↓
+
+Customer Ranking
+
+       ↓
+
+Customer Value Classification
+
+       ↓
+
+Business Insights
+```
+
+## 🎯 Day 59 High-Value Customer Analysis
+
+The analysis identifies customers contributing higher revenue and provides a business-oriented view of customer value.
+
+This can support:
+
+* Customer relationship management
+* Customer retention planning
+* Revenue monitoring
+* High-value customer identification
+* Customer segmentation
+* Business reporting
+
+## 📌 Day 59 Business Analysis
+
+The Day 59 analysis extends the project's customer revenue analytics by connecting customer-level SQL calculations with business interpretation.
+
+The analysis focuses on converting:
+
+```text
+Raw Customer Sales Data
+        ↓
+Revenue Calculation
+        ↓
+Customer Ranking
+        ↓
+Revenue Contribution
+        ↓
+Customer Segmentation
+        ↓
+Business Insights
+```
+
+## ⚠️ Methodology Limitation
+
+Day 59 analysis is based on the available historical sales dataset.
+
+The analysis does not claim that:
+
+* Customer behavior will remain unchanged
+* Historical revenue guarantees future performance
+* Customer segments are machine-learning predictions
+* Revenue rankings represent future customer behavior
+
+The results are intended for historical business analysis and portfolio demonstration.
+
+## 📁 Day 59 Project Files
+
+```text
+SQL/
+
+└── day59_customer_revenue_analysis.sql
+
+Report/
+
+└── Day59_Customer_Revenue_Analysis.md
+
+Screenshots/
+
+└── Day 59/
+```
+
+## 🏆 Day 59 Achievement
+
+**Advanced Customer Revenue & Business Analysis completed successfully. ✅**
+
+The project has now reached:
+
+**59 Days of continuous SQL business analysis. 🚀**
 
 ---
 
@@ -356,6 +559,7 @@ The project has now reached:
 |     Day 56 | Customer Revenue Contribution & Concentration Analysis |
 |     Day 57 | Customer Revenue Concentration & Analysis              |
 | **Day 58** | **Customer Revenue Pareto & 80/20 Analysis**           |
+| **Day 59** | **Advanced Customer Revenue & Business Analysis**      |
 
 ---
 
@@ -414,6 +618,8 @@ Customer Revenue Contribution & Concentration
       ↓
 Customer Revenue Pareto & 80/20 Analysis
       ↓
+Advanced Customer Revenue & Business Analysis
+      ↓
 Business Insights
 ```
 
@@ -425,9 +631,10 @@ Business Insights
 Sales_Data_Analysis_SQL/
 
 │
+
 ├── Database_Design/
 │   └── sales_analysis.mwb
-│
+
 ├── SQL/
 │   ├── create_database.sql
 │   ├── create_tables.sql
@@ -478,15 +685,16 @@ Sales_Data_Analysis_SQL/
 │   ├── customer_purchase_value_basket_analysis.sql
 │   ├── customer_purchase_value_segmentation.sql
 │   ├── customer_revenue_contribution_analysis.sql
-│   └── customer_revenue_pareto_analysis.sql
+│   ├── customer_revenue_pareto_analysis.sql
+│   └── day59_customer_revenue_analysis.sql
 │
 ├── Screenshots/
 │   ├── Day 1/
 │   ├── Day 2/
 │   ├── ...
-│   ├── Day 56/
 │   ├── Day 57/
-│   └── Day 58/
+│   ├── Day 58/
+│   └── Day 59/
 │
 ├── Presentation/
 │
@@ -494,9 +702,9 @@ Sales_Data_Analysis_SQL/
 │   ├── Week1_Report.md
 │   ├── Week2_Report.md
 │   ├── ...
-│   ├── Day56_Customer_Revenue_Contribution_Analysis.md
 │   ├── Day57_Customer_Revenue_Concentration_Analysis.md
-│   └── Day58_Customer_Revenue_Pareto_Analysis.md
+│   ├── Day58_Customer_Revenue_Pareto_Analysis.md
+│   └── Day59_Customer_Revenue_Analysis.md
 │
 └── README.md
 ```
@@ -507,21 +715,21 @@ Sales_Data_Analysis_SQL/
 
 **Current Status: 🟢 Active**
 
-**Completed: 58 Days**
+**Completed: 59 Days**
 
 **Primary Focus: SQL Data Analysis & Business Intelligence**
 
-The project has completed **58 days of structured SQL learning and business analysis**.
+The project has completed **59 days of structured SQL learning and business analysis**.
 
-The project now covers database design, SQL fundamentals, advanced SQL, query optimization, customer analytics, product analytics, customer segmentation, RFM analysis, customer retention, churn analysis, cohort analysis, customer lifecycle analysis, repeat purchase analysis, purchase frequency analysis, payment analysis, data quality analysis, sales KPI analysis, sales growth analysis, order value analysis, basket analysis, revenue forecasting, product demand forecasting, customer repeat-purchase prediction, customer purchase propensity analysis, customer purchase value analysis, customer value segmentation, customer revenue ranking, customer revenue concentration, Pareto analysis, 80/20 revenue distribution analysis, and business reporting.
+The project now covers database design, SQL fundamentals, advanced SQL, query optimization, customer analytics, product analytics, customer segmentation, RFM analysis, customer retention, churn analysis, cohort analysis, customer lifecycle analysis, repeat purchase analysis, purchase frequency analysis, payment analysis, data quality analysis, sales KPI analysis, sales growth analysis, order value analysis, basket analysis, revenue forecasting, product demand forecasting, customer repeat-purchase prediction, customer purchase propensity analysis, customer purchase value analysis, customer value segmentation, customer revenue ranking, customer revenue concentration, Pareto analysis, 80/20 revenue distribution analysis, advanced customer revenue analysis, and business reporting.
 
 ---
 
-# 🚀 58-Day Portfolio Progress
+# 🚀 59-Day Portfolio Progress
 
-**58 Days Completed 🚀**
+**59 Days Completed 🚀**
 
-**SQL Fundamentals → Advanced SQL → Business Analytics → Customer Analytics → Customer Retention → Customer Lifetime Value → RFM Customer Segmentation → Customer Segment Performance → Customer Segment Retention & Churn Risk → Customer Cohort & Retention Trend Analysis → Customer Lifecycle & Repeat Purchase Analysis → Customer Purchase Frequency & Repeat Behavior Analysis → Payment Analysis → Data Quality & Integrity Analysis → Sales Performance KPI Analysis → Sales Growth & Month-over-Month Analysis → Sales Order Value & Basket Analysis → Sales Revenue Forecasting → Product Demand & Sales Forecasting → Customer Repeat Purchase Prediction → Customer Purchase Propensity Analysis → Customer Purchase Value & Basket Analysis → Customer Purchase Value Segmentation → Customer Revenue Contribution & Concentration → Customer Revenue Pareto & 80/20 Analysis → Business Insights**
+**SQL Fundamentals → Advanced SQL → Business Analytics → Customer Analytics → Customer Retention → Customer Lifetime Value → RFM Customer Segmentation → Customer Segment Performance → Customer Segment Retention & Churn Risk → Customer Cohort & Retention Trend Analysis → Customer Lifecycle & Repeat Purchase Analysis → Customer Purchase Frequency & Repeat Behavior Analysis → Payment Analysis → Data Quality & Integrity Analysis → Sales Performance KPI Analysis → Sales Growth & Month-over-Month Analysis → Sales Order Value & Basket Analysis → Sales Revenue Forecasting → Product Demand & Sales Forecasting → Customer Repeat Purchase Prediction → Customer Purchase Propensity Analysis → Customer Purchase Value & Basket Analysis → Customer Purchase Value Segmentation → Customer Revenue Contribution & Concentration → Customer Revenue Pareto & 80/20 Analysis → Advanced Customer Revenue & Business Analysis → Business Insights**
 
 The project demonstrates a broad practical SQL workflow suitable for showcasing **Data Analyst, Business Analyst, SQL Developer, Reporting Analyst, and MIS Analyst portfolio skills**.
 
@@ -550,7 +758,7 @@ The next stage of the project can move toward:
 * Data quality monitoring dashboards
 * Business performance monitoring
 
-**Next Milestone: Day 59 → 59/59 🔥**
+**Next Milestone: Day 60 → 60/60 🔥**
 
 ---
 
@@ -562,12 +770,12 @@ The long-term goal is to transform this project into a complete **SQL + Business
 
 ---
 
-# 🎉 58-Day Milestone
+# 🎉 59-Day Milestone
 
-**Day 58 is completed successfully. ✅**
+**Day 59 is completed successfully. ✅**
 
-**58 Days of continuous SQL business analysis completed. 🚀**
+**59 Days of continuous SQL business analysis completed. 🚀**
 
-**Customer Revenue Pareto & 80/20 Analysis completed. 🎯📊**
+**Advanced Customer Revenue & Business Analysis completed. 🎯📊**
 
-**Next target: Day 59. 🔥**
+**Next target: Day 60. 🔥**
