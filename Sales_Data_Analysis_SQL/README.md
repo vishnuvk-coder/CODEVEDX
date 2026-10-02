@@ -1,10 +1,12 @@
-📊 Sales Data Analysis Using SQL
+# 📊 Sales Data Analysis Using SQL
 
-A hands-on SQL portfolio project focused on relational database design, advanced SQL analytics, query optimization, customer analytics, product analytics, business intelligence, customer retention, cohort analysis, customer lifecycle analysis, repeat purchase analysis, purchase frequency analysis, payment analysis, data quality analysis, sales KPI analysis, sales growth analysis, order value analysis, basket analysis, revenue forecasting, product demand forecasting, customer repeat purchase prediction, customer purchase propensity analysis, customer purchase value analysis, basket-size classification, spending classification, customer value segmentation, customer revenue ranking, customer revenue concentration analysis, Pareto analysis, 80/20 revenue analysis, customer revenue decile analysis, customer revenue quartile analysis, and customer revenue quintile analysis using MySQL.
+A hands-on SQL portfolio project focused on **relational database design, advanced SQL analytics, query optimization, customer analytics, product analytics, business intelligence, customer retention, cohort analysis, customer lifecycle analysis, repeat purchase analysis, purchase frequency analysis, payment analysis, data quality analysis, sales KPI analysis, sales growth analysis, order value analysis, basket analysis, revenue forecasting, product demand forecasting, customer repeat purchase prediction, customer purchase propensity analysis, customer purchase value analysis, basket-size classification, spending classification, customer value segmentation, customer revenue ranking, customer revenue concentration analysis, Pareto analysis, 80/20 revenue analysis, customer revenue decile analysis, customer revenue quartile analysis, customer revenue quintile analysis, and customer revenue ABC analysis using MySQL.**
 
-This project simulates a real-world sales management system and demonstrates practical SQL skills relevant to Data Analyst, Business Analyst, SQL Developer, Reporting Analyst, and MIS Analyst roles.
+This project simulates a real-world sales management system and demonstrates practical SQL skills relevant to **Data Analyst, Business Analyst, SQL Developer, Reporting Analyst, and MIS Analyst roles.**
 
-🚀 Project Overview
+---
+
+# 🚀 Project Overview
 
 This project follows a structured, end-to-end SQL data-analysis workflow, progressing from database fundamentals to advanced analytical and business-oriented SQL.
 
@@ -12,106 +14,123 @@ The primary objective is to transform raw sales data into meaningful business in
 
 The project covers:
 
-Database design
-SQL fundamentals
-Data manipulation
-SQL querying
-JOIN operations
-Aggregation
-Advanced SQL
-Query optimization
-Customer analytics
-Product analytics
-Revenue analysis
-Business KPI analysis
-Sales performance KPI analysis
-Sales growth analysis
-Month-over-month comparison
-Customer segmentation
-RFM customer segmentation
-Customer retention and churn analysis
-Cohort and lifecycle analysis
-Repeat purchase analysis
-Purchase frequency analysis
-Customer Lifetime Value analysis
-Product purchase behavior
-Product affinity and cross-selling
-Customer-product analysis
-Customer purchase journey analysis
-Basket size analysis
-Order value analysis
-High-value order analysis
-Revenue forecasting
-Future sales projection
-Product demand analysis
-Product demand forecasting
-Customer repeat purchase prediction
-Customer purchase propensity analysis
-Customer propensity scoring
-Customer purchase recency analysis
-Customer purchase frequency classification
-Customer purchase value analysis
-Customer basket behavior analysis
-Customer spending classification
-Purchase value scoring
-Customer purchase value ranking
-Customer value segmentation
-High-value customer identification
-Customer revenue contribution
-Customer revenue ranking
-Customer revenue concentration
-Cumulative revenue contribution
-Top customer analysis
-Payment status analysis
-Payment method analysis
-Customer payment behavior
-Customer payment risk analysis
-Data quality and integrity analysis
-Customer Revenue Pareto Analysis
-80/20 Revenue Concentration Analysis
-50% and 80% Revenue Threshold Analysis
-Top 10%, 20%, and 30% Customer Revenue Analysis
-Customer Revenue Decile Analysis
-Customer Revenue Distribution Analysis
-Customer Revenue Quartile Analysis
-Customer Revenue Quintile Analysis
-Customer Value Distribution Analysis
-Business intelligence
-Business reporting
-📈 Day 58 — Customer Revenue Pareto & 80/20 Analysis
+- Database design
+- SQL fundamentals
+- Data manipulation
+- SQL querying
+- JOIN operations
+- Aggregation
+- Advanced SQL
+- Query optimization
+- Customer analytics
+- Product analytics
+- Revenue analysis
+- Business KPI analysis
+- Sales performance KPI analysis
+- Sales growth analysis
+- Month-over-month comparison
+- Customer segmentation
+- RFM customer segmentation
+- Customer retention and churn analysis
+- Cohort and lifecycle analysis
+- Repeat purchase analysis
+- Purchase frequency analysis
+- Customer Lifetime Value analysis
+- Product purchase behavior
+- Product affinity and cross-selling
+- Customer-product analysis
+- Customer purchase journey analysis
+- Basket size analysis
+- Order value analysis
+- High-value order analysis
+- Revenue forecasting
+- Future sales projection
+- Product demand analysis
+- Product demand forecasting
+- Customer repeat purchase prediction
+- Customer purchase propensity analysis
+- Customer propensity scoring
+- Customer purchase recency analysis
+- Customer purchase frequency classification
+- Customer purchase value analysis
+- Customer basket behavior analysis
+- Customer spending classification
+- Purchase value scoring
+- Customer purchase value ranking
+- Customer value segmentation
+- High-value customer identification
+- Customer revenue contribution
+- Customer revenue ranking
+- Customer revenue concentration
+- Cumulative revenue contribution
+- Top customer analysis
+- Payment status analysis
+- Payment method analysis
+- Customer payment behavior
+- Customer payment risk analysis
+- Data quality and integrity analysis
+- Customer Revenue Pareto Analysis
+- 80/20 Revenue Concentration Analysis
+- 50% and 80% Revenue Threshold Analysis
+- Top 10%, 20%, and 30% Customer Revenue Analysis
+- Customer Revenue Decile Analysis
+- Customer Revenue Distribution Analysis
+- Customer Revenue Quartile Analysis
+- Customer Revenue Quintile Analysis
+- Customer Value Distribution Analysis
+- Customer Revenue ABC Analysis
+- ABC Customer Classification
+- Revenue Contribution by ABC Class
+- Cumulative Revenue Contribution by ABC Class
+- Class A Customer Analysis
+- Class B Customer Analysis
+- Class C Customer Analysis
+- Customer Revenue Prioritization
+- Customer Portfolio Classification
+- Business intelligence
+- Business reporting
+
+---
+
+# 📈 Day 58 — Customer Revenue Pareto & 80/20 Analysis
 
 Day 58 focused on customer revenue Pareto analysis and 80/20 revenue concentration using MySQL.
 
 The analysis extends customer revenue concentration work by measuring how many customers contribute to major portions of total revenue.
 
-🎯 Day 58 Objective
+## 🎯 Day 58 Objective
 
 The objective was to analyze customer revenue concentration using the Pareto principle and determine how revenue is distributed across customer ranks.
 
 The analysis answers questions such as:
 
-How many customers generate 50% of total revenue?
-How many customers generate 80% of total revenue?
-What percentage of customers generate 80% of revenue?
-How much revenue is generated by the top 10%, 20%, and 30% of customers?
-Which customers belong to major revenue concentration groups?
-How much revenue belongs to the long-tail customer group?
-🔍 Day 58 Key Analyses
-Total Revenue per Customer
-Customer Revenue Ranking
-Customer Revenue Contribution Percentage
-Cumulative Revenue Percentage
-Customers Required to Reach 50% Revenue
-Customers Required to Reach 80% Revenue
-Percentage of Customers Generating 80% Revenue
-Top 10% Customer Revenue Contribution
-Top 20% Customer Revenue Contribution
-Top 30% Customer Revenue Contribution
-Pareto Customer Classification
-Revenue Above and Below the 80% Threshold
-Pareto Revenue Concentration Summary
-Final Day 58 Pareto Analysis
-🧠 Day 58 SQL Techniques
+- How many customers generate 50% of total revenue?
+- How many customers generate 80% of total revenue?
+- What percentage of customers generate 80% of revenue?
+- How much revenue is generated by the top 10%, 20%, and 30% of customers?
+- Which customers belong to major revenue concentration groups?
+- How much revenue belongs to the long-tail customer group?
+
+## 🔍 Day 58 Key Analyses
+
+- Total Revenue per Customer
+- Customer Revenue Ranking
+- Customer Revenue Contribution Percentage
+- Cumulative Revenue Percentage
+- Customers Required to Reach 50% Revenue
+- Customers Required to Reach 80% Revenue
+- Percentage of Customers Generating 80% Revenue
+- Top 10% Customer Revenue Contribution
+- Top 20% Customer Revenue Contribution
+- Top 30% Customer Revenue Contribution
+- Pareto Customer Classification
+- Revenue Above and Below the 80% Threshold
+- Pareto Revenue Concentration Summary
+- Final Day 58 Pareto Analysis
+
+## 🧠 Day 58 SQL Techniques
+
+```text
 SUM()
 COUNT()
 ROUND()
@@ -832,9 +851,9 @@ The analysis measures:
 
 Customer count
 Revenue
-Average revenue
 Orders
 Units purchased
+Average revenue
 Revenue contribution
 
 This provides visibility into the lower-value portion of the customer base.
@@ -920,6 +939,289 @@ Customer Revenue Quintile & Value Distribution Analysis completed successfully. 
 
 61 Days of continuous SQL business analysis completed. 🚀
 
+📊 Day 62 — Customer Revenue ABC Analysis
+
+Day 62 focused on Customer Revenue ABC Analysis using MySQL.
+
+The analysis extends the customer revenue segmentation and distribution work from Days 56–61 by classifying customers into A, B, and C revenue groups based on their contribution to total customer revenue.
+
+ABC analysis provides a structured way to prioritize customers according to their historical revenue contribution.
+
+🎯 Day 62 Objective
+
+The objective of Day 62 was to analyze customer revenue contribution and classify customers into ABC revenue groups.
+
+The analysis answers questions such as:
+
+Which customers generate the highest revenue?
+How much revenue does each customer contribute?
+What percentage of total revenue is generated by each customer?
+What is the cumulative revenue contribution of customers?
+Which customers belong to Class A?
+Which customers belong to Class B?
+Which customers belong to Class C?
+How much total revenue is generated by each ABC class?
+What percentage of customers belong to each ABC class?
+What percentage of total revenue is contributed by each ABC class?
+How concentrated is customer revenue across ABC groups?
+Which customer groups should receive higher business attention?
+🔍 Day 62 Key Analyses
+Total Revenue per Customer
+Customer Revenue Ranking
+Customer Revenue Contribution Percentage
+Cumulative Revenue
+Cumulative Revenue Contribution Percentage
+ABC Customer Classification
+Class A Customer Identification
+Class B Customer Identification
+Class C Customer Identification
+Customer Count by ABC Class
+Revenue by ABC Class
+Revenue Contribution by ABC Class
+Average Revenue by ABC Class
+Order Volume by ABC Class
+Units Purchased by ABC Class
+Customer Revenue Prioritization
+Customer Portfolio Classification
+Final ABC Revenue Analysis
+🧠 Day 62 SQL Techniques
+SELECT
+SUM()
+COUNT()
+AVG()
+ROUND()
+CASE
+JOIN
+CTEs
+Window Functions
+ROW_NUMBER()
+SUM() OVER()
+Cumulative calculations
+Revenue ranking
+Revenue contribution calculations
+Percentage calculations
+ABC classification
+Customer segmentation
+Revenue concentration analysis
+📈 Customer Revenue Ranking
+
+Customers were ranked according to their total revenue contribution.
+
+ROW_NUMBER() OVER (
+    ORDER BY total_revenue DESC
+)
+
+This creates a customer revenue ranking from the highest-revenue customer to the lowest-revenue customer.
+
+📊 Revenue Contribution
+
+Each customer's revenue contribution was calculated using:
+
+Customer Revenue Contribution %
+=
+Customer Revenue / Total Customer Revenue × 100
+
+This measures the percentage of total customer revenue generated by each customer.
+
+📈 Cumulative Revenue Contribution
+
+Cumulative revenue contribution was calculated by ordering customers from highest revenue to lowest revenue.
+
+SUM(total_revenue) OVER (
+    ORDER BY total_revenue DESC
+    ROWS BETWEEN UNBOUNDED PRECEDING
+    AND CURRENT ROW
+)
+
+The cumulative revenue percentage helps determine where customers fall within the ABC classification.
+
+🏷️ ABC Customer Classification
+
+ABC analysis divides customers into revenue-based priority groups.
+
+The classification is based on cumulative revenue contribution.
+
+ABC Class	Revenue Position	Customer Group
+A	Highest cumulative revenue range	High-value customers
+B	Middle cumulative revenue range	Medium-value customers
+C	Remaining cumulative revenue range	Lower-value customers
+
+The exact class boundaries are defined by the SQL analysis methodology.
+
+ABC analysis is used to identify customers that contribute different levels of historical revenue.
+
+🅰️ Class A Customers
+
+Class A represents customers located in the highest revenue-contribution portion of the customer base.
+
+The analysis measures:
+
+Number of Class A customers
+Class A revenue
+Class A revenue contribution
+Average Class A customer revenue
+Orders generated by Class A customers
+Units purchased by Class A customers
+
+Class A customers can be used for focused customer-value analysis and revenue concentration monitoring.
+
+🅱️ Class B Customers
+
+Class B represents customers in the middle revenue-contribution group.
+
+The analysis measures:
+
+Number of Class B customers
+Class B revenue
+Class B revenue contribution
+Average Class B customer revenue
+Orders generated by Class B customers
+Units purchased by Class B customers
+
+Class B customers represent the middle portion of the customer revenue portfolio.
+
+🅲️ Class C Customers
+
+Class C represents customers in the lower revenue-contribution group.
+
+The analysis measures:
+
+Number of Class C customers
+Class C revenue
+Class C revenue contribution
+Average Class C customer revenue
+Orders generated by Class C customers
+Units purchased by Class C customers
+
+This provides visibility into the long-tail portion of the customer base.
+
+💰 Revenue Contribution by ABC Class
+
+The analysis compares total revenue generated by:
+
+Class A
+Class B
+Class C
+
+For each class, the analysis can calculate:
+
+Customer count
+Customer percentage
+Total revenue
+Revenue contribution percentage
+Average customer revenue
+Total orders
+Average orders
+Total units
+Average units
+
+This provides a structured view of customer revenue concentration.
+
+📊 ABC Revenue Distribution
+
+The analysis evaluates how customer revenue is distributed across the three ABC classes.
+
+Customer Sales Data
+        ↓
+Customer Revenue
+        ↓
+Revenue Ranking
+        ↓
+Revenue Contribution %
+        ↓
+Cumulative Revenue %
+        ↓
+ABC Classification
+        ↓
+Class A / Class B / Class C
+        ↓
+Revenue Distribution
+        ↓
+Customer Prioritization
+👥 Customer Portfolio Prioritization
+
+ABC analysis provides a simple framework for grouping customers according to their historical revenue contribution.
+
+The classification can support:
+
+Customer prioritization
+Revenue concentration monitoring
+Customer relationship management
+Account management
+Customer retention planning
+Revenue planning
+Sales strategy
+Customer portfolio analysis
+Business reporting
+📊 ABC Analysis Summary
+
+The final Day 62 analysis summarizes:
+
+Total customers
+Total customer revenue
+Class A customer count
+Class B customer count
+Class C customer count
+Class A revenue
+Class B revenue
+Class C revenue
+Class A revenue contribution
+Class B revenue contribution
+Class C revenue contribution
+Customer percentage by class
+Average revenue by class
+💼 Business Applications
+
+Customer Revenue ABC Analysis can support:
+
+High-value customer identification
+Customer prioritization
+Revenue concentration monitoring
+Customer relationship management
+Customer retention planning
+Account management
+Revenue risk monitoring
+Sales planning
+Customer portfolio management
+Revenue performance analysis
+Business reporting
+Management-level analysis
+Customer segmentation
+⚠️ Methodology Limitation
+
+The Day 62 ABC analysis describes historical customer revenue distribution in the available sales dataset.
+
+The analysis does not claim that:
+
+Customer revenue will remain unchanged.
+Customer behavior will remain unchanged.
+ABC classification predicts future customer behavior.
+Class A customers will always remain Class A.
+The classification represents machine-learning predictions.
+Revenue contribution is statistically guaranteed.
+ABC boundaries represent universal business standards.
+
+ABC analysis is used as a business-analysis framework for understanding and prioritizing historical customer revenue contribution.
+
+📁 Day 62 Project Files
+SQL/
+└── customer_revenue_abc_analysis.sql
+
+Report/
+└── Day62_Customer_Revenue_ABC_Analysis.md
+
+Screenshots/
+└── Day 62/
+🏆 Day 62 Achievement
+
+Customer Revenue ABC Analysis completed successfully. ✅
+
+62 Days of continuous SQL business analysis completed. 🚀
+
+Customer Revenue Ranking, Contribution Analysis, Cumulative Revenue Analysis, and ABC Customer Classification completed successfully. 🎯📊
+
+62/62 Milestone Achieved. 🔥🏆
+
 📅 Daily Project Organization
 Day	Main Work
 Day 1	Database Fundamentals
@@ -983,6 +1285,7 @@ Day 58	Customer Revenue Pareto & 80/20 Analysis
 Day 59	Customer Revenue Decile & Revenue Distribution Analysis
 Day 60	Customer Revenue Quartile & Value Distribution Analysis
 Day 61	Customer Revenue Quintile & Value Distribution Analysis
+Day 62	Customer Revenue ABC Analysis
 📊 Business Analysis Journey
 Raw Sales Data
       ↓
@@ -1041,6 +1344,8 @@ Customer Revenue Decile & Revenue Distribution
 Customer Revenue Quartile & Value Distribution
       ↓
 Customer Revenue Quintile & Value Distribution
+      ↓
+Customer Revenue ABC Analysis
       ↓
 Business Insights
 📁 Project Structure
@@ -1103,7 +1408,8 @@ Sales_Data_Analysis_SQL/
 │   ├── customer_revenue_pareto_analysis.sql
 │   ├── customer_revenue_decile_analysis.sql
 │   ├── customer_revenue_quartile_analysis.sql
-│   └── customer_revenue_quintile_analysis.sql
+│   ├── customer_revenue_quintile_analysis.sql
+│   └── customer_revenue_abc_analysis.sql
 │
 ├── Screenshots/
 │   ├── Day 1/
@@ -1113,7 +1419,8 @@ Sales_Data_Analysis_SQL/
 │   ├── Day 58/
 │   ├── Day 59/
 │   ├── Day 60/
-│   └── Day 61/
+│   ├── Day 61/
+│   └── Day 62/
 │
 ├── Presentation/
 │
@@ -1125,24 +1432,25 @@ Sales_Data_Analysis_SQL/
 │   ├── Day58_Customer_Revenue_Pareto_Analysis.md
 │   ├── Day59_Customer_Revenue_Decile_Analysis.md
 │   ├── Day60_Customer_Revenue_Quartile_Analysis.md
-│   └── Day61_Customer_Revenue_Quintile_Analysis.md
+│   ├── Day61_Customer_Revenue_Quintile_Analysis.md
+│   └── Day62_Customer_Revenue_ABC_Analysis.md
 │
 └── README.md
 📌 Project Status
 
 Current Status: 🟢 Active
 
-Completed: 61 Days
+Completed: 62 Days
 
 Primary Focus: SQL Data Analysis & Business Intelligence
 
-The project has completed 61 days of structured SQL learning and business analysis.
+The project has completed 62 days of structured SQL learning and business analysis.
 
-The project now covers database design, SQL fundamentals, advanced SQL, query optimization, customer analytics, product analytics, customer segmentation, RFM analysis, customer retention, churn analysis, cohort analysis, customer lifecycle analysis, repeat purchase analysis, purchase frequency analysis, payment analysis, data quality analysis, sales KPI analysis, sales growth analysis, order value analysis, basket analysis, revenue forecasting, product demand forecasting, customer repeat-purchase prediction, customer purchase propensity analysis, customer purchase value analysis, customer value segmentation, customer revenue ranking, customer revenue concentration, Pareto analysis, 80/20 revenue distribution analysis, customer revenue decile analysis, customer revenue distribution analysis, customer revenue quartile analysis, customer revenue quintile analysis, customer value distribution analysis, and business reporting.
+The project now covers database design, SQL fundamentals, advanced SQL, query optimization, customer analytics, product analytics, customer segmentation, RFM analysis, customer retention, churn analysis, cohort analysis, customer lifecycle analysis, repeat purchase analysis, purchase frequency analysis, payment analysis, data quality analysis, sales KPI analysis, sales growth analysis, order value analysis, basket analysis, revenue forecasting, product demand forecasting, customer repeat-purchase prediction, customer purchase propensity analysis, customer purchase value analysis, customer value segmentation, customer revenue ranking, customer revenue concentration, Pareto analysis, 80/20 revenue distribution analysis, customer revenue decile analysis, customer revenue distribution analysis, customer revenue quartile analysis, customer revenue quintile analysis, customer value distribution analysis, and customer revenue ABC analysis.
 
-🚀 61-Day Portfolio Progress
+🚀 62-Day Portfolio Progress
 
-61 Days Completed 🚀
+62 Days Completed 🚀
 
 SQL Fundamentals
         →
@@ -1200,6 +1508,8 @@ Customer Revenue Quartile & Value Distribution Analysis
         →
 Customer Revenue Quintile & Value Distribution Analysis
         →
+Customer Revenue ABC Analysis
+        →
 Business Insights
 
 The project demonstrates a broad practical SQL workflow suitable for showcasing Data Analyst, Business Analyst, SQL Developer, Reporting Analyst, and MIS Analyst portfolio skills.
@@ -1227,7 +1537,7 @@ Payment risk monitoring dashboards
 Data quality monitoring dashboards
 Business performance monitoring
 
-Next Milestone: Day 62 🔥
+Next Milestone: Day 63 🔥
 
 ⭐ Project Goal
 
@@ -1254,14 +1564,14 @@ Predict
 Generate Insights
    →
 Recommend Business Actions
-🎉 61-Day Milestone
+🎉 62-Day Milestone
 
-Day 61 is completed successfully. ✅
+Day 62 is completed successfully. ✅
 
-61 Days of continuous SQL business analysis completed. 🚀
+62 Days of continuous SQL business analysis completed. 🚀
 
-Customer Revenue Quintile & Value Distribution Analysis completed. 🎯📊
+Customer Revenue ABC Analysis completed. 🎯📊
 
-61/61 Milestone Achieved. 🔥🏆
+62/62 Milestone Achieved. 🔥🏆
 
-Next target: Day 62. 🚀
+Next target: Day 63. 🚀
