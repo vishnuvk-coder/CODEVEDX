@@ -1,6 +1,6 @@
 # 📊 Sales Data Analysis Using SQL
 
-A hands-on SQL portfolio project focused on **relational database design, advanced SQL analytics, query optimization, customer analytics, product analytics, business intelligence, customer retention, cohort analysis, customer lifecycle analysis, repeat purchase analysis, purchase frequency analysis, payment analysis, data quality analysis, sales KPI analysis, sales growth analysis, order value analysis, basket analysis, revenue forecasting, product demand forecasting, customer repeat purchase prediction, customer purchase propensity analysis, customer purchase value analysis, basket-size classification, spending classification, customer value segmentation, customer revenue ranking, customer revenue concentration analysis, Pareto analysis, 80/20 revenue analysis, customer revenue decile analysis, customer revenue quartile analysis, customer revenue quintile analysis, customer revenue ABC analysis, ABC segment performance analysis, ABC segment comparison, and ABC segment business priority analysis using MySQL.**
+A hands-on SQL portfolio project focused on **relational database design, advanced SQL analytics, query optimization, customer analytics, product analytics, business intelligence, customer retention, cohort analysis, customer lifecycle analysis, repeat purchase analysis, purchase frequency analysis, payment analysis, data quality analysis, sales KPI analysis, sales growth analysis, order value analysis, basket analysis, revenue forecasting, product demand forecasting, customer repeat purchase prediction, customer purchase propensity analysis, customer purchase value analysis, basket-size classification, spending classification, customer value segmentation, customer revenue ranking, customer revenue concentration analysis, Pareto analysis, 80/20 revenue analysis, customer revenue decile analysis, customer revenue quartile analysis, customer revenue quintile analysis, customer revenue ABC analysis, ABC segment performance analysis, ABC segment comparison, ABC segment business priority analysis, payment performance analysis, payment status analysis, payment method analysis, payment trend analysis, and payment risk analysis using MySQL.**
 
 This project simulates a real-world sales management system and demonstrates practical SQL skills relevant to **Data Analyst, Business Analyst, SQL Developer, Reporting Analyst, and MIS Analyst roles.**
 
@@ -68,6 +68,9 @@ The project covers:
 * Payment method analysis
 * Customer payment behavior
 * Customer payment risk analysis
+* Payment transaction analysis
+* Payment trend analysis
+* Payment business risk analysis
 * Data quality and integrity analysis
 * Sales KPI analysis
 * Sales growth analysis
@@ -110,6 +113,18 @@ The project covers:
 * Highest Order Activity Segment
 * Highest Unit Activity Segment
 * ABC Segment Business Priority Analysis
+* Payment Performance Analysis
+* Payment Status Distribution
+* Payment Method Distribution
+* Payment Transaction Analysis
+* Payment Status Percentage
+* Payment Method Percentage
+* Payment Activity by Date
+* Payment Activity by Month
+* Successful Payment Analysis
+* Unsuccessful Payment Analysis
+* Payment Status and Method Cross-Analysis
+* Payment Business Risk Analysis
 * Business intelligence
 * Business reporting
 
@@ -407,7 +422,7 @@ Customer Revenue ABC Analysis completed successfully. ✅
 
 Day 63 focused on **Customer Revenue ABC Segment Performance Analysis** using MySQL.
 
-The analysis extends the Day 62 Customer Revenue ABC Analysis by evaluating the business performance of **A, B, and C customer revenue segments**.
+The analysis extends the Day 62 Customer Revenue ABC Analysis by evaluating **A, B, and C customer revenue segments**.
 
 ## 🎯 Day 63 Objective
 
@@ -829,74 +844,212 @@ ABC Segment Comparison and Business Priority Analysis completed successfully. �
 
 ---
 
+# 📊 Day 65 — Payment Performance & Business Analysis
+
+Day 65 focused on **Payment Performance & Business Analysis** using MySQL.
+
+The analysis evaluates payment transaction behavior, payment status distribution, payment method usage, order-level payment activity, payment trends, and business risk associated with unsuccessful payment activity.
+
+## 🎯 Day 65 Objective
+
+The objective was to understand how payments are distributed across different statuses and payment methods and identify payment-related business risks.
+
+## 🔍 Day 65 Key Analyses
+
+* Payment Status Distribution
+* Payment Method Distribution
+* Total Payment Transactions
+* Unique Orders with Payments
+* Payment Transactions by Method
+* Orders by Payment Status
+* Payment Status Percentage
+* Payment Method Percentage
+* Payment Activity by Date
+* Payment Activity by Month
+* Successful Payment Orders
+* Unsuccessful Payment Orders
+* Payment Status × Payment Method Analysis
+* Payment Business Risk Analysis
+* Final Payment Performance Summary
+
+## 🧠 Day 65 SQL Techniques Used
+
+* SELECT
+* COUNT()
+* COUNT(DISTINCT)
+* GROUP BY
+* ORDER BY
+* ROUND()
+* NULLIF()
+* CASE
+* Window Functions
+* DATE_FORMAT()
+* Payment Status Analysis
+* Payment Method Analysis
+* Order-Level Payment Analysis
+* Business Risk Classification
+* KPI Analysis
+
+## 💳 Day 65 Payment Status Analysis
+
+Payment statuses are analyzed to understand the distribution of payment activity across different transaction outcomes.
+
+The analysis separates successful, pending, failed, cancelled, and other available payment statuses based on the values present in the database.
+
+## 💰 Day 65 Payment Method Analysis
+
+Payment methods are compared using:
+
+* Transaction count
+* Unique order count
+* Percentage contribution
+
+This helps understand customer payment preferences and payment-channel usage.
+
+## 📈 Day 65 Payment Trend Analysis
+
+Payment activity is analyzed by:
+
+* Payment date
+* Payment month
+* Number of payment transactions
+* Number of unique orders
+
+This helps identify changes in payment activity over time.
+
+## ⚠️ Day 65 Business Risk Analysis
+
+Payment statuses are classified into business-risk categories:
+
+| Payment Status Type | Business Priority |
+| ------------------- | ----------------- |
+| Successful          | Low Risk          |
+| Pending             | Medium Risk       |
+| Failed              | High Risk         |
+| Cancelled           | High Risk         |
+| Other / Unknown     | Review Required   |
+
+The exact classification depends on the payment status values available in the dataset.
+
+## 💼 Day 65 Business Applications
+
+Payment performance analysis can support:
+
+* Payment monitoring
+* Payment failure identification
+* Payment method optimization
+* Transaction monitoring
+* Order payment tracking
+* Revenue collection monitoring
+* Payment risk management
+* Customer payment behavior analysis
+* Business reporting
+* Operational decision-making
+
+## ⚠️ Day 65 Methodology Limitation
+
+The analysis is based on the payment transactions available in the sales database.
+
+The `payments` table does not contain a direct payment amount field, so this analysis focuses primarily on payment transactions, orders, statuses, methods, and payment activity.
+
+Payment status classifications are business-analysis rules and should be interpreted according to the actual status values present in the dataset.
+
+The analysis does not represent a machine-learning prediction.
+
+## 📁 Day 65 Project Files
+
+```text
+SQL/
+└── payment_performance_business_analysis.sql
+
+Report/
+└── Day65_Payment_Performance_Business_Analysis.md
+
+Screenshots/
+└── Day 65/
+```
+
+### 🏆 Day 65 Achievement
+
+Payment Performance & Business Analysis completed successfully. ✅
+
+65 Days of continuous SQL business analysis completed. 🚀
+
+Payment transaction, payment method, payment status, payment trend, and payment risk analysis completed successfully. 💳📊
+
+65/65 Milestone Achieved. 🔥🏆
+
+---
+
 # 📅 Daily Project Organization
 
-| Day        | Main Work                                                                |
-| ---------- | ------------------------------------------------------------------------ |
-| Day 1      | Database Fundamentals                                                    |
-| Day 2      | SQL Table & Data Operations                                              |
-| Day 3      | Basic SQL Queries                                                        |
-| Day 4      | SQL Filtering & Analysis                                                 |
-| Day 5      | SQL Aggregation                                                          |
-| Day 6      | JOIN Operations                                                          |
-| Day 7      | SQL Fundamentals Review                                                  |
-| Day 8      | Intermediate SQL                                                         |
-| Day 9      | Stored Procedures                                                        |
-| Day 10     | Advanced SQL                                                             |
-| Day 11     | Views                                                                    |
-| Day 12     | Triggers                                                                 |
-| Day 13     | Indexes                                                                  |
-| Day 14     | Advanced Business Analysis                                               |
-| Day 15     | Window Functions                                                         |
-| Day 16     | CTEs                                                                     |
-| Day 17     | Query Optimization & Business Analysis                                   |
-| Day 18     | Customer Analytics                                                       |
-| Day 19     | Customer Behavior Analysis                                               |
-| Day 20     | Customer Retention Analysis                                              |
-| Day 21     | Customer Lifetime Value                                                  |
-| Day 22     | RFM Customer Segmentation                                                |
-| Day 23     | Sales Trend Analysis                                                     |
-| Day 24     | Product Performance Analysis                                             |
-| Day 25     | Sales Profitability Analysis                                             |
-| Day 26     | Customer Revenue Contribution                                            |
-| Day 27     | Customer Churn Analysis                                                  |
-| Day 28     | Customer Cohort & Retention                                              |
-| Day 29     | Customer Purchase Frequency                                              |
-| Day 30     | Customer Segmentation & Revenue                                          |
-| Day 31     | Product Purchase Behavior                                                |
-| Day 32     | Product Customer Affinity                                                |
-| Day 33     | Customer-Product Purchase Analysis                                       |
-| Day 34     | Cross-Selling & Product Recommendation                                   |
-| Day 35     | Customer Purchase Journey & Basket                                       |
-| Day 36     | Customer Lifetime Value & Revenue Contribution                           |
-| Day 37     | Customer RFM Segmentation                                                |
-| Day 38     | Customer Segment Performance                                             |
-| Day 39     | Customer Segment Retention & Churn Risk                                  |
-| Day 40     | Customer Cohort & Retention Trend                                        |
-| Day 41     | Customer Lifecycle & Repeat Purchase                                     |
-| Day 42     | Customer Purchase Frequency & Repeat Behavior                            |
-| Day 43     | Payment Status & Payment Method                                          |
-| Day 44     | Customer Payment Behavior                                                |
-| Day 45     | Customer Payment Risk & Pending Payments                                 |
-| Day 46     | Data Quality & Integrity                                                 |
-| Day 47     | Sales Performance KPI                                                    |
-| Day 48     | Sales Growth & Month-over-Month                                          |
-| Day 49     | Sales Order Value & Basket                                               |
-| Day 50     | Sales Revenue Forecasting                                                |
-| Day 51     | Product Demand & Sales Forecasting                                       |
-| Day 52     | Customer Repeat Purchase Prediction & Analysis                           |
-| Day 53     | Customer Purchase Propensity Analysis                                    |
-| Day 54     | Customer Purchase Value & Basket Analysis                                |
-| Day 55     | Customer Purchase Value Segmentation Analysis                            |
-| Day 56     | Customer Revenue Contribution & Concentration Analysis                   |
-| Day 57     | Customer Revenue Concentration & Analysis                                |
-| Day 58     | Customer Revenue Pareto & 80/20 Analysis                                 |
-| Day 59     | Customer Revenue Decile & Revenue Distribution Analysis                  |
-| Day 60     | Customer Revenue Quartile & Value Distribution Analysis                  |
-| Day 61     | Customer Revenue Quintile & Value Distribution Analysis                  |
-| Day 62     | Customer Revenue ABC Analysis                                            |
-| Day 63     | Customer Revenue ABC Segment Performance Analysis                        |
-| **Day 64** | **Customer Revenue ABC Segment Comparison & Business Priority Analysis** |
+| Day        | Main Work                                                            |
+| ---------- | -------------------------------------------------------------------- |
+| Day 1      | Database Fundamentals                                                |
+| Day 2      | SQL Table & Data Operations                                          |
+| Day 3      | Basic SQL Queries                                                    |
+| Day 4      | SQL Filtering & Analysis                                             |
+| Day 5      | SQL Aggregation                                                      |
+| Day 6      | JOIN Operations                                                      |
+| Day 7      | SQL Fundamentals Review                                              |
+| Day 8      | Intermediate SQL                                                     |
+| Day 9      | Stored Procedures                                                    |
+| Day 10     | Advanced SQL                                                         |
+| Day 11     | Views                                                                |
+| Day 12     | Triggers                                                             |
+| Day 13     | Indexes                                                              |
+| Day 14     | Advanced Business Analysis                                           |
+| Day 15     | Window Functions                                                     |
+| Day 16     | CTEs                                                                 |
+| Day 17     | Query Optimization & Business Analysis                               |
+| Day 18     | Customer Analytics                                                   |
+| Day 19     | Customer Behavior Analysis                                           |
+| Day 20     | Customer Retention Analysis                                          |
+| Day 21     | Customer Lifetime Value                                              |
+| Day 22     | RFM Customer Segmentation                                            |
+| Day 23     | Sales Trend Analysis                                                 |
+| Day 24     | Product Performance Analysis                                         |
+| Day 25     | Sales Profitability Analysis                                         |
+| Day 26     | Customer Revenue Contribution                                        |
+| Day 27     | Customer Churn Analysis                                              |
+| Day 28     | Customer Cohort & Retention                                          |
+| Day 29     | Customer Purchase Frequency                                          |
+| Day 30     | Customer Segmentation & Revenue                                      |
+| Day 31     | Product Purchase Behavior                                            |
+| Day 32     | Product Customer Affinity                                            |
+| Day 33     | Customer-Product Purchase Analysis                                   |
+| Day 34     | Cross-Selling & Product Recommendation                               |
+| Day 35     | Customer Purchase Journey & Basket                                   |
+| Day 36     | Customer Lifetime Value & Revenue Contribution                       |
+| Day 37     | Customer RFM Segmentation                                            |
+| Day 38     | Customer Segment Performance                                         |
+| Day 39     | Customer Segment Retention & Churn Risk                              |
+| Day 40     | Customer Cohort & Retention Trend                                    |
+| Day 41     | Customer Lifecycle & Repeat Purchase                                 |
+| Day 42     | Customer Purchase Frequency & Repeat Behavior                        |
+| Day 43     | Payment Status & Payment Method                                      |
+| Day 44     | Customer Payment Behavior                                            |
+| Day 45     | Customer Payment Risk & Pending Payments                             |
+| Day 46     | Data Quality & Integrity                                             |
+| Day 47     | Sales Performance KPI                                                |
+| Day 48     | Sales Growth & Month-over-Month                                      |
+| Day 49     | Sales Order Value & Basket                                           |
+| Day 50     | Sales Revenue Forecasting                                            |
+| Day 51     | Product Demand & Sales Forecasting                                   |
+| Day 52     | Customer Repeat Purchase Prediction & Analysis                       |
+| Day 53     | Customer Purchase Propensity Analysis                                |
+| Day 54     | Customer Purchase Value & Basket Analysis                            |
+| Day 55     | Customer Purchase Value Segmentation Analysis                        |
+| Day 56     | Customer Revenue Contribution & Concentration Analysis               |
+| Day 57     | Customer Revenue Concentration & Analysis                            |
+| Day 58     | Customer Revenue Pareto & 80/20 Analysis                             |
+| Day 59     | Customer Revenue Decile & Revenue Distribution Analysis              |
+| Day 60     | Customer Revenue Quartile & Value Distribution Analysis              |
+| Day 61     | Customer Revenue Quintile & Value Distribution Analysis              |
+| Day 62     | Customer Revenue ABC Analysis                                        |
+| Day 63     | Customer Revenue ABC Segment Performance Analysis                    |
+| Day 64     | Customer Revenue ABC Segment Comparison & Business Priority Analysis |
+| **Day 65** | **Payment Performance & Business Analysis**                          |
 
 ---
 
@@ -969,6 +1122,10 @@ ABC Segment Comparison
       ↓
 Business Priority Analysis
       ↓
+Payment Performance Analysis
+      ↓
+Payment Risk Analysis
+      ↓
 Business Insights
 ```
 
@@ -978,6 +1135,7 @@ Business Insights
 
 ```text
 Sales_Data_Analysis_SQL/
+
 │
 ├── Database_Design/
 │   └── sales_analysis.mwb
@@ -1038,20 +1196,21 @@ Sales_Data_Analysis_SQL/
 │   ├── customer_revenue_quintile_analysis.sql
 │   ├── customer_revenue_abc_analysis.sql
 │   ├── customer_revenue_abc_segment_performance.sql
-│   └── customer_revenue_abc_segment_comparison.sql
+│   ├── customer_revenue_abc_segment_comparison.sql
+│   └── payment_performance_business_analysis.sql
 │
 ├── Screenshots/
 │   ├── Day 1/
 │   ├── Day 2/
 │   ├── ...
-│   ├── Day 57/
 │   ├── Day 58/
 │   ├── Day 59/
 │   ├── Day 60/
 │   ├── Day 61/
 │   ├── Day 62/
 │   ├── Day 63/
-│   └── Day 64/
+│   ├── Day 64/
+│   └── Day 65/
 │
 ├── Presentation/
 │
@@ -1066,7 +1225,8 @@ Sales_Data_Analysis_SQL/
 │   ├── Day61_Customer_Revenue_Quintile_Analysis.md
 │   ├── Day62_Customer_Revenue_ABC_Analysis.md
 │   ├── Day63_Customer_Revenue_ABC_Segment_Performance.md
-│   └── Day64_Customer_Revenue_ABC_Segment_Comparison.md
+│   ├── Day64_Customer_Revenue_ABC_Segment_Comparison.md
+│   └── Day65_Payment_Performance_Business_Analysis.md
 │
 └── README.md
 ```
@@ -1077,19 +1237,19 @@ Sales_Data_Analysis_SQL/
 
 **Current Status: 🟢 Active**
 
-**Completed: 64 Days**
+**Completed: 65 Days**
 
 **Primary Focus: SQL Data Analysis & Business Intelligence**
 
-The project has completed 64 days of structured SQL learning and business analysis.
+The project has completed 65 days of structured SQL learning and business analysis.
 
-The project now covers database design, SQL fundamentals, advanced SQL, query optimization, customer analytics, product analytics, customer segmentation, RFM analysis, customer retention, churn analysis, cohort analysis, customer lifecycle analysis, repeat purchase analysis, purchase frequency analysis, payment analysis, data quality analysis, sales KPI analysis, sales growth analysis, order value analysis, basket analysis, revenue forecasting, product demand forecasting, customer repeat-purchase prediction, customer purchase propensity analysis, customer purchase value analysis, customer value segmentation, customer revenue ranking, customer revenue concentration, Pareto analysis, 80/20 revenue distribution analysis, customer revenue decile analysis, customer revenue distribution analysis, customer revenue quartile analysis, customer revenue quintile analysis, customer value distribution analysis, customer revenue ABC analysis, ABC segment performance analysis, ABC segment comparison, and ABC segment business priority analysis.
+The project now covers database design, SQL fundamentals, advanced SQL, query optimization, customer analytics, product analytics, customer segmentation, RFM analysis, customer retention, churn analysis, cohort analysis, customer lifecycle analysis, repeat purchase analysis, purchase frequency analysis, payment analysis, payment performance analysis, payment status analysis, payment method analysis, payment trend analysis, payment risk analysis, data quality analysis, sales KPI analysis, sales growth analysis, order value analysis, basket analysis, revenue forecasting, product demand forecasting, customer repeat-purchase prediction, customer purchase propensity analysis, customer purchase value analysis, customer value segmentation, customer revenue ranking, customer revenue concentration, Pareto analysis, 80/20 revenue distribution analysis, customer revenue decile analysis, customer revenue distribution analysis, customer revenue quartile analysis, customer revenue quintile analysis, customer value distribution analysis, customer revenue ABC analysis, ABC segment performance analysis, ABC segment comparison, and ABC segment business priority analysis.
 
 ---
 
-# 🚀 64-Day Portfolio Progress
+# 🚀 65-Day Portfolio Progress
 
-64 Days Completed 🚀
+**65 Days Completed 🚀**
 
 ```text
 SQL Fundamentals
@@ -1156,6 +1316,12 @@ Customer Revenue ABC Segment Comparison
       ↓
 ABC Segment Business Priority Analysis
       ↓
+Payment Performance Analysis
+      ↓
+Payment Status & Method Analysis
+      ↓
+Payment Trend & Risk Analysis
+      ↓
 Business Insights
 ```
 
@@ -1184,7 +1350,7 @@ The next stage of the project can move toward:
 * Data quality monitoring dashboards
 * Business performance monitoring
 
-**Next Milestone: Day 65 🔥**
+**Next Milestone: Day 66 🔥**
 
 ---
 
@@ -1218,14 +1384,16 @@ Recommend Business Actions
 
 ---
 
-# 🎉 64-Day Milestone
+# 🎉 65-Day Milestone
 
-**Day 64 is completed successfully. ✅**
+**Day 65 is completed successfully. ✅**
 
-**64 Days of continuous SQL business analysis completed. 🚀**
+**65 Days of continuous SQL business analysis completed. 🚀**
 
-**Customer Revenue ABC Segment Comparison & Business Priority Analysis completed. 🎯📊**
+**Payment Performance & Business Analysis completed successfully. 💳📊**
 
-**64/64 Milestone Achieved. 🔥🏆**
+**Payment transaction, payment method, payment status, payment trend, and payment risk analysis completed. 🎯**
 
-**Next target: Day 65. 🚀**
+**65/65 Milestone Achieved. 🔥🏆**
+
+**Next target: Day 66. 🚀**
