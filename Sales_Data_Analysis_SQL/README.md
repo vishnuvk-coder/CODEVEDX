@@ -1,6 +1,6 @@
 # 📊 Sales Data Analysis Using SQL
 
-A hands-on SQL portfolio project focused on **relational database design, advanced SQL analytics, query optimization, customer analytics, product analytics, business intelligence, customer retention, cohort analysis, customer lifecycle analysis, repeat purchase analysis, purchase frequency analysis, payment analysis, data quality analysis, sales KPI analysis, sales growth analysis, order value analysis, basket analysis, revenue forecasting, product demand forecasting, customer repeat purchase prediction, customer purchase propensity analysis, customer purchase value analysis, basket-size classification, spending classification, customer value segmentation, customer revenue ranking, customer revenue concentration analysis, Pareto analysis, 80/20 revenue analysis, customer revenue decile analysis, customer revenue quartile analysis, customer revenue quintile analysis, customer revenue ABC analysis, ABC segment performance analysis, ABC segment comparison, ABC segment business priority analysis, payment performance analysis, payment status analysis, payment method analysis, payment trend analysis, and payment risk analysis using MySQL.**
+A hands-on SQL portfolio project focused on **relational database design, advanced SQL analytics, query optimization, customer analytics, product analytics, business intelligence, customer retention, cohort analysis, customer lifecycle analysis, repeat purchase analysis, purchase frequency analysis, payment analysis, data quality analysis, sales KPI analysis, sales growth analysis, order value analysis, basket analysis, revenue forecasting, product demand forecasting, customer repeat purchase prediction, customer purchase propensity analysis, customer purchase value analysis, basket-size classification, spending classification, customer value segmentation, customer revenue ranking, customer revenue concentration analysis, Pareto analysis, 80/20 revenue analysis, customer revenue decile analysis, customer revenue quartile analysis, customer revenue quintile analysis, customer revenue ABC analysis, ABC segment performance analysis, ABC segment comparison, ABC segment business priority analysis, payment performance analysis, payment status analysis, payment method analysis, payment trend analysis, payment risk analysis, customer payment behavior analysis, customer payment success analysis, customer payment failure analysis, customer payment method preference analysis, and customer payment risk classification using MySQL.**
 
 This project simulates a real-world sales management system and demonstrates practical SQL skills relevant to **Data Analyst, Business Analyst, SQL Developer, Reporting Analyst, and MIS Analyst roles.**
 
@@ -71,6 +71,16 @@ The project covers:
 * Payment transaction analysis
 * Payment trend analysis
 * Payment business risk analysis
+* Customer payment success analysis
+* Customer payment failure analysis
+* Customer payment method preference
+* Multiple payment method analysis
+* Repeated payment failure analysis
+* Pending payment analysis
+* Customer payment success rate
+* Customer payment failure rate
+* Customer payment risk classification
+* High-risk customer identification
 * Data quality and integrity analysis
 * Sales KPI analysis
 * Sales growth analysis
@@ -130,854 +140,237 @@ The project covers:
 
 ---
 
-# 📈 Day 58 — Customer Revenue Pareto & 80/20 Analysis
-
-Day 58 focused on customer revenue Pareto analysis and 80/20 revenue concentration using MySQL.
-
-The analysis measured how customer revenue is distributed across customer rankings and identified the customer concentration required to reach major revenue thresholds.
-
-### 🎯 Day 58 Objective
-
-* Analyze customer revenue concentration
-* Identify customers required to reach 50% revenue
-* Identify customers required to reach 80% revenue
-* Analyze top 10%, 20%, and 30% customer revenue
-* Measure cumulative revenue contribution
-* Analyze Pareto revenue distribution
-
-### 🔍 Day 58 Key Analyses
-
-* Total Revenue per Customer
-* Customer Revenue Ranking
-* Customer Revenue Contribution Percentage
-* Cumulative Revenue Percentage
-* Customers Required to Reach 50% Revenue
-* Customers Required to Reach 80% Revenue
-* Percentage of Customers Generating 80% Revenue
-* Top 10% Customer Revenue Contribution
-* Top 20% Customer Revenue Contribution
-* Top 30% Customer Revenue Contribution
-* Pareto Customer Classification
-* Revenue Above and Below the 80% Threshold
-* Pareto Revenue Concentration Summary
-
-### 🏆 Day 58 Achievement
-
-Customer Revenue Pareto & 80/20 Analysis completed successfully. ✅
-
-58 Days of continuous SQL business analysis completed. 🚀
-
----
-
-# 📊 Day 59 — Customer Revenue Decile & Revenue Distribution Analysis
-
-Day 59 focused on customer revenue decile analysis and revenue distribution using MySQL.
-
-The analysis divided customers into ten revenue-based groups and measured revenue, orders, units, and customer value across each group.
-
-### 🎯 Day 59 Objective
-
-The objective was to understand how customer revenue is distributed across ten customer revenue deciles.
-
-### 🔍 Day 59 Key Analyses
-
-* Total Revenue per Customer
-* Customer Revenue Ranking
-* Customer Revenue Contribution
-* Customer Revenue Decile
-* Revenue Contribution by Decile
-* Customer Count by Decile
-* Average Revenue per Customer
-* Total Orders by Decile
-* Average Orders per Customer
-* Total Units Purchased
-* Average Units per Customer
-* Cumulative Revenue Contribution
-* Top Revenue Decile
-* Bottom Revenue Decile
-* Final Revenue Distribution Summary
-
-### 🧠 SQL Techniques Used
-
-* SELECT
-* SUM()
-* COUNT()
-* AVG()
-* ROUND()
-* CASE
-* JOIN
-* CTEs
-* Window Functions
-* ROW_NUMBER()
-* NTILE(10)
-* SUM() OVER()
-* COUNT() OVER()
-* Revenue Ranking
-* Decile Classification
-* Percentage Calculations
-* Cumulative Calculations
-
-### 🏆 Day 59 Achievement
-
-Customer Revenue Decile & Revenue Distribution Analysis completed successfully. ✅
-
-59 Days of continuous SQL business analysis completed. 🚀
-
----
-
-# 📊 Day 60 — Customer Revenue Quartile & Value Distribution Analysis
-
-Day 60 focused on Customer Revenue Quartile & Value Distribution Analysis using MySQL.
-
-The analysis divided customers into four revenue-based quartiles and analyzed customer revenue, purchasing activity, and value distribution.
-
-### 🎯 Day 60 Objective
-
-* Customer revenue ranking
-* Customer revenue quartile classification
-* Revenue distribution by quartile
-* Customer count by quartile
-* Average revenue per customer
-* Orders and units by quartile
-* Revenue contribution percentage
-* Cumulative revenue contribution
-* Customer value distribution
-
-### 🔍 Day 60 Key Analyses
-
-* Total Revenue per Customer
-* Customer Revenue Ranking
-* Customer Revenue Contribution
-* Customer Revenue Quartile Classification
-* Customer Count by Quartile
-* Total Revenue by Quartile
-* Average Revenue per Customer
-* Revenue Contribution Percentage
-* Total Orders by Quartile
-* Average Orders per Customer
-* Total Units Purchased
-* Average Units per Customer
-* Cumulative Revenue Contribution
-* Top Revenue Quartile
-* Bottom Revenue Quartile
-* Customer Value Distribution Summary
-
-### 🧠 SQL Techniques Used
-
-* SELECT
-* SUM()
-* COUNT()
-* AVG()
-* ROUND()
-* CASE
-* JOIN
-* CTEs
-* Window Functions
-* ROW_NUMBER()
-* NTILE(4)
-* SUM() OVER()
-* Revenue Ranking
-* Quartile Classification
-* Percentage Calculations
-* Cumulative Calculations
-
-### 🏆 Day 60 Achievement
-
-Customer Revenue Quartile & Value Distribution Analysis completed successfully. ✅
-
-60 Days of continuous SQL business analysis completed. 🚀
-
----
-
-# 📊 Day 61 — Customer Revenue Quintile & Value Distribution Analysis
-
-Day 61 focused on Customer Revenue Quintile & Value Distribution Analysis using MySQL.
-
-The analysis divided customers into five revenue-based quintiles and analyzed customer value, revenue contribution, orders, and units across those groups.
-
-### 🎯 Day 61 Objective
-
-The objective was to analyze how customer revenue and purchasing behavior are distributed across five revenue-based customer quintiles.
-
-### 🔍 Day 61 Key Analyses
-
-* Total Revenue per Customer
-* Customer Revenue Ranking
-* Customer Revenue Contribution
-* Customer Revenue Quintile Classification
-* Customer Count by Quintile
-* Total Revenue by Quintile
-* Average Revenue per Customer
-* Revenue Contribution Percentage
-* Total Orders by Quintile
-* Average Orders per Customer
-* Total Units Purchased
-* Average Units per Customer
-* Cumulative Revenue Contribution
-* Top Revenue Quintile
-* Bottom Revenue Quintile
-* Customer Value Distribution Summary
-
-### 🧠 SQL Techniques Used
-
-* SELECT
-* SUM()
-* COUNT()
-* AVG()
-* ROUND()
-* CASE
-* JOIN
-* CTEs
-* Window Functions
-* ROW_NUMBER()
-* NTILE(5)
-* SUM() OVER()
-* Revenue Ranking
-* Quintile Classification
-* Revenue Contribution
-* Percentage Calculations
-* Cumulative Calculations
-
-### 🏆 Day 61 Achievement
-
-Customer Revenue Quintile & Value Distribution Analysis completed successfully. ✅
-
-61 Days of continuous SQL business analysis completed. 🚀
-
----
-
-# 📊 Day 62 — Customer Revenue ABC Analysis
-
-Day 62 focused on Customer Revenue ABC Analysis using MySQL.
-
-The analysis extended the customer revenue segmentation and distribution work by classifying customers into A, B, and C revenue groups based on cumulative revenue contribution.
-
-### 🎯 Day 62 Objective
-
-The objective was to analyze customer revenue contribution and classify customers into ABC revenue groups.
-
-### 🔍 Day 62 Key Analyses
-
-* Total Revenue per Customer
-* Customer Revenue Ranking
-* Revenue Contribution Percentage
-* Cumulative Revenue
-* Cumulative Revenue Contribution Percentage
-* ABC Customer Classification
-* Class A Customer Identification
-* Class B Customer Identification
-* Class C Customer Identification
-* Customer Count by ABC Class
-* Revenue by ABC Class
-* Revenue Contribution by ABC Class
-* Average Revenue by ABC Class
-* Order Volume by ABC Class
-* Units Purchased by ABC Class
-* Customer Revenue Prioritization
-* Customer Portfolio Classification
-* Final ABC Revenue Analysis
-
-### 🧠 Day 62 SQL Techniques Used
-
-* SELECT
-* SUM()
-* COUNT()
-* AVG()
-* ROUND()
-* CASE
-* JOIN
-* CTEs
-* Window Functions
-* ROW_NUMBER()
-* SUM() OVER()
-* Cumulative Calculations
-* Revenue Ranking
-* Revenue Contribution
-* Percentage Calculations
-* ABC Classification
-* Customer Segmentation
-* Revenue Concentration Analysis
-
-### 🏷️ ABC Classification
-
-ABC analysis groups customers according to cumulative revenue contribution.
-
-| Segment | Revenue Position                   | Customer Group         |
-| ------- | ---------------------------------- | ---------------------- |
-| A       | Highest cumulative revenue range   | High-value customers   |
-| B       | Middle cumulative revenue range    | Medium-value customers |
-| C       | Remaining cumulative revenue range | Lower-value customers  |
-
-### 🏆 Day 62 Achievement
-
-Customer Revenue ABC Analysis completed successfully. ✅
-
-62 Days of continuous SQL business analysis completed. 🚀
-
-62/62 Milestone Achieved. 🔥🏆
-
----
-
-# 📊 Day 63 — Customer Revenue ABC Segment Performance Analysis
-
-Day 63 focused on **Customer Revenue ABC Segment Performance Analysis** using MySQL.
-
-The analysis extends the Day 62 Customer Revenue ABC Analysis by evaluating **A, B, and C customer revenue segments**.
-
-## 🎯 Day 63 Objective
-
-The objective was to understand how customer revenue, orders, units, and average customer value are distributed across ABC customer segments.
-
-## 🔍 Day 63 Key Analyses
-
-* Customer Revenue
-* Customer Revenue Ranking
-* Revenue Contribution
-* Cumulative Revenue Contribution
-* ABC Customer Classification
-* A Segment Performance
-* B Segment Performance
-* C Segment Performance
-* Customer Count by Segment
-* Revenue by Segment
-* Revenue Contribution by Segment
-* Orders by Segment
-* Units by Segment
-* Average Revenue per Customer
-* Average Orders per Customer
-* Average Units per Customer
-* Revenue per Order
-* Revenue per Unit
-* Final ABC Segment Performance Summary
-
-## 🧠 Day 63 SQL Techniques Used
-
-* SELECT
-* SUM()
-* COUNT()
-* AVG()
-* ROUND()
-* CASE
-* JOIN
-* CTEs
-* ROW_NUMBER()
-* Window Functions
-* Revenue Ranking
-* Revenue Contribution
-* Cumulative Revenue
-* ABC Classification
-* Segment Performance Analysis
-
-## 📊 Day 63 ABC Classification
-
-Customers are classified according to cumulative revenue contribution:
-
-| Cumulative Revenue | Segment |
-| ------------------ | ------- |
-| Up to 80%          | A       |
-| 80%–95%            | B       |
-| Above 95%          | C       |
-
-These thresholds are used as the analytical framework for this portfolio project.
-
-## 📈 Day 63 Segment Performance
-
-### 🅰️ A Segment
-
-The A segment represents customers within the highest cumulative revenue contribution range.
-
-The analysis measures:
-
-* Customer count
-* Revenue
-* Revenue contribution
-* Orders
-* Units
-* Average revenue per customer
-* Average orders per customer
-* Average units per customer
-* Revenue per order
-* Revenue per unit
-
-### 🅱️ B Segment
-
-The B segment represents customers within the middle cumulative revenue contribution range.
-
-The analysis measures:
-
-* Customer count
-* Revenue
-* Revenue contribution
-* Orders
-* Units
-* Average revenue per customer
-* Average orders per customer
-* Average units per customer
-* Revenue per order
-* Revenue per unit
-
-### 🅲️ C Segment
-
-The C segment represents customers within the remaining cumulative revenue contribution range.
-
-The analysis measures:
-
-* Customer count
-* Revenue
-* Revenue contribution
-* Orders
-* Units
-* Average revenue per customer
-* Average orders per customer
-* Average units per customer
-* Revenue per order
-* Revenue per unit
-
-## 📊 Day 63 Segment Performance Workflow
-
-```text
-Sales Data
-    ↓
-Customer Revenue
-    ↓
-Customer Revenue Ranking
-    ↓
-Revenue Contribution
-    ↓
-Cumulative Revenue Contribution
-    ↓
-ABC Classification
-    ↓
-A / B / C Segments
-    ↓
-Segment Revenue
-    ↓
-Segment Orders
-    ↓
-Segment Units
-    ↓
-Average Customer Metrics
-    ↓
-Revenue per Order
-    ↓
-Revenue per Unit
-    ↓
-ABC Segment Performance Summary
-```
-
-## 💼 Day 63 Business Applications
-
-ABC segment performance analysis can support:
-
-* Customer prioritization
-* High-value customer analysis
-* Revenue concentration monitoring
-* Customer relationship management
-* Account management
-* Revenue planning
-* Customer retention planning
-* Sales performance analysis
-* Business reporting
-* Customer portfolio analysis
-
-## ⚠️ Day 63 Methodology Limitation
-
-The analysis describes historical revenue and purchasing behavior in the available sales dataset.
-
-The ABC classification is a business-analysis framework and does not represent a machine-learning prediction.
-
-Customer behavior and revenue contribution may change over time.
-
-The A, B, and C classifications should therefore be interpreted as analytical segments based on the defined cumulative revenue thresholds.
-
-## 📁 Day 63 Project Files
-
-```text
-SQL/
-└── customer_revenue_abc_segment_performance.sql
-
-Report/
-└── Day63_Customer_Revenue_ABC_Segment_Performance.md
-
-Screenshots/
-└── Day 63/
-```
-
-### 🏆 Day 63 Achievement
-
-Customer Revenue ABC Segment Performance Analysis completed successfully. ✅
-
-63 Days of continuous SQL business analysis completed. 🚀
-
-Customer Revenue ABC Classification and Segment Performance Analysis completed successfully. 🎯📊
-
-63/63 Milestone Achieved. 🔥🏆
-
----
-
-# 📊 Day 64 — Customer Revenue ABC Segment Comparison & Business Priority Analysis
-
-Day 64 focused on **Customer Revenue ABC Segment Comparison & Business Priority Analysis** using MySQL.
-
-The analysis extends the Day 63 ABC Segment Performance Analysis by comparing A, B, and C segments across customer count, revenue, orders, units, customer value, and business performance KPIs.
-
-## 🎯 Day 64 Objective
-
-The objective was to compare customer revenue, orders, units, and average customer value across ABC segments and assign a practical business-priority framework.
-
-## 🔍 Day 64 Key Analyses
-
-* Customer Revenue by ABC Segment
-* Customer Count by ABC Segment
-* Revenue Contribution by Segment
-* Customer Percentage by Segment
-* Total Orders by Segment
-* Total Units by Segment
-* Average Revenue per Customer
-* Average Orders per Customer
-* Average Units per Customer
-* Revenue per Order
-* Revenue per Unit
-* Segment Performance Comparison
-* Highest Revenue Segment
-* Highest Average Customer Value Segment
-* Highest Order Activity Segment
-* Highest Unit Activity Segment
-* Customer Segment Business Priority
-* Final ABC Segment Comparison Summary
-
-## 🧠 Day 64 SQL Techniques Used
-
-* SELECT
-* SUM()
-* COUNT()
-* COUNT(DISTINCT)
-* AVG()
-* ROUND()
-* CASE
-* NULLIF()
-* JOIN
-* CTEs
-* GROUP BY
-* ORDER BY
-* ROW_NUMBER()
-* Window Functions
-* Revenue Ranking
-* Revenue Contribution
-* Cumulative Revenue
-* ABC Classification
-* Segment Comparison
-* Business KPI Analysis
-* Business Priority Analysis
-
-## 📊 Day 64 ABC Classification
-
-Customers are classified according to cumulative revenue contribution:
-
-| Cumulative Revenue | Segment |
-| ------------------ | ------- |
-| Up to 80%          | A       |
-| 80%–95%            | B       |
-| Above 95%          | C       |
-
-These thresholds are used as the analytical framework for this portfolio project.
-
-## 📈 Day 64 Segment Comparison
-
-### 🅰️ A Segment
-
-**Business Priority: Highest Priority — Protect and Retain**
-
-The A segment represents the highest cumulative revenue contribution.
-
-The analysis evaluates:
-
-* Customer count
-* Revenue
-* Revenue contribution
-* Customer percentage
-* Orders
-* Units
-* Average revenue per customer
-* Average orders per customer
-* Average units per customer
-* Revenue per order
-* Revenue per unit
-
-### 🅱️ B Segment
-
-**Business Priority: Medium Priority — Develop and Grow**
-
-The B segment represents the middle cumulative revenue contribution range.
-
-The analysis evaluates:
-
-* Customer count
-* Revenue
-* Revenue contribution
-* Customer percentage
-* Orders
-* Units
-* Average revenue per customer
-* Average orders per customer
-* Average units per customer
-* Revenue per order
-* Revenue per unit
-
-### 🅲️ C Segment
-
-**Business Priority: Lower Priority — Monitor and Develop**
-
-The C segment represents the remaining cumulative revenue contribution range.
-
-The analysis evaluates:
-
-* Customer count
-* Revenue
-* Revenue contribution
-* Customer percentage
-* Orders
-* Units
-* Average revenue per customer
-* Average orders per customer
-* Average units per customer
-* Revenue per order
-* Revenue per unit
-
-## 📊 Day 64 Segment Comparison Workflow
-
-```text
-Sales Data
-    ↓
-Customer Revenue
-    ↓
-Customer Revenue Ranking
-    ↓
-Revenue Contribution
-    ↓
-Cumulative Revenue Contribution
-    ↓
-ABC Classification
-    ↓
-A / B / C Segments
-    ↓
-Customer Count Comparison
-    ↓
-Revenue Comparison
-    ↓
-Order Comparison
-    ↓
-Unit Comparison
-    ↓
-Average Customer Value Comparison
-    ↓
-Revenue per Order
-    ↓
-Revenue per Unit
-    ↓
-Segment Performance Comparison
-    ↓
-Business Priority Analysis
-    ↓
-Final ABC Segment Comparison Summary
-```
-
-## 💼 Day 64 Business Applications
-
-ABC segment comparison and business priority analysis can support:
-
-* Customer prioritization
-* Customer retention planning
-* Revenue concentration analysis
-* Account management
-* Customer relationship management
-* Revenue planning
-* Customer development
-* Sales planning
-* Business KPI monitoring
-* Segment performance monitoring
-* Resource prioritization
-* Business decision support
-
-## 🏷️ Day 64 Business Priority Framework
-
-| ABC Segment | Business Priority                     |
-| ----------- | ------------------------------------- |
-| A           | Highest Priority — Protect and Retain |
-| B           | Medium Priority — Develop and Grow    |
-| C           | Lower Priority — Monitor and Develop  |
-
-The priority framework is a business-analysis rule created for this portfolio project and is not a machine-learning prediction.
-
-## ⚠️ Day 64 Methodology Limitation
-
-The analysis describes historical revenue and purchasing behavior in the available sales dataset.
-
-The ABC classification is a business-analysis framework and does not represent a machine-learning prediction.
-
-Customer behavior and revenue contribution may change over time.
-
-Business priorities are analytical rules used for portfolio analysis and should be combined with additional business information before making real-world decisions.
-
-## 📁 Day 64 Project Files
-
-```text
-SQL/
-└── customer_revenue_abc_segment_comparison.sql
-
-Report/
-└── Day64_Customer_Revenue_ABC_Segment_Comparison.md
-
-Screenshots/
-└── Day 64/
-```
-
-### 🏆 Day 64 Achievement
-
-Customer Revenue ABC Segment Comparison & Business Priority Analysis completed successfully. ✅
-
-64 Days of continuous SQL business analysis completed. 🚀
-
-ABC Segment Comparison and Business Priority Analysis completed successfully. 🎯📊
-
-64/64 Milestone Achieved. 🔥🏆
-
----
-
-# 📊 Day 65 — Payment Performance & Business Analysis
-
-Day 65 focused on **Payment Performance & Business Analysis** using MySQL.
-
-The analysis evaluates payment transaction behavior, payment status distribution, payment method usage, order-level payment activity, payment trends, and business risk associated with unsuccessful payment activity.
-
-## 🎯 Day 65 Objective
-
-The objective was to understand how payments are distributed across different statuses and payment methods and identify payment-related business risks.
-
-## 🔍 Day 65 Key Analyses
-
-* Payment Status Distribution
-* Payment Method Distribution
-* Total Payment Transactions
-* Unique Orders with Payments
-* Payment Transactions by Method
-* Orders by Payment Status
-* Payment Status Percentage
-* Payment Method Percentage
-* Payment Activity by Date
-* Payment Activity by Month
-* Successful Payment Orders
-* Unsuccessful Payment Orders
-* Payment Status × Payment Method Analysis
-* Payment Business Risk Analysis
-* Final Payment Performance Summary
-
-## 🧠 Day 65 SQL Techniques Used
+# 📊 Day 66 — Customer Payment Behavior & Risk Analysis
+
+Day 66 focused on **Customer Payment Behavior & Risk Analysis** using MySQL.
+
+The analysis extends the Day 65 payment performance work by moving from overall payment analysis to **customer-level payment behavior and risk analysis**.
+
+The analysis evaluates customer payment activity, successful and unsuccessful payments, payment method usage, repeated payment failures, pending payments, payment success and failure rates, and rule-based customer payment risk classification.
+
+## 🎯 Day 66 Objective
+
+The objective was to understand how customers interact with the payment system and identify customers who may require additional monitoring based on their payment behavior.
+
+The analysis focuses on:
+
+* Customer payment activity
+* Payment success and failure behavior
+* Payment method preferences
+* Repeated payment failures
+* Pending payments
+* Customer payment success rate
+* Customer payment failure rate
+* Customer payment risk classification
+
+## 🔍 Day 66 Key Analyses
+
+* Customer Payment Transaction Count
+* Customers with Successful Payments
+* Customers with Failed Payments
+* Customers with Pending Payments
+* Customer Payment Success Rate
+* Customer Payment Failure Rate
+* Payment Method Preference by Customer
+* Customers Using Multiple Payment Methods
+* Customers with Repeated Payment Failures
+* Customers with Pending Payment Transactions
+* Customer Payment Risk Classification
+* High-Risk Customer Identification
+* Customer Payment Status Distribution
+* Customer Payment Method and Status Analysis
+* Final Customer Payment Behavior Summary
+
+## 🧠 Day 66 SQL Techniques Used
 
 * SELECT
 * COUNT()
 * COUNT(DISTINCT)
-* GROUP BY
-* ORDER BY
+* SUM()
 * ROUND()
 * NULLIF()
 * CASE
-* Window Functions
-* DATE_FORMAT()
+* WHERE
+* GROUP BY
+* HAVING
+* ORDER BY
+* JOIN
+* CTEs
+* Conditional Aggregation
+* Customer-Level Aggregation
 * Payment Status Analysis
 * Payment Method Analysis
-* Order-Level Payment Analysis
-* Business Risk Classification
-* KPI Analysis
+* Success Rate Calculation
+* Failure Rate Calculation
+* Risk Classification
+* Business KPI Analysis
 
-## 💳 Day 65 Payment Status Analysis
+## 💳 Day 66 Customer Payment Behavior
 
-Payment statuses are analyzed to understand the distribution of payment activity across different transaction outcomes.
+Customer payment behavior was analyzed by connecting customer information from the `orders` table with payment information from the `payments` table.
 
-The analysis separates successful, pending, failed, cancelled, and other available payment statuses based on the values present in the database.
+The analysis measures:
 
-## 💰 Day 65 Payment Method Analysis
+* Total payment transactions
+* Unique orders with payments
+* Successful transactions
+* Failed transactions
+* Pending transactions
+* Payment methods used
+* Payment success rate
+* Payment failure rate
 
-Payment methods are compared using:
+This provides a customer-level view of payment activity rather than only looking at overall payment statistics.
 
-* Transaction count
-* Unique order count
-* Percentage contribution
+## 📈 Day 66 Payment Success Rate
 
-This helps understand customer payment preferences and payment-channel usage.
+The customer payment success rate is calculated as the percentage of successful payment transactions compared with the customer's total payment transactions.
 
-## 📈 Day 65 Payment Trend Analysis
+This metric helps identify customers with consistently successful payment activity.
 
-Payment activity is analyzed by:
+## ⚠️ Day 66 Payment Failure Rate
 
-* Payment date
-* Payment month
-* Number of payment transactions
-* Number of unique orders
+The customer payment failure rate measures the percentage of failed payment transactions compared with the customer's total payment transactions.
 
-This helps identify changes in payment activity over time.
+A higher failure rate may indicate payment friction, repeated transaction issues, or the need for operational follow-up.
 
-## ⚠️ Day 65 Business Risk Analysis
+## 💳 Day 66 Payment Method Preference
 
-Payment statuses are classified into business-risk categories:
+Customer payment methods are analyzed to understand:
 
-| Payment Status Type | Business Priority |
-| ------------------- | ----------------- |
-| Successful          | Low Risk          |
-| Pending             | Medium Risk       |
-| Failed              | High Risk         |
-| Cancelled           | High Risk         |
-| Other / Unknown     | Review Required   |
+* Which payment methods customers use
+* How frequently each method is used
+* Customers who use multiple payment methods
+* Payment method and payment-status combinations
 
-The exact classification depends on the payment status values available in the dataset.
+This can help businesses understand customer payment-channel preferences.
 
-## 💼 Day 65 Business Applications
+## 🚨 Day 66 Repeated Payment Failure Analysis
 
-Payment performance analysis can support:
+Customers with multiple failed payment transactions are identified separately.
+
+Customers with repeated payment failures may require additional investigation because repeated failures can create:
+
+* Payment friction
+* Order-processing issues
+* Customer dissatisfaction
+* Operational follow-up requirements
+
+## ⏳ Day 66 Pending Payment Analysis
+
+Customers with pending payment transactions are identified to help monitor transactions that may require further processing or confirmation.
+
+Pending transactions can represent an operational risk because the associated order may not have reached a final payment state.
+
+## 🔐 Day 66 Customer Payment Risk Classification
+
+Customers are classified using a rule-based payment-risk framework:
+
+| Customer Behavior                                     | Risk Classification |
+| ----------------------------------------------------- | ------------------- |
+| No significant payment issues                         | Low Risk            |
+| At least one failed or pending transaction            | Medium Risk         |
+| Two or more failed transactions OR failure rate ≥ 50% | High Risk           |
+
+The classification is based on the payment behavior observed in the available dataset.
+
+## 🎯 Day 66 High-Risk Customer Identification
+
+High-risk customers are identified using:
+
+* Number of failed transactions
+* Customer payment failure rate
+
+The analysis prioritizes customers with repeated failures or a high proportion of failed transactions.
+
+This allows businesses to focus attention on customers showing stronger payment-related risk signals.
+
+## 💼 Day 66 Business Applications
+
+Customer payment behavior analysis can support:
 
 * Payment monitoring
-* Payment failure identification
+* Customer risk monitoring
+* Payment failure investigation
+* Payment recovery processes
+* Customer support prioritization
 * Payment method optimization
 * Transaction monitoring
-* Order payment tracking
-* Revenue collection monitoring
-* Payment risk management
-* Customer payment behavior analysis
-* Business reporting
 * Operational decision-making
+* Customer experience improvement
+* Business reporting
 
-## ⚠️ Day 65 Methodology Limitation
+## 📊 Day 66 Business Priority Framework
+
+### 🟢 Low-Risk Customers
+
+Customers with stable successful payment behavior.
+
+**Business focus:**
+
+* Maintain normal payment processing
+* Continue standard customer experience
+* Monitor payment behavior periodically
+
+### 🟡 Medium-Risk Customers
+
+Customers with at least one failed or pending payment.
+
+**Business focus:**
+
+* Monitor payment activity
+* Investigate unresolved transactions
+* Provide payment assistance when required
+
+### 🔴 High-Risk Customers
+
+Customers with repeated payment failures or a failure rate of at least 50%.
+
+**Business focus:**
+
+* Prioritize investigation
+* Monitor payment issues
+* Consider payment recovery or support actions
+* Identify possible payment-channel problems
+
+## ⚠️ Day 66 Methodology Limitation
 
 The analysis is based on the payment transactions available in the sales database.
 
-The `payments` table does not contain a direct payment amount field, so this analysis focuses primarily on payment transactions, orders, statuses, methods, and payment activity.
+The `payments` table does not contain a direct payment amount field, so this analysis focuses on payment transactions, payment statuses, payment methods, orders, and customer-level payment behavior.
 
-Payment status classifications are business-analysis rules and should be interpreted according to the actual status values present in the dataset.
+The customer risk classification is a **rule-based business-analysis framework**.
 
-The analysis does not represent a machine-learning prediction.
+It is not a machine-learning prediction or statistically validated credit-risk model.
 
-## 📁 Day 65 Project Files
+Payment statuses must be interpreted according to the actual values present in the database.
+
+Customer payment behavior may also change over time.
+
+## 📁 Day 66 Project Files
 
 ```text
 SQL/
-└── payment_performance_business_analysis.sql
+└── customer_payment_behavior_risk_analysis.sql
 
 Report/
-└── Day65_Payment_Performance_Business_Analysis.md
+└── Day66_Customer_Payment_Behavior_Risk_Analysis.md
 
 Screenshots/
-└── Day 65/
+└── Day 66/
 ```
 
-### 🏆 Day 65 Achievement
+### 🏆 Day 66 Achievement
 
-Payment Performance & Business Analysis completed successfully. ✅
+Customer Payment Behavior & Risk Analysis completed successfully. ✅
 
-65 Days of continuous SQL business analysis completed. 🚀
+The analysis covered customer payment activity, payment success and failure rates, payment method preferences, repeated payment failures, pending payments, and rule-based customer payment risk classification.
 
-Payment transaction, payment method, payment status, payment trend, and payment risk analysis completed successfully. 💳📊
+**66 Days of continuous SQL business analysis completed. 🚀**
 
-65/65 Milestone Achieved. 🔥🏆
+**Customer Payment Behavior & Risk Analysis completed successfully. 💳📊**
+
+**66/66 Milestone Achieved. 🔥🏆**
 
 ---
 
@@ -1049,7 +442,8 @@ Payment transaction, payment method, payment status, payment trend, and payment 
 | Day 62     | Customer Revenue ABC Analysis                                        |
 | Day 63     | Customer Revenue ABC Segment Performance Analysis                    |
 | Day 64     | Customer Revenue ABC Segment Comparison & Business Priority Analysis |
-| **Day 65** | **Payment Performance & Business Analysis**                          |
+| Day 65     | Payment Performance & Business Analysis                              |
+| **Day 66** | **Customer Payment Behavior & Risk Analysis**                        |
 
 ---
 
@@ -1126,6 +520,10 @@ Payment Performance Analysis
       ↓
 Payment Risk Analysis
       ↓
+Customer Payment Behavior Analysis
+      ↓
+Customer Payment Risk Classification
+      ↓
 Business Insights
 ```
 
@@ -1197,20 +595,17 @@ Sales_Data_Analysis_SQL/
 │   ├── customer_revenue_abc_analysis.sql
 │   ├── customer_revenue_abc_segment_performance.sql
 │   ├── customer_revenue_abc_segment_comparison.sql
-│   └── payment_performance_business_analysis.sql
+│   ├── payment_performance_business_analysis.sql
+│   └── customer_payment_behavior_risk_analysis.sql
 │
 ├── Screenshots/
 │   ├── Day 1/
 │   ├── Day 2/
 │   ├── ...
-│   ├── Day 58/
-│   ├── Day 59/
-│   ├── Day 60/
-│   ├── Day 61/
-│   ├── Day 62/
 │   ├── Day 63/
 │   ├── Day 64/
-│   └── Day 65/
+│   ├── Day 65/
+│   └── Day 66/
 │
 ├── Presentation/
 │
@@ -1226,7 +621,8 @@ Sales_Data_Analysis_SQL/
 │   ├── Day62_Customer_Revenue_ABC_Analysis.md
 │   ├── Day63_Customer_Revenue_ABC_Segment_Performance.md
 │   ├── Day64_Customer_Revenue_ABC_Segment_Comparison.md
-│   └── Day65_Payment_Performance_Business_Analysis.md
+│   ├── Day65_Payment_Performance_Business_Analysis.md
+│   └── Day66_Customer_Payment_Behavior_Risk_Analysis.md
 │
 └── README.md
 ```
@@ -1237,19 +633,19 @@ Sales_Data_Analysis_SQL/
 
 **Current Status: 🟢 Active**
 
-**Completed: 65 Days**
+**Completed: 66 Days**
 
 **Primary Focus: SQL Data Analysis & Business Intelligence**
 
-The project has completed 65 days of structured SQL learning and business analysis.
+The project has completed 66 days of structured SQL learning and business analysis.
 
-The project now covers database design, SQL fundamentals, advanced SQL, query optimization, customer analytics, product analytics, customer segmentation, RFM analysis, customer retention, churn analysis, cohort analysis, customer lifecycle analysis, repeat purchase analysis, purchase frequency analysis, payment analysis, payment performance analysis, payment status analysis, payment method analysis, payment trend analysis, payment risk analysis, data quality analysis, sales KPI analysis, sales growth analysis, order value analysis, basket analysis, revenue forecasting, product demand forecasting, customer repeat-purchase prediction, customer purchase propensity analysis, customer purchase value analysis, customer value segmentation, customer revenue ranking, customer revenue concentration, Pareto analysis, 80/20 revenue distribution analysis, customer revenue decile analysis, customer revenue distribution analysis, customer revenue quartile analysis, customer revenue quintile analysis, customer value distribution analysis, customer revenue ABC analysis, ABC segment performance analysis, ABC segment comparison, and ABC segment business priority analysis.
+The project now covers database design, SQL fundamentals, advanced SQL, query optimization, customer analytics, product analytics, customer segmentation, RFM analysis, customer retention, churn analysis, cohort analysis, customer lifecycle analysis, repeat purchase analysis, purchase frequency analysis, payment analysis, payment performance analysis, payment status analysis, payment method analysis, payment trend analysis, payment risk analysis, customer payment behavior analysis, customer payment success and failure analysis, payment method preference analysis, repeated payment failure analysis, pending payment analysis, customer payment risk classification, data quality analysis, sales KPI analysis, sales growth analysis, order value analysis, basket analysis, revenue forecasting, product demand forecasting, customer repeat-purchase prediction, customer purchase propensity analysis, customer purchase value analysis, customer value segmentation, customer revenue ranking, customer revenue concentration, Pareto analysis, 80/20 revenue distribution analysis, customer revenue decile analysis, customer revenue distribution analysis, customer revenue quartile analysis, customer revenue quintile analysis, customer value distribution analysis, customer revenue ABC analysis, ABC segment performance analysis, ABC segment comparison, and ABC segment business priority analysis.
 
 ---
 
-# 🚀 65-Day Portfolio Progress
+# 🚀 66-Day Portfolio Progress
 
-**65 Days Completed 🚀**
+**66 Days Completed 🚀**
 
 ```text
 SQL Fundamentals
@@ -1322,6 +718,16 @@ Payment Status & Method Analysis
       ↓
 Payment Trend & Risk Analysis
       ↓
+Customer Payment Behavior Analysis
+      ↓
+Customer Payment Success & Failure Analysis
+      ↓
+Customer Payment Method Preference
+      ↓
+Repeated Payment Failure Analysis
+      ↓
+Customer Payment Risk Classification
+      ↓
 Business Insights
 ```
 
@@ -1347,10 +753,11 @@ The next stage of the project can move toward:
 * Customer behavior dashboards
 * Payment monitoring dashboards
 * Payment risk monitoring dashboards
+* Customer payment risk dashboards
 * Data quality monitoring dashboards
 * Business performance monitoring
 
-**Next Milestone: Day 66 🔥**
+**Next Milestone: Day 67 🔥**
 
 ---
 
@@ -1384,16 +791,16 @@ Recommend Business Actions
 
 ---
 
-# 🎉 65-Day Milestone
+# 🎉 66-Day Milestone
 
-**Day 65 is completed successfully. ✅**
+**Day 66 is completed successfully. ✅**
 
-**65 Days of continuous SQL business analysis completed. 🚀**
+**66 Days of continuous SQL business analysis completed. 🚀**
 
-**Payment Performance & Business Analysis completed successfully. 💳📊**
+**Customer Payment Behavior & Risk Analysis completed successfully. 💳📊**
 
-**Payment transaction, payment method, payment status, payment trend, and payment risk analysis completed. 🎯**
+**Customer payment success, failure, payment method, repeated failure, pending payment, and customer payment risk analysis completed. 🎯**
 
-**65/65 Milestone Achieved. 🔥🏆**
+**66/66 Milestone Achieved. 🔥🏆**
 
-**Next target: Day 66. 🚀**
+**Next target: Day 67. 🚀**
