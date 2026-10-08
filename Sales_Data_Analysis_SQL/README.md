@@ -1,6 +1,6 @@
 # 📊 Sales Data Analysis Using SQL
 
-A hands-on SQL portfolio project focused on **relational database design, advanced SQL analytics, query optimization, customer analytics, product analytics, business intelligence, customer retention, cohort analysis, customer lifecycle analysis, repeat purchase analysis, purchase frequency analysis, payment analysis, payment performance analysis, payment status analysis, payment method analysis, payment trend analysis, payment risk analysis, customer payment behavior analysis, customer payment success analysis, customer payment failure analysis, customer payment method preference analysis, customer payment risk classification, and customer payment method performance analysis using MySQL.**
+A hands-on SQL portfolio project focused on **relational database design, advanced SQL analytics, query optimization, customer analytics, product analytics, business intelligence, customer retention, cohort analysis, customer lifecycle analysis, repeat purchase analysis, purchase frequency analysis, payment analysis, payment performance analysis, payment status analysis, payment method analysis, payment trend analysis, payment risk analysis, customer payment behavior analysis, customer payment success analysis, customer payment failure analysis, customer payment method preference analysis, customer payment risk classification, customer payment method performance analysis, and payment method trend and reliability analysis using MySQL.**
 
 This project simulates a real-world sales management system and demonstrates practical SQL skills relevant to **Data Analyst, Business Analyst, SQL Developer, Reporting Analyst, and MIS Analyst roles.**
 
@@ -78,6 +78,11 @@ The project covers:
 * Payment method pending rate
 * Customer adoption by payment method
 * Payment method risk classification
+* Payment method trend analysis
+* Monthly payment method analysis
+* Payment method growth analysis
+* Payment method reliability analysis
+* Month-over-month payment analysis
 * Business intelligence
 * Business reporting
 
@@ -92,20 +97,6 @@ The analysis extends the Day 66 customer payment behavior and risk analysis by e
 ## 🎯 Objective
 
 The objective was to understand how different payment methods perform across the sales system and identify payment methods with strong or weak payment performance.
-
-The analysis focuses on:
-
-* Payment method usage
-* Payment transaction volume
-* Customer adoption
-* Successful transactions
-* Failed transactions
-* Pending transactions
-* Success rate
-* Failure rate
-* Pending rate
-* Payment method ranking
-* Payment method risk classification
 
 ## 🔍 Key Analyses
 
@@ -242,45 +233,343 @@ The analysis covered payment method usage, customer adoption, transaction perfor
 
 ---
 
+# 📊 Day 68 — Payment Method Trend & Reliability Analysis
+
+Day 68 focused on **Payment Method Trend & Reliability Analysis** using MySQL.
+
+The analysis extends the Day 67 payment method performance analysis by evaluating payment-method behavior over time, monthly transaction activity, customer adoption, payment performance trends, month-over-month growth, and payment-method reliability.
+
+## 🎯 Objective
+
+The objective was to understand how different payment methods perform over time and identify payment methods that are becoming more or less popular and reliable.
+
+The analysis focuses on:
+
+* Payment method usage by date
+* Payment method usage by month
+* Monthly transaction volume
+* Monthly unique orders
+* Monthly customer adoption
+* Successful transactions
+* Failed transactions
+* Pending transactions
+* Monthly payment success rate
+* Monthly payment failure rate
+* Monthly payment pending rate
+* Monthly payment-method performance
+* Payment method reliability
+* Month-over-month growth
+
+## 🔍 Key Analyses
+
+* Payment Method Usage by Date
+* Payment Method Usage by Month
+* Monthly Transactions by Payment Method
+* Monthly Unique Orders by Payment Method
+* Monthly Customer Count by Payment Method
+* Monthly Successful Transactions
+* Monthly Failed Transactions
+* Monthly Pending Transactions
+* Monthly Payment Success Rate
+* Monthly Payment Failure Rate
+* Monthly Payment Pending Rate
+* Payment Method Monthly Performance Ranking
+* Payment Method Reliability Analysis
+* Highest-Growth Payment Method
+* Final Payment Method Trend & Reliability Summary
+
+## 🧠 SQL Techniques Used
+
+* SELECT
+* COUNT()
+* COUNT(DISTINCT)
+* SUM()
+* ROUND()
+* NULLIF()
+* CASE
+* WHERE
+* GROUP BY
+* ORDER BY
+* JOIN
+* CTEs
+* Conditional Aggregation
+* Window Functions
+* RANK()
+* LAG()
+* DATE_FORMAT()
+* Month-over-Month Growth Analysis
+* Trend Analysis
+* Payment Performance Analysis
+* Reliability Classification
+* KPI Analysis
+
+## 📅 Payment Method Trend Analysis
+
+Payment methods were analyzed across payment dates and months to understand how transaction activity changes over time.
+
+Monthly analysis helps identify:
+
+* Increasing payment-method usage
+* Decreasing payment-method usage
+* Changes in transaction volume
+* Changes in customer adoption
+* Changes in payment performance
+
+This provides a time-based view of payment-channel behavior.
+
+## 💳 Monthly Payment Method Usage
+
+Payment transactions were grouped by month and payment method.
+
+The analysis measures the number of transactions associated with each payment method during each month.
+
+This helps businesses understand which payment channels are most active during different periods.
+
+## 🧾 Monthly Unique Orders
+
+The analysis measures the number of unique orders associated with each payment method every month.
+
+This provides an order-level view of payment-method usage and helps avoid relying only on raw transaction counts.
+
+## 👥 Monthly Customer Adoption
+
+The number of unique customers using each payment method was analyzed by month.
+
+This helps identify payment methods with:
+
+* Broad customer adoption
+* Increasing customer usage
+* Lower customer adoption
+* Changing customer preferences
+
+## ✅ Monthly Payment Success Analysis
+
+Successful payment transactions were analyzed by month and payment method.
+
+The analysis calculates:
+
+* Successful transaction count
+* Total transaction count
+* Monthly success rate
+
+The success rate provides a standardized measure for comparing payment methods across different transaction volumes.
+
+## ❌ Monthly Payment Failure Analysis
+
+Failed payment transactions were analyzed by month and payment method.
+
+The analysis calculates:
+
+* Failed transaction count
+* Total transaction count
+* Monthly failure rate
+
+A higher failure rate may indicate payment friction or operational issues affecting a payment channel.
+
+## ⏳ Monthly Pending Payment Analysis
+
+Pending payment transactions were analyzed by month and payment method.
+
+The analysis measures:
+
+* Pending transaction count
+* Total transaction count
+* Pending rate
+
+Pending payments may require additional monitoring because they have not reached a final payment state.
+
+## 🏆 Monthly Payment Method Performance Ranking
+
+Payment methods were ranked within each month according to their payment success rate.
+
+The analysis uses the `RANK()` window function with monthly partitions.
+
+This makes it possible to identify the strongest-performing payment method for each period.
+
+## 📈 Payment Method Growth Analysis
+
+Month-over-month payment-method transaction growth was calculated using the `LAG()` window function.
+
+The comparison uses:
+
+* Current-month transactions
+* Previous-month transactions
+* Month-over-month growth percentage
+
+This helps identify payment methods experiencing stronger increases or decreases in transaction activity.
+
+## 🔐 Payment Method Reliability Analysis
+
+Payment methods were classified according to their overall payment success rate.
+
+### Reliability Framework
+
+| Success Rate | Reliability Classification |
+| ------------ | -------------------------- |
+| ≥ 90%        | 🟢 Highly Reliable         |
+| ≥ 75%        | 🟡 Moderately Reliable     |
+| < 75%        | 🔴 Low Reliability         |
+
+This framework is used as a business-analysis rule for comparing payment-method reliability.
+
+## 📊 KPI Framework
+
+The main KPIs used in this analysis are:
+
+| KPI                        | Purpose                                  |
+| -------------------------- | ---------------------------------------- |
+| Payment Transactions       | Measures payment-method activity         |
+| Unique Orders              | Measures order-level usage               |
+| Unique Customers           | Measures customer adoption               |
+| Successful Transactions    | Measures successful payment activity     |
+| Failed Transactions        | Measures payment failures                |
+| Pending Transactions       | Measures unresolved payment activity     |
+| Success Rate               | Measures payment effectiveness           |
+| Failure Rate               | Measures payment failure level           |
+| Pending Rate               | Measures unresolved payment activity     |
+| Monthly Performance Rank   | Compares payment methods by month        |
+| Month-over-Month Growth    | Measures changes in payment-method usage |
+| Reliability Classification | Provides a business reliability view     |
+
+## 💼 Business Applications
+
+Payment method trend and reliability analysis can support:
+
+* Payment-channel monitoring
+* Payment-method optimization
+* Customer payment preference analysis
+* Payment failure investigation
+* Payment reliability monitoring
+* Payment operations
+* Payment-channel planning
+* Customer experience improvement
+* Transaction monitoring
+* Business reporting
+* Operational decision-making
+
+## 🎯 Business Interpretation
+
+### 🟢 Highly Reliable Payment Methods
+
+Payment methods with a success rate of at least 90%.
+
+**Business focus:**
+
+* Maintain availability
+* Continue regular monitoring
+* Support continued customer usage
+
+### 🟡 Moderately Reliable Payment Methods
+
+Payment methods with success rates between 75% and 89.99%.
+
+**Business focus:**
+
+* Monitor performance
+* Investigate recurring failures
+* Review operational performance
+
+### 🔴 Low-Reliability Payment Methods
+
+Payment methods with success rates below 75%.
+
+**Business focus:**
+
+* Prioritize investigation
+* Identify causes of payment failures
+* Review payment-channel reliability
+* Consider corrective operational actions
+
+## ⚠️ Methodology Limitation
+
+The analysis is based on payment transactions available in the sales database.
+
+The `payments` table does not contain a direct payment amount field, so this analysis focuses on:
+
+* Payment transactions
+* Payment methods
+* Payment statuses
+* Orders
+* Customers
+* Time-based payment activity
+
+The reliability classification is a **rule-based business-analysis framework**.
+
+It is not a machine-learning prediction or statistically validated reliability model.
+
+The month-over-month growth analysis depends on the months available in the dataset. The first available month for a payment method does not have a previous-month value for comparison.
+
+Payment status values should be interpreted according to the actual values available in the database.
+
+Payment-method usage and reliability may change over time.
+
+## 📁 Project Files
+
+```text
+SQL/
+└── payment_method_trend_reliability_analysis.sql
+
+Report/
+└── Day68_Payment_Method_Trend_Reliability_Analysis.md
+
+Screenshots/
+└── Day 68/
+```
+
+## 🏆 Day 68 Achievement
+
+Payment Method Trend & Reliability Analysis completed successfully. ✅
+
+The analysis covered payment-method trends, monthly transaction activity, customer adoption, payment success and failure rates, pending payments, monthly performance ranking, month-over-month growth, and payment-method reliability.
+
+**68 Days of continuous SQL business analysis completed. 🚀**
+
+**Payment Method Trend & Reliability Analysis completed successfully. 📈💳**
+
+**68/68 Milestone Achieved. 🔥🏆**
+
+---
+
 # 📅 Daily Project Organization
 
-| Day        | Main Work                                        |
-| ---------- | ------------------------------------------------ |
-| Day 1–7    | SQL & Database Fundamentals                      |
-| Day 8–14   | Intermediate SQL Analysis                        |
-| Day 15–17  | Advanced SQL & Optimization                      |
-| Day 18–22  | Customer & Business Analytics                    |
-| Day 23     | Sales Trend Analysis                             |
-| Day 24     | Product Performance Analysis                     |
-| Day 25     | Sales Profitability Analysis                     |
-| Day 26     | Customer Revenue Contribution                    |
-| Day 27     | Customer Churn Analysis                          |
-| Day 28     | Customer Cohort & Retention                      |
-| Day 29     | Customer Purchase Frequency                      |
-| Day 30     | Customer Segmentation & Revenue                  |
-| Day 31–42  | Customer & Product Analytics                     |
-| Day 43–45  | Payment & Customer Payment Analysis              |
-| Day 46     | Data Quality & Integrity                         |
-| Day 47     | Sales Performance KPI                            |
-| Day 48     | Sales Growth & Month-over-Month                  |
-| Day 49     | Sales Order Value & Basket                       |
-| Day 50     | Sales Revenue Forecasting                        |
-| Day 51     | Product Demand & Sales Forecasting               |
-| Day 52     | Customer Repeat Purchase Prediction              |
-| Day 53     | Customer Purchase Propensity Analysis            |
-| Day 54     | Customer Purchase Value & Basket Analysis        |
-| Day 55     | Customer Purchase Value Segmentation             |
-| Day 56–57  | Customer Revenue Contribution & Concentration    |
-| Day 58     | Customer Revenue Pareto & 80/20 Analysis         |
-| Day 59     | Customer Revenue Decile Analysis                 |
-| Day 60     | Customer Revenue Quartile Analysis               |
-| Day 61     | Customer Revenue Quintile Analysis               |
-| Day 62     | Customer Revenue ABC Analysis                    |
-| Day 63     | Customer Revenue ABC Segment Performance         |
-| Day 64     | ABC Segment Comparison & Business Priority       |
-| Day 65     | Payment Performance & Business Analysis          |
-| Day 66     | Customer Payment Behavior & Risk Analysis        |
-| **Day 67** | **Customer Payment Method Performance Analysis** |
+| Day        | Main Work                                       |
+| ---------- | ----------------------------------------------- |
+| Day 1–7    | SQL & Database Fundamentals                     |
+| Day 8–14   | Intermediate SQL Analysis                       |
+| Day 15–17  | Advanced SQL & Optimization                     |
+| Day 18–22  | Customer & Business Analytics                   |
+| Day 23     | Sales Trend Analysis                            |
+| Day 24     | Product Performance Analysis                    |
+| Day 25     | Sales Profitability Analysis                    |
+| Day 26     | Customer Revenue Contribution                   |
+| Day 27     | Customer Churn Analysis                         |
+| Day 28     | Customer Cohort & Retention                     |
+| Day 29     | Customer Purchase Frequency                     |
+| Day 30     | Customer Segmentation & Revenue                 |
+| Day 31–42  | Customer & Product Analytics                    |
+| Day 43–45  | Payment & Customer Payment Analysis             |
+| Day 46     | Data Quality & Integrity                        |
+| Day 47     | Sales Performance KPI                           |
+| Day 48     | Sales Growth & Month-over-Month                 |
+| Day 49     | Sales Order Value & Basket                      |
+| Day 50     | Sales Revenue Forecasting                       |
+| Day 51     | Product Demand & Sales Forecasting              |
+| Day 52     | Customer Repeat Purchase Prediction             |
+| Day 53     | Customer Purchase Propensity Analysis           |
+| Day 54     | Customer Purchase Value & Basket Analysis       |
+| Day 55     | Customer Purchase Value Segmentation            |
+| Day 56–57  | Customer Revenue Contribution & Concentration   |
+| Day 58     | Customer Revenue Pareto & 80/20 Analysis        |
+| Day 59     | Customer Revenue Decile Analysis                |
+| Day 60     | Customer Revenue Quartile Analysis              |
+| Day 61     | Customer Revenue Quintile Analysis              |
+| Day 62     | Customer Revenue ABC Analysis                   |
+| Day 63     | Customer Revenue ABC Segment Performance        |
+| Day 64     | ABC Segment Comparison & Business Priority      |
+| Day 65     | Payment Performance & Business Analysis         |
+| Day 66     | Customer Payment Behavior & Risk Analysis       |
+| Day 67     | Customer Payment Method Performance Analysis    |
+| **Day 68** | **Payment Method Trend & Reliability Analysis** |
 
 ---
 
@@ -288,47 +577,105 @@ The analysis covered payment method usage, customer adoption, transaction perfor
 
 ```text
 Raw Sales Data
+
       ↓
+
 Database Design
+
       ↓
+
 SQL Fundamentals
+
       ↓
+
 JOINs & Aggregations
+
       ↓
+
 Advanced SQL
+
       ↓
+
 Query Optimization
+
       ↓
+
 Business KPIs
+
       ↓
+
 Customer Analytics
+
       ↓
+
 Customer Retention
+
       ↓
+
 Customer Lifetime Value
+
       ↓
+
 RFM Segmentation
+
       ↓
+
 Cohort & Lifecycle Analysis
+
       ↓
+
 Repeat Purchase Analysis
+
       ↓
+
 Payment Analysis
+
       ↓
+
 Payment Performance Analysis
+
       ↓
+
 Payment Risk Analysis
+
       ↓
+
 Customer Payment Behavior Analysis
+
       ↓
+
 Customer Payment Risk Classification
+
       ↓
+
 Customer Payment Method Preference
+
       ↓
+
 Payment Method Performance Analysis
+
       ↓
+
 Payment Method Success / Failure / Pending Analysis
+
       ↓
+
+Payment Method Trend Analysis
+
+      ↓
+
+Monthly Payment Method Analysis
+
+      ↓
+
+Payment Method Growth Analysis
+
+      ↓
+
+Payment Method Reliability Analysis
+
+      ↓
+
 Business Insights
 ```
 
@@ -401,26 +748,27 @@ Sales_Data_Analysis_SQL/
 │   ├── customer_revenue_abc_segment_comparison.sql
 │   ├── payment_performance_business_analysis.sql
 │   ├── customer_payment_behavior_risk_analysis.sql
-│   └── customer_payment_method_performance_analysis.sql
-
+│   ├── customer_payment_method_performance_analysis.sql
+│   └── payment_method_trend_reliability_analysis.sql
+│
 ├── Screenshots/
 │   ├── Day 1/
 │   ├── Day 2/
 │   ├── ...
-│   ├── Day 65/
 │   ├── Day 66/
-│   └── Day 67/
-
+│   ├── Day 67/
+│   └── Day 68/
+│
 ├── Presentation/
-
+│
 ├── Report/
 │   ├── Week1_Report.md
 │   ├── Week2_Report.md
 │   ├── ...
-│   ├── Day65_Payment_Performance_Business_Analysis.md
 │   ├── Day66_Customer_Payment_Behavior_Risk_Analysis.md
-│   └── Day67_Customer_Payment_Method_Performance_Analysis.md
-
+│   ├── Day67_Customer_Payment_Method_Performance_Analysis.md
+│   └── Day68_Payment_Method_Trend_Reliability_Analysis.md
+│
 └── README.md
 ```
 
@@ -430,59 +778,113 @@ Sales_Data_Analysis_SQL/
 
 **Current Status: 🟢 Active**
 
-**Completed: 67 Days**
+**Completed: 68 Days**
 
 **Primary Focus: SQL Data Analysis & Business Intelligence**
 
-The project has completed 67 days of structured SQL learning and business analysis.
+The project has completed 68 days of structured SQL learning and business analysis.
 
-The project now covers database design, SQL fundamentals, advanced SQL, query optimization, customer analytics, product analytics, customer segmentation, RFM analysis, customer retention, churn analysis, cohort analysis, customer lifecycle analysis, repeat purchase analysis, purchase frequency analysis, payment analysis, payment performance analysis, payment status analysis, payment method analysis, payment trend analysis, payment risk analysis, customer payment behavior analysis, customer payment success and failure analysis, payment method preference analysis, repeated payment failure analysis, pending payment analysis, customer payment risk classification, customer payment method performance analysis, payment method success/failure/pending analysis, customer payment method adoption, and payment method risk classification.
+The project now covers database design, SQL fundamentals, advanced SQL, query optimization, customer analytics, product analytics, customer segmentation, RFM analysis, customer retention, churn analysis, cohort analysis, customer lifecycle analysis, repeat purchase analysis, purchase frequency analysis, payment analysis, payment performance analysis, payment status analysis, payment method analysis, payment trend analysis, payment risk analysis, customer payment behavior analysis, customer payment success and failure analysis, payment method preference analysis, repeated payment failure analysis, pending payment analysis, customer payment risk classification, customer payment method performance analysis, payment method success/failure/pending analysis, customer payment method adoption, payment method risk classification, payment method trend analysis, monthly payment-method performance, month-over-month payment-method growth, and payment-method reliability analysis.
 
 ---
 
-# 🚀 67-Day Portfolio Progress
+# 🚀 68-Day Portfolio Progress
 
-**67 Days Completed 🚀**
+**68 Days Completed 🚀**
 
 ```text
 SQL Fundamentals
+
       ↓
+
 Advanced SQL
+
       ↓
+
 Business Analytics
+
       ↓
+
 Customer Analytics
+
       ↓
+
 Customer Retention
+
       ↓
+
 Customer Lifetime Value
+
       ↓
+
 RFM Customer Segmentation
+
       ↓
+
 Customer Segment Performance
+
       ↓
+
 Customer Cohort & Lifecycle Analysis
+
       ↓
+
 Repeat Purchase Analysis
+
       ↓
+
 Payment Analysis
+
       ↓
+
 Payment Performance Analysis
+
       ↓
+
 Payment Risk Analysis
+
       ↓
+
 Customer Payment Behavior Analysis
+
       ↓
+
 Customer Payment Success & Failure Analysis
+
       ↓
+
 Customer Payment Method Preference
+
       ↓
+
 Customer Payment Risk Classification
+
       ↓
+
 Customer Payment Method Performance Analysis
+
       ↓
+
 Payment Method Success / Failure / Pending Analysis
+
       ↓
+
+Payment Method Trend Analysis
+
+      ↓
+
+Monthly Payment Method Analysis
+
+      ↓
+
+Payment Method Growth Analysis
+
+      ↓
+
+Payment Method Reliability Analysis
+
+      ↓
+
 Business Insights
 ```
 
@@ -509,10 +911,12 @@ The next stage of the project can move toward:
 * Payment monitoring dashboards
 * Payment risk monitoring dashboards
 * Customer payment method dashboards
+* Payment trend dashboards
+* Payment reliability dashboards
 * Data quality monitoring dashboards
 * Business performance monitoring
 
-**Next Milestone: Day 68 🔥**
+**Next Milestone: Day 69 🔥**
 
 ---
 
@@ -522,40 +926,60 @@ The long-term goal is to transform this project into a complete SQL + Business A
 
 ```text
 Query
+
    ↓
+
 Analyze
+
    ↓
+
 Measure
+
    ↓
+
 Validate
+
    ↓
+
 Segment
+
    ↓
+
 Compare
+
    ↓
+
 Identify Problems
+
    ↓
+
 Forecast
+
    ↓
+
 Predict
+
    ↓
+
 Generate Insights
+
    ↓
+
 Recommend Business Actions
 ```
 
 ---
 
-# 🎉 67-Day Milestone
+# 🎉 68-Day Milestone
 
-**Day 67 is completed successfully. ✅**
+**Day 68 is completed successfully. ✅**
 
-**67 Days of continuous SQL business analysis completed. 🚀**
+**68 Days of continuous SQL business analysis completed. 🚀**
 
-**Customer Payment Method Performance Analysis completed successfully. 💳📊**
+**Payment Method Trend & Reliability Analysis completed successfully. 📈💳**
 
-**Payment method usage, customer adoption, success rate, failure rate, pending rate, performance comparison, and payment method risk classification completed. 🎯**
+**Payment method trends, monthly performance, customer adoption, success rate, failure rate, pending rate, month-over-month growth, and reliability analysis completed. 🎯**
 
-**67/67 Milestone Achieved. 🔥🏆**
+**68/68 Milestone Achieved. 🔥🏆**
 
-**Next target: Day 68. 🚀**
+**Next target: Day 69. 🚀**
