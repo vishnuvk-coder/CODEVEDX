@@ -1,17 +1,9 @@
-# 📊 Sales Data Analysis Using SQL
-
-A hands-on SQL portfolio project focused on **relational database design, advanced SQL analytics, query optimization, customer analytics, product analytics, business intelligence, payment analysis, sales forecasting, and seasonality analysis** using MySQL.
-
-This project simulates a real-world sales management system and demonstrates practical SQL skills relevant to **Data Analyst, Business Analyst, SQL Developer, Reporting Analyst, and MIS Analyst roles**.
-
----
-
-## 🚀 Project Overview
-
+📊 Sales Data Analysis Using SQL
+A hands-on SQL portfolio project focused on relational database design, advanced SQL analytics, query optimization, customer analytics, product analytics, business intelligence, payment analysis, sales forecasting, and seasonality analysis using MySQL.
+This project simulates a real-world sales management system and demonstrates practical SQL skills relevant to Data Analyst, Business Analyst, SQL Developer, Reporting Analyst, and MIS Analyst roles.
+🚀 Project Overview
 The project follows a structured SQL learning and business analysis journey, progressing from database fundamentals to advanced analytical techniques and business decision-support use cases.
-
 The project covers:
-
 - Database design and SQL fundamentals
 - Data querying, JOINs and aggregations
 - Advanced SQL and query optimization
@@ -27,17 +19,62 @@ The project covers:
 - Sales forecasting and revenue projection
 - Monthly sales seasonality and year-over-year comparisons
 - Business reporting and actionable business insights
+🏆 Latest Milestone: Day 71 Completed
+Day 71 — Customer Purchase Trends and Repeat Purchase Analysis Using SQL
+Day 71 focuses on customer order frequency, repeat-purchase behavior, the time between consecutive orders, monthly repeat activity, and customer revenue contribution using MySQL 8.0.
+🎯 Day 71 Objectives
+- Summarize orders, units purchased, revenue, and average order value by customer.
+- Classify one-time and repeat customers.
+- Calculate the overall repeat-purchase rate.
+- Segment customers by purchase frequency.
+- Calculate days between consecutive customer orders.
+- Measure average purchase intervals for customers with multiple dated orders.
+- Analyze monthly customers who place multiple orders within the same month.
+- Rank customers by revenue contribution.
+🔍 Day 71 Key Analyses
+1. Customer Purchase Summary
+2. One-Time vs Repeat Customer Classification
+3. Overall Repeat-Purchase Rate
+4. Purchase Frequency Segmentation
+5. Days Between Consecutive Orders
+6. Average Purchase Interval per Customer
+7. Monthly Repeat Customer Trends
+8. Customer Revenue Ranking
+🧠 SQL Techniques Used
+- Aggregate functions and GROUP BY
+- CASE expressions and conditional aggregation
+- Common Table Expressions (CTEs)
+- LAG() for previous-order dates
+- DATEDIFF() for purchase intervals
+- DATE_FORMAT() for monthly analysis
+- DENSE_RANK() for customer revenue ranking
+- COALESCE() and NULLIF() for safe calculations
+💼 Business Applications
+- Identify one-time customers and repeat buyers.
+- Understand purchase frequency and time between orders.
+- Find high-revenue customers.
+- Monitor customers placing multiple orders within a month.
+- Support customer retention and engagement planning.
+⚠️ Methodology Limitations
+- Repeat-customer classification uses all available orders in the database.
+- Monthly repeat-customer rate means multiple orders within the same calendar month; it does not measure every customer returning from a previous month.
+- Purchase interval results require valid order dates and at least two dated orders per customer.
+- Revenue uses quantity multiplied by the current product price in the products table; historical prices, discounts, refunds, taxes, shipping, and product costs are not included unless modeled separately.
+- Numerical findings should be reported only after reviewing the actual query results.
+📁 Day 71 Project Files
+SQL/
+└── customer_repeat_purchase_analysis.sql
 
----
+Report/
+└── Day71_Customer_Repeat_Purchase_Analysis.md
 
-## 🏆 Latest Milestone: Day 70 Completed
-
-**Day 70 — Advanced Sales Seasonality & Year-over-Year Performance Analysis Using SQL**
-
+Screenshots/
+└── Day 71/
+Day 71 Status: ✅ Completed
+🏆 Latest Milestone: Day 71 Completed
+Day 70 — Advanced Sales Seasonality & Year-over-Year Performance Analysis Using SQL
 Day 70 extends the sales forecasting work from Day 69 by comparing revenue across calendar months and years, examining quarterly performance, and identifying stronger and weaker observed sales periods.
-
-### 🎯 Day 70 Objectives
-
+🎯 Day 70 Objectives
 - Analyze monthly sales revenue by year.
 - Compare revenue for the same calendar month across consecutive years.
 - Calculate year-over-year (YoY) revenue growth.
@@ -47,9 +84,7 @@ Day 70 extends the sales forecasting work from Day 69 by comparing revenue acros
 - Compare quarterly sales performance.
 - Analyze year-over-year changes in units sold.
 - Summarize annual sales performance.
-
-### 🔍 Day 70 Key Analyses
-
+🔍 Day 70 Key Analyses
 1. Monthly Sales Revenue by Year
 2. Year-over-Year Revenue Comparison
 3. YoY Revenue Change
@@ -65,32 +100,26 @@ Day 70 extends the sales forecasting work from Day 69 by comparing revenue acros
 13. Average Observed Monthly Revenue
 14. Highest and Lowest Observed Monthly Revenue
 15. Final Sales Seasonality and YoY Analysis
-
-### 🧠 SQL Techniques Used
-
-- `SELECT`, `SUM()`, `COUNT()`, `AVG()`
-- `MIN()` and `MAX()`
-- `ROUND()` and `NULLIF()`
-- `YEAR()`, `MONTH()` and `QUARTER()`
-- `DATE_FORMAT()` and `STR_TO_DATE()`
-- `GROUP BY` and `ORDER BY`
+🧠 SQL Techniques Used
+- SELECT, SUM(), COUNT(), AVG()
+- MIN() and MAX()
+- ROUND() and NULLIF()
+- YEAR(), MONTH() and QUARTER()
+- DATE_FORMAT() and STR_TO_DATE()
+- GROUP BY and ORDER BY
 - JOINs and Common Table Expressions (CTEs)
 - Self-joins for prior-year comparisons
-- Window functions and `RANK()`
+- Window functions and RANK()
 - Percentage change calculations
 - Conditional handling of missing comparisons
-
-### 💼 Business Applications
-
+💼 Business Applications
 - Compare sales performance against the same month in the previous year.
 - Identify calendar months with stronger observed revenue.
 - Support preliminary inventory and staffing discussions.
 - Monitor quarterly sales performance.
 - Compare revenue growth with units-sold growth.
 - Prepare historical sales performance reports.
-
-### ⚠️ Methodology Limitations
-
+⚠️ Methodology Limitations
 - Seasonality conclusions depend on the amount and quality of historical data.
 - Months without orders are not automatically generated by the monthly aggregation.
 - Average monthly revenue is based on observed months with sales.
@@ -98,30 +127,28 @@ Day 70 extends the sales forecasting work from Day 69 by comparing revenue acros
 - Revenue is calculated from product quantity multiplied by product price; discounts, refunds, taxes, shipping and product costs are not included unless modeled separately.
 - This is descriptive SQL analysis, not proof of seasonal causation or a machine-learning forecast.
 - Numerical business findings should be reported only after reviewing the actual query results.
+📁 Day 70 Project Files
 
-### 📁 Day 70 Project Files
-
-```text
 SQL/
+
 └── sales_seasonality_yoy_analysis.sql
 
+
+
 Report/
+
 └── Day70_Sales_Seasonality_YoY_Analysis.md
 
+
+
 Screenshots/
+
 └── Day 70/
-```
 
-**Day 70 Status: ✅ Completed**
-
----
-
-## 📊 Day 69 — Sales Forecasting & Trend Projection Using SQL
-
+Day 70 Status: ✅ Completed
+📊 Day 69 — Sales Forecasting & Trend Projection Using SQL
 Day 69 focused on analyzing historical sales performance and calculating a baseline projection for future revenue using MySQL.
-
-### Key Analyses
-
+Key Analyses
 1. Monthly Sales Revenue
 2. Monthly Order Count
 3. Monthly Units Sold
@@ -137,38 +164,27 @@ Day 69 focused on analyzing historical sales performance and calculating a basel
 13. Revenue Volatility Overview
 14. Baseline Next-Month Revenue Projection
 15. Final Sales Forecasting Summary
-
-### SQL Techniques
-
+SQL Techniques
 - CTEs and window functions
-- `LAG()`, `RANK()` and `ROW_NUMBER()`
+- LAG(), RANK() and ROW_NUMBER()
 - Moving averages
 - Revenue growth calculations
 - Standard deviation analysis
 - Historical trend classification
-
-### Forecasting Method
-
+Forecasting Method
 The baseline projection uses the average revenue from the three most recent available monthly records. It is a simple reference estimate, not a machine-learning prediction or guaranteed forecast.
+Day 69 Project Files
 
-### Day 69 Project Files
-
-```text
 SQL/sales_forecasting_trend_projection.sql
+
 Report/Day69_Sales_Forecasting_Trend_Projection.md
+
 Screenshots/Day 69/
-```
 
-**Day 69 Status: ✅ Completed**
-
----
-
-## 💳 Day 68 — Payment Method Trend & Reliability Analysis
-
+Day 69 Status: ✅ Completed
+💳 Day 68 — Payment Method Trend & Reliability Analysis
 Day 68 analyzed payment method usage, transaction outcomes and reliability over time.
-
-### Key Analyses
-
+Key Analyses
 1. Payment Method Usage by Date
 2. Payment Method Usage by Month
 3. Monthly Transactions by Payment Method
@@ -184,35 +200,25 @@ Day 68 analyzed payment method usage, transaction outcomes and reliability over 
 13. Payment Method Reliability Classification
 14. Highest-Growth Payment Method
 15. Final Payment Method Trend Summary
-
-### Reliability Framework
-
+Reliability Framework
 | Success Rate | Classification |
 |---|---|
 | 90% or higher | Highly Reliable |
 | 75% to below 90% | Moderately Reliable |
 | Below 75% | Low Reliability |
-
 These categories are rule-based business analysis classifications, not a machine-learning model.
+Day 68 Project Files
 
-### Day 68 Project Files
-
-```text
 SQL/payment_method_trend_reliability_analysis.sql
+
 Report/Day68_Payment_Method_Trend_Reliability_Analysis.md
+
 Screenshots/Day 68/
-```
 
-**Day 68 Status: ✅ Completed**
-
----
-
-## 💰 Day 67 — Customer Payment Method Performance Analysis
-
+Day 68 Status: ✅ Completed
+💰 Day 67 — Customer Payment Method Performance Analysis
 Day 67 focused on comparing payment methods based on transaction activity and payment outcomes.
-
-### Key Analyses
-
+Key Analyses
 - Payment method transaction count
 - Unique orders by payment method
 - Customer count by payment method
@@ -223,23 +229,17 @@ Day 67 focused on comparing payment methods based on transaction activity and pa
 - Highest failure rate
 - Rule-based payment method risk classification
 - Final payment method performance summary
+Day 67 Project Files
 
-### Day 67 Project Files
-
-```text
 SQL/customer_payment_method_performance_analysis.sql
+
 Report/Day67_Customer_Payment_Method_Performance_Analysis.md
+
 Screenshots/Day 67/
-```
 
-**Day 67 Status: ✅ Completed**
-
----
-
-## 📈 Sales Trend & Forecasting Analysis
-
+Day 67 Status: ✅ Completed
+📈 Sales Trend & Forecasting Analysis
 The project includes:
-
 - Daily and monthly sales trend analysis
 - Monthly revenue and order analysis
 - Month-over-month revenue comparison
@@ -254,13 +254,8 @@ The project includes:
 - Product demand and sales forecasting concepts
 - Year-over-year sales comparisons
 - Monthly seasonality and quarterly performance analysis
-
----
-
-## 👥 Customer Analytics
-
+👥 Customer Analytics
 The project includes:
-
 - Customer purchase behavior
 - Customer revenue contribution
 - Customer lifetime value
@@ -276,13 +271,8 @@ The project includes:
 - Customer revenue decile, quartile and quintile analysis
 - Customer revenue ABC analysis
 - ABC segment performance and business-priority analysis
-
----
-
-## 📦 Product & Business Analytics
-
+📦 Product & Business Analytics
 The project includes:
-
 - Product performance analysis
 - Product revenue contribution
 - Product purchase behavior
@@ -294,47 +284,38 @@ The project includes:
 - Sales performance KPIs
 - Business performance reporting
 - Data quality and integrity analysis
-
----
-
-## 🗄️ Database Design
-
-**Database:** `sales_analysis_db`
-
+🗄️ Database Design
+Database: sales_analysis_db
 The database includes the following tables:
-
 | Table | Purpose |
 |---|---|
-| `customers` | Customer information |
-| `orders` | Order records and dates |
-| `order_items` | Products and quantities within orders |
-| `products` | Product details and prices |
-| `payments` | Payment methods, dates and statuses |
+| customers | Customer information |
+| orders | Order records and dates |
+| order_items | Products and quantities within orders |
+| products | Product details and prices |
+| payments | Payment methods, dates and statuses |
+Database Relationships
 
-### Database Relationships
-
-```text
 Customers
-   |
-   └── Orders
-         |
-         ├── Order_Items ─── Products
-         |
-         └── Payments
-```
 
-### Revenue Calculation
+   |
 
-```sql
-SUM(order_items.quantity * products.price)
-```
+   └── Orders
 
-Revenue analyses use product quantity multiplied by product price. The `order_items` table does not contain the product price field in this schema, and the `payments` table is not assumed to contain a payment amount field.
+         |
 
----
+         ├── Order_Items ─── Products
 
-## 📅 Daily Project Organization
+         |
 
+         └── Payments
+
+Revenue Calculation
+
+SUM(order_items.quantity \* products.price)
+
+Revenue analyses use product quantity multiplied by product price. The order_items table does not contain the product price field in this schema, and the payments table is not assumed to contain a payment amount field.
+📅 Daily Project Organization
 | Day | Main Work |
 |---|---|
 | Day 1–7 | SQL and Database Fundamentals |
@@ -374,163 +355,268 @@ Revenue analyses use product quantity multiplied by product price. The `order_it
 | Day 67 | Customer Payment Method Performance |
 | Day 68 | Payment Method Trend and Reliability |
 | Day 69 | Sales Forecasting and Trend Projection |
-| **Day 70** | **Advanced Sales Seasonality and YoY Analysis** |
+| Day 70 | Advanced Sales Seasonality and YoY Analysis |
+**
+| Day 71 | Customer Repeat Purchase and Purchase Interval Analysis |
+📁 Project Structure**
 
----
-
-## 📁 Project Structure
-
-```text
 Sales_Data_Analysis_SQL/
+
 │
+
 ├── Database_Design/
-│   └── sales_analysis.mwb
+
+│   └── sales_analysis.mwb
+
 │
+
 ├── SQL/
-│   ├── create_database.sql
-│   ├── create_tables.sql
-│   ├── insert_data.sql
-│   ├── basic_queries.sql
-│   ├── join_queries.sql
-│   ├── aggregate_queries.sql
-│   ├── subqueries.sql
-│   ├── sales_analysis_report.sql
-│   ├── views.sql
-│   ├── stored_procedures.sql
-│   ├── triggers.sql
-│   ├── indexes.sql
-│   ├── window_functions.sql
-│   ├── cte_queries.sql
-│   ├── cte_analysis.sql
-│   ├── advanced_business_analysis.sql
-│   ├── query_optimization.sql
-│   ├── business_kpi_analysis.sql
-│   ├── customer_revenue_analytics.sql
-│   ├── customer_behavior_analysis.sql
-│   ├── customer_retention_analysis.sql
-│   ├── customer_lifetime_value.sql
-│   ├── rfm_customer_segmentation.sql
-│   ├── sales_trend_analysis.sql
-│   ├── product_performance_analysis.sql
-│   ├── sales_profitability_analysis.sql
-│   ├── customer_revenue_contribution.sql
-│   ├── customer_churn_analysis.sql
-│   ├── customer_cohort_analysis.sql
-│   ├── customer_purchase_frequency_analysis.sql
-│   ├── data_quality_integrity_analysis.sql
-│   ├── sales_performance_kpi_analysis.sql
-│   ├── sales_growth_mom_analysis.sql
-│   ├── sales_order_value_basket_analysis.sql
-│   ├── sales_revenue_forecasting_analysis.sql
-│   ├── product_demand_forecasting_analysis.sql
-│   ├── customer_repeat_purchase_prediction.sql
-│   ├── customer_purchase_propensity_analysis.sql
-│   ├── customer_purchase_value_basket_analysis.sql
-│   ├── customer_purchase_value_segmentation.sql
-│   ├── customer_revenue_contribution_analysis.sql
-│   ├── customer_revenue_pareto_analysis.sql
-│   ├── customer_revenue_decile_analysis.sql
-│   ├── customer_revenue_quartile_analysis.sql
-│   ├── customer_revenue_quintile_analysis.sql
-│   ├── customer_revenue_abc_analysis.sql
-│   ├── customer_revenue_abc_segment_performance.sql
-│   ├── customer_revenue_abc_segment_comparison.sql
-│   ├── payment_performance_business_analysis.sql
-│   ├── customer_payment_behavior_risk_analysis.sql
-│   ├── customer_payment_method_performance_analysis.sql
-│   ├── payment_method_trend_reliability_analysis.sql
-│   ├── sales_forecasting_trend_projection.sql
-│   └── sales_seasonality_yoy_analysis.sql
+
+│   ├── create_database.sql
+
+│   ├── create_tables.sql
+
+│   ├── insert_data.sql
+
+│   ├── basic_queries.sql
+
+│   ├── join_queries.sql
+
+│   ├── aggregate_queries.sql
+
+│   ├── subqueries.sql
+
+│   ├── sales_analysis_report.sql
+
+│   ├── views.sql
+
+│   ├── stored_procedures.sql
+
+│   ├── triggers.sql
+
+│   ├── indexes.sql
+
+│   ├── window_functions.sql
+
+│   ├── cte_queries.sql
+
+│   ├── cte_analysis.sql
+
+│   ├── advanced_business_analysis.sql
+
+│   ├── query_optimization.sql
+
+│   ├── business_kpi_analysis.sql
+
+│   ├── customer_revenue_analytics.sql
+
+│   ├── customer_behavior_analysis.sql
+
+│   ├── customer_retention_analysis.sql
+
+│   ├── customer_lifetime_value.sql
+
+│   ├── rfm_customer_segmentation.sql
+
+│   ├── sales_trend_analysis.sql
+
+│   ├── product_performance_analysis.sql
+
+│   ├── sales_profitability_analysis.sql
+
+│   ├── customer_revenue_contribution.sql
+
+│   ├── customer_churn_analysis.sql
+
+│   ├── customer_cohort_analysis.sql
+
+│   ├── customer_purchase_frequency_analysis.sql
+
+│   ├── data_quality_integrity_analysis.sql
+
+│   ├── sales_performance_kpi_analysis.sql
+
+│   ├── sales_growth_mom_analysis.sql
+
+│   ├── sales_order_value_basket_analysis.sql
+
+│   ├── sales_revenue_forecasting_analysis.sql
+
+│   ├── product_demand_forecasting_analysis.sql
+
+│   ├── customer_repeat_purchase_prediction.sql
+
+│   ├── customer_purchase_propensity_analysis.sql
+
+│   ├── customer_purchase_value_basket_analysis.sql
+
+│   ├── customer_purchase_value_segmentation.sql
+
+│   ├── customer_revenue_contribution_analysis.sql
+
+│   ├── customer_revenue_pareto_analysis.sql
+
+│   ├── customer_revenue_decile_analysis.sql
+
+│   ├── customer_revenue_quartile_analysis.sql
+
+│   ├── customer_revenue_quintile_analysis.sql
+
+│   ├── customer_revenue_abc_analysis.sql
+
+│   ├── customer_revenue_abc_segment_performance.sql
+
+│   ├── customer_revenue_abc_segment_comparison.sql
+
+│   ├── payment_performance_business_analysis.sql
+
+│   ├── customer_payment_behavior_risk_analysis.sql
+
+│   ├── customer_payment_method_performance_analysis.sql
+
+│   ├── payment_method_trend_reliability_analysis.sql
+
+│   ├── sales_forecasting_trend_projection.sql
+
+│   ├── sales_seasonality_yoy_analysis.sql
+
+│   └── customer_repeat_purchase_analysis.sql
+
 │
+
 ├── Screenshots/
-│   ├── Day 67/
-│   ├── Day 68/
-│   ├── Day 69/
-│   └── Day 70/
+
+│   ├── Day 67/
+
+│   ├── Day 68/
+
+│   ├── Day 69/
+
+│   ├── Day 70/
+│   └── Day 71/
+
 │
+
 ├── Presentation/
+
 │
+
 ├── Report/
-│   ├── Week1_Report.md
-│   ├── Week2_Report.md
-│   ├── Day67_Customer_Payment_Method_Performance_Analysis.md
-│   ├── Day68_Payment_Method_Trend_Reliability_Analysis.md
-│   ├── Day69_Sales_Forecasting_Trend_Projection.md
-│   └── Day70_Sales_Seasonality_YoY_Analysis.md
+
+│   ├── Week1_Report.md
+
+│   ├── Week2_Report.md
+
+│   ├── Day67_Customer_Payment_Method_Performance_Analysis.md
+
+│   ├── Day68_Payment_Method_Trend_Reliability_Analysis.md
+
+│   ├── Day69_Sales_Forecasting_Trend_Projection.md
+
+│   ├── Day70_Sales_Seasonality_YoY_Analysis.md
+│   └── Day71_Customer_Repeat_Purchase_Analysis.md
+
 │
+
 └── README.md
-```
 
 *Note: The structure documents the main project files. Keep the filenames aligned with the actual files present in the repository.*
+📌 Project Status
+Current Status: 🟢 Active
+Completed: 71 Days
+Primary Focus: SQL Data Analysis and Business Intelligence
+The project has progressed from database design and SQL fundamentals to advanced SQL analytics, customer analytics, product analytics, revenue segmentation, payment analysis, sales forecasting, seasonality analysis, and repeat-purchase behavior.
+Day 70 added calendar-month revenue comparisons, year-over-year growth calculations, quarterly rankings, and annual performance summaries. Day 71 adds repeat-customer classification, purchase frequency segmentation, purchase interval calculations, monthly repeat activity, and customer revenue ranking.
+🚀 71-Day Portfolio Progress
 
----
-
-## 📌 Project Status
-
-**Current Status:** 🟢 Active
-
-**Completed:** 70 Days
-
-**Primary Focus:** SQL Data Analysis and Business Intelligence
-
-The project has progressed from database design and SQL fundamentals to advanced SQL analytics, customer analytics, product analytics, revenue segmentation, payment analysis, sales forecasting, and seasonality analysis.
-
-Day 70 adds calendar-month revenue comparisons, year-over-year growth calculations, quarterly rankings, and annual performance summaries to the portfolio.
-
----
-
-## 🚀 70-Day Portfolio Progress
-
-```text
 SQL Fundamentals
-       ↓
+
+       ↓
+
 Advanced SQL
-       ↓
+
+       ↓
+
 Business Analytics
-       ↓
+
+       ↓
+
 Customer Analytics
-       ↓
+
+       ↓
+
 Customer Retention and Lifecycle Analysis
-       ↓
+
+       ↓
+
 Customer Lifetime Value and RFM Segmentation
-       ↓
+
+       ↓
+
 Product and Customer Behavior Analysis
-       ↓
+
+       ↓
+
 Revenue Contribution and Segmentation
-       ↓
+
+       ↓
+
 ABC Segment Performance
-       ↓
+
+       ↓
+
 Payment Performance and Risk Analysis
-       ↓
+
+       ↓
+
 Payment Method Performance
-       ↓
+
+       ↓
+
 Payment Method Trend and Reliability
-       ↓
+
+       ↓
+
 Sales Revenue Trend Analysis
-       ↓
+
+       ↓
+
 Month-over-Month Growth
-       ↓
+
+       ↓
+
 Three-Month and Six-Month Moving Averages
-       ↓
+
+       ↓
+
 Revenue Volatility
-       ↓
+
+       ↓
+
 Baseline Next-Month Revenue Projection
-       ↓
+
+       ↓
+
 Calendar-Month Seasonality
-       ↓
+
+       ↓
+
 Year-over-Year Revenue and Units Sold Comparison
-       ↓
+
+       ↓
+
+Repeat Purchase and Purchase Interval Analysis
+
+       ↓
+
 Quarterly and Annual Performance Analysis
-       ↓
+
+       ↓
+
 Business Insights
-```
 
----
-
-## 🎯 Next Milestone
-
+🎯 Next Milestone
 The next stage can explore:
-
 - Advanced forecast evaluation
 - Product demand seasonality
 - Customer behavior forecasting
@@ -543,47 +629,51 @@ The next stage can explore:
 - Payment monitoring dashboards
 - Data quality monitoring
 - Business performance monitoring
-
-**Next Milestone: Day 71 🚀**
-
----
-
-## ⭐ Project Goal
-
+Next Milestone: Day 72 🚀
+⭐ Project Goal
 The long-term goal is to develop a practical SQL and Business Analytics portfolio demonstrating the ability to:
 
-```text
 Query
-  ↓
+
+  ↓
+
 Analyze
-  ↓
+
+  ↓
+
 Measure
-  ↓
+
+  ↓
+
 Validate
-  ↓
+
+  ↓
+
 Segment
-  ↓
+
+  ↓
+
 Compare
-  ↓
+
+  ↓
+
 Identify Problems
-  ↓
+
+  ↓
+
 Forecast
-  ↓
+
+  ↓
+
 Generate Insights
-  ↓
+
+  ↓
+
 Recommend Business Actions
-```
 
----
-
-## 🎉 70-Day Milestone
-
-**Day 70 — Advanced Sales Seasonality and YoY Analysis completed. ✅**
-
-**70 days of structured SQL business analysis documented. 🚀**
-
-**Monthly seasonality, YoY revenue growth, quarterly performance, monthly revenue ranking, and annual sales summaries added to the project. 📊**
-
-**70/70 Milestone Achieved. 🏆**
-
-**Next target: Day 71. 🚀**
+🎉 71-Day Milestone
+Day 71 — Customer Purchase Trends and Repeat Purchase Analysis completed. ✅
+71 days of structured SQL business analysis documented. 🚀
+Repeat-customer analysis, purchase frequency, purchase intervals, monthly repeat activity, and customer revenue ranking added to the project. 📊
+71/71 Milestone Achieved. 🏆
+Next target: Day 72. 🚀
