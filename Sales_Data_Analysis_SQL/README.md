@@ -643,7 +643,7 @@ Primary Focus: SQL Data Analysis and Business Intelligence
 The project has progressed from database design and SQL fundamentals to advanced SQL analytics, customer analytics, product analytics, revenue segmentation, payment analysis, sales forecasting, seasonality analysis, repeat-purchase behavior, and customer revenue contribution analysis.
 Day 70 added calendar-month revenue comparisons, year-over-year growth calculations, quarterly rankings, and annual performance summaries. Day 71 added repeat-customer classification, purchase frequency segmentation, purchase interval calculations, monthly repeat activity, and customer revenue ranking. Day 72 adds relative revenue-based customer segmentation, customer and segment revenue contribution, customer ranking, and cumulative revenue analysis. Day 74 adds returning-customer classification, repeat-purchase rate, purchase-frequency groups, consecutive-order intervals, and returning-customer revenue analysis. Day 75 adds customer purchase recency, inactivity segments, at-risk customer identification, and rule-based re-engagement priorities. Day 76 adds customer spending summaries, relative spending segmentation, segment performance comparisons, and top-spending customer identification.
 🚀 76-Day Portfolio Progress
-SQL Fundamentals
+SQL Fundamental
        ↓
 Advanced SQL
        ↓
