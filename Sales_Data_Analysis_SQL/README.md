@@ -19,7 +19,45 @@ The project covers:
 - Sales forecasting and revenue projection
 - Monthly sales seasonality and year-over-year comparisons
 - Business reporting and actionable business insights
-🏆 Latest Milestone: Day 75 Completed
+🏆 Latest Milestone: Day 76 Completed
+Day 76 — Customer Spending Segmentation Analysis Using SQL
+Day 76 analyzes customer spending behavior using MySQL, calculates customer-level order and spending metrics, groups purchasing customers into relative low-, medium-, and high-spending segments, compares segment performance, and identifies top-spending customers.
+Day 76 Objectives
+- Calculate each customer's total orders, total quantity purchased, total spending, and average order value.
+- Segment purchasing customers into low-, medium-, and high-spending groups using NTILE(3).
+- Compare customer counts, segment revenue, average customer spending, and average order value across segments.
+- Identify the top 10 customers by total spending.
+- List customers in the high-spending segment.
+Day 76 Key Analyses
+1. Customer spending summary.
+2. Relative customer spending segmentation.
+3. Spending segment performance comparison.
+4. Top 10 customers by spending.
+5. High-spending customer identification.
+SQL Techniques Used
+- JOINs and LEFT JOINs.
+- SUM(), COUNT(), AVG(), ROUND(), and COALESCE().
+- Common Table Expressions (CTEs).
+- CASE expressions.
+- NTILE() window function.
+- GROUP BY, HAVING, ORDER BY, and LIMIT.
+Business Applications
+- Identify customers who contribute higher spending.
+- Compare spending across customer groups.
+- Support loyalty and customer engagement planning.
+- Identify opportunities to encourage medium- and low-spending customers to purchase more.
+- Support customer-level business reporting.
+Methodology Limitations
+- NTILE(3) creates relative spending groups, not fixed monetary thresholds.
+- Customers with no orders are classified separately as Never Purchased.
+- Revenue is calculated as quantity multiplied by current product price; historical prices, discounts, refunds, taxes, shipping, and product costs are not included unless modeled separately.
+- Numerical findings should only be reported after reviewing actual query results.
+Day 76 Project Files
+- SQL/customer_spending_segmentation_analysis.sql
+- Report/Day76_Customer_Spending_Segmentation_Analysis.md
+- Screenshots/Day 76/
+Day 76 Status: Completed
+🏆 Previous Milestone: Day 75 Completed
 Day 75 — Customer Purchase Recency and Inactivity Analysis Using SQL
 Day 75 analyzes how recently customers purchased, segments customers by purchase recency, identifies customers at risk of inactivity, compares historical revenue from inactive customers, and assigns rule-based re-engagement priorities using MySQL.
 Day 75 Objectives
@@ -499,6 +537,7 @@ Revenue analyses use product quantity multiplied by product price. The order_ite
 | Day 73 | Customer Revenue Concentration and Pareto (80/20) Analysis |
 | Day 74 | Customer Repeat Purchase and Returning Customer Analysis |
 | Day 75 | Customer Purchase Recency and Inactivity Analysis |
+| Day 76 | Customer Spending Segmentation Analysis |
 📁 Project Structure**
 Sales_Data_Analysis_SQL/
 │
@@ -564,7 +603,8 @@ Sales_Data_Analysis_SQL/
 │   ├── customer_segmentation_revenue_contribution.sql
 │   ├── customer_revenue_concentration_pareto_analysis.sql
 │   ├── customer_repeat_purchase_returning_analysis.sql
-│   └── customer_purchase_recency_inactivity_analysis.sql
+│   ├── customer_purchase_recency_inactivity_analysis.sql
+│   └── customer_spending_segmentation_analysis.sql
 │
 ├── Screenshots/
 │   ├── Day 67/
@@ -575,7 +615,8 @@ Sales_Data_Analysis_SQL/
 │   ├── Day 72/
 │   ├── Day 73/
 │   ├── Day 74/
-│   └── Day 75/
+│   ├── Day 75/
+│   └── Day 76/
 │
 ├── Presentation/
 │
@@ -590,17 +631,18 @@ Sales_Data_Analysis_SQL/
 │   ├── Day72_Customer_Segmentation_Revenue_Contribution.md
 │   ├── Day73_Customer_Revenue_Concentration_Pareto_Analysis.md
 │   ├── Day74_Customer_Repeat_Purchase_Analysis.md
-│   └── Day75_Customer_Purchase_Recency_Inactivity_Analysis.md
+│   ├── Day75_Customer_Purchase_Recency_Inactivity_Analysis.md
+│   └── Day76_Customer_Spending_Segmentation_Analysis.md
 │
 └── README.md
 *Note: The structure documents the main project files. Keep the filenames aligned with the actual files present in the repository.*
 📌 Project Status
 Current Status: 🟢 Active
-Completed: 75 Days
+Completed: 76 Days
 Primary Focus: SQL Data Analysis and Business Intelligence
 The project has progressed from database design and SQL fundamentals to advanced SQL analytics, customer analytics, product analytics, revenue segmentation, payment analysis, sales forecasting, seasonality analysis, repeat-purchase behavior, and customer revenue contribution analysis.
-Day 70 added calendar-month revenue comparisons, year-over-year growth calculations, quarterly rankings, and annual performance summaries. Day 71 added repeat-customer classification, purchase frequency segmentation, purchase interval calculations, monthly repeat activity, and customer revenue ranking. Day 72 adds relative revenue-based customer segmentation, customer and segment revenue contribution, customer ranking, and cumulative revenue analysis. Day 74 adds returning-customer classification, repeat-purchase rate, purchase-frequency groups, consecutive-order intervals, and returning-customer revenue analysis.
-🚀 75-Day Portfolio Progress
+Day 70 added calendar-month revenue comparisons, year-over-year growth calculations, quarterly rankings, and annual performance summaries. Day 71 added repeat-customer classification, purchase frequency segmentation, purchase interval calculations, monthly repeat activity, and customer revenue ranking. Day 72 adds relative revenue-based customer segmentation, customer and segment revenue contribution, customer ranking, and cumulative revenue analysis. Day 74 adds returning-customer classification, repeat-purchase rate, purchase-frequency groups, consecutive-order intervals, and returning-customer revenue analysis. Day 75 adds customer purchase recency, inactivity segments, at-risk customer identification, and rule-based re-engagement priorities. Day 76 adds customer spending summaries, relative spending segmentation, segment performance comparisons, and top-spending customer identification.
+🚀 76-Day Portfolio Progress
 SQL Fundamentals
        ↓
 Advanced SQL
@@ -658,7 +700,7 @@ The next stage can explore:
 - Payment monitoring dashboards
 - Data quality monitoring
 - Business performance monitoring
-Next Milestone: Day 76 🚀
+Next Milestone: Day 77 🚀
 ⭐ Project Goal
 The long-term goal is to develop a practical SQL and Business Analytics portfolio demonstrating the ability to:
 Query
@@ -680,14 +722,16 @@ Forecast
 Generate Insights
   ↓
 Recommend Business Actions
-🎉 75-Day Milestone
+🎉 76-Day Milestone
 Day 71 — Customer Purchase Trends and Repeat Purchase Analysis completed. ✅
 Day 72 — Customer Segmentation and Revenue Contribution Analysis completed. ✅
 Day 73 — Customer Revenue Concentration and Pareto (80/20) Analysis completed. ✅
 Day 74 — Customer Repeat Purchase and Returning Customer Analysis completed. ✅
 Day 75 — Customer Purchase Recency and Inactivity Analysis completed. ✅
-75 days of structured SQL business analysis documented. 🚀
+76 days of structured SQL business analysis documented. 🚀
 Customer purchase recency, inactivity segments, at-risk customer identification, historical revenue from inactive customers, and rule-based re-engagement priorities added to the project. 📊
-75/75 Milestone Achieved. 🏆
+76/76 Milestone Achieved. 🏆
 Day 75 — Customer Purchase Recency and Inactivity Analysis completed. ✅
-Next target: Day 76. 🚀
+Day 76 — Customer Spending Segmentation Analysis completed. ✅
+Customer spending summary, relative spending segments, segment performance comparison, top-spending customer ranking, and high-spending customer identification added to the project. 📊
+Next target: Day 77. 🚀
