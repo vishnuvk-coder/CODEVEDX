@@ -19,7 +19,46 @@ The project covers:
 - Sales forecasting and revenue projection
 - Monthly sales seasonality and year-over-year comparisons
 - Business reporting and actionable business insights
-🏆 Latest Milestone: Day 76 Completed
+🏆 Latest Milestone: Day 77 Completed
+Day 77 — Customer Revenue Growth and Trend Analysis Using SQL
+Day 77 focuses on month-by-month revenue trends, comparing each customer's recorded monthly revenue with their previous recorded month, measuring revenue changes and growth percentages, and identifying growing, declining, and stable revenue patterns.
+Day 77 Objectives
+- Calculate monthly revenue for each customer.
+- Compare monthly customer revenue with the previous recorded month using LAG().
+- Calculate revenue change and month-over-month growth percentage.
+- Classify customer revenue trends as Growing, Declining, Stable, or No Previous Month.
+- Compare overall monthly revenue and identify customers whose latest recorded revenue is declining.
+Day 77 Key Analyses
+1. Monthly revenue per customer.
+2. Previous-month revenue comparison.
+3. Revenue change and growth percentage.
+4. Customer revenue trend classification.
+5. Overall monthly revenue trend.
+6. Identification of customers with declining latest recorded revenue.
+SQL Techniques Used
+- JOINs and aggregate functions.
+- Common Table Expressions (CTEs).
+- DATE_FORMAT() for monthly grouping.
+- LAG() and ROW_NUMBER() window functions.
+- CASE expressions and growth calculations.
+- NULLIF() for division-by-zero protection.
+Business Applications
+- Monitor changes in customer revenue over time.
+- Identify customers with declining recorded revenue.
+- Detect customers whose spending is increasing.
+- Support customer retention and marketing decisions.
+- Track monthly business revenue performance.
+Methodology Limitations
+- Revenue is calculated as quantity multiplied by current product price; historical prices, discounts, refunds, taxes, shipping, and product costs are not represented by this calculation.
+- Customers with no purchases in a month are absent from that month's customer-revenue rows.
+- LAG() compares the previous recorded month for a customer; if they skipped a calendar month, the comparison is not necessarily with the immediately preceding calendar month.
+- Numerical findings should be reported only after reviewing actual query results.
+Day 77 Project Files
+- SQL/customer_revenue_growth_trend_analysis.sql
+- Report/Day77_Customer_Revenue_Growth_Trend_Analysis.md
+- Screenshots/Day 77/
+Day 77 Status: Completed
+🏆 Previous Milestone: Day 76 Completed
 Day 76 — Customer Spending Segmentation Analysis Using SQL
 Day 76 analyzes customer spending behavior using MySQL, calculates customer-level order and spending metrics, groups purchasing customers into relative low-, medium-, and high-spending segments, compares segment performance, and identifies top-spending customers.
 Day 76 Objectives
@@ -55,6 +94,7 @@ Methodology Limitations
 Day 76 Project Files
 - SQL/customer_spending_segmentation_analysis.sql
 - Report/Day76_Customer_Spending_Segmentation_Analysis.md
+│   └── Day77_Customer_Revenue_Growth_Trend_Analysis.md
 - Screenshots/Day 76/
 Day 76 Status: Completed
 🏆 Previous Milestone: Day 75 Completed
@@ -538,6 +578,7 @@ Revenue analyses use product quantity multiplied by product price. The order_ite
 | Day 74 | Customer Repeat Purchase and Returning Customer Analysis |
 | Day 75 | Customer Purchase Recency and Inactivity Analysis |
 | Day 76 | Customer Spending Segmentation Analysis |
+| Day 77 | Customer Revenue Growth and Trend Analysis |
 📁 Project Structure**
 Sales_Data_Analysis_SQL/
 │
@@ -604,7 +645,8 @@ Sales_Data_Analysis_SQL/
 │   ├── customer_revenue_concentration_pareto_analysis.sql
 │   ├── customer_repeat_purchase_returning_analysis.sql
 │   ├── customer_purchase_recency_inactivity_analysis.sql
-│   └── customer_spending_segmentation_analysis.sql
+│   ├── customer_spending_segmentation_analysis.sql
+│   └── customer_revenue_growth_trend_analysis.sql
 │
 ├── Screenshots/
 │   ├── Day 67/
@@ -616,7 +658,8 @@ Sales_Data_Analysis_SQL/
 │   ├── Day 73/
 │   ├── Day 74/
 │   ├── Day 75/
-│   └── Day 76/
+│   ├── Day 76/
+│   └── Day 77/
 │
 ├── Presentation/
 │
@@ -638,12 +681,12 @@ Sales_Data_Analysis_SQL/
 *Note: The structure documents the main project files. Keep the filenames aligned with the actual files present in the repository.*
 📌 Project Status
 Current Status: 🟢 Active
-Completed: 76 Days
+Completed: 77 Days
 Primary Focus: SQL Data Analysis and Business Intelligence
 The project has progressed from database design and SQL fundamentals to advanced SQL analytics, customer analytics, product analytics, revenue segmentation, payment analysis, sales forecasting, seasonality analysis, repeat-purchase behavior, and customer revenue contribution analysis.
-Day 70 added calendar-month revenue comparisons, year-over-year growth calculations, quarterly rankings, and annual performance summaries. Day 71 added repeat-customer classification, purchase frequency segmentation, purchase interval calculations, monthly repeat activity, and customer revenue ranking. Day 72 adds relative revenue-based customer segmentation, customer and segment revenue contribution, customer ranking, and cumulative revenue analysis. Day 74 adds returning-customer classification, repeat-purchase rate, purchase-frequency groups, consecutive-order intervals, and returning-customer revenue analysis. Day 75 adds customer purchase recency, inactivity segments, at-risk customer identification, and rule-based re-engagement priorities. Day 76 adds customer spending summaries, relative spending segmentation, segment performance comparisons, and top-spending customer identification.
-🚀 76-Day Portfolio Progress
-SQL Fundamental
+Day 70 added calendar-month revenue comparisons, year-over-year growth calculations, quarterly rankings, and annual performance summaries. Day 71 added repeat-customer classification, purchase frequency segmentation, purchase interval calculations, monthly repeat activity, and customer revenue ranking. Day 72 adds relative revenue-based customer segmentation, customer and segment revenue contribution, customer ranking, and cumulative revenue analysis. Day 74 adds returning-customer classification, repeat-purchase rate, purchase-frequency groups, consecutive-order intervals, and returning-customer revenue analysis. Day 75 adds customer purchase recency, inactivity segments, at-risk customer identification, and rule-based re-engagement priorities. Day 76 adds customer spending summaries, relative spending segmentation, segment performance comparisons, and top-spending customer identification. Day 77 adds monthly customer revenue trends, previous-period comparisons, growth percentages, trend classification, and declining-revenue customer identification.
+🚀 77-Day Portfolio Progress
+SQL Fundamentals
        ↓
 Advanced SQL
        ↓
@@ -700,7 +743,7 @@ The next stage can explore:
 - Payment monitoring dashboards
 - Data quality monitoring
 - Business performance monitoring
-Next Milestone: Day 77 🚀
+Next Milestone: Day 78 🚀
 ⭐ Project Goal
 The long-term goal is to develop a practical SQL and Business Analytics portfolio demonstrating the ability to:
 Query
@@ -722,16 +765,18 @@ Forecast
 Generate Insights
   ↓
 Recommend Business Actions
-🎉 76-Day Milestone
+🎉 77-Day Milestone
 Day 71 — Customer Purchase Trends and Repeat Purchase Analysis completed. ✅
 Day 72 — Customer Segmentation and Revenue Contribution Analysis completed. ✅
 Day 73 — Customer Revenue Concentration and Pareto (80/20) Analysis completed. ✅
 Day 74 — Customer Repeat Purchase and Returning Customer Analysis completed. ✅
 Day 75 — Customer Purchase Recency and Inactivity Analysis completed. ✅
-76 days of structured SQL business analysis documented. 🚀
+77 days of structured SQL business analysis documented. 🚀
 Customer purchase recency, inactivity segments, at-risk customer identification, historical revenue from inactive customers, and rule-based re-engagement priorities added to the project. 📊
-76/76 Milestone Achieved. 🏆
+77/77 Milestone Achieved. 🏆
 Day 75 — Customer Purchase Recency and Inactivity Analysis completed. ✅
 Day 76 — Customer Spending Segmentation Analysis completed. ✅
 Customer spending summary, relative spending segments, segment performance comparison, top-spending customer ranking, and high-spending customer identification added to the project. 📊
-Next target: Day 77. 🚀
+Day 77 — Customer Revenue Growth and Trend Analysis completed. ✅
+Monthly customer revenue comparisons, revenue change and growth calculations, customer trend classification, overall monthly revenue trends, and declining latest-month customer identification documented. 📈
+Next target: Day 78. 🚀
