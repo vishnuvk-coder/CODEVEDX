@@ -19,7 +19,46 @@ The project covers:
 - Sales forecasting and revenue projection
 - Monthly sales seasonality and year-over-year comparisons
 - Business reporting and actionable business insights
-🏆 Latest Milestone: Day 77 Completed
+🏆 Latest Milestone: Day 78 Completed
+Day 78 — Customer Purchase Recency and Repeat Purchase Analysis Using SQL
+Day 78 analyzes customer purchase frequency, first and latest purchase dates, days since the latest purchase, one-time versus repeat customers, and rule-based customer activity categories using MySQL.
+Day 78 Objectives
+- Calculate each customer's total orders, first purchase date, and last purchase date.
+- Measure days since each customer's latest purchase.
+- Classify customers as one-time or repeat customers.
+- Group customers by purchase recency into Recently Active, Needs Attention, At Risk, and Inactive categories.
+- Calculate the number and percentage of one-time and repeat customers.
+Day 78 Key Analyses
+1. Customer purchase summary.
+2. Days since last purchase.
+3. One-time versus repeat-customer classification.
+4. Customer activity classification.
+5. Overall repeat-customer summary and percentage.
+SQL Techniques Used
+- COUNT(DISTINCT ...) and aggregate functions.
+- MIN() and MAX().
+- DATEDIFF() and CURRENT_DATE().
+- CASE expressions.
+- Subqueries and conditional aggregation.
+- ROUND() and NULLIF().
+Business Applications
+- Identify customers who may need follow-up.
+- Support customer retention and re-engagement campaigns.
+- Understand one-time and repeat purchasing behavior.
+- Prioritize customer engagement based on purchase recency.
+- Monitor repeat-customer percentage.
+Methodology Limitations
+- Activity categories use illustrative 30-, 60-, and 90-day thresholds.
+- Recency is calculated against the date when the query is executed.
+- Inactivity does not necessarily mean a customer has permanently churned.
+- This analysis includes customers who have placed at least one order; customers with no orders require a separate customer-table-based analysis.
+- Numerical findings should be reported only after reviewing actual query results.
+Day 78 Project Files
+- SQL/customer_purchase_recency_repeat_analysis.sql
+- Report/Day78_Customer_Purchase_Recency_Repeat_Analysis.md
+- Screenshots/Day 78/
+Day 78 Status: Completed
+🏆 Previous Milestone: Day 77 Completed
 Day 77 — Customer Revenue Growth and Trend Analysis Using SQL
 Day 77 focuses on month-by-month revenue trends, comparing each customer's recorded monthly revenue with their previous recorded month, measuring revenue changes and growth percentages, and identifying growing, declining, and stable revenue patterns.
 Day 77 Objectives
@@ -579,113 +618,112 @@ Revenue analyses use product quantity multiplied by product price. The order_ite
 | Day 75 | Customer Purchase Recency and Inactivity Analysis |
 | Day 76 | Customer Spending Segmentation Analysis |
 | Day 77 | Customer Revenue Growth and Trend Analysis |
-📁 Project Structure**
+| Day 78 | Customer Purchase Recency and Repeat Purchase Analysis |
+📁 Project Structure
 Sales_Data_Analysis_SQL/
-│
 ├── Database_Design/
-│   └── sales_analysis.mwb
-│
+│   └── sales_analysis.mwb
 ├── SQL/
-│   ├── create_database.sql
-│   ├── create_tables.sql
-│   ├── insert_data.sql
-│   ├── basic_queries.sql
-│   ├── join_queries.sql
-│   ├── aggregate_queries.sql
-│   ├── subqueries.sql
-│   ├── sales_analysis_report.sql
-│   ├── views.sql
-│   ├── stored_procedures.sql
-│   ├── triggers.sql
-│   ├── indexes.sql
-│   ├── window_functions.sql
-│   ├── cte_queries.sql
-│   ├── cte_analysis.sql
-│   ├── advanced_business_analysis.sql
-│   ├── query_optimization.sql
-│   ├── business_kpi_analysis.sql
-│   ├── customer_revenue_analytics.sql
-│   ├── customer_behavior_analysis.sql
-│   ├── customer_retention_analysis.sql
-│   ├── customer_lifetime_value.sql
-│   ├── rfm_customer_segmentation.sql
-│   ├── sales_trend_analysis.sql
-│   ├── product_performance_analysis.sql
-│   ├── sales_profitability_analysis.sql
-│   ├── customer_revenue_contribution.sql
-│   ├── customer_churn_analysis.sql
-│   ├── customer_cohort_analysis.sql
-│   ├── customer_purchase_frequency_analysis.sql
-│   ├── data_quality_integrity_analysis.sql
-│   ├── sales_performance_kpi_analysis.sql
-│   ├── sales_growth_mom_analysis.sql
-│   ├── sales_order_value_basket_analysis.sql
-│   ├── sales_revenue_forecasting_analysis.sql
-│   ├── product_demand_forecasting_analysis.sql
-│   ├── customer_repeat_purchase_prediction.sql
-│   ├── customer_purchase_propensity_analysis.sql
-│   ├── customer_purchase_value_basket_analysis.sql
-│   ├── customer_purchase_value_segmentation.sql
-│   ├── customer_revenue_contribution_analysis.sql
-│   ├── customer_revenue_pareto_analysis.sql
-│   ├── customer_revenue_decile_analysis.sql
-│   ├── customer_revenue_quartile_analysis.sql
-│   ├── customer_revenue_quintile_analysis.sql
-│   ├── customer_revenue_abc_analysis.sql
-│   ├── customer_revenue_abc_segment_performance.sql
-│   ├── customer_revenue_abc_segment_comparison.sql
-│   ├── payment_performance_business_analysis.sql
-│   ├── customer_payment_behavior_risk_analysis.sql
-│   ├── customer_payment_method_performance_analysis.sql
-│   ├── payment_method_trend_reliability_analysis.sql
-│   ├── sales_forecasting_trend_projection.sql
-│   ├── sales_seasonality_yoy_analysis.sql
-│   ├── customer_repeat_purchase_analysis.sql
-│   ├── customer_segmentation_revenue_contribution.sql
-│   ├── customer_revenue_concentration_pareto_analysis.sql
-│   ├── customer_repeat_purchase_returning_analysis.sql
-│   ├── customer_purchase_recency_inactivity_analysis.sql
-│   ├── customer_spending_segmentation_analysis.sql
-│   └── customer_revenue_growth_trend_analysis.sql
-│
+│   ├── create_database.sql
+│   ├── create_tables.sql
+│   ├── insert_data.sql
+│   ├── basic_queries.sql
+│   ├── join_queries.sql
+│   ├── aggregate_queries.sql
+│   ├── subqueries.sql
+│   ├── sales_analysis_report.sql
+│   ├── views.sql
+│   ├── stored_procedures.sql
+│   ├── triggers.sql
+│   ├── indexes.sql
+│   ├── window_functions.sql
+│   ├── cte_queries.sql
+│   ├── cte_analysis.sql
+│   ├── advanced_business_analysis.sql
+│   ├── query_optimization.sql
+│   ├── business_kpi_analysis.sql
+│   ├── customer_revenue_analytics.sql
+│   ├── customer_behavior_analysis.sql
+│   ├── customer_retention_analysis.sql
+│   ├── customer_lifetime_value.sql
+│   ├── rfm_customer_segmentation.sql
+│   ├── sales_trend_analysis.sql
+│   ├── product_performance_analysis.sql
+│   ├── sales_profitability_analysis.sql
+│   ├── customer_revenue_contribution.sql
+│   ├── customer_churn_analysis.sql
+│   ├── customer_cohort_analysis.sql
+│   ├── customer_purchase_frequency_analysis.sql
+│   ├── data_quality_integrity_analysis.sql
+│   ├── sales_performance_kpi_analysis.sql
+│   ├── sales_growth_mom_analysis.sql
+│   ├── sales_order_value_basket_analysis.sql
+│   ├── sales_revenue_forecasting_analysis.sql
+│   ├── product_demand_forecasting_analysis.sql
+│   ├── customer_repeat_purchase_prediction.sql
+│   ├── customer_purchase_propensity_analysis.sql
+│   ├── customer_purchase_value_basket_analysis.sql
+│   ├── customer_purchase_value_segmentation.sql
+│   ├── customer_revenue_contribution_analysis.sql
+│   ├── customer_revenue_pareto_analysis.sql
+│   ├── customer_revenue_decile_analysis.sql
+│   ├── customer_revenue_quartile_analysis.sql
+│   ├── customer_revenue_quintile_analysis.sql
+│   ├── customer_revenue_abc_analysis.sql
+│   ├── customer_revenue_abc_segment_performance.sql
+│   ├── customer_revenue_abc_segment_comparison.sql
+│   ├── payment_performance_business_analysis.sql
+│   ├── customer_payment_behavior_risk_analysis.sql
+│   ├── customer_payment_method_performance_analysis.sql
+│   ├── payment_method_trend_reliability_analysis.sql
+│   ├── sales_forecasting_trend_projection.sql
+│   ├── sales_seasonality_yoy_analysis.sql
+│   ├── customer_repeat_purchase_analysis.sql
+│   ├── customer_segmentation_revenue_contribution.sql
+│   ├── customer_revenue_concentration_pareto_analysis.sql
+│   ├── customer_repeat_purchase_returning_analysis.sql
+│   ├── customer_purchase_recency_inactivity_analysis.sql
+│   ├── customer_spending_segmentation_analysis.sql
+│   ├── customer_revenue_growth_trend_analysis.sql
+│   └── customer_purchase_recency_repeat_analysis.sql
 ├── Screenshots/
-│   ├── Day 67/
-│   ├── Day 68/
-│   ├── Day 69/
-│   ├── Day 70/
-│   ├── Day 71/
-│   ├── Day 72/
-│   ├── Day 73/
-│   ├── Day 74/
-│   ├── Day 75/
-│   ├── Day 76/
-│   └── Day 77/
-│
+│   ├── Day 67/
+│   ├── Day 68/
+│   ├── Day 69/
+│   ├── Day 70/
+│   ├── Day 71/
+│   ├── Day 72/
+│   ├── Day 73/
+│   ├── Day 74/
+│   ├── Day 75/
+│   ├── Day 76/
+│   ├── Day 77/
+│   └── Day 78/
 ├── Presentation/
-│
 ├── Report/
-│   ├── Week1_Report.md
-│   ├── Week2_Report.md
-│   ├── Day67_Customer_Payment_Method_Performance_Analysis.md
-│   ├── Day68_Payment_Method_Trend_Reliability_Analysis.md
-│   ├── Day69_Sales_Forecasting_Trend_Projection.md
-│   ├── Day70_Sales_Seasonality_YoY_Analysis.md
-│   ├── Day71_Customer_Repeat_Purchase_Analysis.md
-│   ├── Day72_Customer_Segmentation_Revenue_Contribution.md
-│   ├── Day73_Customer_Revenue_Concentration_Pareto_Analysis.md
-│   ├── Day74_Customer_Repeat_Purchase_Analysis.md
-│   ├── Day75_Customer_Purchase_Recency_Inactivity_Analysis.md
-│   └── Day76_Customer_Spending_Segmentation_Analysis.md
-│
+│   ├── Week1_Report.md
+│   ├── Week2_Report.md
+│   ├── Day67_Customer_Payment_Method_Performance_Analysis.md
+│   ├── Day68_Payment_Method_Trend_Reliability_Analysis.md
+│   ├── Day69_Sales_Forecasting_Trend_Projection.md
+│   ├── Day70_Sales_Seasonality_YoY_Analysis.md
+│   ├── Day71_Customer_Repeat_Purchase_Analysis.md
+│   ├── Day72_Customer_Segmentation_Revenue_Contribution.md
+│   ├── Day73_Customer_Revenue_Concentration_Pareto_Analysis.md
+│   ├── Day74_Customer_Repeat_Purchase_Analysis.md
+│   ├── Day75_Customer_Purchase_Recency_Inactivity_Analysis.md
+│   ├── Day76_Customer_Spending_Segmentation_Analysis.md
+│   ├── Day77_Customer_Revenue_Growth_Trend_Analysis.md
+│   └── Day78_Customer_Purchase_Recency_Repeat_Analysis.md
 └── README.md
-*Note: The structure documents the main project files. Keep the filenames aligned with the actual files present in the repository.*
+Note: This tree is based on the project files documented in this README. Confirm filenames and folders against the actual local repository; remove entries for files that do not exist and add any real files missing from this list.
 📌 Project Status
 Current Status: 🟢 Active
-Completed: 77 Days
+Completed: 78 Days
 Primary Focus: SQL Data Analysis and Business Intelligence
 The project has progressed from database design and SQL fundamentals to advanced SQL analytics, customer analytics, product analytics, revenue segmentation, payment analysis, sales forecasting, seasonality analysis, repeat-purchase behavior, and customer revenue contribution analysis.
-Day 70 added calendar-month revenue comparisons, year-over-year growth calculations, quarterly rankings, and annual performance summaries. Day 71 added repeat-customer classification, purchase frequency segmentation, purchase interval calculations, monthly repeat activity, and customer revenue ranking. Day 72 adds relative revenue-based customer segmentation, customer and segment revenue contribution, customer ranking, and cumulative revenue analysis. Day 74 adds returning-customer classification, repeat-purchase rate, purchase-frequency groups, consecutive-order intervals, and returning-customer revenue analysis. Day 75 adds customer purchase recency, inactivity segments, at-risk customer identification, and rule-based re-engagement priorities. Day 76 adds customer spending summaries, relative spending segmentation, segment performance comparisons, and top-spending customer identification. Day 77 adds monthly customer revenue trends, previous-period comparisons, growth percentages, trend classification, and declining-revenue customer identification.
-🚀 77-Day Portfolio Progress
+Day 70 added calendar-month revenue comparisons, year-over-year growth calculations, quarterly rankings, and annual performance summaries. Day 71 added repeat-customer classification, purchase frequency segmentation, purchase interval calculations, monthly repeat activity, and customer revenue ranking. Day 72 adds relative revenue-based customer segmentation, customer and segment revenue contribution, customer ranking, and cumulative revenue analysis. Day 74 adds returning-customer classification, repeat-purchase rate, purchase-frequency groups, consecutive-order intervals, and returning-customer revenue analysis. Day 75 adds customer purchase recency, inactivity segments, at-risk customer identification, and rule-based re-engagement priorities. Day 76 adds customer spending summaries, relative spending segmentation, segment performance comparisons, and top-spending customer identification. Day 77 adds monthly customer revenue trends, previous-period comparisons, growth percentages, trend classification, and declining-revenue customer identification. Day 78 adds purchase recency, one-time versus repeat-customer classification, customer activity categories, and repeat-customer percentage analysis.
+🚀 78-Day Portfolio Progress
 SQL Fundamentals
        ↓
 Advanced SQL
@@ -743,7 +781,7 @@ The next stage can explore:
 - Payment monitoring dashboards
 - Data quality monitoring
 - Business performance monitoring
-Next Milestone: Day 78 🚀
+Next Milestone: Day 79 🚀
 ⭐ Project Goal
 The long-term goal is to develop a practical SQL and Business Analytics portfolio demonstrating the ability to:
 Query
@@ -765,18 +803,22 @@ Forecast
 Generate Insights
   ↓
 Recommend Business Actions
-🎉 77-Day Milestone
+🎉 78-Day Milestone
 Day 71 — Customer Purchase Trends and Repeat Purchase Analysis completed. ✅
 Day 72 — Customer Segmentation and Revenue Contribution Analysis completed. ✅
 Day 73 — Customer Revenue Concentration and Pareto (80/20) Analysis completed. ✅
 Day 74 — Customer Repeat Purchase and Returning Customer Analysis completed. ✅
 Day 75 — Customer Purchase Recency and Inactivity Analysis completed. ✅
-77 days of structured SQL business analysis documented. 🚀
+78 days of structured SQL business analysis documented. 🚀
 Customer purchase recency, inactivity segments, at-risk customer identification, historical revenue from inactive customers, and rule-based re-engagement priorities added to the project. 📊
-77/77 Milestone Achieved. 🏆
+78/78 Milestone Achieved. 🏆
 Day 75 — Customer Purchase Recency and Inactivity Analysis completed. ✅
 Day 76 — Customer Spending Segmentation Analysis completed. ✅
 Customer spending summary, relative spending segments, segment performance comparison, top-spending customer ranking, and high-spending customer identification added to the project. 📊
 Day 77 — Customer Revenue Growth and Trend Analysis completed. ✅
 Monthly customer revenue comparisons, revenue change and growth calculations, customer trend classification, overall monthly revenue trends, and declining latest-month customer identification documented. 📈
-Next target: Day 78. 🚀
+Next target: Day 79. 🚀
+Day 78 — Customer Purchase Recency and Repeat Purchase Analysis completed. ✅
+Customer purchase summaries, days since last purchase, one-time and repeat-customer classification, customer activity categories, and repeat-customer percentage analysis added to the project. 📊
+78/78 Milestone Achieved. 🏆
+Next target: Day 79. 🚀
